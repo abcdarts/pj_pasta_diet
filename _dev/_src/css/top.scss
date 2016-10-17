@@ -1,0 +1,80 @@
+@charset 'UTF-8';
+
+$base-color: #C9000A;
+
+.wrapper{
+  padding-bottom: 0;
+}
+
+.top-content{
+  border-top: 17px solid $base-color;
+
+  &.information{
+    background: url(/assets/images/top/top_bg_01.png) center top no-repeat;
+    height: 542px;
+
+    .hdg{
+      width: 592px;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+  }
+
+  &.instagram{
+    background: url(/assets/images/top/top_bg_02.png) center top no-repeat;
+    height: 663px;
+
+    .hdg{
+      width: 592px;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+  }
+
+  &.facebook{
+    background: url(/assets/images/top/top_bg_03.png) center top no-repeat;
+    height: 686px;
+
+    .inner{
+        width: 980px;
+        margin: 0 auto;
+        overflow: hidden;
+        zoom: 1;
+        padding: 45px 0 0;
+
+        .hdg{
+          width: 437px;
+          margin: 0 auto;
+          padding: 20px 0;
+          float: left;
+        }
+
+        .chicken-container{
+            float: left;
+            overflow: hidden;
+            zoom: 1;
+            width: 460px;
+
+            .btn-to-fb{
+                float: left;
+                width: 212px;
+                margin: 60px 0 0;
+            }
+
+            .image{
+                float: right;
+                width: 228px;
+            }
+        }
+
+        .fb-container{
+            width: 500px;
+            float: right;
+            border: 1px solid #ccc;
+
+        }
+    }
+
+  }
+
+}

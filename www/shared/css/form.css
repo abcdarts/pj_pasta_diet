@@ -1,0 +1,50 @@
+form.present {
+	width:500px;
+	margin:0;
+	padding:0;
+	}
+
+table.form td,
+table.form th{
+	padding: 10px;
+	border-bottom: solid 1px#c9c1b8;
+	text-align: left;
+}
+table.form th{
+	color: #68441d;
+}
+table.form th strong{
+	color: #d32f2e;
+}
+table.form td.line{
+	padding: 0;
+	border-bottom: none;
+}
+table.form td .desc{
+	color: #68441d;
+}
+
+table.form td table td,
+table.form td table th{
+	padding: 0;
+	border-bottom: none;
+}
+
+form .sizeS{
+	width: 30px;
+}
+form .sizeM{
+	width: 50px;
+}
+form .sizeML{
+	width: 100px;
+}
+form .sizeL{
+	width: 180px;
+}
+form .sizeLL{
+	width: 220px;
+}
+form .sizeFull{
+	width: 270px;
+}

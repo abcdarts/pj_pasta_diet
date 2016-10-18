@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+<meta name="Keywords" content="パスタ,パスタレシピ,パスタメニュー,ゆで方,おいしい作り方,クッキングスクール,スパゲッティ,スパゲティ" />
+<meta name="Description" content="日本パスタ協会の公式サイト。ご家庭で簡単に作れるパスタレシピを毎週、様々な切り口でご紹介。その他、自分の好みのパスタを探せる検索機能や、自分のオリジナルレシピをみんなに紹介できるパスタレシピ投稿ページ、パスタクッキングスクールのご案内など、パスタの楽しみ方を広げられるサイトです。" />
+<title>日本パスタ協会｜パスタのレシピ情報満載！</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="copyright" content="" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="" />
+<link href="/shared/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<script type="text/javascript" src="/shared/js/jquery.js"></script>
+<script type="text/javascript" src="/shared/js/default.js" ></script>
+<script type="text/javascript" src="/shared/js/switchtab.js"></script>
+<script type="text/javascript" src="/shared/js/peoplerecipe.js"></script>
+<script type="text/javascript">
+<!--
+window.onload = function() {
+  //initRollswaps();
+  //switchDispDiv('society');
+  dispMemberRecipeList();
+}
+//-->
+</script>
+</head>
+<body id="home">
+<div id="page">
+<div class="pageBt">
+	<div id="header">
+		<!--#include virtual="/include/inc_header_top.html"-->
+		<!--#include virtual="/include/inc_gnavi.html"-->
+	</div>
+	<!-- / header -->
+	<div id="mainArea">
+		<div id="contents">
+			<div id="main_column">
+				<div id="search_block">
+					<h2><img src="/images/h2_search.gif" width="497" height="40" alt="おいしいレシピが2000種類以上！" /></h2>
+					<div class="search_method_01">
+						<form onsubmit="goToSearch(); return false;">
+							<dl class="clearfix">
+								<dt><img src="/images/method_dt_01.gif" width="131" height="18" alt="フリーワードで探す" /></dt>
+								<dd class="clearfix">
+									<input id="keyword" name="keyword" type="text" />
+									<input id="submit" type="image" src="/images/index_btn_search03.gif" alt="検索" />
+								</dd>
+							</dl>
+							<ul class="clearfix">
+								<li><input id="inBoth" type="radio" checked="checked" name="radio1" /><label for="inBoth">両方のレシピから探す</label></li>
+								<li><input id="inPro" type="radio" name="radio1" /><label for="inPro">パスタ協会オフィシャルレシピから探す</label></li>
+								<li><input id="inMember" type="radio" name="radio1" /><label for="inMember">みんなの投稿パスタレシピから探す</label></li>
+							</ul>
+						</form>
+					</div>
+					<div class="search_method_02">
+						<dl class="clearfix">
+							<dt><img src="/images/method_dt_02.gif" width="133" height="18" alt="パスタソースで探す" /></dt>
+							<dd>
+								<ul class="clearfix">
+									<li class="list_01"><a href="/recipe/category/1/01/0000/01/">オイル系</a></li>
+									<li class="list_02"><a href="/recipe/category/1/02/0000/01/">トマト系</a></li>
+									<li class="list_03"><a href="/recipe/category/1/03/0000/01/">クリーム系</a></li>
+									<li class="list_04"><a href="/recipe/category/1/04/0000/01/">和風</a></li>
+									<li class="list_05"><a href="/recipe/category/1/99/0000/01/">その他</a></li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+					<div class="search_method_03 clearfix">
+						<p><a href="/recipe/index.php">もっと詳しい条件で探す</a></p>
+					</div>
+				</div><!-- /search_block -->
+
+				<!--#include virtual="/include/inc_top_banner_l.html"-->
+
+				<div id="recommend_recipe">
+					<div id="recipe_photo"><p><a href="/recipe/recipe.php?recipe_id=00417"><img src="/recipe/images/recipe_photo/recipe_photo00417.jpg" height="211" alt="" /></a></p></div>
+					<div id="recipe_info">
+						<h2><img src="/images/h2_recommend.gif" width="328" height="83" alt="毎月更新！協会おすすめレシピ" /></h2>
+						<div class="recipe_description">
+							<p><a href="/recipe/recipe.php?recipe_id=00417">サルシッチャとトマトソースのペンネ</a></p>
+							<p>濃厚なうまみのサルシッチャをトマトソースと合わせて</p>
+						</div>
+						<div id="before_recipe" class="clearfix">
+							<div id="before_recipe_photo"><p><a href="/recipe/recipe.php?recipe_id=416"><img src="/recipe/images/recipe_photo_s/recipe_photo_s00416.jpg" width="70" height="90" alt="" /></a></p></div>
+							<div id="before_recipe_info">
+								<h3><img src="/images/h3_before_recipe.gif" width="270" height="44" alt="先月の協会おすすめレシピ" /></h3>
+								<div class="recipe_description">
+									<p><a href="/recipe/recipe.php?recipe_id=416">ひよこ豆のスープパスタ</a></p>
+									<p>シンプルな味つけで、豆の風味が広がるやさしい味わい</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- /recommend_recipe -->
+				<!--#include virtual="/include/inc_top_banner.html"-->
+				<!--#include virtual="/recipe_ranking_top.html"-->
+				<div id="middle_contents" class="clearfix">
+					<div id="new_post_block" class="clearfix">
+						<h2><img src="/images/h2_post.gif" width="292" height="37" alt="新着投稿レシピ" /></h2>
+						<div class="left_block new_post">
+							<p><a href="/recipe/member_recipe.php?cmd=DispDetail&recipe_id=2370"><img src="/recipe/member_recipe_img/img_00002370.jpg" id="new_recipe_image" alt="" /></a><span>NEW！</span></p>
+						</div>
+						<div class="right_block new_post">
+							<p class="recipe_name"><a href="/recipe/member_recipe.php?cmd=DispDetail&recipe_id=2370">ナスとムール貝のパスタ</a></p>
+							<p class="recipe_author">by <a href="/recipe/member_recipe.php?cmd=ListUpByMember&member_id=1000">ototototo</a></p>
+							<p class="recipe_text">殆どムール貝が支配します</p>
+							<p class="others_recipe"><a href="/recipe/member_recipe.php?cmd=SearchDone&u=1&page=1&search=keyword&keyword="><img src="/images/btn_post_recipe_off.gif" class="swap" width="128" height="24" alt="その他の投稿レシピ" /></a></p>
+						</div>
+					</div>
+					<div id="dietitian_block">
+						<h2><img src="/images/h2_dietitian.gif" width="302" height="26" alt="学校給食向けレシピ" /></h2>
+						<ul>
+							<li><a href="/dietitian/index.html">学校給食向けパスタレシピとは？</a></li>
+							<li><a href="/dietitian/recipe/index.html">学校給食向けレシピ一覧</a></li>
+						</ul>
+					</div>
+				</div><!-- /content_block -->
+			</div><!-- /main_column -->
+			<div id="sub_column">
+				<!--#include virtual="/include/inc_top_side_contents.html"-->
+				<!--#include virtual="/include/inc_top_info.html"-->
+			</div>
+		</div>
+		<!--#include virtual="/include/inc_footer_link.html"-->
+		<!-- / contents -->
+		<p class="pagetop"><a href="#header"><img src="/shared/images/btn_pagetop_rody_off.gif" alt="このページのトップへ" width="108" height="16" class="swap" /></a></p>
+		<!-- / sub -->
+	</div>
+	<!-- / mainArea -->
+	<!--#include virtual="/include/inc_footer.html"-->
+	<!-- / footer -->
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-182016-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

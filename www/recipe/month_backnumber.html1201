@@ -1,0 +1,25 @@
+			<dl class="monthBackNumber">
+				<dt><img src="/recipe/images/month_h_backnumber.gif" alt="今月の特集 バックナンバー" width="657" height="44" /></dt>
+				<dd><div class="tblArea">
+					<table cellspacing="0" cellpadding="0" summary="今月の特集 バックナンバー">
+						<tr class="noline">
+							<th>2008年6月</th>
+							<td class="left"><a href="http://www.pasta.or.jp/recipe/special.php?cmd=DetailSearch&renew=1&search_id[]=1&search_id[]=2&search_id[]=3&search_id[]=4&recipe_attributes[]=1&x=21&y=21&ym=200806">お肉も食べれるダイエットパスタ</a></td>
+							<th>2008年7月</th>
+							<td><a href="http://www.pasta.or.jp/recipe/special.php?cmd=KeywordSearch&u=1&page=1&keyword=%E3%81%97%E3%82%87%E3%81%86%E3%82%86&ym=200807">パスタで安眠特集</a></td>
+						</tr>
+						<tr class="noline">
+							<th>2008年8月</th>
+							<td class="left"><a href="http://www.pasta.or.jp/recipe/special.php?cmd=DetailSearch&renew=1&search_id%5B%5D=2&search_id%5B%5D=15&x=60&y=8&ym=200808">夏バテ解消パスタ特集</a></td>
+							<th>2008年9月</th>
+							<td><a href="http://www.pasta.or.jp/recipe/special.php?cmd=DetailSearch&renew=1&search_id%5B%5D=1&search_id%5B%5D=2&search_id%5B%5D=3&search_id%5B%5D=4&recipe_attributes%5B%5D=3&x=50&y=23&ym=200809">だんなや彼氏もつくれる男の手料理特集</a></td>
+						</tr>
+						<tr class="noline">
+							<th>2008年10月</th>
+							<td class="left"><a href="http://www.pasta.or.jp/recipe/special.php?cmd=DetailSearch&renew=1&search_id[]=6&search_id[]=10&x=37&y=5&ym=200810">アンチエイジング特集</a></td>
+							<th>&nbsp;</th>
+							<td>&nbsp;</td>
+						</tr>
+						</table>
+				</div></dd>
+			</dl>

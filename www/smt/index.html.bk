@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="shift_jis" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" />
+<meta name="format-detection" content="telephone=no" />
+
+<link rel="apple-touch-icon" href="/smt/shared/img/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+
+<link rel="stylesheet" href="/smt/shared/css/import.css" />
+
+<script src="/smt/shared/js/jquery.js"></script>
+<script src="/smt/shared/js/jquery.flatheights.js"></script>
+<script src="/smt/shared/js/base.js"></script>
+
+<meta name="Keywords" content="パスタ,パスタレシピ,パスタメニュー,ゆで方,おいしい作り方,クッキングスクール,スパゲッティ,スパゲティ" />
+<meta name="Description" content="日本パスタ協会の公式サイト。ご家庭で簡単に作れるパスタレシピを毎週、様々な切り口でご紹介。その他、自分の好みのパスタを探せる検索機能や、自分のオリジナルレシピをみんなに紹介できるパスタレシピ投稿ページ、パスタクッキングスクールのご案内など、パスタの楽しみ方を広げられるサイトです。" />
+<title>日本パスタ協会</title>
+
+</head>
+
+<body id="top">
+
+<header id="header">
+	<div id="header_upper_block">
+		<h1><a href="/smt/"><img src="shared/images/logo.jpg" width="169" height="48" alt="社団法人 日本パスタ協会"></a></h1>
+		<nav>
+			<ul>
+				<!--#include virtual="/smt/login_check1.php" -->
+				<!--#include virtual="/smt/include/inc_menu.html" -->
+			</ul>
+		</nav>
+	</div>
+	<div id="search_block">
+		<!--#include virtual="/smt/include/search.html" -->
+		<p id="search_button" class="button"><a href="/smt/searchtop.php">パスタレシピ 条件検索はこちら</a></p>
+	</div>
+</header><!--/header-->
+
+	<section id="recommend_recipe">
+		<a href="recipe.php?recipe_id=00417">
+			<img src="./recipe/images/recipe_photo00417.jpg" id="recipe_image" alt="" />
+			<div class="recipe_info">
+				協会おすすめレシピ<br />
+				<strong>サルシッチャとトマトソースのペンネ</strong>
+				<img src="./images/recipe_icon.png" id="recipe_icon" alt="" />
+			</div>
+		</a>
+	</section><!--/recommend_recipe-->
+
+<div id="contents">
+	<!--#include virtual="/smt/include/inc_campaign.html" -->
+	
+	<!--#include virtual="/smt/include/inc_top_banner.html" -->
+	
+	<section class="regist">
+		<h2 class="balloon">パスタ協会の会員になってレシピを投稿しよう！</h2>
+		<ul>
+			<li>人気レシピはランキングに掲載</li>
+			<li>「お気に入り登録」で気になるレシピをチェック</li>
+			<li>プレゼントキャンペーンやパスタレシピコンテストに参加できる！</li>
+		</ul>
+		<p class="button"><a href="https://www.pasta.or.jp/smt/regist.php">無料会員登録はこちら</a></p>
+	</section>
+	
+	<section id="ranking">
+		<h2 class="icon"><span>レシピランキング</span></h2>
+		<div id="official">
+			<a class="ranking_header" href="/smt/searchpro.php?cmd=ListUp&page=1&order_by=rat">
+				<dl>
+					<dt>パスタ協会オフィシャルレシピランキング</dt>
+					<dd>パスタ協会考案のパスタレシピをご紹介します。</dd>
+				</dl>
+			</a>
+			<ol>
+				<!--#include virtual="/smt/recipe/smt_pro_ranking.html" -->
+			</ol>
+		</div>
+		<div id="member">
+			<a class="ranking_header" href="/smt/searchmem.php?cmd=ListUp&order_by=rat&page=1">
+				<dl>
+					<dt>みんなの投稿パスタレシピランキング</dt>
+					<dd>会員のみなさまが投稿して頂いた多彩なパスタレシピをご紹介します！</dd>
+				</dl>
+			</a>
+			<ol>
+				<!--#include virtual="/smt/recipe/smt_mem_ranking.html" -->
+			</ol>
+		</div>
+	</section>
+	
+	<section id="new_recipe">
+		<h2 class="icon"><span>新着投稿レシピ</span></h2>
+		<div class="clearfix">
+			<a href="member_recipe.php?cmd=DispDetail&recipe_id=2370" class="clearfix">
+			<div class="left_block" style="background-image:url(/recipe/member_recipe_img/tmn_00002370.jpg);"><img src="/recipe/member_recipe_img/tmn_00002370.jpg" alt="" /></div>
+			<div class="right_block">
+				<dl class="recipe_info">
+					<dt>ナスとムール貝のパスタ</dt>
+					<dd>殆どムール貝が支配します</dd>
+				</dl>
+			</div>
+			</a>
+		</div>
+	</section>
+	
+	<section class="regist">
+		<h2 class="balloon">パスタ協会の会員になってレシピを投稿しよう！</h2>
+		<ul>
+			<li>人気レシピはランキングに掲載</li>
+			<li>「お気に入り登録」で気になるレシピをチェック</li>
+			<li>プレゼントキャンペーンやパスタレシピコンテストに参加できる！</li>
+		</ul>
+		<p class="button"><a href="https://www.pasta.or.jp/smt/regist.php">無料会員登録はこちら</a></p>
+	</section>
+	
+</div>
+
+<!--#include virtual="login_check2.php" -->
+
+</body>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-182016-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</html>

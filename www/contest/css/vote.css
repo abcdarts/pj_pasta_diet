@@ -1,0 +1,10 @@
+@charset "shift_jis";
+
+
+.flow dl.flow01 {width: 222px;}
+.flow dl.flow02 {width: 224px;}
+.flow dl.flow03 {width: 227px;}
+.apply .flow {
+	background-image:url(../images/2012/vote/flow_bg.gif);
+}
+

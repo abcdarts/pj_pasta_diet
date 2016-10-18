@@ -1,0 +1,11 @@
+INSERT INTO recipe_search_data VALUES ('388', '8');
+INSERT INTO recipe_search_data VALUES ('389', '13');
+INSERT INTO recipe_search_data VALUES ('390', '13');
+INSERT INTO recipe_search_data VALUES ('391', '12');
+INSERT INTO recipe_search_data VALUES ('392', '13');
+INSERT INTO recipe_search_data VALUES ('393', '11');
+INSERT INTO recipe_search_data VALUES ('394', '7');
+INSERT INTO recipe_search_data VALUES ('395', '1');
+INSERT INTO recipe_search_data VALUES ('396', '10');
+INSERT INTO recipe_search_data VALUES ('397', '8');
+INSERT INTO recipe_search_data VALUES ('398', '2');

@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="Keywords" content="パスタ,パスタレシピ,パスタメニュー,ゆで方,おいしい作り方,クッキングスクール,スパゲッティ,スパゲティ" />
+<meta name="Description" content="日本パスタ協会の公式サイト。ご家庭で簡単に作れるパスタレシピを毎週、様々な切り口でご紹介。その他、自分の好みのパスタを探せる検索機能や、自分のオリジナルレシピをみんなに紹介できるパスタレシピ投稿ページ、パスタクッキングスクールのご案内など、パスタの楽しみ方を広げられるサイトです。" />
+<meta name="copyright" content="Japan-Pasta Association, All rights reserved." />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="" />
+<link href="/shared/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<script type="text/javascript" src="/shared/js/jquery.js"></script>
+<script type="text/javascript" src="/shared/js/default.js"></script>
+<script type="text/javascript" src="/shared/js/peoplerecipe.js" ></script>
+
+<script type="text/javascript">
+<!--
+window.onload = function() {
+  dispMemberRecipeList();
+  dispRecommendRecipe();
+}
+//-->
+</script>
+<title>メルマガ登録フォーム│日本パスタ協会</title>
+</head>
+<body id="magazine">
+<div id="page">
+<div class="pageBt">
+	<div id="header">
+		<p id="logo"><a href="/"><img src="/shared/images/logo_rody.gif" alt="社団法人 日本パスタ協会" width="225" height="70" /></a></p>
+		<div id="descript">
+			<p id="header_lead">パスタのレシピ情報満載！<br />パスタ協会のオフィシャルサイトです！</p>
+
+			<p>協会おすすめレシピ（366品） みんなのレシピ（1772品）</p>
+		</div>
+		<div class="hdnavi">
+			
+<ul id="hdnavi_login">
+				<li><a href="http://pasta-stg.check.pensees.co.jp/recipe/login.php"><img src="/shared/images/header_btn_login_off.gif" class="swap" width="140" height="31" alt="ログイン" /></a></li>
+				<li><a href="https://www.pasta.or.jp/recipe/regist.php"><img src="/shared/images/header_btn_regist_off.gif" class="swap" width="140" height="31" alt="無料会員登録" /></a></li>
+			</ul>
+
+			<ul id="hdnavi_content">
+
+				<li><a href="/recipe/mymenu/favorite.php">お気に入りリスト</a></li>
+				<li><a href="/sitemap.html">サイトマップ</a></li>
+				<!--li class="smart_phone"><a href="sitemap.html"><img src="/shared/images/header_sp_btn.gif" width="113" height="38" alt="スマートフォン版" /></a></li-->
+			</ul>
+
+		</div>
+		<ul id="gnavi">
+			<li class="nav01"><a href="/recipe/index.php"><img src="/shared/images/gnavi_01_off.gif" class="swap" alt="レシピを探す" width="218" height="47" /></a></li>
+
+			<li class="nav04"><a href="/event/school/index.html"><img src="/shared/images/gnavi_02_off.gif" class="swap" alt="イベント情報を知る" width="218" height="47" /></a></li>
+			<li class="nav05"><a href="/content/healthy/index.html"><img src="/shared/images/gnavi_03_off.gif" class="swap" alt="パスタを知る" width="217" height="47" /></a></li>
+			<li class="nav06"><a href="/association/greeting/index.html"><img src="/shared/images/gnavi_04_off.gif" class="swap" alt="協会を知る" width="217" height="47" /></a></li>
+		</ul>
+	</div>
+	<!-- / header -->
+	<p class="location"><a href="/index.html">HOME</a> ＞ メルマガ登録フォーム</p>
+
+	<div id="mainArea">
+		<div id="contents">
+			<h1><img src="./images/h1.jpg" alt="メルマガ登録フォーム" width="683" height="92" /></h1>
+			<!--p class="lead">
+				パスタ協会のメルマガでは、セミナー、スクール、キャンペーンなど、お得な最新情報をお届けします！
+				<span>※利用規約を必ずお読みの上、同意ボタンにチェックを入れて、ご登録ください。</span>
+			</p-->
+			
+			<div class="form_block formArea">
+				<h2>メールアドレス変更</h2>
+				<form name="UpdForm" method="post" action="https://sv4.mgzn.jp/sys/updExec.php">
+					<input type="hidden" name="cid" value="Q205635" />
+
+					<table>
+						<tr>
+							<th>旧メールアドレス： <span class="redMark">(*)</span></th>
+							<td><input type="text" name="emailold" size="30" maxlength="60" /></td>
+						</tr>
+						<tr>
+							<th>新メールアドレス： <span class="redMark">(*)</span></th>
+
+							<td><input type="text" name="emailnew" size="30" maxlength="60" /></td>
+						</tr>
+					</table>
+					<input id="btn_alter" type="submit" name="exec" value=" 変更する " />
+				</form>
+			</div>
+			
+			<div class="form_block formArea">
+				<h2>メルマガ登録解除</h2>
+
+				<form name="DelForm" method="post" action="https://sv4.mgzn.jp/sys/unregExec.php">
+					<input type="hidden" name="cid" value="Q205635" />
+					<table>
+						<tr>
+							<th>メールアドレス <span class="redMark">(*)</span></th>
+							<td><input type="text" name="email" size="30" maxlength="60" /></td>
+						</tr>
+					</table>
+
+					<input id="btn_cancel" type="submit" name="exec" value=" 解除する " />
+				</form>
+			</div>
+		</div>
+		<!-- / contents -->
+		<div id="sub">
+			<ul class="bnrArea">
+				<li><a href="/mail_magazine/"><img src="/shared/images/side_banner_mail_magazine_off.gif" alt="セミナー、スクール、キャンペーンなど 最新の情報を配信中！" width="172" height="63" class="swap" /></a></li>
+			</ul>
+		</div>
+		<!-- / sub -->
+	</div>
+	<!-- / mainArea -->
+
+	<div id="footer_link">
+			<div class="column_block">
+				<ul class="parent">
+					<li><span><a href="/recipe/index.php">レシピを探す</a></span></li>
+					<li><span><a href="/recipe/mymenu/myrecipe.php?cmd=InsertDispForm">パスタを投稿する</a></span></li>
+					<li>
+						<span><a href="/event/school/index.html">イベント情報を知る</a></span>
+
+						<ul class="child">
+							<li><a href="/event/school/index.html">クッキングスクール</a></li>
+							<li><a href="/event/kyoudo/index.html">郷土野菜クッキングセミナー</a></li>
+							<li><a href="/contest/index.html">レシピコンテスト</a></li>
+							<li><a href="/present/index.html">アンケート</a></li>
+							<li><a href="/event/campaign/index.html">街頭キャンペーン</a></li>
+
+							<li><a href="/event/college/index.html">パスタ大学</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="column_block">
+				<ul class="parent">
+					<li>
+
+						<span><a href="/content/healthy/index.html">パスタを知る</a></span>
+						<ul class="child">
+							<li><a href="/content/healthy/index.html">パスタはヘルシー</a></li>
+							<li><a href="/content/healthy/index.html">パスタでダイエット＆パワーアップ</a></li>
+							<li><a href="/content/healthy/sport.html">スポーツ選手パワーアップ</a></li>
+							<li><a href="/content/healthy/diet.html">パスタでおいしくダイエット</a></li>
+
+							<li><a href="/content/basic/index.html">パスタの基本</a></li>
+							<li><a href="/content/basic/index.html">パスタに関する基礎知識</a></li>
+							<li><a href="/content/basic/boil.html">パスタのおいしいゆで方</a></li>
+							<li><a href="/content/basic/second.html">パスタをおいしくする脇役たち</a></li>
+							<li><a href="/content/dictionary/index.html">パスタ辞典</a></li>
+							<li><a href="/content/dictionary/index.html">パスタの歴史</a></li>
+
+							<li><a href="/content/dictionary/type.html">パスタの種類</a></li>
+							<li><a href="/pasta_fa/popup.html">パスタ工場</a></li>
+							<li><a href="/content/song/index.html">パスタサンデーの歌</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div class="column_block">
+				<ul class="parent">
+					<li>
+						<span><a href="/dietitian/index.html">学校給食向けレシピ</a></span>
+						<ul class="child">
+							<li><a href="/dietitian/index.html">学校給食向けレシピ</a></li>
+							<li><a href="/dietitian/recipe/index.html">学校給食向けレシピ一覧</a></li>
+
+						</ul>
+					</li>
+					<li>
+						<span><a href="/association/greeting/index.html">協会を知る</a></span>
+						<ul class="child">
+							<li><a href="/association/greeting/index.html">ごあいさつ</a></li>
+							<li><a href="/association/overview/index.html">協会概要</a></li>
+
+							<li><a href="/association/activity/index.html">活動内容紹介</a></li>
+							<li><a href="/association/company/index.html">加盟企業紹介</a></li>
+							<li><a href="/association/report/index.html">パスタレポート</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div class="column_block">
+				<ul class="parent">
+					<li><span><a href="/news/">お知らせ</a></span></li>
+					<li><span><a href="/about/index.html">このサイトについて</a></span></li>
+					<li><span><a href="/privacy/index.html">プライバシーポリシー</a></span></li>
+					<li><span><a href="/rules.html">利用規約</a></span></li>
+				</ul>
+
+			</div>
+			<div id="mobile_info_block" class="column_block">
+				<!--dl class="smart_section">
+					<dt><img src="/shared/images/footer_link_sp_text.gif" width="179" height="18" alt="スマートフォン版トップはこちら！" /></dt>
+					<dd><a href="#"><img src="/shared/images/footer_link_sp_btn.gif" width="179" height="38" alt="スマートフォン版" /></a></dd>
+				</dl-->
+				<dl class="mobile_section">
+					<dt><img src="/shared/images/footer_link_mb_text.gif" width="179" height="18" alt="モバイル版トップはこちら！" /></dt>
+					<dd><img src="/shared/images/footer_link_mb_qr.gif" width="49" height="50" alt="QRコード" /></dd>
+				</dl>
+			</div>
+		</div>
+
+	<div id="footer">
+	<div class="footerLine">
+		<ul>
+			<li><a href="/sitemap.html"><img src="/shared/images/ftnavi01_off.gif" alt="サイトマップ" width="78" height="13" class="swap" /></a></li>
+			<li><a href="/about/index.html"><img src="/shared/images/ftnavi02_off.gif" alt="このサイトについて" width="110" height="13" class="swap" /></a></li>
+			<li><a href="/privacy/index.html"><img src="/shared/images/ftnavi03_off.gif" alt="プライバシーポリシー" width="122" height="13" class="swap" /></a></li>
+			<li><a href="/rules.html"><img src="/shared/images/ftnavi04_off.gif" alt="利用規約" width="64" height="13" class="swap"></a></li>
+		</ul>
+		<address>Japan-Pasta Association, All rights reserved. / (c)2011 LEDRAPLASTIC JAMMY</address>
+
+	</div>
+	</div>
+
+	<!-- / footer -->
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-182016-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

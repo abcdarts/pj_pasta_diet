@@ -14,4 +14,4 @@ gulp.task('watch', function() {
     gulp.watch('./_src/images/**',['copy']);
 });
 
-gulp.task('default', ['init','watch','sass','ejs','babel','copy']);
+gulp.task('default', ['init']);

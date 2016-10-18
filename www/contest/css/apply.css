@@ -1,0 +1,508 @@
+@charset "shift_jis";
+
+/* -----------------------------------------------
+		announce page style
+
+----------------------------------------------- */
+.apply #contents h2,
+.apply #contents h1 {
+	margin: 0;
+	padding: 0;
+}
+#contest.apply #contents {
+	color: #633100 !important;
+}
+
+/* margin
+------------------------------------------------ */
+#outlineArea {
+	margin-top: 40px;
+}
+.entryBtnWrap,
+.flowGra {
+	margin-top: 20px;
+}
+.applyAbout{
+	margin-top: 7px;
+}
+.applyFlowEntry p {
+	margin-top: 12px;
+}
+.applyPrize,
+.applyFlowEntry,
+.flowGra,
+.applyAbout {
+	margin-right: 4px;
+}
+
+/* common
+------------------------------------------------ */
+#keyvisual {
+	margin:0 3px 0 -1px;
+}
+#keyvisual p img {
+	vertical-align: top;
+}
+
+
+/* ============== gra */
+.applyPrize,
+.flowGra,
+.applyFlowEntry {
+	margin-bottom:30px;
+}
+
+/* ============== over */
+
+.overContest {
+	text-align: center;
+	padding-top: 17px;
+	padding-bottom: 20px;
+}
+
+/* ============== content_block */
+#contest .content_block {
+	width:683px;
+	padding-top:14px;
+	background-image: url(../images/apply/content_block_bg.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+#contest .applyFlowEntry .content_block {
+	padding-top:5px;
+}
+
+
+
+
+/* each
+------------------------------------------------ */
+
+
+/* ------------------ index.html */
+/* ============ judgment */
+.judgment {
+	margin-top: 3px;
+	margin-left: 5px;
+	background-image: url(../images/apply/apply_judgment_bg.gif);
+	background-repeat: repeat-y;
+	background-position: 0 0;
+}
+
+.judgment dl {
+	width: 673px;
+	padding-top: 7px;
+	background-image: url(../images/apply/apply_judgment_bg_top.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.judgment dt {
+	float: left;
+	width: 285px;
+}
+
+.judgment dd {
+	margin-top: 18px;
+	margin-left: 285px;
+	padding: 0 18px 0 14px;
+	border-left: 1px solid #ffbd5e;
+}
+
+.judgment .bg {
+	padding-bottom: 22px;
+	background-image: url(../images/apply/apply_judgment_bg_btm.gif);
+	background-repeat: no-repeat;
+	background-position: 0 100%;
+}
+
+
+/* ============ flow */
+/* float */
+.flow .bg {
+	background:none !important;
+}
+.flow dl {
+	float: left;
+	min-height: 100px;
+	height: auto !important;
+	height: 100px;
+	background:none !important;
+}
+.flow dl.flow01 {width: 161px;}
+.flow dl.flow02 {width: 175px;}
+.flow dl.flow03 {width: 169px;}
+.flow dl.flow04 {width: 168px;}
+.apply .flow {
+	background:url(../images/apply/apply_flow_bg.gif) left top repeat-y;
+}
+.apply .flow .bg dt {
+	padding-bottom:10px;
+	background-color:#fff;
+}
+.apply .flow .bg dd {
+	width:auto;
+	padding:5px 10px;
+	margin:0;
+}
+
+
+/* posi */
+.flow {
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+.flow dl dd {
+	margin-left: 12px;
+	margin-right: 35px;
+	padding-top: 6px;
+}
+
+.flow dl.flow04 dt {
+	margin-right: 0;
+}
+
+.flow dl.flow04 dd {
+	margin-right: 12px;
+}
+
+
+/* ============ flowEntry */
+/* float */
+.flowEntry dl {
+	float: left;
+	width: 229px;
+}
+.flowEntry dl.flow03 {
+	width: 208px;
+}
+
+/* bg */
+.flowEntry {
+	background-image: url(../images/apply/flow_entry_bg_center.gif);
+	background-repeat: repeat-y;
+	background-position: 0 0;
+}
+.flowEntry .bg {
+	padding-bottom: 15px;
+	background-image: url(../images/apply/flow_entry_bg_btm.gif);
+	background-repeat: no-repeat;
+	background-position: 0 100%;
+}
+
+/* arrow */
+.flowEntry dl {
+	background-image: url(../images/apply/flow_entry_arrow.gif);
+	background-repeat: no-repeat;
+	background-position: 99% 33px;
+}
+.flowEntry dl.flow03 {
+	background: none;
+}
+
+/* posi */
+.flowEntry {
+	margin-top: 0;
+	margin-left: 10px;
+}
+
+.flowEntry dl dd {
+	margin-left: 12px;
+	margin-right: 26px;
+	padding-top: 6px;
+}
+
+.flowEntry dl.flow03 dt,
+.flowEntry dl.flow03 dd {
+	margin-right: 6px;
+}
+
+
+
+/* ========= classify */
+
+.classify {
+	padding-bottom: 10px;
+}
+
+.classify dl {
+	width: 219px;
+	float: left;
+	padding-right: 8px;
+}
+
+.classify dl.right {
+	padding-right: 0;
+}
+
+.classify dd {
+	padding: 12px 13px 15px 14px;
+}
+
+.classify .bg {
+	width: 673px;
+	margin: 0 0 10px 5px;
+	background-image: url(../images/apply/apply_classify_bg.gif);
+	background-repeat: repeat;
+	background-position: 0 0;
+}
+
+.classify .bgBtm {
+	background-image: url(../images/apply/apply_classify_bg_btm.gif);
+	background-repeat: repeat-x;
+	background-position: 0 100%;
+}
+
+.classify .notes {
+	margin: 0 0 0 10px;
+	padding: 0 12px;
+	font-size: 86%;
+}
+
+
+/* ========= applyPrize */
+.applyPrize #applyPrize_contents {
+	padding:0 5px 5px;
+}
+.applyPrize #applyPrize_contents #grand_prix {
+	padding:6px;
+	background-color:#ffe6c1;
+	margin-bottom:15px;
+}
+.applyPrize #applyPrize_contents img {
+	margin-bottom:5px;
+}
+.applyPrize #applyPrize_contents .arrow {
+	float:right;
+}
+.applyPrize #applyPrize_contents .arrow a {
+	padding-left:15px;
+	background:url(../images/arrow_icon.gif) left center no-repeat;
+	color:#ab7943 !important;
+	font-weight:bold !important;
+}
+.applyPrize #applyPrize_contents #grand_prix .arrow {
+	font-size: 115%;
+}
+.applyPrize #applyPrize_contents .btm_block {
+	float:left;
+	width:205px;
+	padding:6px;
+	margin-right:11px;
+	background-color:#ffe6c1;
+}
+.applyPrize #applyPrize_contents .btm_block.end {
+	float:right;
+	margin-right:0;
+}
+
+
+
+
+
+/* ============ flowEntry */
+.entryBtnWrap {
+	padding: 10px;
+	background-color: #e7e9e9;
+}
+.entryBtnWrap .applyEntry {
+	float: left;
+	width: 337px;
+}
+.entryBtnWrap .applyMembar {
+	min-height: 170px;
+	height: auto !important;
+	height: 170px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	float: right;
+	width: 285px;
+	background-color: #fff;
+}
+.entryBtnWrap dd {
+	margin-top: 10px;
+}
+.applyEntry dd {
+	margin-top: 5px;
+}
+
+.entryBtnWrap dd dd {
+	margin: 0 0 6px;
+}
+
+.applyEntry dd dd {
+	margin: 0 0 8px;
+}
+
+.applyFlowEntry {
+	margin-top: 25px;
+}
+
+.applyFlowEntry p,
+.entryBtnWrap {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.entryBtnWrap dt,
+.entryBtnWrap dd {
+	text-align: center;
+}
+
+/* ============ outlineArea */
+#outlineArea {
+	clear: both;
+	width: 683px;
+	color: #633100;
+}
+
+#outlineAreaIn {
+	width: 683px;
+	padding-bottom: 10px;
+}
+
+#outlineArea div.outlineList {
+	width: 681px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background-image: url(../images/apply/apply_line_gray.gif);
+	background-repeat: repeat-y;
+	background-position: 50% 0;
+}
+
+
+#outlineArea h3 {
+	padding: 7px 18px;
+	background-color: #f79d45;
+	color: #fff;
+	font-size: 115%;
+	font-weight: bold;
+}
+
+#outlineArea dl {
+	padding-top: 20px;
+}
+
+#outlineArea dl.left {
+	float: left;
+	display: inline;
+	width: 318px;
+	margin: 0 23px 0 12px;
+}
+
+#outlineArea dl.right {
+	float: left;
+	width: 318px;
+}
+
+#outlineArea dl dt {
+	margin-bottom: 8px;
+	padding: 3px 5px;
+	background-color: #fdf4e7;
+	font-weight: bold;
+	color: #bc5e02;
+}
+
+#outlineArea dl dd {
+	padding: 0 5px 14px;
+}
+
+#outlineArea dl dd ul li {
+	padding-bottom: 13px;
+}
+
+#outlineArea dl dd ul li.last {
+	padding-bottom: 0;
+}
+
+#outlineArea dl dd span {
+	display: block;
+	margin-top: 13px;
+}
+
+#outlineArea dl dd em {
+	font-weight: bold;
+	font-style: normal;
+}
+
+#outlineArea dl dd span.text01 {
+	display: block;
+	padding-left: 1em;
+	margin: 0;
+}
+
+body#contest #contents #outlineArea a: link,
+body#contest #contents #outlineArea a: visited,
+body#contest #contents #outlineArea a: hover,
+body#contest #contents #outlineArea a: active {
+	color: #333333;
+}
+
+
+/* ====================================================
+				attention
+==================================================== */
+
+.attention {
+	padding: 12px 15px 0;
+}
+
+
+/* ====================================================
+				clear
+==================================================== */
+.entryBtnWrap:after,
+.flowEntry .bg:after,
+.applyPrize:after,
+.applyAbout .bg:after,
+.flow .bg:after,
+.judgment dl:after,
+.classify .bgBtm:after,
+.outlineList:after {
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+	font-size: 1px;
+	line-height: 1em;
+}
+
+/* win ie7,6 \*/
+*:first-child+html .entryBtnWrap,
+*:first-child+html .flowEntry .bg,
+*:first-child+html .applyPrize,
+*:first-child+html .applyAbout .bg,
+*:first-child+html .flow .bg,
+*:first-child+html .judgment dl,
+*:first-child+html .classify .bgBtm,
+*:first-child+html .outlineList {
+	display: inline-block;
+}
+*html .entryBtnWrap,
+*html .flowEntry .bg,
+*html .applyPrize,
+*html .applyAbout .bg,
+*html .flow .bg,
+*html .judgment dl,
+*html .classify .bgBtm,
+*html .outlineList {
+	height: 1%;
+}
+
+/* end */
+
+/* macIE5 only \*//*/
+.entryBtnWrap,
+.flowEntry .bg,
+.applyPrize,
+.applyAbout .bg,
+.flow .bg,
+.judgment dl,
+.classify .bgBtm,
+.outlineList {
+	display: inline-block;
+}
+/* end */

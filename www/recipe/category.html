@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="Keywords" content="パスタ,パスタレシピ,パスタメニュー,ゆで方,おいしい作り方,クッキングスクール,スパゲッティ,スパゲティ" />
+<meta name="Description" content="日本パスタ協会の公式サイト。ご家庭で簡単に作れるパスタレシピを毎週、様々な切り口でご紹介。その他、自分の好みのパスタを探せる検索機能や、自分のオリジナルレシピをみんなに紹介できるパスタレシピ投稿ページ、パスタクッキングスクールのご案内など、パスタの楽しみ方を広げられるサイトです。" />
+<meta name="copyright" content="Japan-Pasta Association, All rights reserved." />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="" />
+<link href="/shared/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<script type="text/javascript" src="/shared/js/switchtab.js"></script>
+<script type="text/javascript" src="/shared/js/peoplerecipe.js"></script>
+<script type="text/javascript">
+<!--
+window.onload = function() {
+  initRollovers();
+  switchDispDiv('society');
+  dispMemberRecipeList();
+}
+//-->
+</script>
+<title>クリーム系│カテゴリー│レシピを探す│日本パスタ協会</title>
+</head>
+<body class="nav01">
+<div id="page">
+<div class="pageBt">
+	<div id="header">
+		<!--#include virtual="/include/inc_header.html"-->
+<!--#include virtual="/include/inc_gnavi.html"-->
+	</div>
+	<!-- / header -->
+	<p class="location"><a href="/index.html">HOME</a> ＞ <a href="/recipe/index.php">レシピを探す</a> ＞ <a href="/recipe/index.php">カテゴリー</a> ＞ クリーム系</p>
+	<div id="mainArea">
+		<div id="contents">
+			<h1><img src="/recipe/images/category_h_result.jpg" alt="カテゴリー" width="683" height="92" /></h1>
+			<div class="category_path">
+				<ul>
+					<li class="path01"><a href="/recipe/index.php">カテゴリー</a></li>
+					<li class="path02"><a href="">オイル系</a></li>
+					<li class="path03">ペペロンチーノ</li>
+				</ul>
+			</div>
+			<div class="resultArea">
+				<tmpl:node name="notfound">
+				<div class="resultTop">
+					<p>条件に合致するレシピは見つかりませんでした。</p>
+				</div>
+				</tmpl:node>
+				<tmpl:node name="found">
+				<div class="resultTop">
+					<p><em><tmpl:var name="total" />種類</em> のレシピが見つかりました。</p>
+					<ul>
+						<tmpl:node name="order_by_new_on">
+						<li class="new"><a href="search.php?cmd=ListUp&page=1&order_by=new">新着順</a> |</li>
+						</tmpl:node>
+						<tmpl:node name="order_by_new_off">
+						<li class="new"><em>新着順</em> |</li>
+						</tmpl:node>
+						<tmpl:node name="order_by_rat_on">
+						<li><a href="search.php?cmd=ListUp&page=1&order_by=rat">人気順</a></li>
+						</tmpl:node>
+						<tmpl:node name="order_by_rat_off">
+						<li><em>人気順</em></li>
+						</tmpl:node>
+					</ul>
+				</div>
+				<tmpl:node name="navi">
+				<ul class="resultNavi">
+					<tmpl:node name="prev">
+					<tmpl:node name="on"><li class="prev"><a href="search.php?cmd=ListUp&page=<tmpl:var name="page" />">前へ</a></li></tmpl:node>
+					<tmpl:node name="off"></tmpl:node>
+					</tmpl:node>
+					<li> [ </li>
+					<tmpl:node name="pagelist">
+						<tmpl:node name="page">
+							<tmpl:node name="dot1"> ... </tmpl:node>
+							<tmpl:node name="bar1">｜</tmpl:node>
+							<tmpl:node name="link"><a href="search.php?cmd=ListUp&page=<tmpl:var name="page" />"><tmpl:var name="page" /></a></tmpl:node>
+							<tmpl:node name="current"><em><tmpl:var name="page" /></em></tmpl:node>
+							<tmpl:node name="dot2"> ... </tmpl:node>
+							<tmpl:node name="bar2">｜</tmpl:node>
+						</tmpl:node>
+					</tmpl:node>
+					<li> ] </li>
+					<tmpl:node name="next">
+					<tmpl:node name="on"><li class="next"><a href="search.php?cmd=ListUp&page=<tmpl:var name="page" />">次へ</a></li></tmpl:node>
+					<tmpl:node name="off"></tmpl:node>
+					</tmpl:node>
+				</ul>
+				</tmpl:node>
+				<div class="resultType01">
+					<tmpl:node name="list_tr">
+					<tmpl:node name="first">
+					<div class="resultBox nopdt">
+					</tmpl:node>
+					<tmpl:node name="notfirst">
+					<div class="resultBox">
+					</tmpl:node>
+						<tmpl:node name="list_td">
+						<tmpl:node name="left">
+						<div class="leftBox">
+						</tmpl:node>
+						<tmpl:node name="right">
+						<div class="rightBox">
+						</tmpl:node>
+							<p class="photo"><a href="recipe.php?recipe_id=<tmpl:var name="recipe_id" />"><img src="images/recipe_img_s/recipe_img_s_<tmpl:var name="recipe_id2" />.gif" alt="" width="50" height="50" /></a></p>
+							<dl>
+								<dt><a href="recipe.php?recipe_id=<tmpl:var name="recipe_id" />"><tmpl:var name="recipe_name"><tmpl:filter name="htmlspecialchars" value="yes" /></tmpl:var></a></dt>
+								<dd>
+									<tmpl:var name="recipe_caption"><tmpl:filter name="htmlspecialchars" value="yes" /></tmpl:var>
+									<ul>
+										<tmpl:node name="icon_01"><li><img src="/shared/images/txt_healthy.gif" alt="ヘルシー" width="45" height="13" /></li></tmpl:node>
+										<tmpl:node name="icon_02"><li><img src="/shared/images/txt_vegetables.gif" alt="ベジー" width="45" height="13" /></li></tmpl:node>
+										<tmpl:node name="icon_03"><li><img src="/shared/images/txt_10min.gif" alt="10min" width="45" height="13" /></li></tmpl:node>
+										<tmpl:node name="icon_04"><li><img src="/shared/images/txt_party.gif" alt="Party" width="45" height="13" /></li></tmpl:node>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+						</tmpl:node>
+					</div>
+					</tmpl:node>
+				</div>
+				<tmpl:node name="navi">
+				<ul class="resultNavi">
+					<tmpl:node name="prev">
+					<tmpl:node name="on"><li class="prev"><a href="search.php?cmd=ListUp&page=<tmpl:var name="page" />">前へ</a></li></tmpl:node>
+					<tmpl:node name="off"></tmpl:node>
+					</tmpl:node>
+					<li> [ </li>
+					<tmpl:node name="pagelist">
+						<tmpl:node name="page">
+							<tmpl:node name="dot1"> ... </tmpl:node>
+							<tmpl:node name="bar1">｜</tmpl:node>
+							<tmpl:node name="link"><a href="search.php?cmd=ListUp&page=<tmpl:var name="page" />"><tmpl:var name="page" /></a></tmpl:node>
+							<tmpl:node name="current"><em><tmpl:var name="page" /></em></tmpl:node>
+							<tmpl:node name="dot2"> ... </tmpl:node>
+							<tmpl:node name="bar2">｜</tmpl:node>
+						</tmpl:node>
+					</tmpl:node>
+					<li> ] </li>
+					<tmpl:node name="next">
+					<tmpl:node name="on"><li class="next"><a href="search.php?cmd=ListUp&page=<tmpl:var name="page" />">次へ</a></li></tmpl:node>
+					<tmpl:node name="off"></tmpl:node>
+					</tmpl:node>
+				</ul>
+				</tmpl:node>
+				</tmpl:node>
+			</div>
+			<h2 class="pdt10"><img src="/shared/images/h_search.gif" alt="パスタレシピ検索" width="653" height="30" /></h2>
+			<div class="searchArea">
+			<div class="searchAreaIn">
+				<h3><img src="/shared/images/h_freeword.gif" alt="フリーワードで探す" width="158" height="18" /></h3>
+				<form onsubmit="goToSearch(); return false;">
+					<div class="free">
+						<table cellspacing="0" cellpadding="0" summary="フリーワードで探す">
+							<tr>
+								<td rowspan="3" class="txt"><input name="keyword" type="text" id="keyword" /></td>
+								<td><input name="radio1" type="radio" id="inPro" value="" checked="checked" /></td>
+								<td><label for="radio101">協会おすすめパスタレシピからさがす</label></td>
+								<td rowspan="3" class="btn"><input name="" type="image" src="/images/index_btn_search01.gif" alt="検索" /></td>
+							</tr>
+							<tr>
+								<td><input name="radio1" type="radio" value="" id="inMember" /></td>
+								<td><label for="radio102">みんなのパスタレシピからさがす</label></td>
+							</tr>
+							<tr>
+								<td><input name="radio1" type="radio" value="" id="inBoth" /></td>
+								<td><label for="radio103">両方のパスタレシピから探す</label></td>
+							</tr>
+						</table>
+					</div>
+					</form>
+          <h3><img src="/shared/images/h_condition.gif" alt="条件で探す" width="104" height="18" /></h3>
+            <ul class="tab" id="search_tab_society">
+              <li><img src="/shared/images/tab_society.gif" alt="協会おすすめパスタ" width="150" height="24" /></li>
+              <li><a href="javascript:switchDispDiv('people');"><img src="/shared/images/tab_people_off.gif" alt="みんなのパスタ" width="150" height="24" class="swap" /></a></li>
+            </ul>
+            <ul class="tab" id="search_tab_people">
+              <li><a href="javascript:switchDispDiv('society');"><img src="/shared/images/tab_society_off.gif" alt="協会おすすめパスタ" width="150" height="24" class="swap" /></a></li>
+              <li><img src="/shared/images/tab_people.gif" alt="みんなのパスタ" width="150" height="24" /></li>
+            </ul>
+          <div class="condition" id="society">
+					<form method="get" action="/recipe/search.php">
+					<input type="hidden" name="cmd" value="DetailSearch">
+					<input type="hidden" name="renew" value="1">
+					<div class="conditionIn">
+						<div class="conditionTbl">
+						<table cellspacing="0" cellpadding="0" summary="条件で探す">
+							<tr class="top">
+								<th>パスタソースで選ぶ：</th>
+								<td>
+									<input name="recipe_source[]" type="checkbox" value="1" id="lb101" /><label for="lb101">オイル系</label>　
+									<input name="recipe_source[]" type="checkbox" value="2" id="lb102" /><label for="lb102">トマト系</label>　
+									<input name="recipe_source[]" type="checkbox" value="3" id="lb103" /><label for="lb103">クリーム系</label><br />
+									<input name="recipe_source[]" type="checkbox" value="4" id="lb104" /><label for="lb104">スープ系</label>　
+									<input name="recipe_source[]" type="checkbox" value="5" id="lb105" /><label for="lb105">和風</label>　
+									<input name="recipe_source[]" type="checkbox" value="6" id="lb106" /><label for="lb106">その他</label>
+								</td>
+							</tr>
+							<tr>
+								<th>パスタの種類で選ぶ：</th>
+								<td>
+									<input name="recipe_pasta[]" type="checkbox" value="1" id="lb201" /><label for="lb201">スパゲッティ</label>　
+									<input name="recipe_pasta[]" type="checkbox" value="2" id="lb202" /><label for="lb202">ペンネ</label>　
+									<input name="recipe_pasta[]" type="checkbox" value="3" id="lb203" /><label for="lb203">マカロニ</label><br />
+									<input name="recipe_pasta[]" type="checkbox" value="4" id="lb204" /><label for="lb204">その他のパスタ</label>
+								</td>
+							</tr>
+							<tr>
+								<th>食材で選ぶ：</th>
+								<td>
+									<input name="search_id[]" type="checkbox" value="1" id="lb301" /><label for="lb301">牛肉</label>　
+									<input name="search_id[]" type="checkbox" value="2" id="lb302" /><label for="lb302">豚肉</label>　
+									<input name="search_id[]" type="checkbox" value="3" id="lb303" /><label for="lb303">鶏肉</label>　
+									<input name="search_id[]" type="checkbox" value="4" id="lb304" /><label for="lb304">その他肉類</label><br />
+									<input name="search_id[]" type="checkbox" value="5" id="lb305" /><label for="lb305">魚</label>　
+									<input name="search_id[]" type="checkbox" value="6" id="lb306" /><label for="lb306">貝</label>　
+									<input name="search_id[]" type="checkbox" value="7" id="lb307" /><label for="lb307">その他魚介類</label><br />
+									<input name="search_id[]" type="checkbox" value="8" id="lb308" /><label for="lb308">旬の野菜</label>　
+									<input name="search_id[]" type="checkbox" value="9" id="lb309" /><label for="lb309">ハーブ類</label>　
+									<input name="search_id[]" type="checkbox" value="10" id="lb310" /><label for="lb310">豆類</label><br />
+									<input name="search_id[]" type="checkbox" value="11" id="lb311" /><label for="lb311">きのこ類</label>　
+									<input name="search_id[]" type="checkbox" value="12" id="lb312" /><label for="lb312">その他野菜</label>　
+									<input name="search_id[]" type="checkbox" value="13" id="lb313" /><label for="lb313">トマト</label><br />
+									<input name="search_id[]" type="checkbox" value="14" id="lb314" /><label for="lb314">チーズ</label>　
+									<input name="search_id[]" type="checkbox" value="15" id="lb315" /><label for="lb315">卵</label>
+								</td>
+							</tr>
+							<tr>
+								<th>その他の条件：</th>
+								<td class="other">
+									<input name="recipe_attributes[]" type="checkbox" value="1" id="lb401" /><label for="lb401"><img src="/shared/images/txt_healthy.gif" alt="ヘルシー" width="45" height="13" />ヘルシーなパスタ(450Kカロリー以下)</label><br />
+									<input name="recipe_attributes[]" type="checkbox" value="2" id="lb402" /><label for="lb402"><img src="/shared/images/txt_vegetables.gif" alt="ベジー" width="45" height="13" />野菜たっぷり</label><br />
+									<input name="recipe_attributes[]" type="checkbox" value="3" id="lb403" /><label for="lb403"><img src="/shared/images/txt_10min.gif" alt="10min" width="45" height="13" />10分パスタ</label><br />
+									<input name="recipe_attributes[]" type="checkbox" value="4" id="lb404" /><label for="lb404"><img src="/shared/images/txt_party.gif" alt="Party" width="45" height="13" />おもてなしパスタ</label>
+								</td>
+							</tr>
+						</table>
+						</div>
+						<p class="btn"><input type="image" src="/images/index_btn_search02.gif" alt="検索" />
+						</p>
+					</div>
+					</form>
+					</div>
+					
+					<div class="condition" id="people">
+					<form method="get" action="/recipe/member_recipe.php">
+					<input type="hidden" name="cmd" value="SearchDone">
+					<input type="hidden" name="search" value="detail">
+					<input type="hidden" name="page" value="1">
+					<div class="conditionIn">
+						<div class="conditionTbl">
+						<table cellspacing="0" cellpadding="0" summary="条件で探す">
+							<tr class="top">
+								<th>パスタソースで選ぶ：</th>
+								<td>
+									<input name="recipe_source[]" type="checkbox" value="オイル系" id="lb501" /><label for="lb501">オイル系</label>　
+									<input name="recipe_source[]" type="checkbox" value="トマト系" id="lb502" /><label for="lb502">トマト系</label>　
+									<input name="recipe_source[]" type="checkbox" value="クリーム系" id="lb503" /><label for="lb503">クリーム系</label><br />
+									<input name="recipe_source[]" type="checkbox" value="スープ系" id="lb504" /><label for="lb504">スープ系</label>　
+									<input name="recipe_source[]" type="checkbox" value="和風" id="lb505" /><label for="lb505">和風</label>　
+									<input name="recipe_source[]" type="checkbox" value="その他" id="lb506" /><label for="lb506">その他</label>
+								</td>
+							</tr>
+							<tr>
+								<th>パスタの種類で選ぶ：</th>
+								<td>
+									<input name="recipe_pasta[]" type="checkbox" value="スパゲッティ" id="lb601" /><label for="lb601">スパゲッティ</label>　
+									<input name="recipe_pasta[]" type="checkbox" value="ペンネ" id="lb602" /><label for="lb602">ペンネ</label>　
+									<input name="recipe_pasta[]" type="checkbox" value="マカロニ" id="lb603" /><label for="lb603">マカロニ</label><br />
+									<input name="recipe_pasta[]" type="checkbox" value="その他パスタ" id="lb604" /><label for="lb604">その他のパスタ</label>
+								</td>
+							</tr>
+							<tr>
+								<th>食材で選ぶ：</th>
+								<td>
+									<input name="recipe_main_item[]" type="checkbox" value="牛肉" id="lb701" /><label for="lb701">牛肉</label>　
+									<input name="recipe_main_item[]" type="checkbox" value="豚肉" id="lb702" /><label for="lb702">豚肉</label>　
+									<input name="recipe_main_item[]" type="checkbox" value="鶏肉" id="lb703" /><label for="lb703">鶏肉</label>　
+									<input name="recipe_main_item[]" type="checkbox" value="その他肉類" id="lb704" /><label for="lb704">その他肉類</label><br />
+									<input name="recipe_main_item[]" type="checkbox" value="魚" id="lb705" /><label for="lb705">魚</label>　
+									<input name="recipe_main_item[]" type="checkbox" value="貝" id="lb706" /><label for="lb706">貝</label>　
+									<input name="recipe_main_item[]" type="checkbox" value="その他魚介類" id="lb707" /><label for="lb707">その他魚介類</label><br />
+									<input name="recipe_main_item[]" type="checkbox" value="旬の野菜" id="lb708" /><label for="lb708">旬の野菜</label>　
+									<input name="recipe_main_item[]" type="checkbox" value="ハーブ類" id="lb709" /><label for="lb709">ハーブ類</label>　
+									<input name="recipe_main_item[]" type="checkbox" value="豆類" id="lb710" /><label for="lb710">豆類</label><br />
+									<input name="recipe_main_item[]" type="checkbox" value="きのこ類" id="lb711" /><label for="lb711">きのこ類</label>　
+									<input name="recipe_main_item[]" type="checkbox" value="その他野菜" id="lb712" /><label for="lb712">その他野菜</label>　
+									<input name="recipe_main_item[]" type="checkbox" value="トマト" id="lb713" /><label for="lb713">トマト</label><br />
+									<input name="recipe_main_item[]" type="checkbox" value="チーズ" id="lb714" /><label for="lb714">チーズ</label>　
+									<input name="recipe_main_item[]" type="checkbox" value="卵" id="lb715" /><label for="lb715">卵</label>
+								</td>
+							</tr>
+						</table>
+						</div>
+						<p class="btn"><input type="image" src="/images/index_btn_search02.gif" alt="検索" />
+						</p>
+					</div>
+					</form>
+					</div>
+      </div>
+			</div>
+			<div class="btmLink">
+				<p class="back"><a href="javascript:history.back();"><img src="/shared/images/btn_back_off.gif" alt="戻る" width="36" height="13" class="swap" /></a></p>
+				<p class="pagetop"><a href="#header"><img src="/shared/images/btn_pagetop_rody_off.gif" alt="このページのトップへ" width="108" height="16" class="swap" /></a></p>
+			</div>
+		</div>
+		<!-- / contents -->
+		<div id="sub">
+			<tmpl:node name="is_member">
+			<dl class="lnavi">
+				<dt><tmpl:var name="member_nickname"><tmpl:filter name="htmlspecialchars" value="yes" /></tmpl:var>さんのマイページ</dt>
+				<dd>
+					<ul>
+						<li><a href="/recipe/mymenu/myrecipe.php?cmd=InsertDispForm"><img src="/recipe/images/lnavi01_off.gif" alt="レシピを投稿する" width="152" height="25" class="swap" /></a></li>
+						<li><a href="/recipe/mymenu/myrecipe.php"><img src="/recipe/images/lnavi02_off.gif" alt="投稿済みレシピ" width="152" height="25" class="swap" /></a></li>
+						<li><a href="/recipe/mymenu/favorite.php"><img src="/recipe/images/lnavi03_off.gif" alt="お気に入りリスト" width="152" height="25" class="swap" /></a></li>
+						<li><a href="<tmpl:var name="Domain_HTTPS" />/recipe/mymenu/alter.php"><img src="/recipe/images/lnavi04_off.gif" alt="登録情報の変更" width="152" height="25" class="swap" /></a></li>
+					</ul>
+					<p><a href="mymenu/logout.php">ログアウト</a></p>
+				</dd>
+			</dl>
+			</tmpl:node>
+			<tmpl:node name="is_pub">
+			</tmpl:node>
+			<!--[bnrArea]-->
+			<!--#include virtual="/bnr_area.html"-->
+			<!--/[bnrArea]-->
+			<!--[recipeRanking]-->
+			<!--#include virtual="/recipe_ranking.html"-->
+			<!--/[recipeRanking]-->
+		</div>
+		<!-- / sub -->
+	</div>
+	<!-- / mainArea -->
+	<div id="footer">
+	<div class="footerLine">
+		<ul>
+			<li><a href="/sitemap.html"><img src="/shared/images/ftnavi01_off.gif" alt="サイトマップ" width="78" height="13" class="swap" /></a></li>
+			<li><a href="/about/index.html"><img src="/shared/images/ftnavi02_off.gif" alt="このサイトについて" width="110" height="13" class="swap" /></a></li>
+			<li><a href="/privacy/index.html"><img src="/shared/images/ftnavi03_off.gif" alt="プライバシーポリシー" width="122" height="13" class="swap" /></a></li>
+			<li><a href="/rules.html"><img src="/shared/images/ftnavi04_off.gif" alt="利用規約" width="64" height="13" class="swap"></a></li>
+		</ul>
+		<address>Japan-Pasta Association, All rights reserved. / (c)2011 LEDRAPLASTIC JAMMY</address>
+	</div>
+	</div>
+	<!-- / footer -->
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-182016-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

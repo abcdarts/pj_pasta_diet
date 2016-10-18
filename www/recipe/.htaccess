@@ -1,0 +1,6 @@
+php_value mbstring.http_output "SJIS"
+<Files "category">
+SetHandler application/x-httpd-php
+</Files>
+
+Redirect permanent /recipe/season/season.php http://www.pasta.or.jp/recipe/index.php

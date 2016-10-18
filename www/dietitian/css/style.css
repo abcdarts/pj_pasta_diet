@@ -1,0 +1,561 @@
+@charset "utf-8";
+
+/* -------------------- common */
+#page .dRecipeIndex h2{
+margin:0;
+padding:7px 9px;
+border-left:solid 7px #f78b22;
+background-color:#fde8c3;
+}
+#page .dRecipeIndex .notes{
+margin-top:10px;
+margin-left:15px;
+}
+
+.detailWrap a,
+.detailWrap a:hover,
+.recipeDWrap a{
+font-weight:normal;
+}
+.recipeDWrap a,
+.recipeDWrap a:link,
+.recipeDWrap a:visited{
+color:#633100;
+font-weight:normal;
+text-decoration:underline;
+}
+.recipeDWrap a:hover{
+text-decoration:none;
+}
+
+/* -------------------- index.html */
+#contents{
+width:687px;
+text-align:left;
+}
+
+.notes{
+font-size:80%;
+}
+.notes img{
+margin-right:10px;
+vertical-align:middle;
+}
+
+/* ----- indexWrap01 */
+
+#page .indexWrap01 h2,
+#page .indexWrap02 h2{
+margin:0;
+}
+#page .indexWrap01 h2{
+padding:8px 18px 12px;
+}
+#page .indexWrap02 h2{
+padding:7px 18px 13px;
+}
+
+#page .indexWrap01 h2 img {
+padding-right:10px;
+}
+.indexWrap01 .inWrap01{
+padding:5px 10px 19px 19px;
+}
+.indexWrap02 .inWrap02{
+padding:5px 21px 18px 18px;
+}
+.indexWrap02{
+margin-top:20px;
+}
+.indexWrap02 .inWrap02,
+.indexWrap02 h2,
+.indexWrap01 .inWrap01,
+.indexWrap01 h2{
+background-repeat:no-repeat;
+}
+.indexWrap02 h2,
+.indexWrap02,
+.indexWrap01 h2,
+.indexWrap01{
+background-position:0 0;
+}
+.indexWrap02 .inWrap02,
+.indexWrap01 .inWrap01{
+background-position:0 100%;
+}
+.indexWrap02,
+.indexWrap01{
+background-repeat:repeat-y;
+}
+
+/* bg */
+.indexWrap01 h2{
+background-image:url(../images/index_bg_t.gif);
+}
+.indexWrap01{
+background-image:url(../images/index_bg_c.gif);
+}
+.indexWrap01 .inWrap01{
+background-image:url(../images/index_bg_btm.gif);
+}
+.indexWrap02 h2{
+background-image:url(../images/index_bg2_t.gif);
+}
+.indexWrap02{
+background-image:url(../images/index_bg2_c.gif);
+}
+.indexWrap02 .inWrap02{
+background-image:url(../images/index_bg2_btm.gif);
+}
+
+/* ----- picupSetWrap */
+.picupSet{
+width:326px;
+float:left;
+}
+
+.picupSetWrap{
+margin-top:8px;
+}
+
+
+/* bg */
+.picupSet,
+.inPicupSetWrap{
+background-repeat:no-repeat;
+}
+.picupSet,
+.picupSetWrap{
+background-position:0 0;
+}
+
+.picupSet{/* top */
+background-image:url(../images/con_bg_t.gif);
+}
+.picupSetWrap{/* c */
+background-image:url(../images/con_bg_c.gif);
+background-repeat:repeat-y;
+}
+.inPicupSetWrap{/* btm */
+background-image:url(../images/con_bg_btm.gif);
+background-position:0 100%;
+}
+
+/* inbg */
+.picupSet p,
+.picupSet dl{
+float:left;
+}
+.picupSet p{
+width:145px;
+}
+.picupSet dl{
+width:162px;
+}
+.picupSet{
+padding-top:10px;
+padding-bottom:10px;
+}
+.picupSet dt{
+padding-bottom:8px;
+margin-bottom:8px;
+background-image:url(../images/dot_x_o.gif);
+background-repeat:repeat-x;
+background-position:0 100%;
+}
+
+.picupSet p img{
+margin-left:10px;
+padding:4px;
+background-color:#fff;
+border:solid 1px #d5d5d5;
+}
+
+.inWrap01 .notes{
+padding-top:8px;
+}
+
+/* ---- .linkList */
+.linkList dt,
+.linkList dd{
+text-align:center;
+}
+.linkList{
+margin-top:10px;
+margin-right: 13px;
+padding:10px;
+background-color:#fef6e8;
+}
+.linkList dt{
+padding-bottom:8px;
+}
+
+/* ----- merit */
+.meritLead{
+padding-bottom:18px;
+background-image:url(../images/dot_x_o.gif);
+background-repeat:repeat-x;
+background-position:0 100%;
+}
+.meritLead h3{
+margin-bottom: 6px;
+}
+.meritWrap{
+padding-top:20px;
+}
+
+.meritWrap h4{
+padding-top:18px;
+margin-bottom:-15px;
+}
+.meritSet{
+padding-left:10px;
+padding-top:25px;
+padding-bottom:10px;
+background-color:#fdeed3;
+background-repeat:no-repeat;
+background-position:100% 0;
+}
+#bg01{
+background-image:url(../images/index_bg_merit_01.jpg);
+}
+#bg02{
+background-image:url(../images/index_bg_merit_02.jpg);
+}
+#bg03{
+background-image:url(../images/index_bg_merit_03.jpg);
+}
+
+/* position */
+.meritWrap h4,
+.meritSet{
+position:relative;
+}
+.meritWrap h4{
+z-index:99;
+}
+.meritSet{
+z-index:1;
+}
+
+
+/* float */
+.meritSet p.img{
+float:left;
+width:117px;
+}
+.meritSet p{
+float:left;
+width:350px;
+}
+
+.detailWrap{
+margin-right:5px;
+padding:10px;
+border:solid 1px #f79d45;
+}
+.detailWrap p{
+margin-top:10px;
+}
+.detailWrap p.detailBtn{
+margin-top:0;
+text-align:right;
+}
+.detailWrap{
+margin-top:20px;
+}
+.detailWrap a{
+font-weight:normal;
+}
+
+/* ---------- recipeList /dietitian/recipe/index.html */
+.recipeListWrap{
+margin-top:30px;
+}
+.recipeList .listSetR,
+.recipeList .listSet{
+float:left;
+width:320px;
+}
+.recipeList .listSetR{
+float:right;
+}
+.listSetR p,
+.listSet p{
+float:left;
+width:73px;
+}
+.listSetR dl,
+.listSet dl{
+float:left;
+width:227px;
+}
+.recipeList{
+padding-top:17px;
+padding-bottom:17px;
+}
+.recipeList#first{
+padding-top:0;
+}
+
+/* recipeListWrap */
+.recipeListWrap{
+background-image:url(../images/dot_y.gif);
+background-repeat:repeat-y;
+background-position:50% 10px;
+}
+.recipeList{
+background-image:url(../images/dot_x.gif);
+background-repeat:repeat-x;
+background-position:0 100%;
+}
+.recipeList .sc{
+margin-top:10px;
+}
+.dRecipeIndex{
+margin-left:10px;
+margin-right:10px;
+}
+
+/* ---------- recipeList /dietitian/recipe/detail */
+.dRecipeDetail{
+padding-left:10px;
+padding-right:10px;
+}
+.recipeDWrap{
+padding:30px 10px 10px 60px;
+}
+.rMaterial{
+float:right;
+width:300px;
+}
+.recipePic{
+float:left;
+width:221px;
+padding-top:16px;
+padding-bottom:27px;
+background-image:url(../images/recipe_pic_bg.gif);
+background-repeat:no-repeat;
+background-position:0 0;
+}
+.recipePic img{
+margin-left:10px;
+}
+
+/* .dRecipeDetail */
+.dRecipeDetail h2{
+color:#e26a0a;
+background-image:url(../images/dot_x.gif);
+background-position:0 100%;
+background-repeat:repeat-x;
+}
+#page .dRecipeDetail h2{
+margin-left:0;
+font-size:133%;
+padding-bottom:5px;
+}
+.recipeLead{
+padding-top:5px;
+}
+.recipeLead img{
+margin-top:2px;
+float:right;
+}
+
+
+.dRecipeDetail h3{
+background-color:#feedcf;
+padding-top:4px;
+padding-left:14px;
+padding-bottom:5px;
+border-bottom:solid 1px #a97b4e;
+}
+.dRecipeDetail h3 img{
+vertical-align:middle;
+margin-right:10px;
+}
+
+/* rMaterial */
+.rMaterial .energyKcal{
+padding-top:5px;
+padding-bottom:5px;
+text-align:right;
+color:#f78b22;
+font-size:80%;
+}
+.rMaterial table{
+width:100%;
+}
+.rMaterial table,
+.rMaterial th,
+.rMaterial td{
+padding:3px;
+background-image:url(../images/dot_x.gif);
+background-repeat:repeat-x;
+background-position:0 0;
+}
+.rMaterial table{
+background-position:0 100%;
+}
+
+.rMaterial th{
+padding-left:16px;
+font-weight:normal;
+text-align:left;
+}
+.rMaterial td{
+padding-right:16px;
+text-align:right;
+}
+.rMaterial .iconNew{
+vertical-align:middle;
+margin-left:5px;
+}
+.rMaterial th.thTtl{
+font-weight:bold;
+color:#a16d34;
+}
+
+/* ---- rDetail */
+
+.rMaterial .rDetail{
+margin-top:20px;
+padding:10px 10px 10px 15px;
+background-color:#fcf4ec;
+}
+.rMaterial .rDetail table{
+background-image:none;
+width:270px;
+}
+.rMaterial .rDetail th,
+.rMaterial .rDetail td{
+background-image:url(../images/dot_x_detail.gif);
+}
+.rMaterial .rDetail th{
+padding-left:16px;
+}
+.rMaterial .rDetail td{
+padding-right:16px;
+}
+.rMaterial .rDetail th.thTtl{
+padding-left:0;
+background-image:none;
+}
+
+/* === underHowTo */
+.underHowTo h3{
+margin-top:20px;
+}
+.underHowTo p{
+padding-top:20px;
+margin-left:45px;
+}
+
+/* float */
+.underHowTo dt{
+float:left;
+width:36px;
+}
+.underHowTo dd{
+float:left;
+width:560px;
+}
+.underHowTo dd dt,
+.underHowTo dd dd{
+float:none;
+width:auto;
+}
+.underHowTo dd em{
+font-weight:normal;
+color:#3058a6;
+font-weight:bold;
+}
+
+.underHowTo dl{
+padding:18px 23px;
+background-image:url(../images/dot_x.gif);
+background-repeat:repeat-x;
+background-position:0 100%;
+}
+.underHowTo dl dl{
+background:none;
+padding:0;
+}
+.underHowTo dt{
+color:#a88461;
+font-size:150%;
+font-weight:bold;
+}
+.inConStye{
+margin-top:10px;
+margin-bottom:10px;
+border:solid 2px #6fcb4b;
+}
+.inConStye dt{
+padding:3px 10px;
+background-color:#6fcb4b;
+color:#fff;
+font-weight:bold;
+}
+.inConStye dd{
+padding:8px 15px;
+}
+
+
+
+/* -------------- clear */
+.underHowTo dl:after,
+.recipeLead:after,
+.recipeDWrap:after,
+.recipeList:after,
+.meritSet:after,
+.picupSet:after,
+.inPicupSetWrap:after{
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}
+
+/* IE7,IE6 \*/
+*html .underHowTo dl,
+*html .recipeLead,
+*html .recipeDWrap,
+*html .recipeList,
+*html .meritSet,
+*html .picupSet,
+*html .inPicupSetWrap{
+height:1%;
+}
+*:first-child+html .underHowTo dl,
+*:first-child+html .recipeLead,
+*:first-child+html .recipeDWrap,
+*:first-child+html .recipeList,
+*:first-child+html .meritSet,
+*:first-child+html .picupSet,
+*:first-child+html .inPicupSetWrap{
+display:inline-block;
+}
+
+/* macIE \*//*/
+.underHowTo dl,
+.recipeLead,
+.recipeDWrap,
+.recipeList,
+.meritSet,
+.picupSet,
+.inPicupSetWrap{
+display:inline-block;
+}
+/**/
+
+/* clear for Dw \*/
+.underHowTo,
+.recipeList,
+.detailWrap,
+.meritWrap h4{
+clear:both;
+}
+
+/* end */

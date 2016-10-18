@@ -1,0 +1,783 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!-- InstanceBegin template="/Templates/base.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta name="Description" content="日本パスタ協会の公式サイト、簡単に美味しく作れるパスタレシピの紹介、パスタクッキングスクールのご案内など">
+<meta name="keywords" content="pasta,spagetti,パスタ,スパゲッティ,スパゲティ,イタリア,パスタレシピ,,パスタメニュー,調理器具,パスタクッキングスクール,パスタのおいしい作り方,パスタのゆで方,パスタ辞典,今夜のおかずはパスタ,パスタサンデー,パスタはヘルシー,パスタポータル,麺,麺類,トマト,オリーブオイル">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>日本パスタ協会</title>
+<link rel="stylesheet" href="shared/css/common.css" type="text/css">
+<link rel="stylesheet" href="shared/css/form.css" type="text/css">
+<script src="shared/js/common.js" type="text/javascript"></script>
+<script src="shared/js/rollover.js" type="text/javascript"></script>
+<script src="shared/js/link.js" type="text/javascript"></script>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script language="JavaScript">
+<!--
+function goToSearch() {
+  keyword = document.getElementById('keyword').value;
+  url = '';
+  if (document.getElementById('inPro').checked) {
+    url = './recipe/search.php?cmd=KeywordSearch&page=1&keyword=' + keyword;
+  } else if (document.getElementById('inMember').checked) {
+    url = './recipe/member_recipe.php?cmd=SearchDone&page=1&search=keyword&keyword=' + keyword;
+  }
+  
+  if (url != '') {
+    location.href = url;
+  }
+}
+//-->
+</script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable --><!-- InstanceParam name="category" type="text" value="top" --><!-- InstanceParam name="categoryJP" type="text" value="" --><!-- InstanceParam name="subcategory" type="text" value="" --><!-- InstanceParam name="subcategoryJP" type="text" value="" --><!-- InstanceParam name="is2col" type="boolean" value="true" -->
+</head>
+<body bgcolor="#E6E1DE" text="#333333" link="#666666" vlink="#666666" alink="#666666" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<a name="top"></a>
+<table width="200" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td rowspan="3" background="shared/images/bg_left.gif"><img src="shared/images/spacer.gif" alt="" width="10" height="10"></td>
+    <td bgcolor="#FFFFFF"><img src="shared/images/spacer.gif" alt="" width="770" height="3"></td>
+    <td rowspan="3" background="shared/images/bg_right.gif"><img src="shared/images/spacer.gif" alt="" width="10" height="10"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF"><table border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td><table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td rowspan="3" valign="top"><img src="shared/images/logo.gif" width="205" height="67" alt="pasta pasta　パスタはヘルシー　社団法人　日本パスタ協会" border="0"></td>
+                <td align="right" valign="top"><img src="shared/images/spacer.gif" alt="" width="5" height="12"></td>
+              </tr>
+              <tr>
+                <td><img src="shared/images/spacer.gif" alt="" width="10" height="24"></td>
+              </tr>
+              <tr>
+                <td>
+                  <table border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><a href="recipe/search.php"><img src="shared/images/menu_prorecipe_self.gif" alt="協会おすすめパスタレシピ" width="106" height="37" border="0" class="rollover"></a></td>
+                      <td><img src="shared/images/spacer.gif" alt="" width="4" height="10"></td>
+                      <td><a href="recipe/member_recipe.php"><img src="shared/images/menu_allsrecipe_self.gif" alt="みんなのパスタレシピ" width="106" height="37" border="0" class="rollover"></a></td>
+                      <td><img src="shared/images/spacer.gif" alt="" width="4" height="10"></td>
+                      <td><a href="event/school/index.html"><img src="shared/images/menu_event_self.gif" width="106" height="37" alt="イベント情報" border="0" class="rollover"></a></td>
+                      <td><img src="shared/images/spacer.gif" alt="" width="4" height="10"></td>
+                      <td><a href="content/healthy/index.html"><img src="shared/images/menu_content_self.gif" width="106" height="37" alt="パスタのマメ知識" border="0" class="rollover"></a></td>
+                      <td><img src="shared/images/spacer.gif" alt="" width="4" height="10"></td>
+                      <td><a href="association/greeting/index.html"><img src="shared/images/menu_association_self.gif" width="106" height="37" alt="協会について" border="0" class="rollover"></a></td>
+                    </tr>
+                  </table>
+                  </td>
+              </tr>
+              <tr>
+                <td colspan="2"><img src="shared/images/menu_bar.gif" width="750" height="15" alt=""></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td><table border="0" cellspacing="0" cellpadding="0">
+            </table>
+            <!-- InstanceBeginEditable name="top-content" -->
+            <table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><img src="shared/images/spacer.gif" alt="" width="475" height="8"></td>
+                <td><img src="shared/images/spacer.gif" alt="" width="20" height="8"></td>
+                <td><img src="shared/images/spacer.gif" alt="" width="254" height="8"></td>
+              </tr>
+              <tr>
+                <td valign="top"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><table border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td colspan="5"><img src="images/top_h_pro.gif" alt="今週のおすすめパスタレシピ" width="476" height="70"></td>
+                        </tr>
+                      <tr>
+                        <td rowspan="2"><img src="images/top_bg_pro01.gif" alt="" width="21" height="213"></td>
+                        <td valign="top" bgcolor="#FFFDEB"><table width="203" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td><img src="images/top_bg_prorecipe_top.gif" alt="" width="203" height="5"></td>
+                            </tr>
+                            <tr>
+                              <td bgcolor="#FFE382" class="text-mn"><table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td height="26"><img src="shared/images/spacer.gif" alt="" width="5" height="7"></td>
+                                  <td class="top-recipe-title"><strong><a href="recipe/recipe.php">{$recipe_name}</a></strong></td>
+                                  <td class="text-mn"><img src="shared/images/spacer.gif" alt="" width="5" height="7"></td>
+                                </tr>
+                              </table>
+                                </td>
+                            </tr>
+                            <tr>
+                              <td><img src="images/top_bg_prorecipe_bottom.gif" alt="" width="203" height="5"></td>
+                            </tr>
+                            <tr>
+                              <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                            </tr>
+                            <tr>
+                              <td><table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td><img src="shared/images/spacer.gif" alt="" width="5" height="7"></td>
+                                  <td class="text-sn">{$recipe_caption}</td>
+                                </tr>
+                              </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="shared/images/spacer.gif" alt="" width="20" height="3"></td>
+                            </tr>
+                            <tr>
+                              <td background="shared/images/dot_bg.gif"><img src="shared/images/spacer.gif" alt="" width="20" height="1"></td>
+                            </tr>
+                            <tr>
+                              <td><img src="shared/images/spacer.gif" alt="" width="20" height="3"></td>
+                            </tr>
+                            <tr>
+                              <td align="right"><a href="recipe/recipe.php"><img src="images/top_btn_viewrecipe_bgyellow.gif" alt="レシピを見る" width="74" height="16" border="0" class="rollover"></a></td>
+                            </tr>
+
+                            <tr>
+                              <td><table border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td colspan="3"><img src="images/top_h_lastrecipe.gif" alt="" width="203" height="15"></td>
+                                    </tr>
+                                  <tr>
+                                    <td bgcolor="#999999"><img src="shared/images/spacer.gif" alt="" width="1" height="8"></td>
+                                    <td bgcolor="#FFFFFF"><table border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td colspan="5"><img src="shared/images/spacer.gif" alt="" width="201" height="7"></td>
+                                        </tr>
+                                      <tr>
+                                        <td rowspan="3"><img src="shared/images/spacer.gif" alt="" width="7" height="7"></td>
+                                        <td rowspan="3" valign="top"><a href="./recipe/recipe.php?recipe_id={$last_recipe_id}"><img src="recipe/images/recipe_img_s/recipe_img_s_{$last_recipe_id2}.gif" alt="{$last_recipe_name}" width="58" height="58" border="0"></a></td>
+                                        <td rowspan="3"><img src="shared/images/spacer.gif" alt="" width="4" height="7"></td>
+                                        <td valign="top" class="top-lastrecipe-title"><a href="./recipe/recipe.php?recipe_id={$last_recipe_id}">{$last_recipe_name}</a></td>
+                                        <td rowspan="3"><img src="shared/images/spacer.gif" alt="" width="4" height="7"></td>
+                                      </tr>
+                                      <tr>
+                                        <td valign="top" class="text-sn">{$last_recipe_caption}</td>
+                                      </tr>
+                                      <tr>
+                                        <td valign="top"><a href="./recipe/recipe.php?recipe_id={$last_recipe_id}"><img src="images/top_btn_viewrecipe_bgwhite.gif" alt="レシピを見る" width="74" height="16" border="0" class="rollover"></a></td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="5"><img src="shared/images/spacer.gif" alt="" width="201" height="5"></td>
+                                        </tr>
+                                    </table></td>
+                                    <td bgcolor="#999999"><img src="shared/images/spacer.gif" alt="" width="1" height="8"></td>
+                                  </tr>
+                                  <tr bgcolor="#999999">
+                                    <td colspan="3"><img src="shared/images/spacer.gif" alt="" width="20" height="1"></td>
+                                    </tr>
+                                </table></td>
+                            </tr>
+                          </table></td>
+                        <td rowspan="2"><img src="images/top_bg_pro02.gif" alt="" width="24" height="213"></td>
+                        <td rowspan="2"><a href="recipe/recipe.php"><img src="recipe/images/recipe_photo/recipe_photo{$recipe_id}.jpg" alt="{$recipe_name}" width="206" height="213" border="0"></a></td>
+                        <td rowspan="2"><img src="images/top_bg_pro03.gif" alt="" width="22" height="213"></td>
+                      </tr>
+                      <tr>
+                        <td valign="bottom" bgcolor="#FFFDEB"><img src="images/top_bg_pro04.gif" alt="" width="203" height="5"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="5"><img src="images/top_bg_pro05.gif" alt="" width="476" height="30"></td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td><img src="shared/images/spacer.gif" alt="" width="475" height="15"></td>
+                  </tr>
+                  <tr>
+                    <td><form name="form1" method="post" action="">
+                      <table width="476" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td><img src="images/top_h_search.gif" alt="パスタレシピ検索" width="476" height="30"></td>
+                        </tr>
+                        <tr>
+                          <td bgcolor="#C69D78"><table border="0" cellspacing="1" cellpadding="1">
+                              <tr>
+                                <td bgcolor="#986c3c"><table border="0" cellspacing="0" cellpadding="3">
+                                    <tr>
+                                      <td bgcolor="#FFFFFF"><table width="466" border="0" cellpadding="0" cellspacing="0">
+                                          <tr>
+                                            <td rowspan="3" bgcolor="#f1ede5"><img src="shared/images/spacer.gif" alt="" width="10" height="15"></td>
+                                            <td colspan="3" bgcolor="#f1ede5"><img src="shared/images/spacer.gif" alt="" width="446" height="10"></td>
+                                            <td rowspan="3" bgcolor="#f1ede5"><img src="shared/images/spacer.gif" alt="" width="10" height="15"></td>
+                                          </tr>
+                                          <tr>
+                                            <td bgcolor="#f1ede5" class="text-mn"><strong><font color="#68441d">キーワード検索</font></strong><br>
+                                              <input name="textfield" type="text" id="keyword" style="width: 130px;"></td>
+                                            <td nowrap bgcolor="#f1ede5" class="text-sn">
+                                              <input type="radio" name="where" id="inPro" value="1" checked>
+                                              <label for="inPro"><font color="#1ea1cc">協会おすすめパスタレシピからさがす</font></label><br>
+                                              <input type="radio" name="where" id="inMember" value="2">
+                                              <font color="#ac6a2c"><label for="inMember">みんなのパスタレシピからさがす</label></font>
+                                            </td>
+                                            <td align="right" bgcolor="#f1ede5"><a href="javascript:goToSearch();"><img border="0" src="images/top_btn_search.gif" alt="検索"></a></td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="3" bgcolor="#f1ede5"><img src="shared/images/spacer.gif" alt="" width="20" height="10"></td>
+                                          </tr>
+                                      </table></td>
+                                    </tr>
+                                </table></td>
+                              </tr>
+                          </table></td>
+                        </tr>
+                      </table>
+                                          </form>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td><img src="shared/images/spacer.gif" alt="" width="20" height="15"></td>
+                  </tr>
+                  <tr>
+                    <td><table border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td><a href="recipe/search.php"><img src="images/top_link_prorecipe.gif" alt="協会おすすめパスタレシピ" width="232" height="83" border="0" class="rollover"></a></td>
+                        <td><img src="shared/images/spacer.gif" alt="" width="12" height="15"></td>
+                        <td><a href="recipe/member_recipe.php"><img src="images/top_link_memberrecipe.gif" alt="みんなのパスタレシピ" width="232" height="83" border="0" class="rollover"></a></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td><img src="shared/images/spacer.gif" alt="" width="20" height="15"></td>
+                  </tr>
+                  <tr>
+                    <td><table width="476" border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td><img src="images/top_h_ranking.gif" alt="人気のパスタレシピランキング" width="476" height="31"></td>
+                      </tr>
+                      <tr>
+                        <td bgcolor="#D1879E"><table border="0" cellspacing="1" cellpadding="1">
+                          <tr>
+                            <td bgcolor="#9e5066"><table width="472" border="0" cellpadding="0" cellspacing="0">
+                              <tr><td colspan="3" bgcolor="#FFFFFF"><img src="shared/images/spacer.gif" alt="" width="20" height="10"></td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#FFFFFF"><img src="shared/images/spacer.gif" alt="" width="10" height="15"></td>
+                                <td bgcolor="#FFFFFF"><table border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td><img src="images/top_h_prorank.gif" alt="協会おすすめパスタレシピ" width="452" height="24"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><img src="shared/images/spacer.gif" alt="" width="20" height="15"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><table border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                          <td rowspan="4"><img src="recipe/images/recipe_rank_pro01.gif" alt="第1位" width="50" height="50"></td>
+                                          <td rowspan="4"><img src="shared/images/spacer.gif" alt="" width="8" height="20"></td>
+                                          <td rowspan="4" valign="top"><a href="./recipe/recipe.php?recipe_id={$pro_recipe_1_recipe_id}"><img src="./recipe/images/recipe_img_s/recipe_img_s_{$pro_recipe_1_recipe_id2}.gif" alt="" width="58" height="58" border="0"></a></td>
+                                          <td rowspan="4"><img src="shared/images/spacer.gif" alt="" width="8" height="20"></td>
+                                          <td class="text-mn"><a href="./recipe/recipe.php?recipe_id={$pro_recipe_1_recipe_id}" class="recipe-name">{$pro_recipe_1_recipe_name}</a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="text-sn">{$pro_recipe_1_recipe_caption}</td>
+                                        </tr>
+                                        <tr>
+                                          <td><img src="shared/images/spacer.gif" alt="" width="20" height="3"></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="text-sn"><a href="./recipe/recipe.php?recipe_id={$pro_recipe_1_recipe_id}"><img src="images/top_btn_prorecipe.gif" alt="レシピを見る" width="74" height="16" border="0" class="rollover"></a></td>
+                                        </tr>
+                                    </table></td>
+                                  </tr>
+                                  <tr>
+                                    <td><img src="shared/images/spacer.gif" alt="" width="20" height="10"></td>
+                                  </tr>
+                                  <tr>
+                                    <td background="recipe/images/recipe_line_list.gif"><img src="shared/images/spacer.gif" alt="" width="20" height="1"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><img src="shared/images/spacer.gif" alt="" width="20" height="10"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><table border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                          <td rowspan="4"><img src="recipe/images/recipe_rank_pro02.gif" alt="第2位" width="50" height="50"></td>
+                                          <td rowspan="4"><img src="shared/images/spacer.gif" alt="" width="8" height="20"></td>
+                                          <td rowspan="4" valign="top"><a href="./recipe/recipe.php?recipe_id={$pro_recipe_2_recipe_id}"><img src="./recipe/images/recipe_img_s/recipe_img_s_{$pro_recipe_2_recipe_id2}.gif" alt="" width="58" height="58" border="0"></a></td>
+                                          <td rowspan="4"><img src="shared/images/spacer.gif" alt="" width="8" height="20"></td>
+                                          <td class="text-mn"><a href="./recipe/recipe.php?recipe_id={$pro_recipe_2_recipe_id}" class="recipe-name">{$pro_recipe_2_recipe_name}</a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="text-sn">{$pro_recipe_2_recipe_caption}</td>
+                                        </tr>
+                                        <tr>
+                                          <td><img src="shared/images/spacer.gif" alt="" width="20" height="3"></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="text-sn"><a href="./recipe/recipe.php?recipe_id={$pro_recipe_2_recipe_id}"><img src="images/top_btn_prorecipe.gif" alt="レシピを見る" width="74" height="16" border="0" class="rollover"></a></td>
+                                        </tr>
+                                    </table></td>
+                                  </tr>
+                                  <tr>
+                                    <td><img src="shared/images/spacer.gif" alt="" width="20" height="10"></td>
+                                  </tr>
+                                  <tr>
+                                    <td background="recipe/images/recipe_line_list.gif"><img src="shared/images/spacer.gif" alt="" width="20" height="1"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><img src="shared/images/spacer.gif" alt="" width="20" height="10"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><table border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                          <td rowspan="4"><img src="recipe/images/recipe_rank_pro03.gif" alt="第3位" width="50" height="50"></td>
+                                          <td rowspan="4"><img src="shared/images/spacer.gif" alt="" width="8" height="20"></td>
+                                          <td rowspan="4" valign="top"><a href="./recipe/recipe.php?recipe_id={$pro_recipe_3_recipe_id}"><img src="./recipe/images/recipe_img_s/recipe_img_s_{$pro_recipe_3_recipe_id2}.gif" alt="" width="58" height="58" border="0"></a></td>
+                                          <td rowspan="4"><img src="shared/images/spacer.gif" alt="" width="8" height="20"></td>
+                                          <td class="text-mn"><a href="./recipe/recipe.php?recipe_id={$pro_recipe_3_recipe_id}" class="recipe-name">{$pro_recipe_3_recipe_name}</a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="text-sn">{$pro_recipe_3_recipe_caption}</td>
+                                        </tr>
+                                        <tr>
+                                          <td><img src="shared/images/spacer.gif" alt="" width="20" height="3"></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="text-sn"><a href="./recipe/recipe.php?recipe_id={$pro_recipe_3_recipe_id}"><img src="images/top_btn_prorecipe.gif" alt="レシピを見る" width="74" height="16" border="0" class="rollover"></a></td>
+                                        </tr>
+                                    </table></td>
+                                  </tr>
+                                </table></td>
+                                <td bgcolor="#FFFFFF"><img src="shared/images/spacer.gif" alt="" width="9" height="15"></td>
+                              </tr>
+                              <tr>
+                                <td colspan="3" bgcolor="#FFFFFF"><img src="shared/images/spacer.gif" alt="" width="20" height="15"></td>
+                                </tr>
+                              <tr>
+                                <td bgcolor="#FFFFFF"><img src="shared/images/spacer.gif" alt="" width="10" height="15"></td>
+                                <td bgcolor="#FFFFFF"><table border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td><img src="images/top_h_memberrank.gif" alt="みんなのパスタレシピ" width="453" height="24"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><img src="shared/images/spacer.gif" alt="" width="20" height="15"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><table border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                          <td rowspan="6"><img src="recipe/images/recipe_rank_member01.gif" alt="第1位" width="50" height="50"></td>
+                                          <td rowspan="6"><img src="shared/images/spacer.gif" alt="" width="8" height="20"></td>
+                                          <td rowspan="6" valign="top"><a href="./recipe/member_recipe.php?cmd=DispDetail&recipe_id={$mem_recipe_1_recipe_id}"><img src="./recipe/member_recipe_img/tmn_{$mem_recipe_1_recipe_id2}.{$mem_recipe_1_ext}" alt="" border="0"></a></td>
+                                          <td rowspan="6"><img src="shared/images/spacer.gif" alt="" width="8" height="20"></td>
+                                          <td class="text-mn"><a href="./recipe/member_recipe.php?cmd=DispDetail&recipe_id={$mem_recipe_1_recipe_id}" class="recipe-name">{$mem_recipe_1_recipe_name}</a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="recipe-author">by {$mem_recipe_1_member_name}</td>
+                                        </tr>
+                                        <tr>
+                                          <td><img src="shared/images/spacer.gif" alt="" width="20" height="3"></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="text-sn">{$mem_recipe_1_recipe_caption}</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="text-sn"><img src="shared/images/spacer.gif" alt="" width="20" height="3"></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="text-sn"><a href="./recipe/member_recipe.php?cmd=DispDetail&recipe_id={$mem_recipe_1_recipe_id}"><img src="images/top_btn_memberrecipe.gif" alt="レシピを見る" width="74" height="16" border="0" class="rollover"></a></td>
+                                        </tr>
+                                    </table></td>
+                                  </tr>
+                                  <tr>
+                                    <td><img src="shared/images/spacer.gif" alt="" width="20" height="10"></td>
+                                  </tr>
+                                  <tr>
+                                    <td background="recipe/images/recipe_line_list.gif"><img src="shared/images/spacer.gif" alt="" width="20" height="1"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><img src="shared/images/spacer.gif" alt="" width="20" height="10"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><table border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                          <td rowspan="6"><img src="recipe/images/recipe_rank_member02.gif" alt="第2位" width="50" height="50"></td>
+                                          <td rowspan="6"><img src="shared/images/spacer.gif" alt="" width="8" height="20"></td>
+                                          <td rowspan="6" valign="top"><a href="./recipe/member_recipe.php?cmd=DispDetail&recipe_id={$mem_recipe_2_recipe_id}"><img src="./recipe/member_recipe_img/tmn_{$mem_recipe_2_recipe_id2}.{$mem_recipe_2_ext}" alt="" border="0"></a></td>
+                                          <td rowspan="6"><img src="shared/images/spacer.gif" alt="" width="8" height="20"></td>
+                                          <td class="text-mn"><a href="./recipe/member_recipe.php?cmd=DispDetail&recipe_id={$mem_recipe_2_recipe_id}" class="recipe-name">{$mem_recipe_2_recipe_name}</a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="recipe-author">by {$mem_recipe_2_member_name}</td>
+                                          </tr>
+                                        <tr>
+                                          <td><img src="shared/images/spacer.gif" alt="" width="20" height="3"></td>
+                                          </tr>
+                                        <tr>
+                                          <td class="text-sn">{$mem_recipe_2_recipe_caption}</td>
+                                          </tr>
+                                        <tr>
+                                          <td class="text-sn"><img src="shared/images/spacer.gif" alt="" width="20" height="3"></td>
+                                          </tr>
+                                        <tr>
+                                          <td class="text-sn"><a href="./recipe/member_recipe.php?cmd=DispDetail&recipe_id={$mem_recipe_2_recipe_id}"><img src="images/top_btn_memberrecipe.gif" alt="レシピを見る" width="74" height="16" border="0" class="rollover"></a></td>
+                                          </tr>
+                                    </table></td>
+                                  </tr>
+                                  <tr>
+                                    <td><img src="shared/images/spacer.gif" alt="" width="20" height="10"></td>
+                                  </tr>
+                                  <tr>
+                                    <td background="recipe/images/recipe_line_list.gif"><img src="shared/images/spacer.gif" alt="" width="20" height="1"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><img src="shared/images/spacer.gif" alt="" width="20" height="10"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><table border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                          <td rowspan="6"><img src="recipe/images/recipe_rank_member03.gif" alt="第3位" width="50" height="50"></td>
+                                          <td rowspan="6"><img src="shared/images/spacer.gif" alt="" width="8" height="20"></td>
+                                          <td rowspan="6" valign="top"><a href="./recipe/member_recipe.php?cmd=DispDetail&recipe_id={$mem_recipe_3_recipe_id}"><img src="./recipe/member_recipe_img/tmn_{$mem_recipe_3_recipe_id2}.{$mem_recipe_3_ext}" alt="" border="0"></a></td>
+                                          <td rowspan="6"><img src="shared/images/spacer.gif" alt="" width="8" height="20"></td>
+                                          <td class="text-mn"><a href="./recipe/member_recipe.php?cmd=DispDetail&recipe_id={$mem_recipe_3_recipe_id}" class="recipe-name">{$mem_recipe_3_recipe_name}</a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="recipe-author">by {$mem_recipe_3_member_name}</td>
+                                          </tr>
+                                        <tr>
+                                          <td><img src="shared/images/spacer.gif" alt="" width="20" height="3"></td>
+                                          </tr>
+                                        <tr>
+                                          <td class="text-sn">{$mem_recipe_3_recipe_caption}</td>
+                                          </tr>
+                                        <tr>
+                                          <td class="text-sn"><img src="shared/images/spacer.gif" alt="" width="20" height="3"></td>
+                                          </tr>
+                                        <tr>
+                                          <td class="text-sn"><a href="./recipe/member_recipe.php?cmd=DispDetail&recipe_id={$mem_recipe_3_recipe_id}"><img src="images/top_btn_memberrecipe.gif" alt="レシピを見る" width="74" height="16" border="0" class="rollover"></a></td>
+                                          </tr>
+                                    </table></td>
+                                  </tr>
+                                </table></td>
+                                <td bgcolor="#FFFFFF"><img src="shared/images/spacer.gif" alt="" width="9" height="15"></td>
+                              </tr>
+                              <tr>
+                                <td colspan="3" bgcolor="#FFFFFF"><img src="shared/images/spacer.gif" alt="" width="20" height="15"></td>
+                                </tr>
+                            </table></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                </table></td>
+                <td>&nbsp;</td>
+                <td valign="top"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><a href="./pasta_priceup/index.html"><img src="./images/priceup.gif" alt="パスタの値上がりについて" width="254" height="119" border="0" class="rollover"></a></td>
+                  </tr>									
+									<tr>
+                    <td><img src="shared/images/spacer.gif" alt="" width="20" height="10"></td>
+                  </tr>
+									<tr>
+                    <td><table border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td colspan="3"><img src="images/top_h_info.gif" alt="お知らせ" width="254" height="33"></td>
+                        </tr>
+                      <tr>
+                        <td bgcolor="#E6E1DE"><img src="shared/images/spacer.gif" alt="" width="1" height="8"></td>
+                        <td><table border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td colspan="3"><img src="shared/images/spacer.gif" alt="" width="252" height="10"></td>
+                            </tr>
+                          <tr>
+                            <td><img src="shared/images/spacer.gif" alt="" width="10" height="10"></td>
+                            <td>{$info_contents}</td>
+                            <td><img src="shared/images/spacer.gif" alt="" width="10" height="10"></td>
+                          </tr>
+                          <tr>
+                            <td colspan="3"><img src="shared/images/spacer.gif" alt="" width="20" height="10"></td>
+                            </tr>
+                        </table></td>
+                        <td bgcolor="#D2CECB"><img src="shared/images/spacer.gif" alt="" width="1" height="8"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="3"><img src="images/top_bg_info_bottom.gif" alt="" width="254" height="10"></td>
+                        </tr>
+                    </table></td>
+                  </tr>
+				<tr>
+                    <td><img src="shared/images/spacer.gif" alt="" width="254" height="10"></td>
+                  </tr>
+									<tr>
+                    <td><a href="contest/index.html"><img src="images/banner_contest.gif" alt="第1回パスタレシピコンテスト開催！" width="254" height="175" border="0"></a></td>
+                  </tr>
+                  <tr>
+                    <td><img src="shared/images/spacer.gif" alt="" width="20" height="10"></td>
+                  </tr>
+                  <tr>
+                    <td><a href="pasta_fa/popup.html" onClick="window.open('pasta_fa/popup.html','win1','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=765,height=540');return false;"><img src="images/pastafa.jpg" alt="バーチャル・パスタ工場" name="pasta_fa" width="254" height="60" border="0" class="rollover"></a></td>
+                  </tr>
+                  <tr>
+                    <td><img src="shared/images/spacer.gif" alt="" width="20" height="10"></td>
+                  </tr>
+                  <tr>
+                    <td><table border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td><img src="images/top_h_event.gif" alt="イベント情報" width="254" height="25"></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="10"></td>
+                      </tr>
+                      <tr>
+                        <td><a href="event/school/index.html"><img src="images/top_link_school.gif" alt="パスタクッキングスクール" width="254" height="36" border="0" class="rollover"></a></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                      </tr>
+                      <tr>
+                        <td background="shared/images/dot_bg.gif"><img src="shared/images/spacer.gif" alt="" width="20" height="1"></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                      </tr>
+                      <tr>
+                        <td><a href="event/campaign/index.html"><img src="images/top_link_campaign.gif" alt="街頭キャンペーン" width="254" height="36" border="0" class="rollover"></a></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                      </tr>
+                      <tr>
+                        <td background="shared/images/dot_bg.gif"><img src="shared/images/spacer.gif" alt="" width="20" height="1"></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="event/college/index.html"><img src="images/top_link_college.gif" alt="パスタ大学" width="254" height="36" border="0" class="rollover"></a></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                      </tr>
+                      <tr>
+                        <td background="shared/images/dot_bg.gif"><img src="shared/images/spacer.gif" alt="" width="20" height="1"></td>
+                      </tr>
+                      
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td><img src="shared/images/spacer.gif" alt="" width="20" height="10"></td>
+                  </tr>
+                  <tr>
+                    <td><table border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td><img src="images/top_h_contents.gif" alt="パスタのマメ知識" width="254" height="25"></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="10"></td>
+                      </tr>
+                      <tr>
+                        <td><a href="content/healthy/index.html"><img src="images/top_link_healty.gif" alt="パスタはヘルシー" width="254" height="36" border="0" class="rollover"></a></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                      </tr>
+                      <tr>
+                        <td background="shared/images/dot_bg.gif"><img src="shared/images/spacer.gif" alt="" width="20" height="1"></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                      </tr>
+                      <tr>
+                        <td><a href="content/dictionary/index.html"><img src="images/top_link_dictionary.gif" alt="パスタ辞典" width="254" height="36" border="0" class="rollover"></a></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                      </tr>
+                      <tr>
+                        <td background="shared/images/dot_bg.gif"><img src="shared/images/spacer.gif" alt="" width="20" height="1"></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                      </tr>
+                      <tr>
+                        <td><a href="content/basic/index.html"><img src="images/top_link_basic.gif" alt="パスタの基本" width="254" height="36" border="0" class="rollover"></a></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                      </tr>
+                      <tr>
+                        <td background="shared/images/dot_bg.gif"><img src="shared/images/spacer.gif" alt="" width="20" height="1"></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                      </tr>
+                      <tr>
+                        <td><a href="content/song/index.html"><img src="images/top_link_song.gif" alt="パスタサンデーの歌" width="254" height="36" border="0" class="rollover"></a></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                      </tr>
+                      <tr>
+                        <td background="shared/images/dot_bg.gif"><img src="shared/images/spacer.gif" alt="" width="20" height="1"></td>
+                      </tr>
+                      
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td><img src="shared/images/spacer.gif" alt="" width="20" height="10"></td>
+
+                  </tr>
+                  <tr>
+                    <td><table border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td><img src="images/top_h_association.gif" alt="協会について" width="254" height="25"></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="10"></td>
+                      </tr>
+                      <tr>
+                        <td><table border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td><img src="images/mark_tri_brown.gif" alt="" width="5" height="7"></td>
+                            <td><img src="shared/images/spacer.gif" alt="" width="7" height="18"></td>
+                            <td class="text-mn"><strong><a href="association/greeting/index.html"><font color="#83674e">ご挨拶</font></a></strong></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                      </tr>
+                      <tr>
+                        <td background="shared/images/dot_bg.gif"><img src="shared/images/spacer.gif" alt="" width="20" height="1"></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                      </tr>
+                      <tr>
+                        <td><table border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td><img src="images/mark_tri_brown.gif" alt="" width="5" height="7"></td>
+                            <td><img src="shared/images/spacer.gif" alt="" width="7" height="18"></td>
+                            <td class="text-mn"><strong><a href="association/overview/index.html"><font color="#83674e">協会概要</font></a></strong></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                      </tr>
+                      <tr>
+                        <td background="shared/images/dot_bg.gif"><img src="shared/images/spacer.gif" alt="" width="20" height="1"></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                      </tr>
+                      <tr>
+                        <td><table border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td><img src="images/mark_tri_brown.gif" alt="" width="5" height="7"></td>
+                            <td><img src="shared/images/spacer.gif" alt="" width="7" height="18"></td>
+                            <td class="text-mn"><strong><a href="association/activity/index.html"><font color="#83674e">活動内容紹介</font></a></strong></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                      </tr>
+                      <tr>
+                        <td background="shared/images/dot_bg.gif"><img src="shared/images/spacer.gif" alt="" width="20" height="1"></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                      </tr>
+                      <tr>
+                        <td><table border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td><img src="images/mark_tri_brown.gif" alt="" width="5" height="7"></td>
+                            <td><img src="shared/images/spacer.gif" alt="" width="7" height="18"></td>
+                            <td class="text-mn"><strong><a href="association/company/index.html"><font color="#83674e">加盟企業紹介</font></a></strong></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                      </tr>
+                      <tr>
+                        <td background="shared/images/dot_bg.gif"><img src="shared/images/spacer.gif" alt="" width="20" height="1"></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                      </tr>
+                      <tr>
+                        <td><table border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td><img src="images/mark_tri_brown.gif" alt="" width="5" height="7"></td>
+                            <td><img src="shared/images/spacer.gif" alt="" width="7" height="18"></td>
+                            <td class="text-mn"><strong><a href="association/report/index.html"><font color="#83674e">Pastaレポート</font></a></strong></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td><img src="shared/images/spacer.gif" alt="" width="20" height="5"></td>
+                      </tr>
+                      <tr>
+                        <td background="shared/images/dot_bg.gif"><img src="shared/images/spacer.gif" alt="" width="20" height="1"></td>
+                      </tr>
+                      
+                    </table></td>
+                  </tr>
+                </table></td>
+              </tr>
+              <tr>
+                <td colspan="3"><img src="shared/images/spacer.gif" alt="" width="20" height="15"></td>
+              </tr>
+              <tr>
+                <td><table border="0" align="right" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td><a href="#top"><img src="shared/images/btn_pagetop.gif" width="115" height="15" border="0" alt="このページの先頭へ"></a></td>
+                      <td><img src="shared/images/spacer.gif" alt="" width="14" height="8"></td>
+                    </tr>
+                </table></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+            <!-- InstanceEndEditable -->  </td>
+        </tr>
+        <tr>
+          <td><img src="shared/images/spacer.gif" alt="" width="10" height="22"></td>
+        </tr>
+        <tr>
+          <td bgcolor="#AC6423"><img src="shared/images/spacer.gif" alt="" width="10" height="3"></td>
+        </tr>
+        <tr>
+          <td><img src="shared/images/spacer.gif" alt="" width="10" height="10"></td>
+        </tr>
+        <tr>
+          <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td><table border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><a href="sitemap.html"><img src="shared/images/menu_sitemap.gif" width="100" height="18" alt="サイトマップ" border="0" class="rollover"></a></td>
+                      <td><img src="shared/images/spacer.gif" alt="" width="7" height="10"></td>
+                      <td><a href="about/index.html"><img src="shared/images/menu_about.gif" width="100" height="18" alt="このサイトについて" border="0" class="rollover"></a></td>
+                      <td><img src="shared/images/spacer.gif" alt="" width="7" height="10"></td>
+                      <td><a href="privacy/index.html"><img src="shared/images/menu_privacy.gif" width="100" height="18" alt="プライバシーポリシー" border="0" class="rollover"></a></td>
+                    </tr>
+                  </table></td>
+                <td align="right"><img src="shared/images/txt_copyright.gif" width="234" height="11" alt="Japan-Pasta Association, All rights reserved "></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF"><img src="shared/images/spacer.gif" alt="" width="770" height="8"></td>
+  </tr>
+  <tr>
+    <td><img src="shared/images/bg_bottom_left.gif" alt="" width="10" height="15"></td>
+    <td background="shared/images/bg_bottom.gif"><img src="shared/images/spacer.gif" alt="" width="10" height="15"></td>
+    <td><img src="shared/images/bg_bottom_right.gif" alt="" width="10" height="15"></td>
+  </tr>
+</table>
+<script type="text/javascript">
+_uacct = "UA-182016-2";
+urchinTracker();
+</script>
+</body>
+<!-- InstanceEnd --></html>

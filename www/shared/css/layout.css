@@ -1,0 +1,379 @@
+@charset "Shift-JIS";
+
+html,body{
+	font-size: 87%;
+	font-style: normal;
+	line-height: 1.5;
+}
+
+body {
+	padding-bottom: 20px;
+	background: #FDF7E4 url(../images/bg_body.gif) repeat-x;
+	color: #633100;
+	text-align: center;
+}
+
+
+/*  レイアウト枠
+----------------------------------------*/
+
+#page {
+	width: 916px;
+	margin: 0 auto;
+	background: url(../images/bg_page_tp.png) no-repeat;
+	text-align: left;
+}
+* html #page {
+  behavior: expression(IEPNGFIX.fix(this));
+}
+
+div.pageBt {
+	width: 916px;
+	background: url(../images/bg_page_bt.gif) no-repeat left bottom;
+}
+
+
+#mainArea {
+	margin: 0 8px;
+	padding: 0 13px 0 15px;
+	background: #FFFFFF;
+}
+#mainArea:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+#mainArea { display:inline-block; }
+/*\*/
+* html #mainArea { height:1%; }
+#mainArea { display:block; }
+/**/
+
+#contents {
+	float: left;
+	width: 687px;
+}
+#contents:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+#contents { display:inline-block; }
+/*\*/
+* html #contents { height:1%; }
+#contents { display:block; }
+/**/
+
+#sub {
+	float: right;
+	width: 174px;
+	padding-bottom: 8px;
+}
+
+
+/*  ヘッダー
+----------------------------------------*/
+
+#header {
+	position: relative;
+	width: 870px;
+	margin: 0 23px 8px;
+	background: url(../images/bg_header01.jpg) no-repeat right top;
+	border-bottom: 1px solid #E07813;
+}
+
+#header p#logo {
+	display: block;
+	position: absolute;
+	top: 18px;
+	left: 10px;
+	width: 215px;
+}
+
+#header #descript {
+	width: 315px;
+	margin-left: 242px;
+	padding-top: 23px;
+}
+
+#header #descript h1,
+#header #descript p strong {
+	color: #805830;
+	font-size: 83.33%;
+	font-weight: bold;
+}
+
+#header div.hdnavi {
+	position: absolute;
+	top: 0;
+	right: -10px;
+	width: 430px;
+	height: 23px;
+	font-size: 10px;
+}
+
+#header div.hdnavi ul {
+	float: right;
+	padding-left: 10px;
+	font-size: 10px;
+	background: #FFFFFF url(../images/bg_hdnavi.gif) no-repeat;
+}
+#header div.hdnavi ul:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+#header div.hdnavi ul { display:inline-block; }
+/*\*/
+* html #header div.hdnavi ul { height:1%; }
+#header div.hdnavi ul { display:block; }
+/**/
+
+#header div.hdnavi ul li,
+#header div.hdnavi ul li.line span {
+	display: inline;
+	margin-right: 8px;
+	padding-left: 7px;
+	background: url(../images/icon_arw01.gif) no-repeat left center;
+	line-height: 23px;
+}
+
+#header div.hdnavi ul li.line {
+	margin-right: 0;
+	padding-left: 0;
+	background: url(../images/line_hdnavi.gif) repeat-y;
+}
+
+#header div.hdnavi ul li.line span {
+	float: none;
+	margin-left: 11px;
+}
+
+#header div.hdnavi ul a:link,
+#header div.hdnavi ul a:visited,
+#header div.hdnavi ul a:hover,
+#header div.hdnavi ul a:active {
+	color: #633100;
+	font-weight: normal;
+}
+
+#header ul.nav {
+	padding-left: 245px;
+	padding-top: 19px;
+	border-bottom: 4px solid #F78B22;
+}
+#header ul.nav:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+#header ul.nav { display:inline-block; }
+/*\*/
+* html #header ul.nav { height:1%; }
+#header ul.nav { display:block; }
+/**/
+
+#header ul.nav li {
+	float: left;
+	margin-right: 5px;
+}
+
+#header ul.nav li.nomgr {
+	margin-right: 0;
+}
+
+
+/* フッター
+----------------------------------------*/
+
+#footer {
+	width: 916px;
+	background: url(../images/bg_ft.gif) no-repeat left bottom;
+}
+
+div.footerLine {
+	width: 870px;
+	margin: 0 18px 0 28px;
+	padding: 15px 0 30px;
+	border-top: 3px solid #FBC590;
+}
+
+#footer ul {
+	padding-right: 4px;
+	text-align: right;
+	font-size: 0;
+}
+
+#footer ul li {
+	display: inline;
+	padding-left: 15px;
+}
+
+#footer address {
+	margin: 10px 5px 0 0;
+	text-align: right;
+	color: #935D28;
+}
+
+
+/*------------------------------------------------------------
+##############################################################
+■ 2012/07 Renewal
+##############################################################
+------------------------------------------------------------*/
+#header {
+	border: none;
+	background: none;
+}
+
+#header p#logo {
+	display: inline;
+	margin: 10px 0 0 9px;
+	float: left;
+	position: static;
+}
+
+#header #descript {
+	display: inline;
+	padding-top: 15px;
+	margin-left: 25px;
+	float: left;
+}
+
+#header #descript #header_lead {
+	color: #633100;
+	font-size: 116.6666%;
+	font-weight: bold;
+	line-height: 1.3571;
+	margin-bottom: 3px;
+}
+
+#header div.hdnavi {
+	width: 294px;
+	right: 0;
+}
+
+#header div.hdnavi ul {
+	clear: both;
+	background-color: transparent;
+	float: none;
+}
+
+#header .hdnavi ul#hdnavi_login {
+	width: 293px;
+	height: 36px;
+	background: url(/shared/images/header_login_bg.gif) no-repeat;
+	padding: 0 0 0 1px;
+	margin-bottom: 7px;
+}
+
+#header .hdnavi ul#hdnavi_content {
+	padding: 0;
+}
+
+#header .hdnavi ul#hdnavi_login li {
+	background: none;
+	padding: 0;
+	margin: 0 0 0 4px;
+	float: left;
+}
+
+/*#header .hdnavi ul#hdnavi_content li {
+	margin: 8px 7px 0 7px;
+	float: left;
+}
+
+#header .hdnavi ul#hdnavi_content li.smart_phone {
+	background: none;
+	padding: 0;
+	margin: 0 0 0 13px;
+}*/
+
+#header .hdnavi ul#hdnavi_content li {
+	margin: 8px 12px 0 0;
+	float: left;
+}
+
+#header .hdnavi ul#hdnavi_content li.smart_phone {
+	background: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+#header #gnavi {
+    clear: both;
+    padding-top: 12px;
+}
+
+#header #gnavi li {
+	float: left;
+}
+
+#footer_link {
+	width: 872px;
+	background: #fff;
+	padding: 20px 13px 0 15px;
+	margin: 0 auto;
+}
+
+#footer_link .column_block {
+	width: 152px;
+	border-right: 1px solid #fdddbf;
+	display: inline;
+	overflow: hidden;
+	margin-right: 20px;
+	float: left;
+}
+
+#footer_link #mobile_info_block {
+	width: 180px;
+	border-right: none;
+	padding-bottom: 12px;
+	margin-right: 0;
+}
+
+#footer_link .column_block ul.parent li span {
+	background: url(/images/icon_sitemap_arrow_02.gif) no-repeat left 0.2em;
+	display: block;
+	padding-left: 18px;
+	margin-bottom: 5px;
+}
+
+* html #footer_link .column_block ul.parent li span { zoom: 1; }
+
+#footer_link .column_block ul.parent li .child {
+	padding: 0 8px;
+	margin-bottom: 5px;
+}
+
+#footer_link .column_block ul.parent li .child li {
+	background: url(/shared/images/icon_list_arrow.gif) no-repeat left 0.5em;
+	padding-left: 10px;
+}
+
+#footer_link .column_block ul.parent li .child li a {
+	font-size: 83.3333%;
+	font-weight: normal;
+}
+
+#footer_link #mobile_info_block dl dt {
+	margin-bottom: 15px;
+}
+
+#footer_link #mobile_info_block dl.smart_section {
+	/*background: url(/shared/images/line_dot_brown.gif) repeat-x left bottom;*/
+	padding-bottom: 16px;
+	margin-bottom: 18px;
+}
+
+
+
+.clearfix:after,
+#header:after,
+#header #gnavi:after,
+#footer_link:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+.clearfix,
+#header,
+#header .gnavi.news,
+#footer_link {
+	display: inline-block;
+}
+.clearfix,
+#header,
+#header .gnavi.news,
+#footer_link {
+	display: block;
+}
+
+

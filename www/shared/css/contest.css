@@ -1,0 +1,98 @@
+/* CSS Document */
+
+table.bg {
+	width:700px;
+	background:#ffcf92;
+	border-style:none;
+	
+	padding:0;
+	margin:0;
+		
+	border:0;
+	}
+
+table.grandPrix {
+	width:733px;
+	color:#533b02;
+
+
+	border-style:none;
+	
+	border:0;
+	}
+
+table.grandPrix td.spacer {
+	background:#fffcf92;
+	}
+
+table.grandPrix td {
+	background:#fff5d8;
+	
+	vertical-align:top;
+	}
+	
+table.grandPrix td.text {
+	width:474px;
+	font-size:75%;
+	line-height:1.5;
+	
+	background:#fff5d8;
+	padding:0 10px 0 9px; 
+	}
+
+table.grandPrix td.recipe_view {
+	background:#fff5d8;
+	
+	text-align:right;
+	padding:0 10px 0 0;
+	}
+
+table.grandPrix td.recipe_view a img {
+	border:0;
+	}
+
+table.contest {
+	width:750px;
+	background:#ffcf92;
+
+	border-style:none;
+	border-collapse:collapse;
+	
+	border:0;
+	padding:0;
+	margin:0;
+	
+	color:#533b02;
+	}
+
+table.contenst th {
+	text-align:left;
+	padding:0;
+	margin:0;
+	}
+
+table.contenst td.text {
+	font-size:75%;
+	padding:0 10px;
+	
+	vertical-align:top;	
+	line-height:1.5;
+	
+	background:url(../../contest/images/small_td_bg.gif) repeat-y 0 0;
+	}
+
+table.contenst td.link {
+	padding:15px 0 0 0;
+	text-align:center;
+	
+	background:url(../../contest/images/small_td_bg.gif) repeat-y 0 0;
+	}
+
+table.contenst td.link a img {
+	border:0;
+	}
+
+table.photo {
+	width:750px;
+	background:#e0dcdc;
+	}

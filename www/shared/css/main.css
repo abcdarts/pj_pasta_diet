@@ -1,0 +1,4151 @@
+@charset "Shift-JIS"; 
+
+/*
+==============　CONTENTS　==============
+
+	1：index
+	2：recipe/society_rank
+	3：recipe/people_rank
+	4：form page
+	5：recipe/login
+	6：recipe/recipelist_month
+	7：recipe/recipelist_person
+	8：recipe/detail_society,detail_people
+	9：recipe/mymenu/delete_check
+	14：recipe/mymenu/mypage_recipelist
+	10：event/
+	11：contest/
+	12：content/pasta_priceup/
+	13：content/pasta_priceup/sbs
+	16：news/index,detail
+	17：sitemap
+	18：utility | about this site,agreement,privacy
+	19：error
+
+========================================
+*/
+
+/* 19 以降は main_second.css */
+
+
+/*
+=========================1：index=========================
+*/
+
+
+/*  今週の新着レシピ
+----------------------------------------*/
+
+
+div.topArea {
+	position: relative;
+	width: 500px;
+	height: 386px;
+	margin-bottom: 10px;
+	background: url(../../images/index_bg_top.gif) no-repeat;
+}
+
+
+/* 写真 */
+
+div.topArea p.mainPhoto {
+	position: absolute;
+	top: 26px;
+	left: 26px;
+	width: 201px;
+	text-align: center;
+}
+
+
+/* コンテンツボックス */
+
+div.topArea div.topCt {
+	margin-left: 248px;
+}
+
+div.topArea div.topCt dd {
+	padding: 0 9px;
+}
+
+
+/* 今週の新着レシピ */
+
+div.topArea div.topCt dl.topBox01 {
+	width: 223px;
+	height: 91px;
+	margin: 0 0 9px 5px;
+	font-size: 12px;
+}
+
+div.topArea div.topCt dl.topBox01 dt {
+	padding: 7px 9px 2px;
+}
+
+
+/* 先週のレシピ */
+
+div.topArea div.topBox02 {
+	position: relative;
+	width: 222px;
+	margin: 6px 0 11px 5px;
+}
+
+div.topArea div.topBox02 dl {
+	width: 135px;
+	height: 98px;
+	font-size: 10px;
+}
+
+div.topArea div.topBox02 dl dt {
+	padding: 8px 9px 6px;
+}
+
+div.topArea div.topBox02 p.photo {
+	position: absolute;
+	top: 1px;
+	right: 0;
+	width: 78px;
+}
+
+div.topArea div.topBox02 p.photo a {
+	display: block;
+	padding: 3px;
+	background: #FFFFFF;
+	border: 1px solid #D5D5D5;
+}
+
+div.topArea p.btn {
+	margin-left: 74px;
+}
+
+
+/*  今月の特集、今日のパスタ
+----------------------------------------*/
+
+div.indexArea01 {
+	width: 496px;
+	margin: 12px 0;
+}
+div.indexArea01:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+div.indexArea01 { display:inline-block; }
+/*\*/
+* html div.indexArea01 { height:1%; }
+div.indexArea01 { display:block; }
+/**/
+
+div.indexArea01 p.bnr {
+	float: left;
+	padding-top: 10px;
+}
+
+div.todayPasta {
+	float: right;
+	width: 243px;
+	background: url(../../images/index_bg_today01_rp.gif) repeat-y;
+}
+
+div.todayPasta dl {
+	padding-bottom: 10px; 
+	background: url(../../images/index_bg_today01_bt.gif) no-repeat left bottom;
+}
+
+div.todayPasta dl dt {
+	width: 234px;
+	position: relative;
+}
+div.todayPasta dl dt span {
+	display: block;
+	position: absolute;
+	top: 49px;
+	left: 125px;
+	color: #F75E22;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+div.todayPasta dl dd {
+	position: relative;
+	width: 203px;
+	margin-left: 20px;
+}
+
+div.todayPasta dl dd div.bgBox {
+	width: 115px;
+	min-height: 56px;
+	margin-bottom: 8px;
+	background: #FEFCF9 url(../../images/index_bg_today02_bt.gif)  no-repeat left bottom;
+}
+* html div.todayPasta dl dd div.bgBox {
+	height: 56px;
+}
+
+div.todayPasta dl dd div.bgBox p {
+	padding: 6px 9px 6px;
+	background: #FEFCF9 url(../../images/index_bg_today02_tp.gif)  no-repeat;
+}
+
+div.todayPasta dl dd p.photo {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+div.todayPasta dl dd p.photo a {
+	display: block;
+	padding: 3px;
+	background: #FFFFFF;
+	border: 1px solid #D5D5D5;
+}
+
+
+/* 新着投稿レシピ
+----------------------------------------*/
+
+#contents div.indexMain h2 {
+	margin-left: 0;
+}
+
+div.contribution {
+	width: 496px;
+	margin: 8px 0 25px;
+	padding-bottom: 9px;
+	background: url(../../images/index_line_contribution.gif) repeat-y;
+}
+div.contribution:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+div.contribution { display:inline-block; }
+/*\*/
+* html div.contribution { height:1%; }
+div.contribution { display:block; }
+/**/
+
+div.contribution div.contributionBox {
+	float: left;
+	width: 154px;
+	margin-right: 17px;
+	padding-top: 10px;
+	background: url(../../images/index_bg_contribution.gif) no-repeat;
+}
+
+div.contribution div.nomgr {
+	margin-right: 0;
+}
+
+div.contribution div.contributionBox p.photo {
+	padding: 0 3px 3px;
+	border-right: 1px solid #D5D5D5;
+	border-bottom: 1px solid #D5D5D5;
+	border-left: 1px solid #D5D5D5;
+	text-align: center;
+	color: #F75E22;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+div.contribution div.contributionBox dl {
+	margin-top: 10px;
+}
+
+div.contribution div.contributionBox dt {
+	padding-left: 18px;
+	background: url(../images/icon_arw02.gif) no-repeat 0 0.2em;
+	font-weight: bold;
+}
+
+div.contribution div.contributionBox dd {
+	margin-top: 3px;
+	font-size: 10px;
+	line-height: 1.4;
+}
+
+#ctArea div.contribution div.contributionBox dd p.arw {
+	margin-top: 2px;
+	background: url(../images/icon_arw01.gif) no-repeat 0 0.6em;
+}
+
+
+/* パスタレシピ検索 トップページ用スタイル
+----------------------------------------*/
+div.indexMain div.searchArea {
+	width: 496px;
+	margin: 0;
+	background: url(../../images/index_bg_search01_rp.gif) repeat-y;
+}
+
+div.indexMain div.searchAreaIn {
+	padding: 14px 15px 15px;
+	background: url(../../images/index_bg_search01_bt.gif) no-repeat left bottom;
+}
+
+
+/* パスタのカテゴリーから探す */
+div.indexMain div.searchArea div.category {
+	margin: 10px 0 25px;
+	padding: 2px 15px;
+	border: 5px solid #fde7c1;
+}
+
+div.indexMain div.searchArea div.category dl {
+	width: 426px;
+	overflow: hidden;
+}
+
+div.indexMain div.searchArea div.category dt {
+	margin-top: -1px;
+	clear: left;
+	float: left;
+	width: 80px;
+	padding-top: 8px;
+	text-align: right;
+	font-size: 117%;
+}
+
+div.indexMain div.searchArea div.category dd {
+	margin-top: -1px;
+	margin-bottom: 0;
+	padding: 8px 0 0 90px;
+	background: url(../images/line_dot_gray.gif) repeat-x 0 0;
+}
+
+div.indexMain div.searchArea div.category dd ul {
+	padding: 2px 0 6px;
+}
+
+div.indexMain div.searchArea div.category dd li {
+	float: left;
+	display: inline-block;
+	padding: 0 14px 2px 7px;
+	background: url(../images/icon_arw01.gif) no-repeat 0 0.5em;
+	word-break: keep-all;
+}
+
+div.indexMain div.searchArea div.category dd li a {
+	font-weight: normal;
+}
+
+div.indexMain div.searchArea div.category dd li a:link,
+div.indexMain div.searchArea div.category dd li a:visited,
+div.indexMain div.searchArea div.category dd li a:active,
+div.indexMain div.searchArea div.category dd li a:hover {
+	color: #f78b22;
+}
+
+div.indexMain div.searchArea div.category dl:after,
+div.indexMain div.searchArea div.category dd ul:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+div.indexMain div.searchArea div.category dl,
+div.indexMain div.searchArea div.category dd ul { display:inline-block; }
+/*\*/
+* html div.indexMain div.searchArea div.category dl,
+* html div.indexMain div.searchArea div.category dd ul { height:1%; }
+div.indexMain div.searchArea div.category dl,
+div.indexMain div.searchArea div.category dd ul { display:block; }
+/**/
+
+
+
+/* フリーキーワードで探す */
+
+div.indexMain div.searchArea p.free_txt {
+	margin: 9px 5px 0;
+}
+
+div.indexMain div.searchArea div.free {
+	width: 466px;
+}
+
+div.indexMain div.searchArea div.free table {
+	width: 466px;
+}
+
+div.indexMain div.searchArea div.free td.txt {
+	width: 140px;
+	padding: 10px 20px 10px 15px;
+}
+
+div.indexMain div.searchArea div.free td.txt input {
+	width: 140px;
+}
+
+
+/* 条件で探す */
+
+div.indexMain div.searchArea div.condition {
+	width: 466px;
+	background: url(../../images/index_bg_search02_rp.gif) repeat-y;
+}
+
+div.indexMain div.searchArea div.conditionIn {
+	padding: 15px 10px 0px;
+	background: url(../../images/index_bg_search02_tp.gif) no-repeat;
+}
+
+div.indexMain div.searchArea div.conditionTbl {
+	padding: 0 15px;
+	background: url(../../images/index_bg_search03_bt.gif) no-repeat left bottom;
+}
+
+div.indexMain div.searchArea div.conditionTbl table {
+	width: 416px;
+}
+
+div.indexMain div.searchArea p.btn {
+	padding: 7px 15px 5px 0;
+}
+
+/* メインバナー */
+
+#main_column #main_banner {
+	margin-bottom:10px;
+}
+
+/*
+=========================2：recipe/society_rank=========================
+*/
+
+div.recipeSocietyArea {
+	width: 653px;
+	margin-left: 15px;
+	padding-bottom: 23px;
+}
+
+div.recipeSocietyArea div.rankBox {
+	position: relative;
+	width: 653px;
+	padding-bottom: 15px;
+	margin-bottom: 12px;
+	background: url(../images/line_dot_gray02.gif) repeat-x left bottom;
+}
+
+div.recipeSocietyArea div.rankBox p.icon {
+	position: absolute;
+	top: 3px;
+	left: 0;
+}
+
+div.recipeSocietyArea div.rankBox p.photo {
+	position: absolute;
+	top: 3px;
+	left: 88px;
+	width: 58px;
+}
+
+div.recipeSocietyArea div.rankBox p.photo a {
+	display: block;
+	background: #FFFFFF;
+}
+
+div.recipeSocietyArea div.rankBox dl {
+	width: 385px;
+	min-height: 50px;
+	margin-left: 162px;
+}
+* html div.recipePeopleArea div.rankBox dl {
+	height: 50px;
+}
+
+div.recipeSocietyArea div.rankBox dt {
+	padding-left: 18px;
+	background: url(../images/icon_arw02.gif) no-repeat 0 0.2em;
+	font-size: 117%;
+	font-weight: bold;
+}
+
+div.recipeSocietyArea div.rankBox dd {
+	margin-top: 3px;
+}
+
+div.recipeSocietyArea div.rankBox dd ul {
+	margin-top: 5px;
+	font-size: 0;
+}
+
+div.recipeSocietyArea div.rankBox dd ul li {
+	display: inline;
+	padding-right: 3px;
+}
+
+div.recipeSocietyArea div.rankBox p.btn {
+	position: absolute;
+	bottom: 8px;
+	right: 0;
+}
+
+
+/*
+=========================3：people_rank=========================
+*/
+
+div.recipePeopleArea {
+	width: 653px;
+	margin-left: 15px;
+	padding-bottom: 23px;
+}
+
+div.recipePeopleArea div.rankBox {
+	position: relative;
+	width: 653px;
+	padding-bottom: 15px;
+	margin-bottom: 12px;
+	background: url(../images/line_dot_gray02.gif) repeat-x left bottom;
+}
+
+div.recipePeopleArea div.rankBox p.icon {
+	position: absolute;
+	top: 3px;
+	left: 0;
+}
+
+div.recipePeopleArea div.rankBox p.photo {
+	position: absolute;
+	top: 3px;
+	left: 88px;
+	width: 120px;
+	text-align: center;
+}
+
+div.recipePeopleArea div.rankBox dl {
+	width: 325px;
+	min-height: 90px;
+	margin-left: 223px;
+}
+* html div.recipePeopleArea div.rankBox dl {
+	height: 90px;
+}
+
+div.recipePeopleArea div.rankBox dt {
+	padding-left: 18px;
+	background: url(../images/icon_arw02.gif) no-repeat 0 0.2em;
+	font-size: 117%;
+	font-weight: bold;
+}
+
+div.recipePeopleArea div.rankBox dd {
+	margin-top: 3px;
+}
+
+div.recipePeopleArea div.rankBox dd p {
+	margin-top: 3px;
+}
+
+div.recipePeopleArea div.rankBox p.btn {
+	position: absolute;
+	bottom: 8px;
+	right: 0;
+}
+
+
+/*
+=========================4：form page=========================
+*/
+
+div.formArea {
+	width: 653px;
+	margin-left: 15px;
+}
+
+div.formArea p.topTxt {
+	margin-bottom: 21px;
+	color: #713902;
+}
+
+div.formArea span.redMark {
+	color: #F75E22;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+div.formArea p.topTxt a {
+	font-weight: normal;
+}
+
+div.formArea p.topTxt a:link,
+div.formArea p.topTxt a:visited,
+div.formArea p.topTxt a:hover,
+div.formArea p.topTxt a:active {
+	color: #713902;
+}
+
+/*
+========================= 4：recipe mobile =========================
+*/
+
+/* margin */
+.mobileSend{
+margin-top:40px;
+padding-top:-20px;
+}
+.mobileSend h3{
+margin-top:28px;
+}
+.mobileSendMail,
+.mobileSend p{
+margin-top:20px;
+}
+.mobileSend p.mobileImg{
+margin-top:15px;
+}
+.mobileSend{
+margin-left:15px;
+}
+/* ------  h3 */
+.mobileSend h3{
+background-image:url(../../recipe/images/recipe_h_bg.gif);
+background-repeat:no-repeat;
+background-position:0 0;
+min-height:36px;
+}
+*html .mobileSend h3{
+height:36px;
+}
+.mobileSend h3 img{
+margin-top:10px;
+margin-left:20px;
+}
+
+/* ------  mobileSendWap */
+.mobileSendWap .mobileImg{
+float:left;
+width:98px;
+text-align:right;
+}
+.mobileSendWap .mobileSendMail{
+float:right;
+width:560px;
+}
+
+.mobileSendWap input,
+.mobileSendWap select{
+vertical-align:middle;
+}
+
+.mobileSendWap #inputAddress{
+width:166px;
+}
+.mobileSendWap #inputAddress,
+.mobileSendWap #career option,
+.mobileSendWap #career{
+margin-left:8px;
+line-height:1.2;
+}
+.mobileSendWap #career option{
+padding-bottom:1px;
+}
+.mobileSendWap #sendAddress{
+margin-left:36px;
+}
+
+/* bg */
+.inMobileSendMail,
+.inMobileSendMail p{
+background-repeat:no-repeat;
+}
+.mobileSendMail,
+.inMobileSendMail{
+background-position:0 0;
+}
+.inMobileSendMail{/* top */
+background-image:url(../../recipe/images/recipe_form_bg_top.gif);
+}
+.mobileSendMail{/* center */
+background-image:url(../../recipe/images/recipe_form_bg_c.gif);
+background-repeat:repeat-y;
+}
+.mobileSendMail p{/* btm */
+background-image:url(../../recipe/images/recipe_form_bg_btm.gif);
+background-position:0 100%;
+}
+.mobileSendMail p{
+margin-top:0;
+padding-left:12px;
+padding-top:22px;
+padding-bottom:22px;
+}
+
+/* -- .qrWrap */
+.qrWrap p{
+float:right;
+width:525px;
+}
+.qrWrap .qr{
+float:left;
+width:123px;
+padding-top:2px;
+padding-bottom:1px;
+text-align:center;
+background-image:url(../../recipe/images/bg_pr.gif);
+background-repeat:no-repeat;
+background-position:0 0;
+}
+
+/* --  clear */
+.qrWrap:after,
+.mobileSendWap:after{
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}
+
+/* win ie \*/
+*:first-child+html .qrWrap,
+*:first-child+html .mobileSendWap{
+display:
+inline-block;
+}
+*html .qrWrap,
+*html .mobileSendWap{
+height:1%;
+}
+/**/
+/* mac ie \*//*/
+.mobileSendWap{
+display:inline-block;
+}
+/**/
+
+/* エラーメッセージ
+----------------------------------------*/
+
+div.formArea dl.error {
+	margin: 0 46px 25px 34px;
+	padding: 22px 0;
+	border: 3px solid #EEE1C5;
+	background: #FCF5E0;
+	text-align: center;
+}
+
+div.formArea dl.error dt {
+	padding: 0 0 15px;
+	font-size: 133%;
+	font-weight: bold;
+}
+
+/* dt oragnge */
+
+div.formArea dl.error dt.orange {
+	color:#f75e22;
+}
+
+div.formArea dl.error em {
+	font-weight: bold;
+}
+
+div.formArea dl.error dd p {
+	margin-top: 18px;
+	color: #F75E22;
+}
+* html div.formArea dl.error dd p {
+	padding: 2px 0;
+}
+
+div.formArea dl.error dd p img {
+	margin: 0 7px 2px 0;
+}
+* html div.formArea dl.error dd p img {
+	margin: 0 7px 0 0;
+}
+
+div.formArea p.errorTxt {
+	margin-bottom: 10px;
+	color: #F75E22;
+}
+
+div.formArea p.errorTxt img {
+	margin-right: 7px;
+}
+
+
+/* 入力フォーム
+----------------------------------------*/
+
+div.formArea div.tblArea {
+	padding-bottom: 1px;
+	background: url(../images/bg_form_bt.gif) no-repeat left bottom;
+}
+
+div.formArea table {
+	width: 653px;
+	background: url(../images/bg_form_rp.gif) repeat-y;
+}
+
+div.formArea table th,
+div.formArea table td {
+	padding: 21px 35px 17px 40px;
+	background: url(../images/line_form.gif) repeat-x;
+	text-align: left;
+	vertical-align: top;
+}
+
+div.formArea table tr.top th,
+div.formArea table tr.top td {
+	padding-top: 17px;
+	background: url(../images/line_form_tp.gif) repeat-x;
+}
+
+div.formArea table th {
+	width: 160px;
+	padding-right: 10px;
+	border-right: 3px solid #FFFFFF;
+	font-weight: bold;
+}
+
+div.formArea table td input,
+div.formArea table td textarea {
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+div.formArea table td span {
+	font-size: 87%;
+}
+
+div.formArea table th img {
+	margin: 0 0 2px 0;
+}
+* html div.formArea table th img {
+	margin: 0 0 0 0;
+	vertical-align: middle;
+}
+*:first-child+html div.formArea table th img {
+	margin: 0 0 0 0;
+	vertical-align: middle;
+}
+
+div.formArea table.type2 td {
+	padding: 21px 0 17px 40px;
+}
+
+div.formArea table.type2 td.err {
+	width: 35px;
+	padding: 21px 0 17px;
+	text-align: center;
+}
+
+/* 材料 */
+
+div.formArea table table.materials {
+	width: 100%;
+	background: none;
+}
+
+div.formArea table table.materials th,
+div.formArea table table.materials td {
+	padding: 5px 10px 5px 0;
+	background: none;
+}
+
+div.formArea table.type2 table.materials td.err {
+	width: 35px;
+	padding: 5px 0 5px 38px;
+}
+
+/* 作り方 */
+
+div.formArea table td.make {
+	padding: 21px 0 17px 0px;
+}
+
+div.formArea table td.make table {
+	width: 100%;
+	background: none;
+}
+
+div.formArea table td.make table th,
+div.formArea table td.make table td {
+	padding: 5px 0;
+	background: none;
+}
+
+div.formArea table td.make table th {
+	width: 35px;
+	padding-right: 5px;
+	border: none;
+	text-align: right;
+	font-weight: normal;
+}
+
+div.formArea table td.make table td.btn {
+	padding-left: 40px;
+}
+
+
+/* フォーム */
+
+div.formArea table input.type01 {
+	width: 300px;
+	padding: 2px 0;
+}
+
+div.formArea table textarea.type02 {
+	width: 300px;
+	height: 59px;
+}
+
+div.formArea table input.type03 {
+	width: 50px;
+	padding: 2px 0;
+}
+
+div.formArea table input.type04 {
+	width: 240px;
+	padding: 2px 0;
+}
+
+div.formArea table textarea.type05 {
+	width: 300px;
+	height: 79px;
+}
+
+div.formArea td.radio input {
+	margin: 0 2px -3px 0;
+}
+* html div.formArea td.radio input {
+	margin: 0 0 -2px 0;
+}
+
+div.formArea td.check input {
+	margin: 0 2px 0 0;
+}
+* html div.formArea td.check input {
+	margin: 0 0 -2px 0;
+}
+
+
+/* カテゴリー */
+/* パスタのカテゴリーから探す */
+div.formArea td div.category {
+	/*margin: 10px 0 25px;
+	padding: 2px 15px;
+	border: 5px solid #fde7c1;*/
+}
+
+div.formArea td div.category dl {
+	width: 365px;
+	overflow: hidden;
+}
+
+div.formArea td div.category dt {
+	margin-top: -1px;
+	clear: left;
+	float: left;
+	width: 80px;
+	padding-top: 8px;
+	text-align: right;
+	font-weight: bold;
+}
+
+div.formArea td div.category dd {
+	margin-top: -1px;
+	margin-bottom: 0;
+	padding: 8px 0 0 90px;
+	background: url(../images/line_dot_gray.gif) repeat-x 0 0;
+}
+
+div.formArea td div.category dd ul {
+	padding-bottom: 6px;
+}
+
+div.formArea td div.category dd li {
+	float: left;
+	display: inline-block;
+	padding: 0 10px 2px 0;
+	word-break: keep-all;
+}
+
+*html div.formArea td div.category dd li label {
+	padding-left: 16px;
+}
+*html div.formArea td div.category dd li input {
+	margin-right: -16px;
+}
+*:first-child+html div.formArea td div.category dd li label {
+	padding-left: 16px;
+}
+*:first-child+html div.formArea td div.category dd li input {
+	margin-right: -16px;
+}
+
+div.formArea td div.category dl:after,
+div.formArea td div.category dd ul:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+div.formArea td div.category dl,
+div.formArea td div.category dd ul { display:inline-block; }
+/*\*/
+* html div.formArea td div.category dl,
+* html div.formArea td div.category dd ul { height:1%; }
+div.formArea td div.category dl,
+div.formArea td div.category dd ul { display:block; }
+/**/
+
+
+
+
+/* ボタン */
+
+div.formArea p.btn {
+	margin-top: 20px;
+	text-align: center;
+}
+
+div.formArea ul.btn {
+	margin-top: 25px;
+	padding-right: 15px;
+	text-align: center;
+}
+
+div.formArea ul.btn li {
+	display: inline;
+	padding-left: 15px;
+}
+
+div.formArea ul.btn li img,
+div.formArea ul.btn li input {
+	vertical-align: top;
+}
+
+/* 登録内容変更 */
+
+#contents div.formArea p.annotation {
+	margin:0 0 25px 0;
+	padding:0;
+	line-height:1.6;
+	}
+
+#contents div.formArea p.annotation em {
+	font-weight:bold;
+	font-style:normal;
+	}
+
+
+/* recipe/regist用
+----------------------------------------*/
+
+div.registArea h1 {
+	margin-bottom: 25px;
+}
+
+div.registArea h2 {
+	margin-bottom: 25px;
+}
+
+div.registArea div.formArea {
+	margin-left: 93px;
+}
+
+div.registArea div.btmLink {
+	margin-left: 93px;
+}
+
+div.registArea p.annotation {
+	margin:0 0 25px 0;
+	padding:0;
+	line-height:1.6;
+	}
+
+/* 中身が少ない時用にスペース確保用 */
+
+div.registArea div.btmLink_nc {
+	position: relative;
+	width: 653px;
+	padding: 20px 0 35px;
+	margin-left: 93px;
+	margin-bottom:150px;
+}
+
+div.btmLink_nc p.back {
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+
+div.btmLink_nc p.pagetop {
+	clear: none;
+	padding: 0;
+	text-align: right;
+}
+
+
+/* recipe/reminder用
+----------------------------------------*/
+
+div.reminderArea h1 {
+	margin-bottom: 25px;
+}
+
+div.reminderArea h2 {
+	margin-bottom: 25px;
+}
+
+div.reminderArea div.formArea {
+	margin-left: 93px;
+}
+
+div.reminderArea div.btmLink {
+	margin-left: 93px;
+}
+
+div.reminderArea p.annotation {
+	margin:0 0 25px 0;
+	padding:0;
+	line-height:1.6;
+	}
+
+div.reminderArea div.btmLink {
+	position: relative;
+	width: 653px;
+	padding: 20px 0 35px;
+	margin-left: 93px;
+	margin-bottom:200px;
+}
+
+div.reminderArea p.back {
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+
+div.reminderArea p.pagetop {
+	clear: none;
+	padding: 0;
+	text-align: right;
+}
+
+
+/* フォーム */
+
+div.formArea table input.type06 {
+	width: 120px;
+}
+
+div.formArea table input.mgr {
+	margin-right: 25px;
+}
+
+div.formArea table tr td.radio input.mgl {
+	margin-left: 25px;
+}
+
+/* reminder mail address */
+
+div.formArea table input.typeMail {
+	width: 270px;
+}
+
+
+/* 背景エリア */
+
+div.formArea ul.bgArea {
+	margin: 32px 40px 0;
+	padding: 17px 34px 10px;
+	background: #F4F4F4;
+}
+
+div.formArea ul.bgArea li {
+	padding-bottom: 6px;
+}
+
+div.formArea ul.bgArea li a {
+	font-weight: normal;
+}
+
+div.formArea ul.bgArea li a:link,
+div.formArea ul.bgArea li a:visited,
+div.formArea ul.bgArea li a:hover,
+div.formArea ul.bgArea li a:active {
+	color: #633100;
+}
+
+
+/* 利用規約 */
+
+div.formArea div.terms {
+	margin: 25px 40px 0;
+}
+
+div.formArea div.terms iframe {
+	border: 2px solid #C1C1C1;
+}
+* html div.formArea div.terms iframe {
+	width: 574px;
+	border: none;
+}
+
+div.formArea div.terms p {
+	margin-top: 15px;
+	text-align: center;
+}
+
+div.formArea div.terms p input {
+	margin: 0 2px 0 0;
+}
+* html div.formArea div.terms p input {
+	margin: 0 0 -2px 0;
+}
+
+
+/* 登録完了Messege
+----------------------------------------*/
+
+div.formArea dl.fixMess {
+	margin: 0 46px 25px 34px;
+	padding: 22px 0;
+	border: 3px solid #EEE1C5;
+	background: #FCF5E0;
+	text-align: center;
+}
+
+div.formArea dl.fixMess dt {
+	padding: 0 0 15px;
+	font-size: 133%;
+	font-weight: bold;
+}
+
+div.formArea dl.fixMess em {
+	font-weight: bold;
+}
+
+div.formArea dl.fixMess dd {
+	text-align:left;
+	margin:0 0 0 31px;
+	}
+
+/* text center */
+div.formArea dl.fixMess dd.thanks {
+	text-align:center;
+	margin:0;
+	}
+
+div.formArea dl.fixMess dd p.fix  {
+	margin:18px 0 20px 0;
+	color: #F75E22;
+}
+* html div.formArea dl.fixMess dd p.fix {
+	padding: 2px 0;
+	margin:0 0 20px 0;
+}
+
+div.formArea dl.fixMess dd p.post_to  {
+	margin:18px 0 15px 0;
+	color: #F75E22;
+}
+* html div.formArea dl.fixMess dd p.post_to {
+	padding: 2px 0;
+	margin:0 0 15px 0;
+}
+
+div.formArea dl.fixMess dd p img {
+	margin: 0 7px 2px 0;
+}
+* html div.formArea dl.fixMess dd p img {
+	margin: 0 7px 0 0;
+}
+
+div.formArea p.fixMessTxt {
+	margin-bottom: 10px;
+	color: #F75E22;
+}
+
+div.formArea p.fixMessTxt img {
+	margin-right: 7px;
+}
+
+
+
+
+
+/* event/school/asahi_form 用
+----------------------------------------*/
+
+/* event form */
+
+div.eventForm div.formArea table th {
+	vertical-align: middle;
+}
+
+
+/* 希望時間・場所 */
+
+
+div.formArea table td.hope {
+	padding: 21px 0 17px 40px;
+}
+
+div.formArea table td.hope table {
+	width: 360px;
+	background: none;
+}
+
+div.formArea table td.hope table td {
+	width: 50%;
+	padding: 0;
+	background: none;
+}
+
+
+/* フォーム */
+
+div.formArea table input.type07 {
+	width: 150px;
+}
+
+div.formArea table input.type08 {
+	width: 280px;
+}
+
+div.formArea table td.addressFrom input.type08 {
+	margin-top: 8px;
+}
+
+div.formArea table input.type09 {
+	width: 86px;
+}
+
+div.formArea table input.type10 {
+	width: 60px;
+}
+
+
+/* 入力フォーム02
+----------------------------------------*/
+
+div.formArea div.tblAreaSingle {
+	border-bottom: 1px solid #E7CBAE;
+}
+
+div.formArea div.tblAreaSingle table {
+	width: 653px;
+	background: #FCF5E0;
+}
+
+div.formArea div.tblAreaSingle table td {
+	padding: 15px 35px 17px 40px;
+	background: url(../images/line_form.gif) repeat-x;
+	text-align: left;
+	vertical-align: top;
+}
+
+div.formArea div.tblAreaSingle table tr.top td {
+	padding-top: 15px;
+	background: url(../images/line_form_tp.gif) repeat-x;
+}
+
+div.formArea div.tblAreaSingle table p {
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+
+
+/* event/college/hama_form 用
+----------------------------------------*/
+
+div.formArea ul.collegeTxt {
+	margin-bottom: 25px;
+	padding: 10px 15px;
+	background: #FDF7E4;
+}
+
+div.formArea table td.addressFrom {
+	padding: 21px 15px 17px 40px;
+}
+
+/* フォーム */
+
+div.formArea table input.type11 {
+	width: 67px;
+}
+
+
+/*
+=========================5：recipe/login=========================
+*/
+
+div.loginArea {
+	margin-left: 15px;
+}
+
+#contents div.loginArea h2 {
+	margin-left: 0;
+}
+
+
+/* 会員登録 ログイン
+----------------------------------------*/
+
+div.loginTop {
+	position: relative;
+	width: 653px;
+	min-height: 152px;
+	margin: 0 0 25px 0;
+	padding-top: 15px;
+	background: url(../../recipe/images/login_bg_top.gif) no-repeat;
+}
+* html div.loginTop {
+	height: 152px;
+}
+
+#contents div.loginArea div.loginTop h2 {
+	margin-left: 15px;
+}
+
+div.loginTop div.sign {
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 316px;
+}
+
+div.loginTop div.sign p {
+	margin: 10px 15px 0;
+}
+
+div.loginTop div.sign p.btn {
+	text-align: right;
+}
+
+div.loginTop div.loginBox {
+	width: 316px;
+	margin-left: 337px;
+	background: url(../../recipe/images/login_bg_loginBox_rp.gif) repeat-y;
+}
+
+div.loginTop div.loginBox h2 {
+	padding-bottom: 7px;
+}
+
+div.loginTop div.loginBox p {
+	padding: 0 15px 4px;
+	color: #F75E22;
+}
+
+div.loginTop div.loginBox div.tblArea {
+	height: 80px;
+	margin: 3px 0 0 15px;
+	background: url(../../recipe/images/login_bg_logintbl.gif) no-repeat;
+}
+
+div.loginTop div.loginBox table {
+	width: 286px;
+	margin-top: 7px;
+}
+
+div.loginTop div.loginBox table th {
+	width: 116px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+div.loginTop div.loginBox table td {
+	padding: 5px 7px;
+}
+
+div.loginTop div.loginBox table td input {
+	width: 120px;
+	padding: 2px 0;
+	border: 1px solid #A5ACB2;
+}
+
+div.loginTop div.loginBox div.btn {
+	position: relative;
+	width: 316px;
+	margin-top: 15px;
+	background: url(../../recipe/images/login_bg_loginBox_bt.gif) no-repeat left bottom;
+}
+
+div.loginTop div.loginBox div.btn p {
+	padding: 0 15px 17px;
+}
+
+div.loginTop div.loginBox div.btn p.right {
+	position: absolute;
+	top: -5px;
+	right: 0;
+	margin: 0;
+}
+
+
+/* レシピの投稿について
+----------------------------------------*/
+
+div.recipeStep {
+	width: 653px;
+	margin-top: 17px;
+	background: url(../../recipe/images/login_bg_step.gif) repeat-y;
+}
+div.recipeStep:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+div.recipeStep { display:inline-block; }
+/*\*/
+* html div.recipeStep { height:1%; }
+div.recipeStep { display:block; }
+/**/
+
+div.recipeStep dl {
+	float: left;
+	width: 205px;
+	margin-right: 19px;
+	font-size: 86%;
+	line-height: 1.4;
+}
+
+div.recipeStep dl.nomgr {
+	margin-right: 0;
+}
+
+div.recipeStep dl dt {
+	width: 205px;
+	background: #FFFFFF;
+}
+
+div.recipeStep dl dd {
+	padding: 11px 9px 13px 13px;
+}
+
+div.recipeStep dl dd img {
+	margin-top: 12px;
+}
+
+div.loginArea p.stepArw {
+	margin: 15px 0 10px;
+	text-align: center;
+}
+
+div.loginArea p.btnCenter {
+	margin: 20px 0 35px 0;
+	text-align: center;
+}
+
+
+/* プレゼント
+----------------------------------------*/
+
+div.loginArea div.present {
+	width: 653px;
+	background: url(../../recipe/images/login_bg_present.jpg) no-repeat;
+}
+
+#contents div.loginArea div.present h2 {
+	padding: 15px 15px 0;
+}
+
+div.loginArea div.present p {
+	padding: 18px 15px 0;
+}
+
+div.loginArea div.present div.presentBox {
+	position: relative;
+	width: 625px;
+	height: 143px;
+	margin: 25px 0 0 15px;
+	background: url(../../recipe/images/login_bg_presentbox.gif) no-repeat;
+}
+
+div.loginArea div.present div.presentBox p.pasta01 {
+	position: absolute;
+	top: 15px;
+	left: 19px;
+	padding: 0;
+}
+
+div.loginArea div.present div.presentBox p.pasta02 {
+	position: absolute;
+	top: 15px;
+	left: 330px;
+	padding: 0;
+}
+
+div.loginArea div.present div.presentBox p.txt {
+	position: absolute;
+	top: 106px;
+	left: 201px;
+	padding: 0;
+}
+
+div.loginArea div.present dl {
+	margin: 0 5px 0 15px;
+}
+
+div.loginArea div.present dl dt {
+	margin: 30px 0 7px;
+	color: #F78B22;
+	font-weight: bold;
+}
+
+div.loginArea div.present dl dt.top {
+	margin-top: 20px;
+}
+
+div.loginArea div.present dd table {
+	width: 623px;
+	margin-top: 7px;
+	border-top: 1px solid #BDBDBD;
+	border-right: 1px solid #BDBDBD;
+}
+
+div.loginArea div.present dd table th,
+div.loginArea div.present dd table td {
+	padding: 4px;
+	border-bottom: 1px solid #BDBDBD;
+	border-left: 1px solid #BDBDBD;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: normal;
+}
+
+div.loginArea div.present dd table th {
+	background: #FDEEC0;
+}
+
+div.loginArea div.present dd table tr.head th {
+	background: #FDF7E4;
+}
+
+div.loginArea div.present dd table tr.head th.bg {
+	background: #FFFFFF;
+}
+
+
+/*
+=========================6：recipe/recipelist_month=========================
+*/
+
+
+/*  今月の特集 バックナンバー
+----------------------------------------*/
+
+dl.monthBackNumber {
+	width: 657px;
+	margin: 35px 0 30px 15px;
+	background: url(../../recipe/images/month_bg_rp.gif) repeat-y;
+}
+* html dl.monthBackNumber {
+	margin: 10px 0 30px 15px;
+}
+*:first-child+html dl.monthBackNumber {
+	margin: 10px 0 30px 15px;
+}
+
+dl.monthBackNumber dd {
+	padding: 0 19px 20px 15px;
+	background: url(../../recipe/images/month_bg_bt.gif) no-repeat left bottom;
+}
+
+dl.monthBackNumber dd div.tblArea {
+	padding: 9px 15px;
+	background: #FDF7E4;
+}
+
+dl.monthBackNumber dd div.tblArea table {
+	width: 593px;
+	background: url(../../recipe/images/month_bg_dot.gif) repeat-y;
+}
+
+dl.monthBackNumber dd div.tblArea table th,
+dl.monthBackNumber dd div.tblArea table td {
+	padding: 9px 0;
+	background: url(../images/line_dot_brown.gif) repeat-x;
+}
+
+dl.monthBackNumber dd div.tblArea table tr.noline th,
+dl.monthBackNumber dd div.tblArea table tr.noline td {
+	padding-top: 0;
+	background: none;
+}
+
+dl.monthBackNumber dd div.tblArea table tr.btm th,
+dl.monthBackNumber dd div.tblArea table tr.btm td {
+	padding-bottom: 0;
+}
+
+dl.monthBackNumber dd div.tblArea table th {
+	width: 72px;
+	color: #78A614;
+}
+
+dl.monthBackNumber dd div.tblArea table td {
+	width: 209px;
+}
+
+dl.monthBackNumber dd div.tblArea table td a {
+	padding-left: 8px;
+	background: url(../images/icon_arw01.gif) no-repeat 0 0.3em;
+}
+
+dl.monthBackNumber dd div.tblArea table td a:link,
+dl.monthBackNumber dd div.tblArea table td a:visited,
+dl.monthBackNumber dd div.tblArea table td a:hover,
+dl.monthBackNumber dd div.tblArea table td a:active {
+	color: #633100;
+	font-weight: normal;
+}
+
+dl.monthBackNumber dd div.tblArea table td.left {
+	padding-right: 31px;
+}
+
+
+/*
+=========================7：recipe/recipelist_person=========================
+*/
+
+div.recipePersonArea {
+	width: 653px;
+	margin-left: 15px;
+	padding-bottom: 23px;
+}
+
+div.recipePersonArea p.bgTitle {
+	margin-bottom: 22px;
+}
+
+div.recipePersonArea div.personBox {
+	position: relative;
+	width: 653px;
+	padding-bottom: 15px;
+	margin-bottom: 12px;
+	background: url(../images/line_dot_gray02.gif) repeat-x left bottom;
+}
+
+div.recipePersonArea div.personBox p.photo {
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 120px;
+	text-align: center;
+}
+
+div.recipePersonArea div.personBox dl.txt {
+	width: 325px;
+	min-height: 94px;
+	margin-left: 135px;
+}
+* html div.recipePersonArea div.personBox dl.txt {
+	height: 94px;
+}
+
+div.recipePersonArea div.personBox dl.txt dt {
+	padding-left: 18px;
+	background: url(../images/icon_arw02.gif) no-repeat 0 0.2em;
+	font-size: 117%;
+	font-weight: bold;
+}
+
+div.recipePersonArea div.personBox dl.txt dd {
+	margin-top: 5px;
+}
+
+div.recipePersonArea div.personBox dl.txt dd p {
+	margin-top: 5px;
+}
+
+div.recipePersonArea div.personBox p.btn {
+	position: absolute;
+	bottom: 8px;
+	right: 0;
+}
+
+div.recipePersonArea div.personBox dl.popularity {
+	position: absolute;
+	top: 1px;
+	right: 0;
+	text-align: right;
+	font-size: 0;
+}
+
+div.recipePersonArea div.personBox dl.popularity dt,
+div.recipePersonArea div.personBox dl.popularity dd {
+	display: inline;
+}
+
+
+
+
+/*
+=========================8：recipe/detail_society,detail_people=========================
+*/
+
+div.detailArea {
+	position: relative;
+	width: 653px;
+	margin-left: 15px;
+}
+
+
+
+/*  タイトル
+----------------------------------------*/
+
+div.detailArea div.detailTitle {
+	position: relative;
+	width: 478px;
+	margin-top: -13px;
+	min-height: 30px;
+	background: url(../images/line_dot_brown02.gif) repeat-x left bottom;
+}
+* html div.detailArea div.detailTitle {
+	height: 30px;
+}
+div.detailArea div.detailTitle:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+div.detailArea div.detailTitle { display:inline-block; }
+/*\*/
+* html div.detailArea div.detailTitle { height:1%; }
+div.detailArea div.detailTitle { display:block; }
+/**/
+
+div.detailArea div.detailTitle p {
+	float: left;
+	width: 45px;
+}
+
+#contents div.detailArea div.detailTitle h2 {
+	float: left;
+	width: 305px;
+	padding: 0 0 6px 0;
+	margin: 13px 0 0 0;
+	color: #E77C14;
+	font-size: 133%;
+	font-weight: bold;
+}
+
+div.detailArea div.detailTitle dl {
+	float: right;
+	margin-top: 16px;
+	text-align: right;
+	font-size: 0;
+}
+
+div.detailArea div.detailTitle dl dt,
+div.detailArea div.detailTitle dl dd {
+	display: inline;
+}
+
+
+/*  概要
+----------------------------------------*/
+
+div.detailArea div.summary {
+	position: relative;
+	width: 478px;
+	min-height: 42px;
+	margin-top: 7px;
+}
+* html div.detailArea div.summary {
+	height: 42px;
+}
+
+div.detailArea div.summary p {
+	padding-right: 105px;
+}
+
+#mainArea div.detailArea div.summary p.arw a {
+	font-weight: bold;
+}
+
+div.detailArea div.summary ul {
+	position: absolute;
+	top: 3px;
+	right: 0;
+	width: 100px;
+	font-size: 0;
+	text-align: right;
+}
+
+div.detailArea div.summary ul li {
+	display: inline;
+}
+* html div.detailArea div.summary ul li {
+	margin-right: -1px;
+}
+
+div.detailArea div.summary ul li img {
+	margin: 0 0 3px 3px;
+}
+
+
+/*  ボタン
+----------------------------------------*/
+
+div.detailArea ul.detailBtn {
+	position: absolute;
+	top: 13px;
+	left: 492px;
+}
+* html div.detailArea ul.detailBtn {
+	position: absolute;
+	top: 0;
+	left: 492px;
+}
+*:first-child+html div.detailArea ul.detailBtn {
+	position: absolute;
+	top: 0;
+	left: 492px;
+}
+
+div.detailArea ul.detailBtn li {
+	margin-bottom: 5px;
+}
+
+
+/*  レシピ
+----------------------------------------*/
+
+div.detailArea div.recipeArea {
+	width: 653px;
+	margin-bottom: 20px;
+	padding-top: 6px;
+}
+div.detailArea div.recipeArea:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+div.detailArea div.recipeArea { display:inline-block; }
+/*\*/
+* html div.detailArea div.recipeArea { height:1%; }
+div.detailArea div.recipeArea { display:block; }
+/**/
+
+
+/* 写真 */
+
+div.detailArea div.recipeArea div.photo {
+	float: left;
+	width: 340px;
+	text-align: center;
+}
+
+div.detailArea div.recipeArea div.photo p.type01 {
+	width: 214px;
+	height: 305px;
+	margin: 0 auto;
+	padding-top: 15px;
+	background: url(../../recipe/images/detail_bg_photo01.gif) no-repeat;
+	text-align: left;
+}
+
+div.detailArea div.recipeArea div.photo p.type01 img {
+	display: block;
+	margin: 0 10px 0 6px;
+}
+
+div.detailArea div.recipeArea div.photo div.type02 {
+	position: relative;
+	width: 340px;
+	margin: 9px auto 0;
+}
+
+div.detailArea div.recipeArea div.photo div.type02 p img {
+	display: block;
+	margin: 0 auto;
+	padding: 5px 5px 20px;
+	border: 1px solid #D5D5D5;
+}
+
+div.detailArea div.recipeArea div.photo div.type02 p.pin {
+	position: absolute;
+	top: -9px;
+	left: 157px;
+}
+
+div.detailArea div.recipeArea div.photo div.type02 p.pin img {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+
+/* 材料 */
+
+div.detailArea div.recipeArea div.txt {
+	float: right;
+	width: 298px;
+	margin-top: 9px;
+}
+
+div.detailArea div.recipeArea div.txt h3 {
+	position: relative;
+	width: 298px;
+	margin-bottom: 5px;
+}
+
+div.detailArea div.recipeArea div.txt h3 span {
+	position: absolute;
+	top: 0;
+	left: 82px;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 28px;
+}
+
+div.detailArea div.recipeArea div.txt p.energy {
+	padding-bottom: 7px;
+	text-align: right;
+	font-size: 86%;
+	background: url(../images/line_dot_gray02.gif) repeat-x left bottom;
+	color: #F78B22;
+}
+
+div.detailArea div.recipeArea div.txt p.energy em {
+	font-weight: bold;
+}
+
+div.detailArea div.recipeArea div.txt table {
+	width: 298px;
+}
+
+div.detailArea div.recipeArea div.txt table th,
+div.detailArea div.recipeArea div.txt table td {
+	padding: 3px 0;
+	background: url(../images/line_dot_gray02.gif) repeat-x left bottom;
+	text-align: left;
+ 	vertical-align: top;
+	font-weight: normal;
+}
+
+div.detailArea div.recipeArea div.txt table th {
+	padding: 3px 0px 3px 16px;
+}
+
+* html div.detailArea div.recipeArea div.txt table th.icon {
+	padding: 6px 0px 3px 16px;
+}
+
+div.detailArea div.recipeArea div.txt table th.icon img {
+	margin: 0 0 2px 5px;
+}
+
+div.detailArea div.recipeArea div.txt table td {
+	padding-right: 16px;
+	text-align: right;
+}
+
+div.detailArea div.recipeArea div.txt table a {
+	font-weight: normal;
+}
+
+div.detailArea div.recipeArea div.txt table a:link,
+div.detailArea div.recipeArea div.txt table a:visited,
+div.detailArea div.recipeArea div.txt table a:hover,
+div.detailArea div.recipeArea div.txt table a:active {
+	color: #633100;
+}
+
+div.detailArea div.recipeArea div.txt div.bgTbl {
+	margin-top: 20px;
+	padding: 7px 16px;
+	background: #FCF4EC;
+}
+
+div.detailArea div.recipeArea div.txt div.bgTbl p {
+	padding-bottom: 4px;
+	color: #A16D34;
+	font-weight: bold;
+}
+
+div.detailArea div.recipeArea div.txt div.bgTbl {
+}
+
+div.detailArea div.recipeArea div.txt div.bgTbl table {
+	width: 267px;
+}
+div.detailArea div.recipeArea div.txt div.bgTbl table th,
+div.detailArea div.recipeArea div.txt div.bgTbl table td {
+	background: url(../images/line_dot_brown.gif) repeat-x left top;
+}
+
+/*  作り方
+----------------------------------------*/
+
+div.detailArea ul.make {
+	margin: 7px 0 25px;
+}
+
+div.detailArea ul.make li {
+	position: relative;
+	padding: 10px 20px 10px 52px;
+	background: url(../images/line_dot_gray02.gif) repeat-x left bottom;
+}
+
+div.detailArea ul.make li span {
+	display: block;
+	position: absolute;
+	top: 7px;
+	left: 24px;
+	color: #A88461;
+	font-weight: bold;
+	font-size: 150%;
+}
+* html div.detailArea ul.make li span {
+	top: 4px;
+	left: -28px;
+}
+
+
+/*  アドバイス
+----------------------------------------*/
+
+div.detailArea div.advice {
+	margin: 17px 15px 40px;
+}
+
+div.detailArea div.advice p.btn {
+	margin-top: 32px;
+	text-align: center;
+}
+
+
+/*  印刷用
+----------------------------------------*/
+
+#detailPrint {
+	padding-bottom: 0;
+	background: none;
+}
+
+#printPage {
+	width: 683px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#printPage #header {
+	position: relative;
+	width: 683px;
+	margin: 0;
+	background: none;
+	border-bottom: 4px solid #F78B22;
+}
+
+
+#printPage #header strong {
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	width: 134px;
+}
+
+#printPage #header p {
+	width: auto;
+	margin-left: 160px;
+	padding: 22px 0;
+}
+
+#printPage #contents {
+	float: none;
+	width: 683px;
+	padding-top: 11px;
+	border-top: 1px solid #E07813;
+}
+
+#printPage div.detailArea div.detailTitle {
+	position: relative;
+	width: 653px;
+}
+
+#printPage div.detailArea div.summary {
+	position: relative;
+	width: 653px;
+}
+
+#printPage p.arw {
+	padding-left: 8px;
+	background: url(../images/icon_arw01.gif) no-repeat 0 0.5em;
+	color: #F78B22;
+}
+
+#printPage p.arw a:link,
+#printPage p.arw a:visited,
+#printPage p.arw a:hover,
+#printPage p.arw a:active {
+	color: #F78B22;
+	font-weight: normal;
+}
+
+#printPage #contents div.advice {
+	margin-bottom: 31px;
+}
+
+#printPage #contents p.closeBtn {
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+#printPage #footer {
+	width: 683px;
+	background: none;
+}
+
+#printPage div.footerLine {
+	width: 683px;
+	margin: 0;
+	padding: 15px 0 17px;
+	border-top: 3px solid #FBC590;
+}
+
+#printPage #footer address {
+	margin: 10px 5px 0 0;
+	text-align: right;
+	color: #935D28;
+}
+
+/*
+=========================9：recipe/mymenu/delete_check=========================
+*/
+
+
+/*  エラーメッセージ
+----------------------------------------*/
+
+div.formArea dl.error dt em {
+	color: #F75E22;
+}
+
+
+/*  レシピタイトル
+----------------------------------------*/
+
+div.detailArea div.deleteTitle {
+	min-height: 30px;
+	background: url(../images/line_dot_brown02.gif) repeat-x left bottom;
+}
+* html div.detailArea div.deleteTitle {
+	height: 30px;
+}
+
+#contents div.detailArea div.deleteTitle h2 {
+	width: 290px;
+	margin-left: 0;
+	padding: 0 0 6px 0;
+	color: #E77C14;
+	font-size: 133%;
+	font-weight: bold;
+}
+
+
+/*  削除ボタン
+----------------------------------------*/
+
+div.detailArea p.delBtn {
+	padding-top: 26px;
+	background: url(../images/line_dot_gray.gif) repeat-x;
+	text-align: center;
+}
+
+/*  投稿ボタン
+----------------------------------------*/
+
+div.detailArea div.postRecipeBtn {
+	padding-top: 26px;
+	background: url(../images/line_dot_gray.gif) repeat-x;
+	}
+
+div.detailArea div.postRecipeBtn ul {
+	width:245px;
+	margin:0 auto;
+	}
+
+div.detailArea div.postRecipeBtn ul li {
+	float:left;
+	margin:0 45px 0 0;
+	padding:0;
+	}
+
+div.detailArea div.postRecipeBtn ul li.draft {
+	margin:0;
+	}
+
+
+div.detailArea p.postBtn {
+	padding-top: 22px;
+	text-align: center;
+}
+
+
+/*
+=========================14：recipe/mymenu/mypage_recipelist=========================
+*/
+
+div.recipeListArea {
+	width: 653px;
+	margin-left: 15px;
+	padding-bottom: 23px;
+}
+
+div.recipeListArea p.bgTitle {
+	margin-bottom: 22px;
+}
+
+div.recipeListArea div.personBox {
+	position: relative;
+	width: 653px;
+	padding-bottom: 15px;
+	margin-bottom: 12px;
+	background: url(../images/line_dot_gray02.gif) repeat-x left bottom;
+}
+
+div.recipeListArea div.personBox p.photo {
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 120px;
+	text-align: center;
+}
+
+div.recipeListArea div.personBox dl.txt {
+	width: 325px;
+	min-height: 94px;
+	margin-left: 135px;
+}
+* html div.recipeListArea div.personBox dl.txt {
+	height: 94px;
+}
+
+div.recipeListArea div.personBox dl.txt dt {
+	padding-left: 18px;
+	background: url(../images/icon_arw02.gif) no-repeat 0 0.2em;
+	font-size: 117%;
+	font-weight: bold;
+}
+
+div.recipeListArea div.personBox dl.txt dd {
+	margin-top: 5px;
+}
+
+div.recipeListArea div.personBox dl.txt dd p {
+	margin-top: 5px;
+}
+
+div.recipeListArea div.personBox dl.txt dd.condition {
+	margin-top: 8px;
+}
+
+div.recipeListArea div.personBox p.btn {
+	position: absolute;
+	bottom: 8px;
+	right: 0;
+}
+
+div.recipeListArea div.personBox dl.popularity {
+	position: absolute;
+	top: 1px;
+	right: 0;
+	text-align: right;
+	font-size: 0;
+}
+
+div.recipeListArea div.personBox dl.popularity dt,
+div.recipeListArea div.personBox dl.popularity dd {
+	display: inline;
+}
+
+div.recipeListArea div.personBox p.registrant {
+	width:114px;
+	font-size:85%;
+	position: absolute;
+	top: 25px;
+	right: 0;
+	color:#f75e22;
+}
+
+div.recipeListArea div.personBox p.registrant em {
+	font-style:normal;
+	font-weight:bold;
+	}
+
+/* favorite */
+
+div.recipeListArea div.favoriteBox {
+	position: relative;
+	width: 653px;
+	padding-bottom: 15px;
+	margin-bottom: 12px;
+	background: url(../images/line_dot_gray02.gif) repeat-x left bottom;
+}
+
+div.recipeListArea div.favoriteBox p.photo {
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 120px;
+	text-align: center;
+}
+
+div.recipeListArea div.favoriteBox dl.txt {
+	width: 325px;
+	min-height: 70px;
+	margin-left: 135px;
+	_height:70px;
+}
+
+div.recipeListArea div.favoriteBox dl.txt dt {
+	padding-left: 18px;
+	background: url(../images/icon_arw02.gif) no-repeat 0 0.2em;
+	font-size: 117%;
+	font-weight: bold;
+}
+
+div.recipeListArea div.favoriteBox dl.txt dd {
+	margin-top: 5px;
+}
+
+div.recipeListArea div.favoriteBox dl.txt dd p {
+	margin-top: 5px;
+}
+
+div.recipeListArea div.favoriteBox p.btn {
+	position: absolute;
+	bottom: 8px;
+	right: 0;
+}
+
+div.recipeListArea div.favoriteBox dl.popularity {
+	position: absolute;
+	top: 1px;
+	right: 0;
+	text-align: right;
+	font-size: 0;
+}
+
+div.recipeListArea div.favoriteBox dl.popularity dt,
+div.recipeListArea div.favoriteBox dl.popularity dd {
+	display: inline;
+}
+
+div.recipeListArea div.favoriteBox p.registrant {
+	width:114px;
+	font-size:85%;
+	position: absolute;
+	top: 25px;
+	right: 0;
+	color:#f75e22;
+}
+
+div.recipeListArea div.favoriteBox p.registrant em {
+	font-style:normal;
+	font-weight:bold;
+	}
+
+div.recipeListArea div.favoriteBox p.icon {
+	width: 325px;
+	min-height: 25px;
+	margin-left: 135px;
+}
+
+
+/*
+=========================10：event/=========================
+*/
+
+div.eventArea {
+	width: 657px;
+	margin-left: 15px;
+}
+
+
+/*  タイトル
+----------------------------------------*/
+
+#contents div.eventArea h2 {
+	margin-left: 0;
+}
+
+#contents div.eventArea h2.eventTitle {
+	margin: 0 4px 15px 0;
+	background: #FDE8C3 url(../images/bg_event_title_bt.gif) repeat-y;
+}
+
+div.eventArea strong {
+	display: block;
+	margin-bottom: 15px;
+}
+
+div.eventArea h3 {
+	margin: 25px 0 10px;
+}
+
+
+/*  背景ボックス
+----------------------------------------*/
+
+div.eventArea div.bgArea,
+div.formArea div.bgAreaForm {
+	margin-bottom: 35px;
+	padding: 12px 0;
+	background: #FDF7E4;
+}
+
+div.eventArea div.bgArea ul,
+div.formArea div.bgAreaForm ul {
+	padding: 0 15px;
+}
+
+div.eventArea div.bgArea ul li,
+div.formArea div.bgAreaForm ul li {
+	padding-left: 13px;
+	background: url(../images/icon_dot_brown.gif) no-repeat 0 0.4em;
+}
+
+div.eventArea div.bgArea p.attention,
+div.formArea div.bgAreaForm p.attention {
+	margin-top: 8px;
+	padding: 0 15px;
+	color: #F75E22;
+}
+
+/* == 強調 090608 */
+div.eventArea div.bgArea ul li em {
+	background-color: #FFFF66;
+	font-weight: bold;
+}
+
+
+/*  イベントテーブル
+----------------------------------------*/
+
+div.eventTbl {
+	width: 653px;
+	margin-top: 11px;
+}
+
+div.eventTbl table {
+	width: 653px;
+	border-top: 1px solid #FFB165;
+	border-right: 1px solid #FFB165;
+}
+
+div.eventTbl table.mgb {
+	margin-bottom: 45px;
+}
+
+div.eventTbl table th,
+div.eventTbl table td {
+	border-bottom: 1px solid #FFB165;
+	border-left: 1px solid #FFB165;
+	text-align: left;
+	vertical-align: top;
+}
+
+div.eventTbl table th {
+	width: 75px;
+	padding: 4px 14px;
+	background: #FDF7E4;
+	vertical-align: middle;
+	color: #F78B22;
+	font-weight: bold;
+}
+
+div.eventTbl table td {
+	padding: 4px 8px;
+}
+
+div.eventTbl table td em {
+	display: block;
+	font-weight: bold;
+}
+
+div.eventTbl p.detailBtn {
+	margin: 10px 0 25px;
+	text-align: right;
+}
+
+div.eventTbl table td span.finish {
+	padding-left: 15px;
+	color: #F75E22;
+	font-weight: bold;
+}
+
+div.eventTbl table td span.finish_nomargin {
+	color: #F75E22;
+	font-weight: bold;
+}
+
+
+div.eventTbl table td blockquote {
+	margin:10px 0 0 0;
+	display: block;
+	font-weight: normal;
+}
+
+
+div.eventTbl table td ul.spc {
+	margin: 8px 0;
+}
+
+div.eventTbl table td ul li {
+	padding-left: 0.8em;
+	text-indent: -0.8em;
+}
+
+
+/*  講習メニュー
+----------------------------------------*/
+
+div.menuBox {
+	width: 657px;
+	background: url(../images/bg_menu_rp.gif) repeat-y;
+}
+
+div.menuBoxTp {
+	width: 657px;
+	background: url(../images/bg_menu_tp.gif) no-repeat;
+}
+
+div.menuBoxBt {
+	width: 657px;
+	padding-bottom: 8px;
+	background: url(../images/bg_menu_bt.gif) no-repeat left bottom;
+}
+
+div.menuBox ul.menuList {
+	margin: 0 15px;
+}
+
+div.menuBox ul.menuList li {
+	padding: 11px 20px;
+	text-indent: -10px;
+	background: url(../images/line_dot_orange.gif) repeat-x left bottom;
+}
+
+div.menuBox ul.menuList li em,
+em.ttl {
+	color: #AB7841;
+	font-weight: bold;
+}
+
+div.menuBox div.imgBox {
+	width: 623px;
+	margin: 10px 15px 0;
+}
+
+
+div.menuBox div.imgBox:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+div.menuBox div.imgBox { display:inline-block; }
+/*\*/
+* html div.menuBox div.imgBox { height:1%; }
+div.menuBox div.imgBox { display:block; }
+/**/
+
+div.menuBox div.imgBox div.txt {
+	float: right;
+	width: 312px;
+}
+div.menuBox div.imgBox div.widthKofu{
+	width: 422px;
+}
+div.menuBox div.imgBox ul {
+	padding-left: 0.8em;
+	text-indent: -0.8em;
+	padding-bottom: 10px;
+}
+
+div.menuBox div.imgBox div.txt ul {
+	margin-top: 18px;
+}
+
+div.menuBox div.imgBox p.photo {
+	float: left;
+	width: 300px;
+}
+
+
+/*  募集要項
+----------------------------------------*/
+
+div.recruitArea {
+	margin-bottom: 35px;
+}
+
+div.recruitArea p {
+	padding: 0 15px;
+}
+
+div.recruitArea p.btn {
+	margin-top: 21px;
+	text-align: center;
+}
+
+div.recruitTbl {
+	width: 653px;
+	margin-bottom: 11px;
+	background: url(../images/bg_recruit_tbl_rp.gif) repeat-y;
+}
+
+div.recruitTbl table {
+	width: 653px;
+	background: url(../images/line_dot_brown.gif) repeat-x left bottom;
+}
+
+div.recruitTbl table th,
+div.recruitTbl table td {
+	background: url(../images/line_dot_brown.gif) repeat-x;
+	text-align: left;
+	vertical-align: top;
+	font-weight: normal;
+}
+
+div.recruitTbl table th {
+	width: 73px;
+	padding: 4px 10px 4px 15px;
+}
+
+div.recruitTbl table td {
+	padding: 4px 8px;
+}
+
+div.recruitTbl table td span.finish {
+	padding-left: 15px;
+	color: #F75E22;
+	font-weight: bold;
+}
+
+
+/*  講師プロフィール
+----------------------------------------*/
+
+div.profileBox,
+div.profileBox02 {
+	width: 653px;
+	margin-top: 17px;
+}
+div.profileBox:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+div.profileBox { display:inline-block; }
+/*\*/
+* html div.profileBox { height:1%; }
+div.profileBox { display:block; }
+/**/
+
+div.profileBox dl {
+	float: left;
+	width: 460px;
+}
+
+div.profileBox dt,
+div.profileBox02 dt {
+	margin-left: 15px;
+	font-weight: bold;
+}
+
+div.profileBox dd ,
+div.profileBox02 dd {
+	margin-left: 15px;
+}
+
+div.profileBox dd p,
+div.profileBox02 dd p {
+	margin-top: 18px;
+}
+
+div.profileBox p.photo {
+	float: right;
+	width: 179px;
+	margin-top: 3px;
+}
+
+div.profileBox ul,
+div.profileBox02 ul {
+	margin: 0 15px;
+}
+
+div.profileBox ul li,
+div.profileBox02 ul li {
+	margin-bottom: 11px;
+	padding-top: 11px;
+	background: url(../images/line_dot_brown.gif) repeat-x;
+}
+
+div.profileBox ul li.top,
+div.profileBox02 ul li.top {
+	padding-top: 0;
+	background: none;
+}
+
+div.profileBox ul li em,
+div.profileBox02 ul li em {
+	display: block;
+	margin-bottom: 18px;
+	font-weight: bold;
+}
+
+div.profileBox p.inquiry,
+div.profileBox02 p.inquiry {
+	margin-top: 32px;
+	padding: 12px 15px;
+	background: #F1F1F1;
+	color: #646464;
+}
+
+div.profileBox p.inquiry em,
+div.profileBox02 p.inquiry em {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+
+.profileBox span.indent {
+	text-indent: -1em;
+	display: block;
+	padding-left: 1em;
+}
+
+
+/*  school/index
+----------------------------------------*/
+
+div.eventArea dl.schoolTop {
+	width: 653px;
+	min-height: 288px;
+	margin-bottom: 25px;
+	background: url(../../event/school/images/index_bg_catch.jpg) no-repeat right top;
+}
+* html div.eventArea dl.schoolTop {
+	height: 288px;
+}
+
+div.eventArea dl.schoolTop dd {
+	width: 433px;
+	padding-top: 27px;
+}
+
+div.eventArea dl.schoolTop div.eventTbl table td span.end_req {
+	margin: 0 0 0 20px;
+	color: #f00;
+	background: #f00;
+}
+
+/* report backnumber 090707追加 */
+div.eventArea div.menuBox h3.repBkTitle {
+	margin: 0 18px 0 15px;
+	padding-top: 10px;
+	padding-bottom: 11px;
+	background: url(../images/line_dot_orange_l.gif) repeat-x 0 100%;
+}
+
+div.eventArea div.menuBox div.repBkList {
+	margin: 10px 18px 12px 15px;
+	background: url(../images/line_dot_brown_v.gif) #fdf7e4 repeat-y 50% 0;
+}
+
+div.eventArea div.repBkListTp {
+	background: url(../images/bg_beige_r_tp.gif) no-repeat 0 0;
+}
+
+div.eventArea div.repBkListBt {
+	background: url(../images/bg_beige_r_bt.gif) no-repeat 0 100%;
+}
+
+div.eventArea div.repBkList dl {
+	float: left;
+	width: 296px;
+	padding: 8px 0;
+}
+
+div.eventArea div.repBkList dt {
+	float: left;
+	width: 90px;
+	padding-left: 15px;
+	font-weight: bold;
+	color: #78a614;
+}
+
+div.eventArea div.repBkList dd {
+	width: 181px;
+	float: right;
+	padding-left: 10px;
+	background: url(../images/icon_arw01.gif) no-repeat 0 6px;
+}
+
+div.eventArea div.repBkList dd img {
+	padding-left: 5px;
+}
+
+div.eventArea div.repBkList div.repBkListLine {
+	margin: 0 15px;
+	background: url(../images/line_dot_brown.gif) repeat-x 0 100%;
+}
+
+div.eventArea div.repBkList div.repBkListLine.last {
+	background: none;
+}
+
+div.eventArea div.repBkList div.repBkListLine:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+div.eventArea div.repBkList div.repBkListLine { display:inline-block; }
+/*\*/
+* html div.eventArea div.repBkList div.repBkListLine { height:1%; }
+div.eventArea div.repBkList div.repBkListLine { display:block; }
+/**/
+
+
+
+/*  kyoudo/index
+----------------------------------------*/
+
+div.eventArea dl.kyoudoTop {
+	width: 653px;
+	min-height: 360px;
+	margin-bottom: 15px;
+	background: url(../../event/kyoudo/images/index_bg_catch.jpg) no-repeat right top;
+}
+* html div.eventArea dl.kyoudoTop {
+	height: 360px;
+}
+
+div.eventArea dl.kyoudoTop dd {
+	width: 436px;
+	/*padding-top: 16px;*/
+	padding-top: 5px;
+}
+
+div.eventArea dl.kyoudoTop dd p {
+	margin: 10px 0 20px;
+}
+
+div.eventArea dl.kyoudoTop dd span {
+	display: block;
+	margin-bottom: 12px;
+}
+
+div.eventArea dl.kyoudoTop dd img {
+	/*margin: 3px 0 12px 0;*/
+	margin: 3px 0 0 0;
+}
+
+
+
+/*  campaign/index
+----------------------------------------*/
+
+div.campaignArea {
+	width: 653px;
+	margin-left: 15px;
+}
+
+#contents div.campaignArea h2 {
+	position: relative;
+	width: 653px;
+	height: 27px;
+	margin-bottom: 12px;
+	margin-left: 0;
+}
+
+div.campaignArea h2 span {
+	height: 23px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	line-height: 23px;
+	background: url(../../event/campaign/images/street_head_bg.gif) no-repeat right top;
+	padding: 0 17px 0 14px;
+	position: absolute;
+	top: 2px;
+	left: 143px;
+}
+
+
+/*  college/index
+----------------------------------------*/
+
+div.eventArea div.collegeTop {
+	width: 653px;
+	min-height: 192px;
+	background: url(../../event/college/images/index_bg_catch.jpg) no-repeat right top;
+}
+* html div.eventArea div.collegeTop {
+	height: 192px;
+}
+
+div.eventArea div.collegeTop p {
+	width: 433px;
+}
+
+div.eventArea div.collegeTop div.bgArea {
+	width: 433px;
+	margin-top: 20px;
+}
+
+div.eventArea div.collegeTop div.bgArea p {
+	width: auto;
+}
+
+
+/*  college/hama
+----------------------------------------*/
+
+div.eventArea div.collegeTxt {
+	padding-top: 7px;
+}
+
+div.eventArea div.collegeTxt p {
+	padding-bottom: 18px;
+}
+
+/*
+=========================11：contest/=========================
+*/
+
+body#contest #contents {
+	color: #333333;
+}
+
+body#contest #contents a:link,
+body#contest #contents a:visited {
+	color: #333333;
+	text-decoration: underline;
+	font-weight: normal;
+}
+body#contest #contents a:hover,
+body#contest #contents a:active {
+	color: #333333;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+div.contest #headArea {
+	position: relative;
+	width: 684px;
+	height: 268px;
+	margin-bottom: 19px;
+	background: url(../../contest/images/index_bg_head.jpg) no-repeat;
+}
+
+#mainArea div.contest #headArea h1 {
+	position: absolute;
+	top: 50px;
+	right: 0;
+	margin: 0;
+}
+
+#mainArea div.contest #headArea p {
+	position: absolute;
+	top: 145px;
+	right: 0;
+	margin: 0;
+}
+
+div.contest #resultArea {
+	width: 683px;
+	margin-bottom: 13px;
+	padding: 5px 0 30px;
+	background: #FFCF92;
+}
+
+div.contest #resultArea div.grandprix {
+	position: relative;
+	width: 665px;
+	margin: 0 0 5px 9px;
+	background: url(../../contest/images/index_bg_prize_rp01.gif) repeat-y;
+}
+
+div.contest #resultArea div.grandprix dl {
+	width: 665px;
+	background: url(../../contest/images/index_bg_prize_tp01.gif) no-repeat left top;
+}
+
+div.contest #resultArea div.grandprix dl dt {
+	padding: 19px 0 20px 95px;
+}
+
+div.contest #resultArea div.grandprix dl dd {
+	position: relative;
+	width: 665px;
+	min-height: 140px;
+	padding-bottom: 10px;
+	background: url(../../contest/images/index_bg_prize_bt01.gif) no-repeat left bottom;
+}
+* html div.contest #resultArea div.grandprix dl dd {
+	height: 140px;
+}
+
+div.contest #resultArea div.grandprix dl dd em {
+	display: block;
+	margin: 0 185px 10px 95px;
+}
+
+div.contest #resultArea div.grandprix dl dd p {
+	margin: 0 185px 0 23px;
+	color: #412E02;
+}
+
+div.contest #resultArea div.grandprix dl dd p span {
+	display: block;
+	margin-top: 2px;
+	text-align: right;
+}
+
+div.contest #resultArea div.grandprix dl dd span.images {
+	position: absolute;
+	top: -59px;
+	right: 11px;
+}
+
+div.contest #resultArea div.department {
+	position: relative;
+	width: 665px;
+	margin-left: 9px;
+	background: url(../../contest/images/index_bg_prize_rp02.gif) repeat-y;
+}
+
+div.contest #resultArea div.departmentIn {
+	width: 665px;
+	padding-bottom: 13px;
+	background: url(../../contest/images/index_bg_prize_bt02.gif) no-repeat left bottom;
+}
+
+div.contest #resultArea div.departmentIn:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+div.contest #resultArea div.departmentIn { display:inline-block; }
+/*\*/
+* html div.contest #resultArea div.departmentIn { height:1%; }
+div.contest #resultArea div.departmentIn { display:block; }
+/**/
+
+div.contest #resultArea div.department dl {
+	float: left;
+	width: 216px;
+}
+
+div.contest #resultArea div.department dl.type01 {
+	margin-right: 9px;
+}
+div.contest #resultArea div.department dl.type02 {
+	margin-right: 8px;
+}
+div.contest #resultArea div.department dl.type03 {
+	margin-right: 0;
+}
+
+div.contest #resultArea div.department dl.type01 dd span.img {
+	display: block;
+	margin-left: 36px;
+}
+div.contest #resultArea div.department dl.type02 dd span.img {
+	display: block;
+	margin-left: 39px;
+}
+div.contest #resultArea div.department dl.type03 dd span.img {
+	display: block;
+	margin-left: 40px;
+}
+
+div.contest #resultArea div.department dl dd em {
+	display: block;
+	text-align: center;
+}
+
+div.contest #resultArea div.department dl dd p {
+	min-height: 170px;
+	margin: 9px 12px 0;
+	color: #533B02;
+}
+* html div.contest #resultArea div.department dl dd p {
+	height: 170px;
+}
+
+div.contest #resultArea div.department dl dd span.btn {
+	display: block;
+	text-align: center;
+}
+
+div.contest #awardArea {
+	width: 662px;
+	margin-bottom: 13px;
+	padding: 12px 0 11px 21px;
+	background: #E0DCDC;
+}
+
+div.contest #awardArea:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+div.contest #awardArea { display:inline-block; }
+/*\*/
+* html div.contest #awardArea { height:1%; }
+div.contest #awardArea { display:block; }
+/**/
+
+div.contest #awardArea p {
+	float: left;
+	margin-right: 7px;
+}
+
+div.contest #applicationArea {
+	position: relative;
+	clear: both;
+	width: 683px;
+	min-height: 256px;
+	margin-bottom: 17px;
+	background: url(../../contest/images/index_bg_aplication.jpg) no-repeat left bottom;
+}
+* html div.contest #applicationArea {
+	height: 256px;
+}
+
+div.contest #applicationArea p {
+	margin: 10px 305px 0 20px;
+	padding-bottom: 10px;
+}
+
+div.contest #applicationArea p span {
+	font-weight: bold;
+}
+
+div.contest #applicationArea span.btn {
+	position: absolute;
+	bottom: 7px;
+	right: 22px;
+	display: block;
+}
+
+div.contest #collectArea {
+	width: 683px;
+	margin-bottom: 22px;
+	background: url(../../contest/images/index_bg_collect_rp.gif) repeat-y;
+}
+
+div.contest #collectAreaIn {
+	width: 683px;
+	background: url(../../contest/images/index_bg_collect_bt.gif) no-repeat left bottom;
+}
+
+div.contest #collectAreaIn:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+div.contest #collectAreaIn { display:inline-block; }
+/*\*/
+* html div.contest #collectAreaIn { height:1%; }
+div.contest #collectAreaIn { display:block; }
+/**/
+
+div.contest #collectArea dl.left {
+	float: left;
+	width: 335px;
+}
+
+div.contest #collectArea dl.right {
+	float: right;
+	width: 335px;
+}
+
+div.contest #collectArea dl.left dd {
+	padding: 10px 9px 0 12px;
+}
+
+div.contest #collectArea dl.right dd {
+	padding: 0 1px 1px 1px;
+}
+
+div.contest #collectArea dl.left dd p {
+	margin-top: 5px;
+	color: #FF0000;
+}
+
+div.contest #collectArea02 {
+	clear: both;
+	width: 683px;
+	margin-bottom: 16px;
+}
+
+div.contest #collectArea02 dl dd {
+	padding: 14px 0 11px 13px;
+	border-left: 1px solid #006600;
+	border-right: 1px solid #006600;
+	border-bottom: 1px solid #006600;
+}
+
+div.contest #collectArea02 dl dd ul {
+	position: relative;
+	width: 655px;
+	height: 404px;
+}
+
+div.contest #collectArea02 dl dd ul li.prize01 {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+div.contest #collectArea02 dl dd ul li.prize02 {
+	position: absolute;
+	top: 190px;
+	left: 0;
+}
+div.contest #collectArea02 dl dd ul li.prize03 {
+	position: absolute;
+	top: 190px;
+	left: 215px;
+}
+div.contest #collectArea02 dl dd ul li.prize04 {
+	position: absolute;
+	top: 190px;
+	left: 435px;
+}
+
+div.contest #flowArea {
+	width: 683px;
+	margin-bottom: 38px;
+}
+
+#mainArea div.contest #flowArea h2 {
+	margin: 0 0 8px 7px;
+	padding: 0;
+}
+
+div.contest #flowArea div.flowBox {
+	width: 665px;
+	margin-left: 18px;
+	background: url(../../contest/images/index_bg_flow_rp.gif) repeat-y;
+}
+
+div.contest #flowArea div.flowBox ul {
+	width: 665px;
+	background: url(../../contest/images/index_bg_flow_bt.gif) no-repeat left bottom;
+}
+
+div.contest #flowArea div.flowBox ul:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+div.contest #flowArea div.flowBox ul { display:inline-block; }
+/*\*/
+* html div.contest #flowArea div.flowBox ul { height:1%; }
+div.contest #flowArea div.flowBox ul { display:block; }
+/**/
+
+div.contest #flowArea div.flowBox ul li {
+	float: left;
+	width: 211px;
+	padding-right: 16px;
+	background: url(../../contest/images/index_bg_flow_arrow.gif) no-repeat right top;
+}
+
+div.contest #flowArea div.flowBox ul li.last {
+	padding-right: 0;
+	background: none;
+}
+
+div.contest #flowArea div.flowBox ul li span {
+	display: block;
+	padding: 12px 12px 15px;
+}
+
+div.contest #flowArea p.attention {
+	clear: both;
+	margin: 10px 0 25px 18px;
+	color: #FF0000;
+}
+
+div.contest #flowArea ul.btn {
+	padding: 12px 0 12px 31px;
+	background: #E7E9E9;
+}
+
+div.contest #flowArea ul.btn:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+div.contest #flowArea ul.btn { display:inline-block; }
+/*\*/
+* html div.contest #flowArea ul.btn { height:1%; }
+div.contest #flowArea ul.btn { display:block; }
+/**/
+
+div.contest #flowArea ul.btn li {
+	float: left;
+}
+
+div.contest #flowArea ul.btn li.sp {
+	margin-right: 20px;
+}
+
+div.contest #outlineArea {
+	clear: both;
+	width: 683px;
+
+	margin-bottom: 28px;
+	background: url(../../contest/images/index_bg_outline_rp.gif) repeat-y;
+}
+
+div.contest #outlineAreaIn {
+	width: 683px;
+	padding-bottom: 10px;
+	background: url(../../contest/images/index_bg_outline_bt.gif) no-repeat left bottom;
+}
+
+div.contest #outlineArea div.outlineList {
+	width: 683px;
+}
+
+div.contest #outlineArea div.outlineList:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+div.contest #outlineArea div.outlineList { display:inline-block; }
+/*\*/
+* html div.contest #outlineArea div.outlineList { height:1%; }
+div.contest #outlineArea div.outlineList { display:block; }
+/**/
+
+div.contest #outlineArea h3 {
+	padding: 5px 18px;
+	background: #053755;
+	color: #FFFFFF;
+	font-weight: normal;
+}
+
+div.contest #outlineArea dl {
+	padding-top: 20px;
+}
+
+div.contest #outlineArea dl.left {
+	float: left;
+	display: inline;
+	width: 318px;
+	margin: 0 23px 0 12px;
+}
+
+div.contest #outlineArea dl.right {
+	float: left;
+	width: 318px;
+}
+
+div.contest #outlineArea dl dt {
+	margin-bottom: 8px;
+	padding: 3px 5px;
+	background: #E7E9E9;
+	font-weight: bold;
+}
+
+div.contest #outlineArea dl dd {
+	padding: 0 5px 8px;
+}
+
+div.contest #outlineArea dl dd ul li {
+	padding-bottom: 13px;
+}
+
+div.contest #outlineArea dl dd ul li.last {
+	padding-bottom: 0;
+}
+
+div.contest #outlineArea dl dd span {
+	display: block;
+	margin-top: 13px;
+}
+
+div.contest p#endTxt {
+	text-align: center;
+}
+
+
+/*
+=========================12：content/pasta_priceup/=========================
+*/
+
+div.content {
+	padding: 5px 0 26px 0px;
+	width: 683px;
+	background: url(../../content/pasta_priceup/images/index_bg_content.gif);
+}
+
+div.content #headArea {
+	position: relative;
+	width: 665px;
+	height: 205px;
+	margin: 0 0 19px 11px;
+	background: url(../../content/pasta_priceup/images/index_img_neagari.jpg) no-repeat;
+}
+
+div.content #headArea h1 {
+	position: absolute;
+	top: 19px;
+	margin: 0;
+	left: 8px;
+}
+
+div.content #headArea p {
+	position: absolute;
+	top: 101px;
+	margin: 0;
+	left: 31px;
+}
+
+
+/*  Q&A
+----------------------------------------*/
+
+div.content #faqArea {
+	width: 670px;
+	margin: 0 0 7px 9px;
+	background: url(../../content/pasta_priceup/images/index_bg_faq_rp.gif) repeat-y;
+}
+
+div.content #faqAreaIn {
+	width: 670px;
+	padding-bottom: 28px;
+	background: url(../../content/pasta_priceup/images/index_bg_faq_bt.gif) no-repeat left bottom;
+}
+
+div.content #faqArea dl.faq {
+	padding: 9px 15px 0 11px;
+	background: url(../../content/pasta_priceup/images/index_bg_faq_tp.gif) no-repeat;
+}
+
+div.content #faqArea dl.faq dt {
+	padding: 10px 0 3px;
+	background: url(../../content/pasta_priceup/images/index_bg_line_dot.gif) repeat-x;
+}
+
+div.content #faqArea dl.faq dt.first {
+	padding-top: 0px;
+	background: none;
+}
+
+div.content #faqArea dl.faq dd {
+	margin: 0 0 10px;
+	padding: 11px 0 0 31px;
+	background: #F9EFD3 url(../../content/pasta_priceup/images/index_icon_answer.gif) no-repeat 8px 7px;
+	color: #333333;
+}
+
+div.content #faqArea dl.faq dd .orange {
+	color: #F84B34;
+	font-weight: bold;
+}
+
+
+/* 回答01 */
+
+div.content #faqArea div.answerBox01 {
+	width: 596px;
+	margin-left: 5px;
+	padding-bottom: 17px;
+}
+div.content #faqArea div.answerBox01:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+div.content #faqArea div.answerBox01 { display:inline-block; }
+/*\*/
+* html div.content #faqArea div.answerBox01 { height:1%; }
+div.content #faqArea div.answerBox01 { display:block; }
+/**/
+
+div.content #faqArea div.answerBox01 p.txt {
+	float: left;
+	width: 292px;
+}
+
+div.content #faqArea div.answerBox01 p.graph {
+	float: right;
+	width: 285px;
+	padding-top: 2px;
+}
+
+
+/* 回答02 */
+
+div.content #faqArea div.answerBox02 {
+	width: 575px;
+	margin-left: 5px;
+	padding-bottom: 22px;
+}
+
+div.content #faqArea div.answerBox02 p.txt {
+	margin-bottom: 7px;
+}
+
+div.content #faqArea div.answerBox02 p.txt a {
+	color: #F84B34;
+	font-weight: normal;
+}
+
+
+/* 回答03 */
+
+div.content #faqArea div.answerBox03 {
+	width: 583px;
+	padding-bottom: 15px;
+}
+
+div.content #faqArea div.answerBox03 p.topTxt {
+	margin: 0 0 0 5px;
+}
+
+div.content #faqArea div.answerBox03 h2 {
+	margin: 15px 0 0;
+}
+
+div.content #faqArea div.answerBox03 h2.first {
+	margin: 11px 0 0;
+}
+
+div.content #faqArea div.causeBox {
+	width: 581px;
+	padding: 10px 0 19px;
+	border-left: 1px solid #DABB8A;
+	border-right: 1px solid #DABB8A;
+	border-bottom: 1px solid #DABB8A;
+}
+
+div.content #faqArea div.causeBox div.change {
+	width: 552px;
+	margin: 0 0 11px 13px;
+	background: url(../../content/pasta_priceup/images/index_bg_cause_arw.gif) no-repeat left bottom;
+}
+div.content #faqArea div.causeBox div.change:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+div.content #faqArea div.causeBox div.change { display:inline-block; }
+/*\*/
+* html div.content #faqArea div.causeBox div.change { height:1%; }
+div.content #faqArea div.causeBox div.change { display:block; }
+/**/
+
+div.content #faqArea div.causeBox div.change p.cause {
+	float: left;
+	width: 272px;
+}
+
+div.content #faqArea div.causeBox div.change p.effect {
+	float: right;
+	width: 250px;
+}
+
+div.content #faqArea div.causeBox div.change p span {
+	display: block;
+	padding-top: 3px;
+	width: 180px;
+}
+
+div.content #faqArea div.causeBox div.change p.cause span {
+	margin-left: 6px;
+}
+
+div.content #faqArea div.causeBox div.change p.effect span {
+	margin-left: 47px;
+}
+
+div.content #faqArea div.causeBox p.graphImg {
+	text-align: center;
+}
+
+
+/* テキスト */
+
+div.content #faqArea p.think {
+	padding-left: 20px;
+}
+
+
+/*  最後に
+----------------------------------------*/
+
+div.content #contentEnd {
+	width: 666px;
+	margin-left: 11px;
+	padding: 40px 0 45px;
+	background: url(../../content/pasta_priceup/images/index_bg_end.gif) no-repeat;
+}
+
+div.content #contentEnd dt,
+div.content #contentEnd dd {
+	margin-left: 46px;
+}
+
+div.content #contentEnd dt {
+	margin-bottom: 10px;
+}
+
+
+/*
+=========================13：content/pasta_priceup/sbs=========================
+*/
+
+#sbs {
+	padding-bottom: 10px;
+	background: #FDF7E4;
+	color: #333333;
+	text-align: center;
+}
+
+#sbsArea {
+	width:734px;
+	margin: 10px auto 0;
+	background: url(../../content/pasta_priceup/images/sbs_bg_ct_rp.gif) repeat-y;
+	text-align: left;
+}
+
+#sbsBox {
+	padding: 0 0 10px 9px;
+	background: url(../../content/pasta_priceup/images/sbs_bg_ct_bt.gif) no-repeat left bottom;
+}
+
+#sbs h1 {
+	margin-bottom: 7px;
+}
+
+#sbs h2 {
+	margin: 0 0 11px 3px;
+}
+
+
+/*
+=========================15：recipe/mymenu/mypage_form=========================
+*/
+
+#mainArea h3#mypageForm { margin:0 0 20px 15px; }
+#mainArea p.formPostNew { text-align:right; margin:0 19px 25px 0; }
+
+
+/*  リード文
+----------------------------------------*/
+
+#sbs div.leadBox {
+	width: 716px;
+	margin-bottom: 11px;
+	background: url(../../content/pasta_priceup/images/sbs_bg_lead_rp.gif) repeat-y;
+}
+
+#sbs div.leadBoxIn {
+	width: 716px;
+	padding-bottom: 11px;
+	background: url(../../content/pasta_priceup/images/sbs_bg_lead_bt.gif) no-repeat left bottom;
+}
+
+#sbs div.leadBox ul {
+	padding: 12px 160px 0 21px;
+	background: url(../../content/pasta_priceup/images/sbs_bg_lead_tp.gif) no-repeat;
+	line-height: 1.65;
+}
+
+#sbs div.leadBox ul li {
+	margin-bottom: 5px;
+	padding-left: 26px;
+	background: url(../../content/pasta_priceup/images/sbs_mark_lead.gif) no-repeat 0 3px;
+}
+
+
+/*  説明図
+----------------------------------------*/
+
+#sbs div.sbsImg {
+	width: 722px;
+	margin: 0 0 15px 3px;
+}
+#sbs div.sbsImg:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+#sbs div.sbsImg { display:inline-block; }
+/*\*/
+* html #sbs div.sbsImg { height:1%; }
+#sbs div.sbsImg { display:block; }
+/**/
+
+#sbs div.sbsImg p {
+	float: left;
+	width: 347px;
+	margin-right: 14px;
+}
+
+#sbs div.sbsImg p.nomgr {
+	margin-right: 0;
+}
+
+
+/*  対象銘柄
+----------------------------------------*/
+
+#sbs div.structure01 {
+	width: 706px;
+	margin: 0 0 15px 3px;
+	padding-bottom: 10px;
+	background: #F9F0D5;
+	border: 1px solid #FFECBF;
+}
+
+#sbs div.structure01 div.brand {
+	width: 666px;
+	margin: 14px 0 6px 16px;
+	padding-bottom: 10px;
+	background: url(../../content/pasta_priceup/images/sbs_bg_brand.gif) repeat-y;
+}
+#sbs div.structure01 div.brand:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+#sbs div.structure01 div.brand { display:inline-block; }
+/*\*/
+* html #sbs div.structure01 div.brand { height:1%; }
+#sbs div.structure01 div.brand { display:block; }
+/**/
+
+#sbs div.structure01 div.brand dl.left {
+	float: left;
+	width: 336px;
+}
+
+#sbs div.structure01 div.brand dl.right {
+	float: right;
+	width: 312px;
+}
+
+#sbs div.structure01 div.brand dl dt {
+	margin-bottom: 3px;
+	font-weight: bold;
+}
+
+#sbs div.structure01 div.brand dl dd {
+	line-height: 1.65;
+}
+
+
+/* 注釈 */
+
+#sbs div.structure01 dl.notes {
+	width: 675px;
+	margin-left: 17px;
+}
+#sbs div.structure01 dl.notes:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+#sbs div.structure01 dl.notes { display:inline-block; }
+/*\*/
+* html #sbs div.structure01 dl.notes { height:1%; }
+#sbs div.structure01 dl.notes { display:block; }
+/**/
+
+#sbs div.structure01 dl.notes dt {
+	float: left;
+	width: 60px;
+	padding-bottom: 11px;
+	font-size: 92%;
+	font-weight: bold;
+}
+/*\*/
+#sbs div.structure01 dl.notes dt {
+	clear: both;
+}
+/**/
+
+#sbs div.structure01 dl.notes dd {
+	float: left;
+	width: 610px;
+	padding-bottom: 11px;
+}
+/*\*/
+* html #sbs div.structure01 dl.notes dd {
+	float: none;
+}
+/**/
+*:first-child + html #sbs div.structure01 dl.notes dd {
+	float: none;
+}
+
+
+/*  最低輸入単位・マークアップ
+----------------------------------------*/
+
+#sbs div.structure02 {
+	width: 709px;
+	margin: 0 0 15px 3px;
+	background: url(../../content/pasta_priceup/images/sbs_bg_structure_rp.gif) repeat-y;
+}
+
+#sbs div.structure02In {
+	width: 709px;
+	padding-bottom: 24px;
+	background: url(../../content/pasta_priceup/images/sbs_bg_structure_bt.gif) no-repeat left bottom;
+}
+#sbs div.structure02In:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+#sbs div.structure02In { display:inline-block; }
+/*\*/
+* html #sbs div.structure02In { height:1%; }
+#sbs div.structure02In { display:block; }
+/**/
+
+#sbs div.structure02 div.unit {
+	float: left;
+	width: 347px;
+}
+
+#sbs div.structure02 div.markup {
+	float: right;
+	width: 347px;
+}
+
+#sbs div.structure02 h3 {
+	margin-bottom: 11px;
+}
+
+#sbs div.structure02 div.unit p,
+#sbs div.structure02 div.markup p {
+	padding: 0 25px 0 20px;
+}
+
+#sbs div.structure02 div.unit p span {
+	font-weight: bold;
+}
+
+#sbs div.structure02 div.unit p span.right {
+	margin-left: 35px;
+}
+
+
+/*  契約相手方の決定方法
+----------------------------------------*/
+
+#sbs div.structure03 {
+	width: 706px;
+	margin: 0 0 0 3px;
+	padding-bottom: 10px;
+	background: #F9F0D5;
+	border: 1px solid #FFECBF;
+}
+
+#sbs div.structure03 div.decision {
+	width: 673px;
+	margin: 7px 0 0 18px;
+}
+#sbs div.structure03 div.decision:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+#sbs div.structure03 div.decision { display:inline-block; }
+/*\*/
+* html #sbs div.structure03 div.decision { height:1%; }
+#sbs div.structure03 div.decision { display:block; }
+/**/
+
+#sbs div.structure03 div.decision div.txt {
+	float: left;
+	width: 312px;
+	margin-top: 19px;
+}
+
+#sbs div.structure03 div.decision div.txt p {
+	min-height: 90px;
+}
+* html #sbs div.structure03 div.decision div.txt p {
+	height: 90px;
+}
+
+#sbs div.structure03 div.decision div.txt p.price {
+	height: auto;
+	margin-top: 5px;
+	text-align: right;
+}
+
+#sbs div.structure03 div.decision p.img {
+	float: right;
+	width: 335px;
+}
+
+
+/*  閉じるボタン
+----------------------------------------*/
+
+p.closeBtn {
+	margin-top: 10px;
+	text-align: center;
+}
+
+
+
+
+
+
+/*
+=========================16：news/=========================
+*/
+
+div.newsArea {
+	width: 657px;
+	margin-left: 15px;
+}
+
+div.newsArea p { line-height:1.7; padding:0 15px; }
+
+#news .newsArea dl { width:653px; }
+#news .newsArea dl dt { float:left; color:#78a614; padding:15px; }
+#news .newsArea dl dd { padding:15px; padding-left:100px; background:url(/shared/images/line_dotted_news.gif) repeat-x left bottom; }
+#news .newsArea dl dd a { color:#713902; padding:0 0 0 10px; background:url(/shared/images/icon_list_arrow.gif) no-repeat 0 0.3em; }
+#news .newsArea dl dd a.long{display:block;background-position:0 0.4em;}
+
+#news .newsArea  h2.newsTitle {
+	margin: 0 4px 15px 0;
+	padding:3px 15px;
+	background: #fde8c3;
+	font-size:120%;
+}
+
+
+div.newsAreaDetail { width:657px; margin-left:15px; }
+div.newsAreaDetail p,
+div.newsAreaDetail ul,
+div.newsAreaDetail dl,
+div.newsAreaDetail h3 { line-height:1.7; padding:0 15px; margin:0 0 10px 0; }
+div.newsAreaDetail .linkIcon li{
+	display:inline;
+	padding-right:10px;
+}
+div.newsAreaDetail .linkIcon li a{
+	padding-left:8px;
+	background-image:url(../images/icon_arw01.gif);
+	background-repeat:no-repeat;
+	background-position:0 0.4em;
+}
+
+div.newsAreaDetail p.attention { line-height:1.7; padding:0 15px; margin:0 0 10px 0; color:#FF0000; }
+div.newsAreaDetail .attention2 {
+	margin-top: 2em;
+}
+
+div.newsAreaDetail .attention2 li {
+	line-height: 1.7;
+	text-indent: -1em;
+	padding-left: 1em;
+}
+
+
+#news div.newsAreaDetail h2.newsTitle {
+	margin: 0 4px 15px 0;
+	padding:3px 15px;
+	background: #fde8c3;
+	font-size:120%;
+}
+
+#news div.newsAreaDetail h2.newsTitle span a { color:#713902; }
+
+
+/* 20100830 Add */
+.newsAreaDetail h3 {
+	font-weight: normal;
+}
+
+.newsAreaDetail .detail_data {
+	
+}
+
+.newsAreaDetail .detail_data dt {
+	
+}
+
+.newsAreaDetail .detail_data dd {
+	text-indent: ;
+	margin: 0 0 1em 0;
+}
+
+/*
+=========================17：news/=========================
+*/
+
+#sitemap div.sitemap .sitemapLeft {
+	width:316px;
+	float:left;
+	margin:0 0 0 15px;
+	}
+
+#sitemap div.sitemap .sitemapRight {
+	width:316px;
+	float:left;
+	margin:0 0 0 21px;
+	}
+
+#sitemap div.sitemap .sitemapLeft h3,
+#sitemap div.sitemap .sitemapRight h3 {
+	margin:25px 0 0 0;
+	}
+	
+#sitemap div.sitemap .sitemapLeft ul,
+#sitemap div.sitemap .sitemapRight ul {
+	margin:8px 0 0 15px;
+	padding:0;
+	
+	list-style:none;
+	}
+
+#sitemap div.sitemap .sitemapLeft ul li,
+#sitemap div.sitemap .sitemapRight ul li {
+	padding:7px 0 0 20px;
+	background:url(/images/icon_sitemap_arrow_01.gif) no-repeat left 0.7em;
+	}
+
+#sitemap div.sitemap .sitemapLeft ul li a,
+#sitemap div.sitemap .sitemapRight ul li a {
+	color:#633100;
+	font-weight:normal;
+	}
+
+#sitemap div.sitemap .sitemapLeft ul li.noLink,
+#sitemap div.sitemap .sitemapRight ul li.noLink {
+	background:url(/images/icon_sitemap_arrow_02.gif) no-repeat left 0.7em;
+	}
+
+#sitemap div.sitemap .sitemapLeft ul li.listHead,
+#sitemap div.sitemap .sitemapRight ul li.listHead {
+	background:url(/images/sitemap_listHead_bg.gif) no-repeat left top;
+	padding-top: 1px;
+	}
+
+
+
+#sitemap div.sitemap .sitemapLeft ul ul,
+#sitemap div.sitemap .sitemapRight ul ul {
+	margin:8px 0 8px 35px;
+	padding:0;
+	
+	list-style:none;
+	}
+
+#sitemap div.sitemap .sitemapLeft ul ul li,
+#sitemap div.sitemap .sitemapRight ul ul li {
+	padding:0 0 0 8px;
+	background:url(/shared/images/icon_list_arrow.gif) no-repeat left 0.5em;
+	}
+
+
+
+
+/*
+=========================18：utility/=========================
+*/
+
+div.utility {
+	width: 657px;
+	margin-left: 15px;
+	margin-bottom:20px;
+	margin-top:0;
+}
+
+div.utility  h3.utilityTitle {
+	margin: 34px 4px 15px 0;
+	padding:3px 15px;
+	background: #fde8c3;
+	font-size:100%;
+	color:#a16c33;
+}
+
+div.utility  h3.utilityTitleTop {
+	margin: 0 4px 15px 0;
+	padding:3px 15px;
+	background: #fde8c3;
+	font-size:100%;
+	color:#a16c33;
+}
+
+
+div.utility ul { width:623px; margin:0 15px; line-height:1.6; list-style:none; }
+div.utility ul li { text-indent:-0.8em; margin:0 0 20px 0; padding:0; padding-left:1.4em; }
+div.utility ul li.listExtend { text-indent:-0.8em; margin:0; padding:0; padding-left:1.4em; }
+div.utility ul li.end { text-indent:-0.8em; margin:0; padding:0; padding-left:1.4em; }
+
+div.utility ul ul { margin:0 0 20px 10px; }
+div.utility ul ul li { padding:0; margin:0 0 0 15px; }
+
+#about #contents p,
+#rules #contents p { padding:0 15px; line-height:1.6; }
+
+#about #contents p.lead, 
+#rules #contents p.lead { padding:0 15px 15px 15px; line-height:1.6; }
+
+
+#rules #contents div.utility ul { width:623px; margin:0 15px; line-height:1.6; list-style:none; }
+#rules #contents div.utility ul li { text-indent:-1.4em; margin:0 0 20px 0; padding:0; padding-left:1.8em; }
+#rules #contents div.utility ul li.listExtend { text-indent:-1.4em; margin:0; padding:0; padding-left:1.8em; }
+#rules #contents div.utility ul li.end { text-indent:-1.4em; margin:0; padding:0; padding-left:1.8em; }
+
+#rules #contents div.utility ul ul { width:610px; margin:15px 0 20px 8px; }
+#rules #contents div.utility ul ul li { padding:0; margin:0 0 0 15px; line-height:1.6; text-indent:-1.2em; padding-left:1em; }
+#rules #contents div.utility ul ul li.end { text-indent:-1.2em; margin:0; padding:0; padding-left:1em; }
+
+
+
+/*
+=========================19：error=========================
+*/
+
+/*  レシピ不存在,403エラー,404エラー
+----------------------------------------*/
+
+div.notExists div.errorMsg {
+	width: 500px;
+	margin: 25px auto;
+	padding: 30px 0;
+	border: 3px solid #EEE1C5;
+	background: #FCF5E0;
+	text-align: center;
+}
+
+#contents div.notExists div.errorMsg h1 {
+	margin-bottom: 0;
+	padding: 0 0 15px;
+	font-size: 133%;
+	font-weight: bold;
+	color: #f75e22;
+}
+
+div.notExists p.btn {
+	text-align: center;
+}

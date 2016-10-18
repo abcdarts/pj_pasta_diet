@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="Keywords" content="パスタ,パスタレシピ,パスタメニュー,ゆで方,おいしい作り方,クッキングスクール,スパゲッティ,スパゲティ" />
+<meta name="Description" content="日本パスタ協会の公式サイト。ご家庭で簡単に作れるパスタレシピを毎週、様々な切り口でご紹介。その他、自分の好みのパスタを探せる検索機能や、自分のオリジナルレシピをみんなに紹介できるパスタレシピ投稿ページ、パスタクッキングスクールのご案内など、パスタの楽しみ方を広げられるサイトです。" />
+<meta name="copyright" content="Japan-Pasta Association, All rights reserved." />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="" />
+<link href="/shared/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<script type="text/javascript" src="/shared/js/jquery.js"></script>
+<script type="text/javascript" src="/shared/js/default.js"></script>
+<script type="text/javascript" src="/shared/js/peoplerecipe.js" ></script>
+<script type="text/javascript">
+<!--
+window.onload = function() {
+  dispMemberRecipeList();
+  dispRecommendRecipe();
+}
+//-->
+</script>
+<title>メルマガ登録フォーム│日本パスタ協会</title>
+</head>
+<body id="magazine">
+<div id="page">
+<div class="pageBt">
+	<div id="header">
+		<!--#include virtual="/include/inc_header.html"-->
+		<!--#include virtual="/include/inc_gnavi.html"-->
+	</div>
+	<!-- / header -->
+	<p class="location"><a href="/index.html">HOME</a> ＞ メルマガ登録フォーム</p>
+	<div id="mainArea">
+		<div id="contents">
+			<h1><img src="./images/h1.jpg" alt="メルマガ登録フォーム" width="683" height="92" /></h1>
+			<!--p class="lead">
+				パスタ協会のメルマガでは、セミナー、スクール、キャンペーンなど、お得な最新情報をお届けします！
+				<span>※利用規約を必ずお読みの上、同意ボタンにチェックを入れて、ご登録ください。</span>
+			</p-->
+			
+			<div class="form_block formArea">
+				<h2>メールアドレス変更</h2>
+				<form name="UpdForm" method="post" action="https://sv4.mgzn.jp/sys/updExec.php">
+					<input type="hidden" name="cid" value="Q205635" />
+					<table>
+						<tr>
+							<th>旧メールアドレス： <span class="redMark">(*)</span></th>
+							<td><input type="text" name="emailold" size="30" maxlength="60" /></td>
+						</tr>
+						<tr>
+							<th>新メールアドレス： <span class="redMark">(*)</span></th>
+							<td><input type="text" name="emailnew" size="30" maxlength="60" /></td>
+						</tr>
+					</table>
+					<input id="btn_alter" type="submit" name="exec" value=" 変更する " />
+				</form>
+			</div>
+			
+			<div class="form_block formArea">
+				<h2>メルマガ登録解除</h2>
+				<form name="DelForm" method="post" action="https://sv4.mgzn.jp/sys/unregExec.php">
+					<input type="hidden" name="cid" value="Q205635" />
+					<table>
+						<tr>
+							<th>メールアドレス <span class="redMark">(*)</span></th>
+							<td><input type="text" name="email" size="30" maxlength="60" /></td>
+						</tr>
+					</table>
+					<input id="btn_cancel" type="submit" name="exec" value=" 解除する " />
+				</form>
+			</div>
+		</div>
+		<!-- / contents -->
+		<div id="sub">
+			<!--#include virtual="/include/inc_side_banner.html"-->
+			<!--#include virtual="/recipe_ranking.html"-->
+		</div>
+		<!-- / sub -->
+	</div>
+	<!-- / mainArea -->
+	<!--#include virtual="/include/inc_footer_link.html"-->
+	<!--#include virtual="/include/inc_footer.html"-->
+	<!-- / footer -->
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-182016-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

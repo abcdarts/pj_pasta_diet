@@ -1,0 +1,694 @@
+@charset "Shift-JIS"; 
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+/*\*/
+*html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+/**/
+
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+	font-style:normal;
+	line-height:100%;
+	margin:0;
+	padding:0;
+	border:0;
+	text-decoration: none;
+}
+
+#contents h2{
+	margin-left:0;
+}
+
+/*
+main*/
+
+#mainArea div.p_contest p{ color: #633100; }
+
+body#contest #contents a:link,
+body#contest #contents a:visited,
+body#contest #contents a:hover,
+body#contest #contents a:active{
+	color: #633100;
+}
+
+div.p_contest #headArea {
+	width: 684px;
+	height: 268px;
+	margin: 0 0 7px 0;
+}
+
+#mainArea div.p_contest #headArea h1 {
+	margin:0;
+	padding:0;
+}
+
+#mainArea div.p_contest .p_mainArea {
+	width: 684px;
+}
+
+#mainArea div.p_contest .collection {
+	float: left;
+	width: 444px;
+	margin-bottom: 15px;
+}
+
+#mainArea div.p_contest .collection h2{
+	margin:0;
+	padding:0;
+}
+
+#mainArea div.p_contest .collection h3{
+	padding:10px 0 5px 0;
+}
+
+#mainArea div.p_contest .collection .cltBox {
+	width: 432px;
+	padding: 6px 2px 0 8px;
+	border-right: solid 1px #ff9900;
+	border-left: solid 1px #ff9900;
+}
+
+#mainArea div.p_contest .collection .cltBox02 {
+	height: 80px;
+	background: url(../images/index_line_clt.gif) no-repeat 108px 50px;
+}
+
+#mainArea div.p_contest .collection .cltBox03 {
+	width: 395px;
+	padding: 10px 15px 9px;
+	background: url(../images/index_bg_cltBox03.gif) no-repeat 0 0;
+	background-color: #fdf4d7;
+}
+
+#mainArea div.p_contest .collection .cltBox .cltImg {
+	float: left;
+	margin-right: 10px;
+
+}
+
+#mainArea div.p_contest .collection .cltFooter {
+	padding-top: 2px;
+	background: url(../images/index_bg_clt_footer.gif) no-repeat 0 0;
+}
+
+/* ie hack */
+*+html body #mainArea div.p_contest .collection .cltFooter { padding-top: 1px; }
+* html body #mainArea div.p_contest .collection .cltFooter { padding-top: 1px; }
+
+#mainArea div.p_contest .judgeBox {
+	float: right;
+	width: 230px;
+	margin-right: 2px;
+}
+
+/* ie6 hack */
+* html body #mainArea div.p_contest .judgeBox { margin-right: 1px; }
+
+
+
+div.p_contest .flowArea {
+	width: 684px;
+	background: url(../images/index_bg_flow.gif) repeat-x 0 32px;
+}
+
+div.p_contest .flowArea h2 {
+	margin:0;
+	padding:0;
+}
+
+div.p_contest .flowArea .flowCnt {
+	margin:0 0 0 10px;	
+}
+
+div.p_contest .flowArea .flowBox {
+	float: left;
+	width: 152px;
+	background: url(../images/index_bg_flowBox.gif) repeat-y 0 0;
+}
+
+div.p_contest .flowArea .alBox {
+	float: left;
+	width: 19px;
+}
+
+div.p_contest .flowArea .endBox {
+	float: left;
+	width: 2px;
+}
+
+div.p_contest .flowArea .flowBox p{
+	margin: 5px 10px 5px;
+}
+
+div.p_contest .prize {
+	width: 684px;
+	background: url(../images/index_bg_prize.gif) repeat-x 0 32px;
+}
+
+div.p_contest .prize h2 {
+	margin:0;
+	padding:0;
+}
+
+div.p_contest .prizeCnt {
+	margin-left:12px;
+	margin-bottom: 25px;
+}
+
+div.p_contest .prizeBox  {
+	float: left;
+	margin-right:8px;
+}
+
+div.p_contest .prizeBoxEnd  {
+	float: left;
+}
+
+div.p_contest .appArea {
+	width: 684px;
+	margin-bottom: 38px;
+	background: url(../images/index_bg_flow.gif) repeat-x 0 32px;
+}
+
+div.p_contest .appArea h2 {
+	margin: 0;
+	padding: 0;
+}
+
+div.p_contest .appArea .appCnt {
+	margin-left: 10px;	
+}
+
+div.p_contest .appArea .appBox {
+	float: left;
+	width: 208px;
+	margin-bottom: 10px;
+	background: url(../images/index_bg_appBox.gif) repeat-y 0 0;
+}
+
+div.p_contest .appArea .alBox {
+	float: left;
+	width: 20px;
+}
+
+div.p_contest .appArea .endBox {
+	float: left;
+	width: 2px;
+}
+
+div.p_contest .appArea .appBox p {
+	margin: 5px 10px 5px;
+}
+
+div.p_contest .appArea .appTxt {
+margin: 0 0 0 10px;
+}
+
+.recipe {
+	width: 684px;
+	min-height: 130px;
+	height: auto !important;
+	height: 130px;
+	margin-left: 10px;
+	margin-bottom: 25px;
+	background: url(../../contest/images/index_bg_recipe.gif) no-repeat;
+	text-align: center;
+}
+
+.recipe ul.btn {
+	padding: 30px 0 0 0;
+
+}
+
+.recipe ul.btn li.sp {
+	margin-right: 20pxi;
+}
+
+div.p_contest #outlineArea {
+	clear: both;
+	width: 683px;
+
+	margin-bottom: 28px;
+	background: url(../../contest/images/index_bg_outline_rp.gif) repeat-y;
+}
+
+div.p_contest #outlineAreaIn {
+	width: 683px;
+	padding-bottom: 10px;
+	background: url(../../contest/images/index_bg_outline_bt.gif) no-repeat left bottom;
+}
+
+div.p_contest #outlineArea div.outlineList {
+	width: 683px;
+}
+
+div.p_contest #outlineArea div.outlineList:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+div.p_contest #outlineArea div.outlineList { display:inline-block; }
+/*\*/
+* html div.p_contest #outlineArea div.outlineList { height:1%; }
+div.p_contest #outlineArea div.outlineList { display:block; }
+/**/
+
+div.p_contest #outlineArea h3 {
+	padding: 7px 18px;
+	background: #4d7ab7;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+div.p_contest #outlineArea dl {
+	padding-top: 20px;
+}
+
+div.p_contest #outlineArea dl.left {
+	float: left;
+	display: inline;
+	width: 318px;
+	margin: 0 23px 0 12px;
+}
+
+div.p_contest #outlineArea dl.right {
+	float: left;
+	width: 318px;
+}
+
+div.p_contest #outlineArea dl dt {
+	margin-bottom: 8px;
+	padding: 3px 5px;
+	background: #E7E9E9;
+	font-weight: bold;
+	color: #08326b;
+}
+
+div.p_contest #outlineArea dl dd {
+	padding: 0 5px 8px;
+}
+
+div.p_contest #outlineArea dl dd ul li {
+	padding-bottom: 13px;
+}
+
+div.p_contest #outlineArea dl dd ul li.last {
+	padding-bottom: 0;
+}
+
+div.p_contest #outlineArea dl dd span {
+	display: block;
+	margin-top: 13px;
+}
+
+body#contest #contents #outlineArea a:link,
+body#contest #contents #outlineArea a:visited,
+body#contest #contents #outlineArea a:hover,
+body#contest #contents #outlineArea a:active{
+	color: #333333;
+}
+
+/*投票ページ*/
+
+#mainArea div.contest_list p,
+#mainArea div.comp p
+{ color: #633100; }
+
+body#contest #contents02 a:link,
+body#contest #contents02 a:visited,
+body#contest #contents02 a:hover,
+body#contest #contents02 a:active{
+	color: #633100;
+}
+
+div.contest_list textarea{
+	padding: 5px;
+	border:solid 1px #c7c7c7;
+	background-color: #FFFFFF;
+}
+
+div.contest_list #headArea {
+	width: 870px;
+	margin-bottom:20px;
+}
+
+div.contest_list .entryList{
+	width: 870px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	background-color: #faf2d7;
+	/*background:url(../images/bg_entryList.gif) left top repeat;*/
+}
+
+div.contest_list .entryList h2{
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+div.contest_list .entryList .clearfix{
+	padding:0 0 0 15px;
+}
+
+div.contest_list .entryList .listBox{
+	float: left;
+	width: 165px;
+	margin:0 5px 0 0;
+	background: url(../images/list_bg_box_foot.gif) no-repeat left bottom;
+	padding-bottom: 15px;
+}
+
+div.contest_list .entryList .listBox .listInnerBox{
+	margin:0 5px 0 0;
+	background: url(../images/list_bg_box.gif) repeat-y 0 0;	
+}
+
+div.contest_list .entryList .listBox .listPhoto{
+	width: 160px;
+	margin:0 0 8px 0;
+	text-align: center;
+}
+
+div.contest_list .entryList .listBox .listDetail{
+	margin:0 0 10px 36px;
+}
+
+
+div.contest_list .entryList .listBox h3{
+	min-height: 3.5em;
+	margin: 0 20px 10px 20px;
+	padding: 0;
+	font-weight: bold;
+	line-height: 135%;
+}
+
+/* IE 6 \*/
+*html div.contest_list .entryList .listBox h3{
+height: 4em; 
+}
+/* end */
+
+div.contest_list .entryList .listBox .entry {
+	width:130px;
+	height:18px;
+	margin:0 10px 0;
+	padding:12px 5px 4px;
+	background-color: #ffe698;
+	vertical-align: middle;
+}
+
+div.contest_list .entryList .listBox .entry img{
+	padding:0 0 8px 3px;
+	vertical-align: middle;
+}
+
+/* ie hack */
+*+html body div.contest_list .entryList .listBox .entry { padding:8px 5px 8px; }
+*html body div.contest_list .entryList .listBox .entry { padding:8px 5px 8px; }
+
+
+div.contest_list .entryList .lictComment{
+	clear: both;
+	/*margin: 10px 0 0 15px;*/
+	margin: 10px 0 5px;
+	padding-top: 10px;
+}
+
+div.contest_list .entryList .lictComment p{
+	margin-bottom: 5px;
+}
+
+div.contest_list .entryList .lictComment img{
+	margin-right: 5px;
+	vertical-align:middle;
+}
+
+div.contest_list .entryList .lictComment textarea{
+	width: 828px;
+}
+
+div.contest_list .nameBox {
+	width: 870px;
+	margin-bottom: 30px;
+	background-color: #f8f8f8;
+}
+
+div.contest_list .nameBox .boxL {
+	float: left;
+	width: 250px;
+	margin-left: 15px;
+}
+
+/* ie hack */
+*+html body div.contest_list .nameBox .boxL { margin-left: 8px; }
+*html body div.contest_list .nameBox .boxL { margin-left: 5px; }
+
+div.contest_list .nameBox .boxR {
+	float: right;
+	width: 570px;
+	margin: 0 5px 5px 0;
+}
+
+div.contest_list .nameBox input{
+	width: 240px;
+	margin-top: 4px;
+	padding: 5px;
+	border:solid 1px #c7c7c7;
+	background-color: #FFFFFF;
+}
+
+div.contest_list .btn_block {
+	margin:20px 0;
+	text-align:center;
+}
+div.contest_list .btn_block p {
+	margin-bottom:10px;
+}
+
+div.contest_list .recipe ul.btn {
+	padding: 30px 0 3px 0;
+
+}
+
+div.contest_list .recipe ul.btn li{
+	margin-bottom: 10px;
+}
+
+div.contest_list .recipe input {
+
+}
+
+div.btmLink02 {
+	position: relative;
+	width: 850px;
+	margin-left: 15px;
+	padding: 20px 0 35px;
+}
+
+div.btmLink02 p.back {
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+
+div.btmLink02 p.pagetop {
+	clear: none;
+	padding: 0;
+	text-align: right;
+}
+
+/*投票完了ページ*/
+
+div.comp #headArea {
+	width:870px;
+	margin-bottom: 25px;
+}
+
+div.comp h1 {
+	margin:0 0 25px 0;
+	padding:0;
+}
+
+div.comp h2 {
+	margin:0 0 25px 20px;
+	padding:0;
+}
+
+div.comp h3 {
+	margin:0 0 20px 0;
+	padding:0;
+	font-size: 135%;
+	font-weight: bold;
+}
+
+div.comp p { margin-bottom: 20px; }
+
+div.comp strong { color: #ff3c00; }
+
+div.comp .compBox{
+	width: 580px;
+	padding-top: 20px;
+	margin: 0 0 35px 148px;
+	background-color: #fcf5e0;
+	border: solid 2px #eee1c5;
+	text-align: center;
+}
+
+div.comp .compBtn {
+	width: 870px;
+	margin-bottom: 200px;
+	text-align: center;
+}
+
+/*作品詳細ページ*/
+
+#workBg {
+	margin: 0;
+	padding: 0;
+	background-color: #FFFFFF;
+	background-image: none;
+	text-align: left;
+}
+
+#pastaWork {
+	width: 450px;
+
+}
+
+#pastaWork #headArea {
+	width: 450px;
+	margin-bottom: 15px;
+	padding: 15px 0 7px 15px;
+	border-bottom: solid 5px #f78b22;
+}
+
+#pastaWork #workBlock {
+	width: 420px;
+	margin: 0 0 0 15px;
+}
+
+#pastaWork #workBlock h1 {
+	margin: 0 0 7px 0;
+	padding: 0;
+}
+
+#pastaWork #workBlock h2 {
+	width: 400px;
+	margin: 0 0 5px 0;
+	padding: 0 0 8px 0;
+	background: url(../../contest/images/work_bg_head.gif) no-repeat 0 bottom;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+#pastaWork #workBlock .titleBox {
+	width: 400px;
+	margin-bottom: 10px;
+	padding: 10px 10px 5px;
+	background-color: #fdf7e4;
+	color: #aa7843;
+}
+
+#pastaWork #workBlock .titleBox p{
+	width: 400px;
+	text-align: right;
+	font-size: 90%;
+}
+
+#pastaWork #workBlock .photoBox {
+	text-align:center;
+	width: 260px;
+	height: 202px;
+	margin: 0 0 0 83px;
+	padding: 11px 0 0 6px;
+	background: url(../../contest/images/work_bg_photo.gif) no-repeat 0 0;
+}
+#pastaWork #workBlock .photoBox img{
+margin-right:20px;
+}
+
+#pastaWork #workBlock .txtBox {
+	width: 400px;
+	margin: 0 0 20px 10px;
+}
+
+#pastaWork #workBlock .txtBox img{
+	margin-bottom: 10px;
+}
+
+#pastaWork #workBlock .txtBox img{
+	margin-top: 20px;
+}
+
+#pastaWork #workBlock .linkBox {
+	width: 400px;
+	margin-bottom: 15px;
+	padding: 5px 10px;
+	background-color: #f6f6f6;
+}
+
+#pastaWork #workBlock .back {
+	float: left;
+}
+
+#pastaWork #workBlock .back a {
+	width: 100px;
+	padding-left: 17px;
+	padding-bottom: 2px;
+	background: url(../../contest/images/work_icon_back_off.gif) no-repeat 0 0;
+	font-weight: normal;
+}
+
+#pastaWork #workBlock .back a:hover {
+	background: url(../../contest/images/work_icon_back_on.gif) no-repeat 0 0;
+}
+
+#pastaWork #workBlock .next {
+	float: right;
+}
+
+#pastaWork #workBlock .next a {
+	width: 100px;
+	padding-right: 17px;
+	padding-bottom: 2px;
+	background: url(../../contest/images/work_icon_next_off.gif) no-repeat right 0;
+	font-weight: normal;
+}
+
+#pastaWork #workBlock .next a:hover {
+	background: url(../../contest/images/work_icon_next_on.gif) no-repeat right 0;
+}
+
+#pastaWork #workBlock .closeBox {
+	width: 420px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#pastaWork #footArea {
+	width: 435px;
+	padding: 10px 15px 0 0;
+	border-top: solid 2px #f78b22;
+	text-align: right;
+}
+
+/* add 081203
+-------------------------------------------- */
+.endTxt{
+padding-top:12px;
+padding-bottom:20px;
+text-align:center;
+}
+

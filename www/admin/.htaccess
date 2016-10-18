@@ -1,0 +1,7 @@
+AuthUserFile /home/pasta/webapp2/.htpasswd_admin
+AuthGroupFile /dev/null
+AuthName "Basic Authentication"
+AuthType Basic
+<Limit POST GET>
+require valid-user
+</Limit>

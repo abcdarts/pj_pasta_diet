@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteBase /
+RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|iPad|Android|Windows\ Phone)
+RewriteCond %{HTTP_REFERER} !^(http|https)://www.pasta.or.jp
+RewriteRule healthy/movie.html smt/content/healthy/movie.html [R]
+
+RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|iPad|Android|Windows\ Phone)
+RewriteCond %{HTTP_REFERER} !^(http|https)://www.pasta.or.jp
+RewriteRule basic/boil.html smt/content/basic/boil01.html [R,L]
+
+RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|iPad|Android|Windows\ Phone)
+RewriteCond %{HTTP_REFERER} !^(http|https)://www.pasta.or.jp
+RewriteRule basic/ smt/content/basic/ [R,L]

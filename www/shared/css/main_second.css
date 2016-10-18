@@ -1,0 +1,2955 @@
+/*
+==============　CONTENTS　==============
+
+	19：assosiation
+	20：content | healthy
+	21：content | basic
+	22：present
+	23：content | dictionary
+	24：song
+	25：pasta_fa
+	26：cgi-bin | event
+	27：event | report
+
+========================================
+*/
+
+
+/* orange line box */
+
+div.orangeBox {
+	width: 653px;
+	background: url(/shared/images/bg_orange_block_middle.gif) repeat-y;
+}
+
+div.orangeTp {
+	width: 653px;
+	background: url(/shared/images/bg_orange_block_top.gif) no-repeat;
+}
+
+div.orangeBt {
+	width: 653px;
+	padding-bottom: 3px;
+	background: url(/shared/images/bg_orange_block_bottom.gif) no-repeat left bottom;
+	}
+
+/* gray line box */
+	
+div.grayBox {
+	width: 653px;
+	background: #f6f6f6;
+}
+
+div.grayTp {
+	width: 653px;
+	background: url(/shared/images/bg_gray_block_top.gif) no-repeat;
+}
+
+div.grayBt {
+	width: 653px;
+	padding-bottom: 2px;
+	background: url(/shared/images/bg_gray_block_bottom.gif) no-repeat left bottom;
+	}
+
+
+/* orange shadow line box */
+
+div.orangeShdBox {
+	width: 627px;
+	background: url(/shared/images/bg_orangeshdbox_middle.gif) repeat-y;
+}
+
+div.orangeShdBoxTp {
+	width: 627px;
+	background: url(/shared/images/bg_orangeshdbox_top.gif) no-repeat;
+}
+
+div.orangeShdBoxBt {
+	width: 627px;
+	padding-bottom: 8px;
+	background: url(/shared/images/bg_orangeshdbox_bottom.gif) no-repeat left bottom;
+	}
+
+
+/*
+=========================19：assosiation/=========================
+*/
+
+div.association {
+	width: 657px;
+	margin-left:15px;
+}
+
+
+div.association div.hr_boder {
+	height:1px;
+	display:block;
+	
+	margin:30px 0 0 0;
+	
+	background:url(/association/images/line_dotted.gif) repeat-x left top;
+	}
+	div.association div.hr_boder hr { display:none; }
+
+
+div.association h2.assosiationTitle {
+	margin: 34px 4px 25px 0;
+	padding:3px 15px;
+}
+
+
+div.association div.greeting {
+	width: 657px;
+	margin:25px 0 0 0;
+	}
+
+div.association div.greeting p.photo { float:left; margin:0; padding:5px 5px 5px 5px; border:1px solid #d5d5d5; }
+div.association div.greeting div.textArea { 
+	float:left;
+	width:490px;
+	margin:0 0 0 15px;
+	}
+	div.association div.greeting div.textArea p { 
+		margin:0 0 12px 0; line-height:1.6;
+		}
+		div.association div.greeting div.textArea p.textBottom { text-align:right; }
+		
+		
+div.association div.greetingBox {
+	width: 657px;
+	background: url(/association/images/bg_orange_box_middle.gif) repeat-y;
+}
+
+div.association div.greetingTp {
+	width: 657px;
+	background: url(/association/images/bg_orange_box_top.gif) no-repeat;
+}
+
+div.association div.greetingBt {
+	width: 657px;
+	padding-bottom: 8px;
+	background: url(/association/images/bg_orange_box_bottom.gif) no-repeat left bottom;
+	}
+
+	div.association div.greetingBox h3 { padding:10px 0 0 15px; }
+
+	div.association div.greetingBox div.greetingBoxIn {
+		margin:10px 15px;
+		width: 623px;
+		background: #fdf7e4;
+	}
+	
+	div.association div.greetingBox div.greetingTpIn {
+		width: 623px;
+		background: url(/association/images/bg_box_inner_top.gif) no-repeat;
+	}
+	
+	div.association div.greetingBox div.greetingBtIn {
+		width: 623px;
+		padding-bottom: 2px;
+		background: url(/association/images/bg_box_inner_bottom.gif) no-repeat left bottom;
+	}
+	
+		div.association div.greetingBox div.greetingBoxIn dl { padding:0 15px; }
+		div.association div.greetingBox div.greetingBoxIn dl dt { color:#78a614; font-weight:bold; padding:14px 0 5px 0; }
+		div.association div.greetingBox div.greetingBoxIn dl dd {
+			line-height:1.6;
+			padding:0;
+			padding-bottom:14px;
+			background:url(/association/images/line_box_inner_dotted.gif) repeat-x left bottom;
+			}
+		div.association div.greetingBox div.greetingBoxIn dl dd.end {
+			background:none;
+			}
+
+
+/* ごあいさつ 090611 */
+
+div.association div.greeting div.textArea p.lowBottom,
+div.association div.greeting div.textArea ul {
+	margin-bottom: 12px;
+}
+
+div.association div.greeting div.textArea ol li ul {
+	margin: 8px 0;
+}
+
+div.association div.greeting div.textArea ol {
+	padding-left: 17px;
+	margin-bottom: 24px;
+	list-style-type: decimal;
+}
+
+*html div.association div.greeting div.textArea ol {
+	margin-left: 17px;
+	padding-left: 7px;
+}
+
+*+html div.association div.greeting div.textArea ol {
+	margin-left: 17px;
+	padding-left: 7px;
+}
+
+div.association div.greeting div.textArea .indent {
+	text-indent: 1em;
+}
+
+/* 協会概要 */
+
+div.association dl#overview { margin: 25px 0 35px 15px; } 
+div.association dl#overview dt { font-size:125%; font-weight:bold; }
+div.association dl#overview dd { line-height:1.7; margin:15px 0 0 0; padding:0; }
+
+
+div.association div.orangeBox ul { padding:18px 0 0 40px; }
+div.association div.orangeBox ul li { margin:0 0 10px 0; }
+div.association div.orangeBox ul li a { margin:0 0 0 10px; font-weight:normal; }
+
+div.association div.grayBox { margin:15px 0 0 0; }
+	div.association div.grayBox div.grayBoxIn { padding:15px 15px 0 15px; }
+	div.association div.grayBox img { float:left; }
+	div.association div.grayBox p { float:left; font-size:90%; width:490px; margin:0 0 0 10px; padding:0 0 10px 0; _padding-bottom:15px; }
+
+
+/* パスタレポート */
+
+div.association p { margin:25px 0; line-height:1.6; }
+div.association p.reportGraph { width:429px; margin:0 auto; }
+
+
+/* 加盟企業紹介 */
+
+div.association div.company p.photo img { float:left; margin:15px 0 0 40px; }
+div.association div.company dl { float:left; margin:0 0 0 25px; padding:0; color:#83521e; }
+	div.association div.company dl dt { font-weight:bold; font-size:120%; margin:0 0 10px; }
+	div.association div.company dl dd { line-height:1.6; }
+	div.association div.company dl dd em { font-weight:bold; }
+	div.association div.company dl dd.url { margin:5px 0 0 0; vertical-align:top; }
+	div.association div.company dl dd.url a { margin:0 10px 0 0; }
+	div.association div.company dl dd.url img { padding:0; margin:0; }
+	
+	
+div.association div.hr_boder_company {
+	clear:both;
+	height:1px;
+	display:block;
+	
+	margin:20px 0;
+	
+	background:url(/association/images/line_dotted.gif) repeat-x left top;
+	}
+	div.association div.hr_boder_company hr { display:none; }
+
+
+/* 活動内容紹介 */
+
+div.activityArea { margin:25px 0 0 0; }
+
+div.association div.activity div.activityIn { float:left; width:383px; margin:0 0 0 15px; }
+div.association div.activity h3 img { margin:0 0 15px 0; padding:0; }
+div.association div.activity p { line-height:1.6; margin:0; }
+div.association div.activity .report { text-align: right; margin: 15px 0 0 0; }
+div.association div.activity p.photo img { float:right; }
+
+/* link */
+div.association div.activity .report li{
+display:inline;
+padding-left:8px;
+}
+
+
+/* a icon */
+div.association div.activity .report a{
+padding-left:8px;
+background-image:url(../images/icon_arw01.gif);
+background-repeat:no-repeat;
+background-position:0 0.35em;
+}
+
+div.association div.hr_boder_activity {
+	clear:both;
+	height:1px;
+	display:block;
+	
+	margin:10px 0 15px 0;
+	
+	background:url(/association/images/line_dotted.gif) repeat-x left top;
+	}
+	div.association div.hr_boder_activity hr { display:none; }
+
+
+
+/*
+=========================20：content/healthy=========================
+*/
+
+div.healthy {
+	width: 657px;
+	margin-left:15px;
+}
+
+/* healthy backgroudn */
+
+div.healthy div.pasta_diet {
+	width:657px;
+	height:280px;
+	display:block;
+	
+	background:url(/content/healthy/images/bg_pasta_healthy.jpg) no-repeat right top;
+ }
+ 
+div.healthy div.sport_powerup {
+	width:657px;
+	height:232px;
+	display:block;
+	
+	background:url(/content/healthy/images/bg_sport_powerup.jpg) no-repeat right top;
+ }
+	
+
+div.healthy h2 { margin:0; padding:20px 0 35px 0; }
+
+div.healthy p {
+	width:425px;
+	margin:0 0 0 15px;
+	line-height:1.7;
+	}
+	div.healthy p em { font-weight:bold; }
+	
+
+
+div.healthy div.diet div.dietIn { float:left; }
+div.healthy div.diet p.graph { float:right; width:193px; margin-top:19px; }
+div.healthy div.diet p.graph img { margin-bottom:10px; }
+div.healthy div.diet p.graph span { font-size:85%; line-height:1.4; }
+
+
+
+/*
+=========================21：content/basic=========================
+*/
+
+div.basic {
+	width: 657px;
+	margin-left:15px;
+}
+
+/* no float block */
+
+div.basic div.basicInner { margin:25px 15px; width: 645px; }
+div.basic div.basicInner h3 img { margin:0 0 15px 0; padding:0; }
+div.basic div.basicInner p { width:625px; line-height:1.6; margin:0; }
+
+div.basic div.basicInner p.orangeBox_space { margin:20px 0 0 0; }
+
+div.basic div.basicInner p.process { width:449px; margin:20px auto 0 auto; } 
+
+
+/* right photo | left text | float block */
+
+div.basic div.basicBox { margin-top:25px; width: 645px; }
+div.basic div.basicBoxIn { background:none; float:left; width:440px; _width:430px; margin:0 15px; _margin:0 15px 0 8px; }
+div.basic div.basicBoxIn h3 img { margin:0 0 15px 0; padding:0; }
+div.basic div.basicBoxIn p { line-height:1.6; margin:0; }
+div.basic div.basicBoxIn p.photo img { float:right; }
+
+div.basic div.hr_boder {
+	clear:both;
+	height:1px;
+	display:block;
+	
+	margin:10px 0 15px 0;
+	
+	background:url(/association/images/line_dotted.gif) repeat-x left top;
+	}
+	div.basic div.hr_boder hr { display:none; }
+	
+
+div.basic div.orangeShdBox div.aboutBoxIn { display:block; width:615px; padding:15px 0 0 15px; height:104px; background:url(/content/basic/images/bg_basicbox_in.gif) no-repeat 15px 15px; }
+
+div.basic div.orangeShdBox div.aboutBoxIn ul { padding:0; margin:0; _margin:5px 0 0 0; }
+div.basic div.orangeShdBox div.aboutBoxIn ul li { float:left; width:265px; padding:0 0 30px 0; }
+div.basic div.orangeShdBox div.aboutBoxIn ul li.inLeftbox { margin:0 45px 0 0; }
+div.basic div.orangeShdBox div.aboutBoxIn ul li.bottom { padding:0; }
+
+
+
+
+/* boil css */
+
+div.basicInner p#boilLead { margin:0 0 25px 0; }
+
+.boilArea { width:642px; margin-left:0; }
+
+.boilArea h4 { width:623px; margin:35px 0 0 0; padding:0; height:14px; }
+
+	.boilArea dl { width:64px; margin:0 0 0 25px; }
+	.boilArea dl dt { margin:25px 0 14px 0; }
+	.boilArea dl dd { width:585px; line-height:1.6; }
+	
+	
+div.basic div.orangeShdBox h3#boil { width:597px; padding:12px 0 0 12px; }
+div.basic div.orangeShdBox div#boilBox { width:597px; padding:5px 0 0 12px; }
+
+div.basic div.orangeShdBox div#boilBox div.boilboxLeft { width:396px; float:left; }
+
+	div.basic div.orangeShdBox div#boilBox div.boilboxLeft dl { margin:0 0 0 12px; padding:0;}
+	div.basic div.orangeShdBox div#boilBox div.boilboxLeft dl dt { margin:25px 0 14px 0; }
+	div.basic div.orangeShdBox div#boilBox div.boilboxLeft dl dt.first { margin:0 0 14px 0; }
+	div.basic div.orangeShdBox div#boilBox div.boilboxLeft dl dd { line-height:1.6; }
+	
+div.basic div.orangeShdBox div#boilBox div.boilboxRight { width:126px; float:left; margin:0 0 0 46px; }
+	div.basic div.orangeShdBox div#boilBox div.boilboxRight ul li { margin:0 0 28px 0; }
+	div.basic div.orangeShdBox div#boilBox div.boilboxRight ul li.boil_first { margin-bottom:28px; }
+	div.basic div.orangeShdBox div#boilBox div.boilboxRight ul li.boil_third { margin-bottom:46px; }
+	
+	
+/* 201210 Add */
+
+#content_navi {
+	width: 678px;
+	height: 32px;
+	background: #ece7de url(/content/basic/images/content_navi_bg.gif) repeat-x left bottom;
+	padding: 5px 5px 0 0;
+	margin-bottom: 23px;
+}
+
+#content_navi ul li {
+	width: 221px;
+	display: inline;
+	margin-left: 5px;
+	float: left;
+}
+
+#content .new_content {
+	width: 623px;
+	padding: 24px 14px 0 16px;
+	margin-left: 15px;
+}
+
+#content .new_content h3 {
+	margin-bottom: 18px;
+}
+
+#content .new_content h4 {
+	margin-bottom: 20px;
+}
+
+#content #basic #boil #boil_movie_block,
+#content #basic #boil #boil_text_block {
+	width: 623px;
+}
+
+#content #basic #boil #boil_movie_block {
+	margin-bottom: 30px;
+}
+
+#boil #movie_block {
+	margin-bottom: 35px;
+}
+
+#boil #movie_block .left_block {
+	width: 320px;
+	display: inline;
+	margin-left: 20px;
+	float: left;
+}
+
+#boil #movie_block .right_block {
+	width: 253px;
+	display: inline;
+	padding: 0 15px;
+	float: right;
+}
+
+#boil #recommend_recipe {
+	background: #f6f4f0 url(/content/basic/images/recommend_block_foot.gif) no-repeat left bottom;
+	padding-bottom: 3px;
+}
+
+#boil #recommend_recipe dl {
+	background: url(/content/basic/images/recommend_block_head.gif) no-repeat left top;
+	padding: 3px 8px 6px 13px;
+}
+
+#boil #recommend_recipe dl dt {
+	width: 74px;
+	display: inline;
+	padding-top: 31px;
+	float: left;
+}
+
+#boil #recommend_recipe dl dd {
+	width: 523px;
+	display: inline;
+	padding-top: 5px;
+	float: right;
+}
+
+#boil #recommend_recipe dl dd ul li {
+	width: 97px;
+	text-align: center;
+	display: inline;
+	margin-left: 7px;
+	float: left;
+}
+
+#boil #recommend_recipe dl dd ul li .txt_area {
+	margin-top: 3px;
+}
+
+#boil #recommend_recipe dl dd ul li .txt_area a {
+	font-size: 83.3333%;
+	font-weight: normal;
+}
+
+#boil #recommend_recipe dl dd ul li.list_01 .txt_area a {
+	background: url(/content/basic/images/recommend_01_icon.gif) no-repeat left top;
+	padding: 1px 0 5px 15px;
+}
+
+#boil #recommend_recipe dl dd ul li.list_02 .txt_area a {
+	background: url(/content/basic/images/recommend_02_icon.gif) no-repeat left top;
+	padding: 0px 0 6px 20px;
+}
+
+#boil #recommend_recipe dl dd ul li.list_03 .txt_area a {
+	background: url(/content/basic/images/recommend_03_icon.gif) no-repeat left top;
+	padding: 0px 0 6px 23px;
+}
+
+#boil #recommend_recipe dl dd ul li.list_04 .txt_area a {
+	background: url(/content/basic/images/recommend_04_icon.gif) no-repeat left top;
+	padding: 0px 0 6px 20px;
+}
+
+#boil #recommend_recipe dl dd ul li.list_05 .txt_area a {
+	background: url(/content/basic/images/recommend_05_icon.gif) no-repeat left top;
+	padding: 0px 0 6px 17px;
+}
+
+#boil #boil_top_block {
+	margin-bottom: 20px;
+}
+
+#boil #boil_top_block .left_block {
+	width: 442px;
+	display: inline;
+	margin-left: 20px;
+	float: left;
+}
+
+#boil #boil_top_block .right_block {
+	width: 126px;
+	display: inline;
+	margin-right: 11px;
+	float: right;
+}
+
+#boil #boil_top_block .left_block dt {
+	margin-bottom: 15px;
+}
+
+#boil #boil_top_block .left_block dd {
+	margin-bottom: 27px;
+}
+
+#boil #boil_top_block .right_block ul li.boil_first {
+	margin-bottom: 23px;
+}
+
+#boil #boil_top_block .right_block ul li.boil_third {
+	margin: 15px 0 30px;
+}
+
+#boil .boil_block .boil_inner_block {
+	padding: 0 15px 0 12px;
+	margin-bottom: 15px;
+}
+
+#boil .boil_block .boil_inner_block .left_block {
+	width: 129px;
+	display: inline;
+	float: left;
+}
+
+#boil .boil_block .boil_inner_block .right_block {
+	width: 442px;
+	display: inline;
+	padding-top: 4px;
+	float: right;
+}
+
+#boil .boil_block .boil_inner_block .left_block p {
+	margin-bottom: 15px;
+}
+
+#boil .boil_block .boil_inner_block .right_block dl dt {
+	margin-bottom: 7px;
+}
+
+#boil .boil_block .boil_inner_block .right_block dl dd {
+	margin-bottom: 15px;
+}
+
+#type #summary,
+#type .summary_sub {
+	margin-bottom: 20px;
+}
+
+#type #long_pasta ul,
+#type #short_pasta ul {
+	
+}
+
+#type #long_pasta ul li,
+#type #short_pasta ul li {
+	background: url(/shared/images/line_dot_gray.gif) repeat-x left bottom;
+	padding-bottom: 25px;
+	margin-bottom: 21px;
+}
+
+#type #long_pasta ul li.last {
+	background: none;
+	padding-bottom: 0;
+	margin-bottom: 50px;
+}
+
+#type #short_pasta ul li.last {
+	margin-bottom: 10px;
+}
+
+#type #long_pasta ul li .pasta_image {
+	width: 241px;
+	display: inline;
+	margin-left: 10px;
+	float: left;
+}
+
+#type #long_pasta ul li .right_text {
+	width: 348px;
+	min-height: 115px;
+	height: auto !important;
+	height: 115px;
+	display: inline;
+	margin-left: 24px;
+	float: left;
+}
+
+#type #long_pasta ul li .right_text p {
+	margin-bottom: 10px;
+}
+
+#type #long_pasta ul li .right_text p.btn {
+	text-align: right;
+	margin-bottom: 0;
+}
+
+#type #short_pasta ul li .pasta_image {
+	width: 129px;
+	display: inline;
+	margin-left: 10px;
+	float: left;
+}
+
+#type #short_pasta ul li .right_text {
+	width: 460px;
+	min-height: 115px;
+	height: auto !important;
+	height: 115px;
+	display: inline;
+	margin-left: 24px;
+	float: left;
+}
+
+#type #short_pasta .btn {
+	text-align: right;
+	margin-bottom: 13px;
+}
+
+#type #short_pasta #other_short_pasta {
+	background: url(/content/dictionary/images/short_pasta_other_bg.gif) no-repeat left bottom;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+#type #short_pasta #other_short_pasta h4 {
+	margin-bottom: 8px;
+}
+
+#type #short_pasta #other_short_pasta ul li {
+	background: none;
+	display: inline;
+	padding: 0;
+	margin: 0 0 10px;
+	float: left;
+}
+
+#type #short_pasta #other_short_pasta ul li.list_01 {
+	height: 134px;
+	padding-left: 150px;
+}
+
+#type #short_pasta #other_short_pasta ul li.list_02 {
+	height: 134px;
+	padding-left: 23px;
+}
+
+#type #short_pasta #other_short_pasta ul li.list_03 {
+	height: 136px;
+	padding-left: 64px;
+}
+
+#type #short_pasta #other_short_pasta ul li.list_04 {
+	height: 136px;
+	padding-left: 25px;
+}
+
+#type #short_pasta #other_short_pasta ul li.list_05 {
+	height: 136px;
+	padding-left: 26px;
+}
+
+/* second css */
+div.basicInner table.basic { width:572px; border-collapse:collapse; border:none; margin:20px 0 10px 25px; }
+	div.basicInner table.basic th { width:164px; padding:0 0 10px 0; }
+	div.basicInner table.basic td { background:#fdf7e4; font-size:85%; vertical-align:text-top; padding:10px; }
+	
+	div.basicInner table.basic td.spc { background:#fff; padding:0; }
+	
+	div.basicInner div.secondBox { margin-top:0; width:605px; }
+		div.basicInner div.secondBoxIn { background:none; float:left; width:375px; }
+		div.basicInner div.secondBoxIn p { width:375px; line-height:1.6; margin:0 0 15px 0; } 
+			div.basicInner div.secondBoxIn p em { color:#f78b22; }
+		
+		div.basicInner div.secondBox p.photo { width:224px; _width:204px; float:left; padding:0; margin:0 ; }
+		div.basicInner div.secondBox p.photo img { float:left; margin:0 40px 0 25px; }
+		
+		
+
+
+
+/*
+=========================22：present=========================
+*/
+
+div.presentArea {
+	width: 657px;
+	margin-left:15px;
+}
+
+div.presentArea p#clickmap { margin:20px 0 0 0; }
+
+div.presentArea p.btn {
+	margin-top: 10px;
+	text-align: center;
+}
+
+
+div.presentArea dl { width:653px; margin:8px 0 30px 0; }
+div.presentArea dl dt { float:left; color:#663100; padding:7px 15px; }
+div.presentArea dl dd { padding:7px 15px; padding-left:130px; background:url(/present/images/line_present_dotted.gif) repeat-x left bottom; }
+	div.presentArea dl dd ul { margin:0; padding:0; line-height:none; }
+	div.presentArea dl dd ul li { width:450px; text-indent:-0.5em; padding-left:0.5em; line-height:1.6; } 
+
+
+/* 擬似iframe css */
+
+div.presentArea .applicationArea { 
+	border:1px solid #7f9db9;
+	width:638px;
+	height:220px;
+	
+	margin:15px 0 0 0;
+  padding: 0.5em;
+  overflow: auto;
+	}
+
+
+	div.presentArea .applicationArea h3 { margin: 22px 0 0 15px; }
+	div.presentArea .applicationArea p { margin:10px 15px; }
+	div.presentArea .applicationArea dl#present { width:580px; margin:0 15px; line-height:1.6; list-style:none; }
+	div.presentArea .applicationArea dl#present dt { margin:0; padding:0; }
+	div.presentArea .applicationArea dl#present dd { margin:0 0 20px 0; padding:0; padding-left:0.7em; background:none; }
+	
+	
+	
+/*
+=========================23：content/dictionary=========================
+*/
+
+/* right photo | left text | float block */
+
+div.basic div.basicDicBox { margin-top:25px; width: 645px; }
+div.basic div.basicDicBoxIn { background:none; float:left; width:375px; _width:365px; margin:0 15px; _margin:0 15px 0 8px; }
+div.basic div.basicDicBoxIn p { line-height:1.6; margin:0 0 20px 0; }
+div.basic p.photo img { float:right; }
+
+/* right text | left photo | float block */
+
+div.basic div.basicDicBoxInLe { background:none; float:right; width:375px; _width:365px; margin:0 0 0 15px; _margin:0 0 0 15px; }
+div.basic div.basicDicBoxInLe p { line-height:1.6; margin:0 0 20px 0; }
+div.basic p.photoLe img { float:left; margin:0 0 0 10px; }
+
+div.basic div.orangeShdBox .movieBoxIn { margin:5px; padding:10px 0 20px 60px; height:136px; background:url(/content/dictionary/images/line_movie_dotted.gif) no-repeat 311px 20px;  }
+	div.basic div.orangeShdBox .movieBoxIn ul { margin:10px 0; _margin-top:20px; padding:0;  }
+	div.basic div.orangeShdBox .movieBoxIn ul li { float:left; }
+	div.basic div.orangeShdBox .movieBoxIn ul li.left { float:left; margin:0 115px 0 0; }
+	
+	
+	
+div.basicInner ul#longpasta { margin:0 0 0 66px; padding:0; }
+div.basicInner ul#longpasta li { float:left; }
+div.basicInner ul#longpasta li.end { clear:both; margin:0 0 35px 131px; _margin-left:65px; }
+
+div.basicInner ul#shortpasta { margin:0 0 0 66px; padding:0; }
+div.basicInner ul#shortpasta li { float:left; }
+div.basicInner ul#shortpasta li.end { clear:both; margin:0 0 0 68px; _margin-left:35px; }
+
+
+
+
+/*
+=========================24：song=========================
+*/
+
+div.songArea {
+	width: 657px;
+	margin-left:15px;
+}
+
+div.songArea h3 { margin:0 0 0 4px; padding:0; }
+
+div.songLeft { float:left; width:440px; padding:0; margin:0; }
+
+div.songLeft dl { margin:35px 0 0 40px; padding:0; }
+	div.songLeft dl dt { float:left; }
+	div.songLeft dl dd { width:360px; margin:0 0 35px 10px; _margin-bottom:0; float:left; line-height:2.0; }
+
+
+div.songLeft div.hr_boder_song {
+	clear:both;
+	height:3px;
+	display:block;
+	width:400px;
+	
+	margin:10px 0 15px 40px;
+	
+	background:url(/content/song/images/line_song_dotted.gif) repeat-x left top;
+	}
+	div.songLeft div.hr_boder_song hr { display:none; }
+
+div.songRight { float:right; }
+
+
+
+/*
+=========================25：pasta_fa=========================
+*/
+
+div.pasta_faArea {
+	width: 657px;
+	margin-left:15px;
+	margin-top:45px;
+}
+
+div.pasta_faArea p.btnflash { width:260px; clear:both; margin:25px auto; }
+
+div.pasta_faArea div.basicBox { margin-top:0; width:653px; }
+		div.pasta_faArea div.basicBoxIn { background:none; float:left; width:390px; }
+		div.pasta_faArea div.basicBoxIn p { width:390px; line-height:1.6;  margin:0 0 15px 0; } 
+		div.pasta_faArea div.basicBoxIn h3 { margin:0 0 30px 0; }
+			
+		div.pasta_faArea div.basicBox p.photo { _width:245px; _float:right; }
+		div.pasta_faArea div.basicBox p.photo img { float:right; margin:0; }
+
+div.pasta_faArea div.grayBox { margin:15px 0 0 0; }
+	div.pasta_faArea div.grayBox div.grayBoxIn { padding:15px 15px 0 15px; }
+	div.pasta_faArea div.grayBox img { float:left; }
+	div.pasta_faArea div.grayBox p { float:left; width:490px; font-size:90%; margin:0 0 0 10px; padding:0 0 8px 0; _padding-bottom:8px; }
+
+	div.pasta_faArea div.grayBox p.popup { font-size:90%; width:620px; float:none; margin:0 0 0 16px; padding:15px 0; background:url(/shared/images/line_dot_gray.gif) repeat-x left bottom; }
+
+
+
+
+
+
+/*
+=========================26：cgi-bin | event ========================
+*/
+
+div.form_Submit { width:265px;margin:20px auto; }
+	div.form_Submit div.submitPrev { width:120px; float:left; }
+	div.form_Submit div.submitNext { width:120px; float:right; }
+
+
+
+/*
+=========================27：event | report ========================
+*/
+
+div.reportArea { margin: 25px 0 0 0; }
+
+div.reportArea div.reportKochi,
+div.reportArea div.reportAomori,
+div.reportArea div.reportShizuoka,
+div.reportArea div.reportAsahikawa,
+div.reportArea div.reportHimeji,
+div.reportArea div.reportNagasaki,
+div.reportArea div.report01,
+div.reportArea div.report05 { margin: 0 0 0 15px; }
+div.reportArea div.report05{margin-top:15px;}
+#kochi div.report05{margin-top:10px;}
+
+div.reportArea div.report02,
+div.reportArea div.report03,
+div.reportArea div.report04 { margin: 0 0 0 30px; }
+
+
+div.reportArea div.report02 p,
+div.reportArea div.report03 p,
+div.reportArea div.report04 p { float: left; }
+
+
+div.reportArea div.report02 p.text,
+div.reportArea div.report03 p.text,
+div.reportArea div.report04 p.text { line-height: 32px; }
+
+div.reportArea div.reportKochi,
+div.reportArea div.reportAomori,
+div.reportArea div.reportShizuoka,
+div.reportArea div.reportAsahikawa,
+div.reportArea div.report01,
+div.reportArea div.reportHimeji,
+div.reportArea div.reportNagasaki{width: 653px; min-height: 242px; }
+* html div.reportArea div.report01,
+* html div.reportArea div.reportKochi,
+* html div.reportArea div.reportAomori,
+* html div.reportArea div.reportShizuoka,
+* html div.reportArea div.reportAsahikawa,
+* html div.reportArea div.reportHimeji,
+* html div.reportArea div.reportNagasaki{ height: 242px; }
+
+/* bg01 bg */
+div.reportArea div.reportAomori{ background:url(/event/school/images/aomori_bg_report_01.jpg) no-repeat;}
+div.reportArea div.reportShizuoka{ background: url(/event/school/images/shizuoka_bg_report_01.jpg) no-repeat;}
+div.reportArea div.reportAsahikawa{ background: url(/event/school/images/asahikawa_bg_report_01.jpg) no-repeat;}
+div.reportArea div.report01 { background: url(/event/kyoudo/images/bg_report_01.jpg) no-repeat;}
+div.reportArea div.reportHimeji{ background: url(/event/school/images/himeji_bg_report_01.jpg) no-repeat;}
+div.reportArea div.reportNagasaki{ background: url(/event/school/images/nagasaki_bg_report_01.jpg) no-repeat;}
+div.reportArea div.reportKochi{ background: url(/event/school/images/kochi_bg_report_01.jpg) no-repeat;}
+
+/* bg01 bg */
+div.reportArea div.reportKochi p.image01,
+div.reportArea div.reportAomori p.image01,
+div.reportArea div.reportShizuoka p.image01,
+div.reportArea div.reportAsahikawa p.image01,
+div.reportArea div.report01 p.image01,
+div.reportArea div.reportHimeji p.image01,
+div.reportArea div.reportNagasaki p.image01 { margin: 0 0 0 11px; padding: 0; }
+div.reportArea div.reportKochi p.image02,
+div.reportArea div.reportAomori p.image02,
+div.reportArea div.reportShizuoka p.image02,
+div.reportArea div.reportAsahikawa p.image02,
+div.reportArea div.report01 p.image02 ,
+div.reportArea div.reportHimeji p.image02,
+div.reportArea div.reportNagasaki p.image02 { margin: 0 0 0 24px; padding: 0; }
+
+div.reportArea div.report02 { background: url(../../event/kyoudo/images/bg_report_02.gif) no-repeat; width: 623px; min-height: 116px; }
+#kochi  div.report02,
+#himeji  div.report02,
+#nagasaki  div.report02 { background: url(../../event/school/images/bg_report_02.gif) no-repeat; width: 623px; min-height: 116px; }
+#kochi  div.report02{
+padding-bottom:8px;
+}
+
+* html div.reportArea div.report02 { height: 116px; }
+#kochi .report02,
+#aomori .report02,
+#asahikawa .report02,
+#shizuoka .report02,
+#himeji .report02,
+#nagasaki .report02{
+		min-height: 145px;
+}
+* html #kochi .report02,
+* html #himeji .report02,
+* html #aomori .report02,
+* html #asahikawa .report02,
+* html #shizuoka .report02,
+* html #nagasaki .report02{
+		height: 146px;
+}
+
+
+div.reportArea div.report02 p.photo { margin: 0; padding: 0; width: 178px; height: 45px; }
+div.reportArea div.report02 p.text { margin: 22px 0 0 10px; padding: 0; width: 435px; }
+div.reportArea div.report02 p.text a { color: #86AD32; }
+
+div.reportArea div.report03 { background: url(../../event/kyoudo/images/bg_report_03.gif) no-repeat; width: 623px; min-height: 221px; }
+* html div.reportArea div.report03 { height: 221px; }
+div.reportArea div.report03 p.text { margin: 36px 0 0 0; width: 311px; }
+div.reportArea div.report03 p.photo { margin: 3px 0 0 0; padding: 0; width: 312px; }
+#kochi div.report03{ min-height: 210px; }
+*html #kochi div.report03{ height: 210px; }
+
+#kochi div.report03,
+#himeji div.report03,
+#nagasaki div.report03 {
+padding-bottom:20px;
+background: url(../../event/school/images/bg_report_03.gif) no-repeat 0 20px;
+}
+#kochi div.report03{
+padding-bottom:0;
+}
+
+
+#kochi div.report03 p.photo img,
+#himeji div.report03 p.photo img,
+#nagasaki div.report03 p.photo img{
+margin-left:5px;
+}
+#kochi div.report03 p.photo img{
+margin-top:1px;
+margin-left:16px;
+}
+
+#kochi div.report03 p.text,
+#himeji div.report03 p.text,
+#nagasaki div.report03 p.text{
+margin-top:55px;
+}
+
+div.reportArea div.report04 { margin: 0 0 35px 15px; background: url(../../event/kyoudo/images/bg_report_04.gif) no-repeat; width: 623px; min-height: 255px; }
+* html div.reportArea div.report04 { height: 255px; }
+div.reportArea div.report04 p.photo { margin: 3px 0 0 0; padding: 0; width: 311px; }
+div.reportArea div.report04 p.text { margin: 35px 0 0 0; width: 312px; }
+
+div.reportArea div.report05 { background: #FDF7E4; width: 653px; min-height: 147px; }
+* html div.reportArea div.report05 { height: 147px; }
+div.reportArea div.report05 p.text { margin: 0; padding: 15px; }
+div.reportArea div.report05 p.text strong { color: #F78B22; }
+div.reportArea div.report05 p.button { margin: 0; padding: 0 0 25px 0; text-align: center; }
+
+/*
+=========================27：event | report 02 ========================
+*/
+
+/* base */
+#page .reportKyoudo .report02,
+#page .reportKyoudo .report03,
+#page .reportKyoudo .report04{
+background-image:url(../../event/images/report_txt_bg.gif);
+background-repeat:repeat;
+background-position:0 0;
+}
+#page .reportKyoudo .report03 .bg,
+#page .reportKyoudo .report04 .bg{
+background-image:url(../../event/images/report_dot_bg.gif);
+background-repeat:repeat-x;
+background-position:0 0;
+}
+#page .reportKyoudo .report02{/* overWrite */
+min-height:145px;
+background-position:0 -10px;
+}
+
+/* posi */
+#page .kanazawa .report02 .photo{
+padding-top:1px;
+padding-bottom:1px;
+}
+#page .reportKyoudo .report03 .photo{
+padding-top:13px;
+padding-bottom:13px;
+}
+#page .reportKyoudo .report04 .photo{
+padding-top:13px;
+}
+
+
+
+/* /each/
+ ------------------------------- */
+ 
+/* ----------------------------- kanazawa_report.html */
+#page .kanazawa .report01{
+background-image:url(../../event/kyoudo/images/kana_bg_report_01.jpg);
+}
+#page .kanazawa .report02 .bg{
+background-image:url(../../event/images/report_dot_bg.gif);
+background-repeat:repeat-x;
+background-position:0 116px;
+}
+#page .kanazawa .report03 .bg{
+background:none;
+}
+#page .kanazawa .report03 .text,
+#page .kanazawa .report03 .photo{
+margin-top:0;
+padding-top:0;
+}
+#page .kanazawa .report03{
+padding-bottom:30px;
+background-position:0 -31px;
+}
+
+#page .kanazawa .report04 .photo{
+padding-top:28px;
+}
+
+/* ----------------------------- nagano_report.html */
+#page .nagano .report01{
+background-image:url(../../event/kyoudo/images/nagano_bg_report_01.jpg);
+}
+
+
+
+
+
+/* clear */
+.reportKyoudo .report01:after,
+.reportKyoudo .report02 .bg:after,
+.reportKyoudo .report03 .bg:after,
+.reportKyoudo .report04 .bg:after,
+.reportKyoudo .report05:after{
+content:'.';
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}
+
+/* ie \*/
+*html .reportKyoudo .report01,
+*html .reportKyoudo .report02 .bg,
+*html .reportKyoudo .report03 .bg,
+*html .reportKyoudo .report04 .bg,
+*html .reportKyoudo .report05{
+height:1%;
+}
+*+html .reportKyoudo .report01,
+*+html .reportKyoudo .report02 .bg,
+*+html .reportKyoudo .report03 .bg,
+*+html .reportKyoudo .report04 .bg,
+*+html .reportKyoudo .report05{
+display:inline-block;
+}
+/* end */
+
+/* mac \*//*/
+.reportKyoudo .report01,
+.reportKyoudo .report02 .bg,
+.reportKyoudo .report03 .bg,
+.reportKyoudo .report04 .bg,
+.reportKyoudo .report05{
+display:inline-block;
+}/**/
+
+
+
+/* 20110301 Add */
+
+#report_table {
+	width: 650px;
+	margin: 50px auto;
+}
+
+#report_table h3 {
+	text-align: center;
+}
+
+#report_table h4 {
+	margin: 5px 0;
+}
+
+#report_table .text_01 {
+	font-size: 87%;
+	text-align: right;
+	margin: 0;
+}
+
+#report_table .text_02 {
+	padding-left: 15px;
+	margin: 5px 0;
+}
+
+#report_table .report_data,
+#report_table .report_data th,
+#report_table .report_data td {
+	text-align: center;
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+
+#report_table .report_data {
+	width: 100%;
+}
+
+#pdf_data h3 {
+	padding: 18px 0 3px 40px;
+}
+
+div.association div.orangeBox #pdf_data ul {
+	padding: 0 0 0 40px;
+}
+
+#report_table .report_data tr#now td,
+#report_table .report_data tr#now th {
+	background: #fdf0c6;
+}
+
+#report_table .report_data tr#sum td,
+#report_table .report_data tr#sum th {
+	font-weight: bold;
+}
+
+
+/* 20110526 Add */
+
+.social_area {
+	min-height: 20px;
+	height: auto !important;
+	height: 20px;
+	margin-bottom: 10px;
+	clear: both;
+	position: relative;
+}
+
+.social_area ul {
+	
+}
+
+.detailTitle .social_area ul,
+.eventArea .social_area ul {
+	position: absolute;
+	right: 0;
+}
+
+.advice .social_area {
+	width: 270px;
+	margin: 10px auto 0;
+}
+
+.social_area ul li.facebook {
+	float: left;
+	margin-right:10px;
+}
+
+.social_area ul li.mixi {
+	width: 58px;
+	float: left;
+}
+
+.social_area ul li.twitter {
+	width: 95px;
+	display: inline;
+	margin-left: 6px;
+	float: left;
+}
+
+* html .social_area ul li.twitter {
+	width: 98px;
+}
+
+.social_area ul li.twitter a {
+	float: left;
+}
+
+.social_area ul li.twitter a.twitter_count {
+	color: #390;
+	text-align: center;
+	text-decoration: none;
+	background: url(/shared/images/social/social_bg_tweeted_left.gif) no-repeat left top;
+	padding: 0px 0 0 6px;
+	background: url(/shared/images/social/social_button_twitter_off.gif) no-repeat left top;
+}
+
+.social_area ul li.twitter a.twitter_count:hover {
+	background: url(/shared/images/social/social_button_twitter_on.gif) no-repeat left top;
+}
+
+.social_area ul li.twitter a.twitter_count span {
+	font-size: 12px;
+	background: url(/shared/images/social/social_bg_tweeted_right.gif) no-repeat right top;
+	cursor: pointer;
+	padding: 5px 7px 3px 4px;
+}
+
+.social_area ul li.li_twitter_count a.twitter_count {
+	float: left;
+}
+
+.social_area ul li.twitter a.twitter_count,
+.social_area ul li.twitter a.twitter_count span {
+	min-height: 1em;
+	height: auto !important;
+	height: 1em;
+	display: block;
+}
+
+.social_area ul li.twitter a.twitter_count {
+	color: #390;
+	text-decoration: none;
+	background: url(/shared/images/social/social_bg_tweeted_left.gif) no-repeat left top;
+	padding: 0px 0 0 6px;
+}
+
+.social_area ul li.twitter a.twitter_count span {
+	font-size: 12px;
+	line-height: 13px;
+	background: url(/shared/images/social/social_bg_tweeted_right.gif) no-repeat right top;
+	cursor: pointer;
+}
+
+.social_area ul li.twitter a.twitter_count:hover {
+	background: url(/shared/images/social/social_bg_tweeted_left_on.gif) no-repeat left top;
+}
+
+.social_area ul li.twitter a.twitter_count:hover span {
+	background: url(/shared/images/social/social_bg_tweeted_right_on.gif) no-repeat right top;
+}
+
+
+/* 20110606 Add */
+
+#header p#logo {
+	width: 225px;
+	top: 20px;
+	left: 0;
+}
+
+div.footerLine {
+	background: url(../images/footer_logo_rody.gif) no-repeat left 3px;
+}
+
+
+/* 20110721 Add */
+
+div.formArea p.topTxt {
+	margin-bottom: 15px;
+}
+
+div.formArea .content_top .apply_info {
+	font-weight: bold;
+	margin-bottom: 1.5em;
+}
+
+div.formArea .content_top .clearfix {
+	margin-bottom: 1em;
+}
+
+div.formArea .content_top .left_box {
+	width: 310px;
+	display: inline;
+	float: left;
+}
+
+div.formArea .content_top .right_box {
+	width: 320px;
+	display: inline;
+	float: left;
+}
+
+#contents div.formArea .content_top h2 {
+	margin: 0 0 0.5em;
+}
+
+
+
+
+
+
+/*------------------------------------------------------------
+##############################################################
+■ 2012/07 Renewal
+##############################################################
+------------------------------------------------------------*/
+
+/* 下層ページ共通部分 */
+#campaign_block {
+	width: 653px;
+	background: url(/shared/images/campaign_block_body_bg.gif) repeat-y left top;
+	margin: auto;
+}
+
+#campaign_block h2,
+#campaign_block h3 {
+	margin: 0 0 3px;
+}
+
+#campaign_block .campaign_lead {
+	font-size: 108.3333%;
+	padding: 0 17px;
+	margin-bottom: 8px;
+}
+
+#campaign_block #campaign_foot p {
+	background: url(/shared/images/icon_arw01.gif) no-repeat 0 0.5em;
+	padding-left: 8px;
+}
+
+#campaign_block #campaign_foot p a {
+	font-weight: normal;
+}
+
+#campaign_block #campaign_body {
+	min-height: 78px;
+	height: auto !important;
+	height: 78px;
+	padding: 0 17px 12px;
+}
+
+#campaign_block #campaign_body .left_block {
+	width: 293px;
+	display: inline;
+	float: left;
+}
+
+#campaign_block #campaign_body .right_block {
+	width: 301px;
+	display: inline;
+	background: url(/shared/images/dot_h_1px_gray.gif) repeat-y left top;
+	padding-left: 8px;
+	margin-left: 15px;
+	float: left;
+}
+
+#campaign_block #campaign_body .item_image {
+	display: inline;
+	margin-right: 4px;
+	float: left;
+}
+
+#campaign_block #campaign_body .left_block .item_image {
+	width: 56px;
+}
+
+#campaign_block #campaign_body .right_block .item_image {
+	width: 64px;
+}
+
+#campaign_block #campaign_body dl {
+	width: 233px;
+	display: inline;
+	float: right;
+}
+
+#campaign_block #campaign_body dl dt {
+	margin-bottom: 5px;
+}
+
+#campaign_block #campaign_foot {
+	height: 34px;
+	background: url(/shared/images/campaign_block_foot_bg.gif) no-repeat left top;
+}
+
+#campaign_block #campaign_foot p {
+	display: inline;
+	margin: 8px 12px 0 0;
+	float: right;
+}
+
+#sub .present_block {
+	background: url(/shared/images/side_block_01_bg.gif) no-repeat left bottom;
+	display: none;
+	padding-bottom: 15px;
+	margin-bottom: 13px;
+}
+
+#sub .present_block h2,
+#sub .present_block h3 {
+	margin-bottom: 8px;
+}
+
+#sub .present_block .campaign_list {
+	width: 150px;
+	margin: 0 auto 12px;
+}
+
+#sub .present_block .campaign_list li {
+	height: 40px;
+	height: auto !important;
+	min-height: 40px;
+	font-weight: bold;
+	line-height: 1.3;
+	padding: 7px 0 0 53px;
+	margin-bottom:;
+}
+
+* html #sub .present_block .campaign_list li {
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+#sub .present_block .campaign_list li.list_01 {
+	background: url(/shared/images/side_present_bg_01.gif) no-repeat left bottom;
+}
+
+#sub .present_block .campaign_list li.list_02 {
+	background: url(/shared/images/side_present_bg_02.gif) no-repeat left bottom;
+}
+
+#sub .present_block .account_link {
+	margin-left: 11px;
+}
+
+#sub .present_block .account_link2 {
+	width: 150px;
+	background: url(/shared/images/icon_arw01.gif) no-repeat 0 0.5em;
+	padding-left: 8px;
+	margin: auto;
+}
+
+#sub .present_block .account_link dt {
+	line-height: 1;
+	margin-bottom: 6px;
+}
+
+#sub .present_block .account_link dd {
+	margin-bottom: 12px;
+}
+
+
+/* トップページ */
+#home #header #descript h1 {
+	color: #633100;
+	font-size: 116.6666%;
+	line-height: 1.3571;
+	margin-bottom: 3px;
+}
+
+#home #contents {
+	width: auto;
+	float: none;
+}
+
+#home #contents #main_column {
+	width: 622px;
+	display: inline;
+	float: left;
+}
+
+#home #contents #sub_column {
+	width: 240px;
+	display: inline;
+	float: right;
+}
+
+#home #footer_link {
+	width: 872px;
+	padding: 20px 0 0;
+}
+
+#home #search_block {
+	background: url(/images/search_block_bg.gif) no-repeat right top;
+}
+
+#home #search_block h2 {
+	margin: 0 0 12px;
+}
+
+#home #search_block .search_method_01,
+#home #search_block .search_method_02 {
+	background: url(/images/search_method_bg.gif) no-repeat left bottom;
+	padding: 0 10px 5px;
+	margin-bottom: 8px;
+}
+
+#home #search_block .search_method_01 dl {
+	margin-bottom: 5px;
+}
+
+#home #search_block .search_method_01 dt {
+	width: 152px;
+	padding-top: 4px;
+	float: left;
+}
+
+#home #search_block .search_method_02 dt {
+	width: 152px;
+	padding-top: 2px;
+	float: left;
+}
+
+#home #search_block .search_method_01 dd,
+#home #search_block .search_method_02 dd {
+	margin-left: 152px;
+}
+
+* html #home #search_block .search_method_01 dd {
+	margin-left: 0;
+}
+
+*:first-child+html #home #search_block .search_method_01 dd {
+	margin-left: 0;
+}
+
+#home #search_block .search_method_01 #keyword {
+	width: 170px;
+	height: 20px;
+	display: inline;
+	border: 1px solid #cab77d;
+	float: left;
+}
+
+#home #search_block .search_method_01 #submit {
+	width: 79px;
+	display: inline;
+	margin-left: 7px;
+	float: left;
+}
+
+#home #search_block .search_method_01 ul li {
+	font-size: 91.6666%;
+	display: inline;
+	margin-right: 20px;
+	float: left;
+}
+
+#home #search_block .search_method_01 ul li input {
+	margin-right: 5px;
+}
+
+#home #search_block .search_method_02 ul li {
+	min-height: 30px;
+	height: auto !important;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: inline;
+	margin-right: 15px;
+	float: left;
+}
+
+#home #search_block .search_method_02 ul li.list_01 {
+	background-image: url(/images/ico_method_01.gif);
+	padding: 0 0 0 21px;
+}
+
+#home #search_block .search_method_02 ul li.list_02 {
+	background-image: url(/images/ico_method_02.gif);
+	padding: 0 0 0 30px;
+}
+
+#home #search_block .search_method_02 ul li.list_03 {
+	background-image: url(/images/ico_method_03.gif);
+	padding: 0 0 0 41px;
+}
+
+#home #search_block .search_method_02 ul li.list_04 {
+	background-image: url(/images/ico_method_04.gif);
+	padding: 0 0 0 32px;
+}
+
+#home #search_block .search_method_02 ul li.list_05 {
+	background-image: url(/images/ico_method_05.gif);
+	padding: 0 0 0 26px;
+}
+
+#home #search_block .search_method_02 a,
+#home #search_block .search_method_03 a {
+	font-weight: normal;
+}
+
+#home #search_block .search_method_03 {
+	margin-bottom: 10px;
+}
+
+#home #search_block .search_method_03 p {
+	background: url(/shared/images/icon_arw01.gif) no-repeat left 0.5em;
+	padding-left: 8px;
+	margin-right: 13px;
+	float: right;
+}
+
+#home #recommend_recipe {
+	width: 620px;
+	height: 283px;
+	background: url(/images/recommend_recipe_bg.gif) no-repeat left top;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+#home #recommend_recipe #recipe_photo {
+	position: absolute;
+	top: 26px;
+	left: 26px;
+}
+
+#home #recommend_recipe #recipe_photo p {
+	width: 198px;
+	text-align: center;
+}
+
+#home #recommend_recipe #recipe_info {
+	padding-top: 11px;
+	margin-left: 246px;
+}
+
+#home #recommend_recipe #recipe_info h2 {
+	margin: 0 0 1px;
+}
+
+#home #recommend_recipe #recipe_info .recipe_description {
+	width: 328px;
+	height: 46px;
+	background: url(/images/recommend_text_bg.gif) no-repeat;
+	overflow: hidden;
+	padding: 6px 11px 0;
+	margin: 0 0 11px 7px;
+}
+
+#home #recommend_recipe #recipe_info .recipe_description p {
+	margin-bottom: 0.4em;
+}
+
+#home #recommend_recipe #recipe_info > .recipe_description p:last-child {
+	font-size: 90.9091%;
+}
+
+#home #recommend_recipe #recipe_info #before_recipe {
+	width: 348px;
+	margin-left: 7px;
+}
+
+#home #recommend_recipe #recipe_info #before_recipe #before_recipe_photo {
+	width: 78px;
+	display: inline;
+	margin-top: 10px;
+	float: right;
+}
+
+#home #recommend_recipe #recipe_info #before_recipe #before_recipe_info {
+	width: 270px;
+	display: inline;
+	float: left;
+}
+
+#home #recommend_recipe #recipe_info #before_recipe #before_recipe_photo p {
+	border: 1px solid #d5d5d5;zoom:1;
+	background-color: #fff;
+	padding: 3px;
+}
+
+#home #recommend_recipe #recipe_info #before_recipe .recipe_description {
+	width: 238px;
+	height: 57px;
+	font-size: 83.3333%;
+	line-height: 1.4;
+	background: url(/images/before_recipe_text_bg.gif) no-repeat;
+	overflow: hidden;
+	padding: 6px 11px 0;
+	margin: 0;
+}
+
+#home #recommend_recipe #recipe_info #before_recipe .recipe_description p {
+	margin-bottom: 0.5em;
+}
+
+#home #banner_block ul {
+	margin-left: -7px;bgc
+}
+
+#home #banner_block ul li {
+	width: 202px;
+	display: inline;
+	padding-bottom: 12px;
+	margin-left: 7px;
+	float: left;
+}
+
+#home #ranking_block {
+	background: url(/images/ranking_block_bg.gif) no-repeat left bottom;
+	margin-bottom: 11px;
+}
+
+#home #ranking_block h2 {
+	margin: 0 0 10px;
+}
+
+#home #ranking_block .left_block {
+	width: 287px;
+	display: inline;
+	margin-left: 11px;
+	float: left;
+}
+
+#home #ranking_block .right_block {
+	width: 287px;
+	display: inline;
+	margin-right: 14px;
+	float: right;
+}
+
+#home #ranking_block h3 {
+	margin: 0 0 11px;
+}
+
+#home #ranking_block ul {
+	
+}
+
+#home #ranking_block ul li {
+	width: 82px;
+	display: inline;
+	overflow: hidden;
+	margin-left: 10px;
+	float: left;
+}
+
+#home #ranking_block ul li .rank_image {
+	margin-left: 8px;
+}
+
+#home #ranking_block ul li .recipe_image {
+	text-align: center;
+	margin: 8px 0 10px;
+}
+
+#home #ranking_block ul li .recipe_image img {
+	max-width: 76px;
+	border: 1px solid #ccc;
+	padding: 2px;
+}
+
+#home #ranking_block .ranking_foot {
+	background: url(/shared/images/line_dot_gray.gif) repeat-x left top;
+	padding: 8px 0 6px;
+	margin-top: 8px;
+}
+
+#home #ranking_block .ranking_foot p {
+	font-weight: normal;
+	background: url(/shared/images/icon_arw01.gif) no-repeat left 0.5em;
+	padding-left: 8px;
+	float: right;
+}
+
+#home #middle_contents {
+	width: 620px;
+	margin-bottom: 4px;
+}
+
+#home #middle_contents #new_post_block {
+	width: 292px;
+	display: inline;
+	float: left;
+}
+
+#home #middle_contents #new_post_block h2 {
+	margin: 0 0 8px;
+}
+
+#home #new_post_block .left_block {
+	width: 154px;
+	background: url(/images/index_bg_contribution.gif) no-repeat left top;
+	display: inline;
+	float: left;
+}
+
+* html #home #new_post_block .left_block {
+	overflow: hidden;
+}
+
+*:first-child+html #home #new_post_block .left_block {
+	overflow: hidden;
+}
+
+#home #new_post_block .right_block {
+	width: 128px;
+	display: inline;
+	float: right;
+	position: relative;
+}
+
+#home #new_post_block .left_block p {
+	min-height: 130px;
+	height: auto !important;
+	height: 130px;
+	text-align: center;
+	border: 1px solid #d5d5d5;
+	border-top: none;
+	padding: 0 3px 3px;
+	margin-top: 10px;
+}
+
+#home #new_post_block .left_block p img {
+	max-width: 146px;
+	max-height: 146px;
+	border-width:0;
+}
+
+#home #new_post_block .left_block p span {
+	color: #f75e22;
+	font-size: 83.3333%;
+	font-weight: bold;
+	display: block;
+}
+
+#home #new_post_block .right_block {
+	padding-bottom: ;
+}
+
+#home #new_post_block .right_block .recipe_name {
+	font-weight: bold;
+	background: url(/shared/images/icon_arw02.gif) no-repeat 0 0.2em;
+	padding-left: 18px;
+	margin: 6px 0 3px;
+}
+
+#home #new_post_block .right_block .recipe_author {
+	color: #f78b22;
+	font-size: 83.3333%;
+	background: url(/shared/images/icon_arw01.gif) no-repeat 0 0.5em;
+	padding-left: 8px;
+	margin-bottom: 5px;
+}
+
+#home #new_post_block .right_block .recipe_author a {
+	color: #f78b22;
+}
+
+#home #new_post_block .right_block .recipe_text {
+	font-size: 83.3333%;
+	margin-bottom: 10px;
+}
+
+#home #new_post_block .right_block .others_recipe {
+	position: absolute;
+	bottom: 0;
+}
+
+#home #middle_contents #dietitian_block {
+	width: 302px;
+	display: inline;
+	background: url(/images/dietitian_block_bg.gif) no-repeat left bottom;
+	float: right;
+}
+
+#home #middle_contents #dietitian_block h2 {
+	margin: 0 0 10px;
+}
+
+#home #middle_contents #dietitian_block ul {
+	padding: 0 10px 10px;
+}
+
+#home #middle_contents #dietitian_block ul li {
+	background: url(/images/icon_link_arrow.gif) no-repeat left 0.2em;
+	padding-left: 15px;
+	margin-bottom: 12px;
+}
+
+#home #campaign_block {
+	width: 620px;
+	background: url(/images/campaign_block_body_bg.gif) repeat-y left top;
+}
+
+#home #campaign_block h2 {
+	margin: 0 0 0;
+}
+
+#home #campaign_block .campaign_lead {
+	font-size: 108.3333%;
+	padding: 0 17px;
+	margin-bottom: 8px;
+}
+
+#home #campaign_block #campaign_foot p {
+	background: url(/shared/images/icon_arw01.gif) no-repeat 0 0.5em;
+	padding-left: 8px;
+}
+
+#home #campaign_block #campaign_foot p a {
+	font-weight: normal;
+}
+
+#home #campaign_block #campaign_body {
+	min-height: 78px;
+	height: auto !important;
+	height: 78px;
+	padding: 0 17px 12px;
+}
+
+#home #campaign_block #campaign_body .left_block {
+	width: 278px;
+	display: inline;
+	float: left;
+}
+
+#home #campaign_block #campaign_body .right_block {
+	width: 286px;
+	display: inline;
+	background: url(/shared/images/dot_h_1px_gray.gif) repeat-y left top;
+	padding-left: 8px;
+	margin-left: 14px;
+	float: left;
+}
+
+#home #campaign_block #campaign_body .item_image {
+	display: inline;
+	margin-right: 4px;
+	float: left;
+}
+
+#home #campaign_block #campaign_body .left_block .item_image {
+	width: 56px;
+}
+
+#home #campaign_block #campaign_body .right_block .item_image {
+	width: 64px;
+}
+
+#home #campaign_block #campaign_body dl {
+	width: 218px;
+	display: inline;
+	float: right;
+}
+
+#home #campaign_block #campaign_body dl dt {
+	margin-bottom: 5px;
+}
+
+#home #campaign_block #campaign_foot {
+	height: 34px;
+	background: url(/images/campaign_block_foot_bg.gif) no-repeat left top;
+}
+
+#home #campaign_block #campaign_foot p {
+	display: inline;
+	margin: 8px 12px 0 0;
+	float: right;
+}
+
+
+#home #sub_column .side_block_01 {
+	background: url(/images/side_block_01_bg.gif) no-repeat left bottom;
+	padding-bottom: 5px;
+	margin-bottom: 13px;
+}
+
+#home #sub_column .side_block_01 h3 {
+	margin-bottom: 8px;
+}
+
+#home #sub_column .side_block_01 .campaign_list {
+	width: 218px;
+	margin: 0 auto 12px;
+}
+
+#home #sub_column .side_block_01 .campaign_list li {
+	width: 199px;
+	margin: 0 auto 8px;
+}
+
+#home #sub_column .side_block_01 .account_link {
+	margin-left: 21px;
+}
+
+#home #sub_column .side_block_01 .account_link dt {
+	line-height: 1;
+	margin-bottom: 6px;
+}
+
+#home #sub_column .side_block_01 .account_link dd {
+	margin-bottom: 12px;
+}
+
+#home #sub_column .side_block_02 {
+	background: url(/images/side_block_02_bg.gif) no-repeat left bottom;
+	padding-bottom: 5px;
+	margin-bottom: 13px;
+}
+
+#home #sub_column .side_block_02 h3 {
+	margin-bottom: 10px;
+}
+
+#home #sub_column .side_block_02 .content_link {
+	padding-left: 17px;
+}
+
+#home #sub_column .side_block_02 .content_link dt {
+	background: url(/images/icon_link_arrow.gif) no-repeat left 0.2em;
+	padding-left: 15px;
+}
+
+#home #sub_column .side_block_02 .content_link dd {
+	font-size: 83.3333%;
+	padding-left: 15px;
+	margin-bottom: 5px;
+}
+
+#home #sub_column .side_block_03 {
+	background: url(/images/side_block_03_bg.gif) no-repeat left bottom;
+	margin-bottom: 10px;
+}
+
+#home #sub_column .side_block_03 h3 {
+	margin-bottom: 10px;
+}
+
+#home #sub_column .side_block_03 a {
+	color: #633100;
+	font-weight: normal;
+}
+
+#home #sub_column #event_list {
+	padding-bottom: 8px;
+}
+
+#home #sub_column #event_list ul {
+	padding: 0 8px;
+}
+
+#home #sub_column #event_list ul li {
+	background: url(/shared/images/icon_arw01.gif) no-repeat left 0.5em;
+	padding-left: 8px;
+	margin-bottom: 5px;
+}
+
+#home #sub_column #news {
+	padding-bottom: 12px;
+}
+
+* html #home #sub_column #news {
+	padding-bottom: 7px;
+}
+
+*:first-child+html #home #sub_column #news {
+	padding-bottom: 7px;
+}
+
+#home #sub_column #news dl {
+	padding: 0 8px;
+}
+
+#home #sub_column #news dl dt {
+	color: #78a614;
+	font-weight: bold;
+}
+
+#home #sub_column #news dl dd {
+	background: url(/shared/images/line_dot_brown.gif) repeat-x left bottom;
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+}
+
+#home #sub_column #news p {
+	font-size: 83.3333%;
+	line-height: 1;
+	background: url(/shared/images/icon_arw01.gif) no-repeat left 0.3em;
+	padding-left: 8px;
+	margin-right: 8px;
+	float: right;
+}
+
+#home #sub_column .bnr_mb8 {
+	margin-bottom: 8px;
+}
+
+#home #sub_column .bnr_mb10 {
+	margin-bottom: 10px;
+}
+
+
+/* レシピ詳細 */
+.recipe_float_block {
+	width: 653px;
+	margin: 30px auto 0;
+}
+
+.recipe_float_block .smart_block,
+.recipe_float_block .qr_block {
+	width: 315px;
+	display: inline;
+	float: left;
+}
+
+.recipe_float_block .smart_block {
+	margin-right: 23px;
+}
+
+.recipe_float_block h3 {
+	margin-bottom: 15px;
+}
+
+.recipe_float_block .smart_block .left_block {
+	width: 127px;
+	float: left;
+}
+
+.recipe_float_block .smart_block .right_block {
+	width: 179px;
+	float: right;
+}
+
+.recipe_float_block .qr_block .left_block {
+	width: 123px;
+	float: left;
+}
+
+.recipe_float_block .qr_block .right_block {
+	width: 183px;
+	float: right;
+}
+
+.recipe_float_block .qr_block .left_block p {
+	width: 123px;
+	text-align: center;
+	background: url(/recipe/images/bg_pr.gif) no-repeat left top;
+	padding: 2px 0 1px;
+}
+
+
+/* マイページ詳細 */
+#mypage h1 {
+	width: 620px;
+	height: 54px;
+	font-size: 166.6666%;
+	line-height: 1;
+	background: url(/recipe/mymenu/images/h1_mypage.jpg) no-repeat left top;
+	padding: 38px 0 0 63px;
+}
+
+#mypage #campaign_block {
+	margin-bottom: 20px;
+}
+
+#mypage #post_recipe {
+	width: 653px;
+	margin: 0 auto 20px;
+}
+
+#mypage #post_recipe p.btn_area {
+	text-align: center;
+	border: 3px solid #eee1c5;
+	background-color: #fcf5e0;
+	padding: 15px 0;
+}
+
+#mypage .arrow_link {
+	background: url(/shared/images/icon_arw01.gif) no-repeat left 0.5em;
+	display: inline;
+	padding-left: 8px;
+	margin-top: 5px;
+	float: right;
+}
+
+#mypage .recipe_list {
+	width: 653px;
+	margin: 0 auto 20px;
+}
+
+#mypage .recipe_list h2 {
+	color: #633100;
+	font-weight: normal;
+	line-height: 1;
+	border: 1px solid #f79d45;
+	background-color: #fde8c3;
+	padding: 6px 13px 4px;
+	margin: 0 0 15px;
+}
+
+#mypage .recipe_list ul {
+	margin-bottom: 5px;
+}
+
+#mypage .recipe_list ul li {
+	width: 156px;
+	background: url(/shared/images/dot_h_1px_gray.gif) repeat-y left top;
+	display: inline;
+	padding-left: 21px;
+	margin-left: 40px;
+	float: left;
+}
+
+#mypage .recipe_list ul li.first {
+	background: none;
+	margin-left: 0;
+}
+
+
+/* メルマガページ */
+#magazine .lead {
+	margin: 0 0 15px 15px;
+}
+
+#magazine .lead span {
+	font-size: 83.3333%;
+	display: block;
+}
+
+#magazine .form_block {
+	margin-bottom: 50px;
+}
+
+#magazine .form_block h2 {
+    font-size: 120%;
+    background: none repeat scroll 0 0 #FDE8C3;
+    padding: 3px 15px;
+    margin: 0 4px 15px 0;
+}
+
+#magazine .form_block table {
+	margin-bottom: 10px;
+}
+
+#magazine .form_block #btn_confirm {
+	width: 120px;
+	height: 36px;
+	text-indent: -9999px;
+	border-width: 0;
+	background: url(/shared/images/btn_confirm02.gif) no-repeat left top;
+	display: block;
+	cursor: pointer;
+	margin: 0 auto 24px;
+}
+
+#magazine .form_block #btn_alter {
+	width: 155px;
+	height: 35px;
+	text-indent: -9999px;
+	border-width: 0;
+	background: url(/shared/images/btn_alter.gif) no-repeat left top;
+	display: block;
+	cursor: pointer;
+	margin: 0 auto 24px;
+}
+
+#magazine .form_block #btn_cancel {
+	width: 155px;
+	height: 35px;
+	text-indent: -9999px;
+	border-width: 0;
+	background: url(/shared/images/btn_cancel2.gif) no-repeat left top;
+	display: block;
+	cursor: pointer;
+	margin: 0 auto 24px;
+}
+
+#magazine .form_block .other_link p {
+	background: url(/shared/images/icon_arw01.gif) no-repeat left 0.5em;
+	padding-left: 8px;
+	float: right;
+}
+
+#magazine #terms {
+	width: 570px;
+	margin: 0 auto 20px;
+}
+
+#magazine #terms #terms_text {
+	width: 520px;
+	height: 150px;
+	border: 2px solid #c1c1c1;
+	overflow: auto;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+#magazine #terms #terms_text h3 {
+	color: #68441D;
+	font-size: 18px;
+	margin-bottom: 12px;
+}
+
+#magazine #terms #terms_text h4 {
+	color: #68441D;
+	font-size: 14px;
+	margin-bottom: 12px;
+}
+
+#magazine #terms #terms_text p {
+	margin-bottom: 24px;
+}
+
+#magazine #terms #terms_text p.signature {
+	text-align: right;
+}
+
+#magazine #terms #terms_text ul {
+	margin-bottom: 24px;
+}
+
+#magazine #terms #terms_text ul li {
+	text-indent: -1.5em;
+	padding-left: 1.5em;
+}
+
+#magazine #terms .terms_check {
+	text-align: center;
+}
+
+
+#gotochi #mainArea a {
+	outline: none;
+}
+
+#gotochi #content_header {
+	padding-bottom: 21px;
+}
+
+#gotochi .map_page #content_header {
+	background: url(/gotochi/images/content_header_bg.gif) repeat-x left bottom;
+}
+
+#gotochi #content_header h2 {
+	width: 620px;
+	float: left;
+}
+
+#gotochi #content_header p {
+	width: 241px;
+	margin-top: 24px;
+	float: left;
+}
+
+#gotochi #gotochi_map {
+	width: 870px;
+	height: 534px;
+	background: url(/gotochi/images/map.jpg) no-repeat;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+#gotochi #gotochi_map h3 {
+	margin-bottom: 32px;
+}
+
+#gotochi #gotochi_map .lead {
+	margin-left: 20px;
+}
+
+#gotochi #gotochi_map .recipe_list {
+	position: absolute;
+	top: 477px;
+	left: 661px;
+}
+
+#gotochi #gotochi_map #pref_list li {
+	position: absolute;
+	z-index: 1;
+}
+
+#gotochi #gotochi_map #pref_list .outer_dl {
+	position: relative;
+	z-index: 1;
+}
+
+#gotochi #gotochi_map #pref_list .outer_dl dt.outer_dt {
+	position: relative;
+	z-index: 2;
+}
+
+#gotochi #gotochi_map #pref_list .outer_dl dt.outer_dt img {
+	cursor: pointer;
+}
+
+* html #gotochi #gotochi_map #pref_list .outer_dl dt.outer_dt {
+	width: 30px;
+	cursor: pointer;
+}
+
+#gotochi #gotochi_map #pref_list .outer_dl dd.outer_dd {
+	width: 154px;
+	background: url(/gotochi/images/place_bg.gif) no-repeat left bottom;
+	display: none;
+	padding-bottom: 8px;
+	position: absolute;
+	bottom: 27px;
+	left: -63px;
+	z-index: 3;
+}
+
+#gotochi #gotochi_map #pref_list .outer_dl.type_02 dd.outer_dd {
+	width: 254px;
+	background: url(/gotochi/images/place_bg_02.gif) no-repeat left bottom;
+}
+
+#gotochi #gotochi_map #pref_list .outer_dl.type_03 dd.outer_dd {
+	width: 254px;
+	background: url(/gotochi/images/place_bg_03.gif) no-repeat left bottom;
+}
+
+#gotochi #gotochi_map #pref_list .outer_dl.type_05 dd.outer_dd {
+	width: 254px;
+	border-bottom: 1px solid #dadada;
+	background: url(/gotochi/images/place_bg_05.gif) no-repeat left top;
+	padding: 5px 0 1px;
+	top: 27px;
+	bottom: auto;
+}
+
+#gotochi #gotochi_map #pref_list .outer_dl.type_06 dd.outer_dd {
+	width: 254px;
+	background: url(/gotochi/images/place_bg_06.gif) no-repeat left bottom;
+	left: 0;
+}
+
+#gotochi #gotochi_map #pref_list li#pref_nagasaki .outer_dl.type_02 dd.outer_dd { left: -40px; }
+
+#gotochi #gotochi_map #pref_list li .outer_dl.type_03 dd.outer_dd,
+#gotochi #gotochi_map #pref_list li .outer_dl.type_05 dd.outer_dd {
+	left: -113px;
+}
+
+#gotochi #gotochi_map #pref_list li .outer_dl.type_06 dd.outer_dd {
+	left: -185px;
+}
+
+#gotochi #gotochi_map #pref_list .outer_dl dd h4 {
+	margin-bottom: 3px;
+}
+
+#gotochi #gotochi_map #pref_list .inner_dl {
+	width: 146px;
+	margin: auto;
+}
+
+#gotochi #gotochi_map #pref_list .type_02 .inner_dl,
+#gotochi #gotochi_map #pref_list .type_03 .inner_dl,
+#gotochi #gotochi_map #pref_list .type_05 .inner_dl,
+#gotochi #gotochi_map #pref_list .type_06 .inner_dl {
+	width: 246px;
+}
+
+#gotochi #gotochi_map #pref_list .inner_dl dt,
+#gotochi #gotochi_map #pref_list .inner_dl dd {
+	margin-bottom: 1px;
+}
+
+#gotochi #header_content {
+	width: 845px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+#gotochi #header_content h1 {
+	width: 560px;
+	float: left;
+}
+
+#gotochi #header_content ul {
+	position: absolute;
+	top: 65px;
+	right: 0;
+}
+
+#gotochi #header_content ul li {
+	background: url(/shared/images/icon_list_arrow.gif) no-repeat left 0.5em;
+	padding-left: 10px;
+	margin-left: 15px;
+	float: left;
+}
+
+#gotochi #header_content ul li a {
+	font-weight: normal;
+}
+
+#gotochi .h2_bg {
+	height: 34px;
+	font-size: 116.6666%;
+	font-weight: bold;
+	background: url(/gotochi/images/h2_bg.gif) no-repeat left top;
+	padding: 16px 0 0 42px;
+}
+
+#gotochi .h3_bg {
+	height: 29px;
+	font-weight: normal;
+	background: url(/gotochi/images/h3_bg.gif) no-repeat left top;
+	padding: 6px 0 0 18px;
+}
+
+#gotochi #gotochi_list {
+	padding-left: 25px;
+}
+
+#gotochi #gotochi_list h2 {
+	margin-bottom: 18px;
+}
+
+#gotochi #gotochi_list #prefecture_list {
+	margin: 0 0 28px 0;
+}
+
+#gotochi #gotochi_list #prefecture_list li {
+	background: url(/gotochi/images/icon_arrow_under.gif) no-repeat 3px 0.6em;
+	padding-left: 15px;
+	margin-left: 20px;
+	float: left;
+}
+
+#gotochi #gotochi_list #prefecture_list li.first {
+	margin-left: 0;
+}
+
+#gotochi .prefecture_section {
+	width: 820px;
+}
+
+#gotochi .prefecture_section h3 {
+	margin-bottom: 12px;
+}
+
+#gotochi .prefecture_section .recipe_list {
+	background: url(/gotochi/images/dot_line_recipe_list.gif) repeat-x left bottom;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+#gotochi .prefecture_section .recipe_list li {
+	width: 302px;
+	margin-right: 104px;
+	float: left;
+}
+
+#gotochi .prefecture_section .recipe_list li dt {
+	font-weight: bold;
+	background: url(/gotochi/images/head_catch.gif) no-repeat 1px top;
+	padding-left: 15px;
+	margin-bottom: 5px;
+}
+
+#gotochi .prefecture_section .recipe_list li dd .pict_area {
+	margin-bottom: 8px;
+}
+
+#gotochi .prefecture_section .recipe_list li dd .text_area {
+	font-size: 116.6666%;
+	background: url(/shared/images/icon_list_arrow.gif) no-repeat left 0.5em;
+	padding-left: 10px;
+}
+
+#gotochi .prefecture_section div.btmLink {
+	width: 820px;
+	margin-left: 0;
+}
+
+#gotochi .prefecture_section div.btmLink p.pagetop {
+	width: 108px;
+	margin-left: auto;
+	float: none;
+}
+
+#gotochi .prefecture_section div.btmLink p.pagetop {
+	width: 108px;
+	margin-left: auto;
+	float: none;
+}
+
+#gotochi #recipe_block {
+	width: 820px;
+	padding-left: 25px;
+}
+
+#gotochi #recipe_block h2 {
+	margin-bottom: 22px;
+}
+
+#gotochi #recipe_block h3 {
+	width: 500px;
+	font-weight: bold;
+	background: url(/gotochi/images/head_catch.gif) no-repeat 1px top;
+	padding-left: 15px;
+	margin-bottom: 5px;
+	position: relative;
+	z-index: 100;
+}
+
+#gotochi #recipe_block #recipe_info #recipe_visual {
+	width: 302px;
+	float: left;
+}
+
+#gotochi #recipe_block #recipe_info #recipe_ingredients {
+	width: 513px;
+	margin-top: -22px;
+	float: right;
+}
+
+#gotochi #recipe_ingredients .h4_block {
+	position: relative;
+	z-index: 10;
+}
+
+#gotochi #recipe_ingredients .h4_block span.num {
+	font-weight: bold;
+	line-height: 1;
+	position: absolute;
+	top: 54px;
+	left: 448px;
+}
+
+#gotochi #recipe_ingredients .h4_block .social_area {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+* html #gotochi #recipe_ingredients .h4_block .social_area {
+	left: 340px;
+}
+
+#gotochi #info_detail {
+	min-height: 190px;
+	height: auto !important;
+	height: 190px;
+	background: url(/gotochi/recipe/images/ingredient_body_bg.gif) no-repeat left top;
+}
+
+#gotochi #info_detail ul {
+	width: 210px;
+	display: inline;
+	padding-top: 4px;
+	margin-left: 24px;
+	float: left;
+}
+
+#gotochi #info_detail ul li {
+	margin-bottom: 0.6em;
+}
+
+#gotochi #info_detail ul li dt {
+	width: 125px;
+	font-size: 116.6666%;
+	line-height: 1.3;
+	background: url(/gotochi/recipe/images/catch_ingredient.gif) no-repeat left 0.4em;
+	padding-left: 14px;
+	float: left;
+}
+
+#gotochi #info_detail ul li dd {
+	color: #dd832c;
+	line-height: 1.3;
+	margin-left: 139px;
+}
+
+#gotochi #info_detail ul li dt.line2,
+#gotochi #info_detail ul li dd.line2 {
+	line-height: 1.5;
+}
+
+* html #gotochi #info_detail ul li dt { width: 120px; }
+* html #gotochi #info_detail ul li dd { margin-left: 134px; }
+
+#gotochi #recipe_steps {
+	background: url(/gotochi/recipe/images/steps_body_bg.gif) no-repeat left 77px;
+	margin-bottom: 30px;
+}
+
+#gotochi #recipe_steps #preparation {
+	border: 1px solid #e2e2e2;
+	background-color: #f4f4f4;
+	padding: 5px;
+	margin: 0 20px 10px;
+}
+
+#gotochi #recipe_steps #preparation dt {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+#gotochi #recipe_steps #preparation dd {
+	padding-left: 31px;
+}
+
+#gotochi #recipe_steps ol {
+	padding: 0 20px;
+}
+
+#gotochi #recipe_steps ol li {
+	min-height: 22px;
+	height: auto !important;
+	height: 22px;
+	background-repeat: no-repeat;
+	background-position: 9px 0.5em;
+	border-bottom: 1px solid #e2e2e2;
+	padding: 8px 0 0 36px;
+}
+
+#gotochi #recipe_steps ol li.even { background-color: #f4f4f4; }
+#gotochi #recipe_steps ol li.step_01 { background-image: url(/gotochi/recipe/images/step_01.gif); }
+#gotochi #recipe_steps ol li.step_02 { background-image: url(/gotochi/recipe/images/step_02.gif); }
+#gotochi #recipe_steps ol li.step_03 { background-image: url(/gotochi/recipe/images/step_03.gif); }
+#gotochi #recipe_steps ol li.step_04 { background-image: url(/gotochi/recipe/images/step_04.gif); }
+#gotochi #recipe_steps ol li.step_05 { background-image: url(/gotochi/recipe/images/step_05.gif); }
+#gotochi #recipe_steps ol li.step_06 { background-image: url(/gotochi/recipe/images/step_06.gif); }
+#gotochi #recipe_steps ol li.step_07 { background-image: url(/gotochi/recipe/images/step_07.gif); }
+#gotochi #recipe_steps ol li.step_08 { background-image: url(/gotochi/recipe/images/step_08.gif); }
+#gotochi #recipe_steps ol li.step_09 { background-image: url(/gotochi/recipe/images/step_09.gif); }
+#gotochi #recipe_steps ol li.step_10 { background-image: url(/gotochi/recipe/images/step_10.gif); }
+#gotochi #recipe_steps ol li.step_11 { background-image: url(/gotochi/recipe/images/step_11.gif); }
+#gotochi #recipe_steps ol li.step_12 { background-image: url(/gotochi/recipe/images/step_12.gif); }
+#gotochi #recipe_steps ol li.step_13 { background-image: url(/gotochi/recipe/images/step_13.gif); }
+#gotochi #recipe_steps ol li.step_14 { background-image: url(/gotochi/recipe/images/step_14.gif); }
+#gotochi #recipe_steps ol li.step_15 { background-image: url(/gotochi/recipe/images/step_15.gif); }
+#gotochi #recipe_steps ol li.step_16 { background-image: url(/gotochi/recipe/images/step_16.gif); }
+#gotochi #recipe_steps ol li.step_17 { background-image: url(/gotochi/recipe/images/step_17.gif); }
+#gotochi #recipe_steps ol li.step_18 { background-image: url(/gotochi/recipe/images/step_18.gif); }
+#gotochi #recipe_steps ol li.step_19 { background-image: url(/gotochi/recipe/images/step_19.gif); }
+#gotochi #recipe_steps ol li.step_20 { background-image: url(/gotochi/recipe/images/step_20.gif); }
+#gotochi #recipe_steps ol li.step_21 { background-image: url(/gotochi/recipe/images/step_21.gif); }
+#gotochi #recipe_steps ol li.step_22 { background-image: url(/gotochi/recipe/images/step_22.gif); }
+
+#gotochi #recipe_steps #point {
+	padding: 10px 0 0 30px;
+}
+#gotochi #recipe_steps #point dt {
+	width: 40px;
+	float: left;
+}
+#gotochi #recipe_steps #point dd {
+	margin-left: 40px;
+}
+
+#gotochi #special_products {
+	width: 820px;
+	margin: 0 auto 20px;
+}
+
+#gotochi #special_products dl {
+	border-bottom: 1px solid #d9d3b7;
+	background: #f4ecca;
+	padding: 16px;
+	margin-bottom: 15px;
+}
+
+#gotochi #special_products dl dt {
+	margin-bottom: 15px;
+}
+
+#gotochi #special_products dl dd .image_left {
+	width: 150px;
+	float: left;
+}
+
+#gotochi #special_products dl dd .text_right {
+	width: 623px;
+	float: right;
+}
+
+#gotochi #special_products dl dd .text_right .image_right {
+	display: inline;
+	margin-left: 10px;
+	float: right;
+}
+
+#gotochi #teacher {
+	width: 820px;
+	margin: 0 auto 20px;
+}
+
+#gotochi #teacher h3 {
+	margin-bottom: 20px;
+}
+
+#gotochi #teacher #teacher_profile {
+	width: 606px;
+	display: inline;
+	padding-left: 15px;
+	float: left;
+}
+
+#gotochi #teacher #teacher_profile dt {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+#gotochi #teacher #teacher_photo {
+	width: 164px;
+	height: 173px;
+	text-align: center;
+	background: url(/gotochi/recipe/images/teacher_bg.gif) no-repeat left top;
+	display: inline;
+	padding: 10px 15px 0 0;
+	margin-left: 20px;
+	float: left;
+}
+
+#gotochi #link_btn {
+	margin-bottom: 10px;
+}
+
+#gotochi #link_btn ul {
+	float: right;
+}
+
+#gotochi #link_btn ul li {
+	display: inline;
+	margin-left: 15px;
+	float: left;
+}
+
+#gotochi #teacher_official p {
+	width: 820px;
+	font-weight: bold;
+	text-align: right;
+	margin: 0 auto 20px;
+}
+
+.gotochi_popup {
+	text-align: left;
+	background: none;
+	display: none;
+	padding: 0;
+}
+
+.popup_body {
+	width: 612px;
+	display: none;
+	margin: auto;
+}
+
+.popup_body .section {
+	width: 302px;
+	padding: 0 2px;
+	float: left;
+}
+
+.popup_body .single {
+	margin: auto;
+	float: none;
+}
+
+.popup_body .section p {
+	text-align: left;
+	margin-bottom: 3px;
+}
+
+
+
+
+
+
+.clearfix:after,
+#gotochi .recipe_list:after,
+#gotochi #recipe_info:after,
+#gotochi #info_detail li dl:after,
+#type ul.type_list li:after {
+	clear: both;
+	content: url(../images/spacer.gif);
+	height: 0;
+	display: block;
+}
+.clearfix,
+#gotochi .recipe_list,
+#gotochi #recipe_info,
+#gotochi #info_detail li dl,
+#type ul.type_list li {
+	display: inline-block;
+
+}
+.clearfix,
+#gotochi .recipe_list,
+#gotochi #recipe_info,
+#gotochi #info_detail li dl,
+#type ul.type_list li {
+	display: block;
+}
+
+
+

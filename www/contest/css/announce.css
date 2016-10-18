@@ -1,0 +1,325 @@
+@charset "shift_jis";
+
+/* -----------------------------------------------
+		announce page style
+
+----------------------------------------------- */
+.announce #contents h2,
+.announce #contents h1{
+margin:0;
+padding:0;
+}
+
+/* margin
+------------------------------------------------ */
+.flowGra,
+.annoGra{
+margin-top:20px;
+}
+.flowGra,
+.annoGra,
+.judge{
+margin-right:4px;
+}
+
+
+/* each
+------------------------------------------------ */
+
+.flowGra,
+.annoGra{
+background-image:url(../images/vote/vote_flow_bg_gra.gif);
+background-repeat:repeat-x;
+background-position:0 33px;
+}
+
+/* ------------------ index.html */
+/* float */
+.flow dl{
+float:left;
+width:171px;
+}
+
+/* bg */
+.flow{
+margin-top: 7px;
+background-image:url(../images/vote/vote_flow_bg.gif);
+background-repeat:repeat-y;
+background-position:0 11px;
+}
+.flow .bg{
+background-image:url(../images/vote/vote_flow_bg_btm.gif);
+background-repeat:no-repeat;
+background-position:0 100%;
+}
+
+/* arrow */
+.flow dl{
+background-image:url(../images/vote/vote_flow_arrow.gif);
+background-repeat:no-repeat;
+background-position:159px 51px;
+}
+.flow dl.flow04{
+background:none;
+}
+
+/* posi */
+.flow{
+margin-left:10px;
+}
+.flow dl dd{
+margin-left:12px;
+margin-right:35px;
+padding-top:6px;
+padding-bottom:15px;
+}
+
+.flow dl.flow04 dt,
+.flow dl.flow04 dd{
+margin-right:0;
+}
+
+/* ------------------ index.html */
+
+.anno{
+margin:13px 0 0 10px;
+}
+
+.anno .conLeft{
+float:left;
+width:400px;
+}
+.anno .conRight{
+float:right;
+width:210px;
+}
+
+#No1 .conLeft{
+width:356px;
+}
+#No1 .conRight{
+width:257px;
+}
+
+/* bg */
+.anno .bg,
+.anno .inBg{
+background-repeat:no-repeat;
+}
+.anno,
+.anno .bg{
+background-position:0 0;
+}
+
+.anno .bg{/* top */
+background-image:url(../images/2012/announce/announce_prize_wrap_top.gif);
+}
+#No1 .bg{
+background-image:url(../images/2012/announce/announce_prize_wrap_top_01.gif);
+}
+.anno{/* center */
+background-image:url(../images/2012/announce/announce_prize_wrap_c.gif);
+background-repeat:repeat-y;
+}
+.anno .inBg{/* btm */
+background-image:url(../images/2012/announce/announce_prize_wrap_btm.gif);
+background-position:0 100%;
+}
+
+/* posi */
+.anno .inBg{
+padding:0 35px 30px 12px;
+}
+
+/* layout */
+.conLeft h3{
+padding-top:4px;
+padding-bottom:3px;
+margin-bottom:15px;
+}
+#No1 .conLeft h3{
+padding-top:9px;
+padding-bottom:6px;
+margin-bottom:11px;
+}
+
+.conRight{
+padding-top:20px;
+}
+
+/* lead */
+.annoLead{
+margin-top:12px;
+padding:8px 10px;
+background-color:#fdf7e4;
+color:#aa7843;
+}
+.annoLead dt{
+padding-bottom:5px;
+margin-bottom:5px;
+background-image:url(../images/announce/anno_lead_dot.gif);
+background-repeat:repeat-x;
+background-position:0 100%;
+font-size:120%;
+font-weight:bold;
+}
+.annoLead dd{
+text-align:right;
+}
+
+/* explain,judge */
+.conLeft dl{
+margin-top:15px;
+margin-left:10px;
+}
+
+.annoJudge dt,
+.annoExplain dt{
+width:97px;
+background-image:url(../images/announce/announce_icon_flower.gif);
+background-repeat:no-repeat;
+background-position:0 0;
+background-color:#fff;
+}
+.annoJudge dt img,
+.annoExplain dt img{
+margin-left:20px;
+padding-bottom:8px;
+}
+.annoJudge,
+.annoExplain{
+background-image:url(../images/announce/announce_dot.gif);
+background-position:0 6px;
+background-repeat:repeat-x;
+}
+
+
+/* img */
+.annoPic{
+padding-top:11px;
+padding-bottom:14px;
+background-image:url(../images/announce/announce_pic_bg_2.gif);
+background-repeat:no-repeat;
+}
+#No1 .annoPic{
+background-image:url(../images/announce/announce_pic_bg.gif);
+}
+.annoPic dt{
+padding-bottom:8px;
+}
+.annoPic dd{
+text-align:center;
+}
+.annoPic dt img{
+margin-left:6px;
+}
+
+/* judge */
+.judge{
+background-image:url(../images/2012/announce/announce_wrap_c.gif);
+background-position:0 0;
+background-repeat:repeat-y;
+}
+.judge .txtWrap{
+background-image:url(../images/2012/announce/announce_wrap_btm.gif);
+background-position:0 100%;
+background-repeat:no-repeat;
+}
+
+.judge .txtWrap{
+/*photo*/
+/*padding:7px 20px 20px 20px;*/
+
+/*no photo*/
+padding:7px 30px 20px 20px;
+}
+.judge .txtWrap .judgeImg{
+float:right;
+width:241px;
+}
+.judge p{
+margin-top:8px;
+}
+/*no photo*/
+.judge p.name{
+text-align:right;
+}
+
+.judge .txtWrap .judgeImg{
+margin-top:0;
+}
+
+/* message */
+.message{
+margin-left:15px;
+margin-right:15px;
+margin-top:40px;
+padding:1px 20px 20px 20px;
+background-color:#f3f3f3;
+}
+.message p,
+.message dl{
+margin-top:20px;
+}
+.message .author{
+text-align:right;
+}
+
+
+/* 2012 Add */
+
+.result2012, .result2012 .annoGra {
+	background: none;
+}
+
+.result2012 .flow {
+	margin: 15px 0 0 5px;
+}
+
+.result2012 #No1 .conLeft{
+width:400px;
+}
+.result2012 #No1 .conRight{
+width:210px;
+}
+
+.result2012 #No1 .annoPic{
+background-image:url(../images/announce/announce_pic_bg_3.gif);
+}
+
+/* ====================================================
+				clear
+==================================================== */
+.judge .txtWrap:after,
+.anno .inBg:after,
+.flow .bg:after{
+content:".";
+display:block;
+height:0;
+visibility:hidden;
+clear:both;
+font-size: 1px;
+line-height:1em;
+}
+
+/* win ie7,6 \*/
+*:first-child+html .judge .txtWrap,
+*:first-child+html .anno .inBg,
+*:first-child+html .flow .bg{
+display:inline-block;
+}
+*html .judge .txtWrap,
+*html .anno .inBg,
+*html .flow .bg{
+height:1%;
+}
+
+/* end */
+
+/* macIE5 only \*//*/
+.judge .txtWrap,
+.anno .inBg,
+.flow .bg{
+display:inline-block;
+}
+/* end */

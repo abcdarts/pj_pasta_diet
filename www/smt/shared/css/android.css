@@ -1,0 +1,6 @@
+@charset "shift_jis";
+
+#top #recommend_recipe #prev_btn,
+#top #recommend_recipe #next_btn {
+	font-size:1px;
+}

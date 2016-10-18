@@ -1,0 +1,9 @@
+@charset "shift_jis";
+
+/* Set Base Style
+------------------------------------------------------------*/
+
+@import url("reset.css");  /* reset setting */
+@import url("common.css"); /* common setting */
+@import url("layout.css"); /* layout setting */
+@import url("each.css");   /* style setting */

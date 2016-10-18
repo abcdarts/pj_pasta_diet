@@ -1,0 +1,66 @@
+@charset "shift_jis";
+/*------------------------------------------------------------
+##############################################################
+
+¡ clearfix
+¡ text setting
+
+##############################################################
+------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------
+##############################################################
+¡ clearfix
+##############################################################
+------------------------------------------------------------*/
+.clearfix:after,
+#header_upper_block:after,
+#header nav ul:after,
+#header #search_block ul:after,
+#contents #search_block_btm ul:after,
+#contents .content_box_01 ul:after,
+#top #recommend_recipe #recommend_list_01_inner:after,
+#top #ranking ol li a:after,
+#top #new_recipe a:after,
+#list #contents #list_header #list_header_inner:after,
+#list #contents #list_header #list_header_inner dl:after,
+#list #contents #list_header #list_tab ul:after,
+#detail #contents #recipe_main_block_inner:after,
+#detail #contents #social_block .detailBtn:after,
+#search #contents #recipe_search td ul:after {
+	content: ''; display: block; clear: both;height: 0;
+}
+
+/*------------------------------------------------------------
+##############################################################
+¡ text setting
+##############################################################
+------------------------------------------------------------*/
+body {
+	color: #686868;
+	font-family:"ƒƒCƒŠƒI","Meiryo", ArialMT, "Hiragino Kaku Gothic ProN", "ƒqƒ‰ƒMƒmŠpƒS ProN W3", ƒƒCƒŠƒI, sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+	-webkit-text-size-adjust: none; /* ƒtƒHƒ“ƒgƒTƒCƒY©“®’²® */
+	text-align:left;
+	background-color:#fff8d8;
+}
+h1,h2,h3 h4,h5,h6,div,p,pre,ul,ol,dl,dt,dd,address,form,blockquote {
+	line-height: 1.5;
+}
+
+a {
+	color:#ab7943;
+	text-decoration:underline;
+}
+a:visited {
+	color:#ab7943;
+}
+a:hover {
+	color:#ab7943;
+}
+a:active {
+	color:#ab7943;
+}
+

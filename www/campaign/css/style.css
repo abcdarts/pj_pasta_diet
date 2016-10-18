@@ -1,0 +1,127 @@
+#contents {
+	width: auto;
+	float: none;
+}
+
+div.btmLink {
+	width: auto;
+}
+
+.phase_01 #contents h1 {
+	margin-bottom: 30px;
+}
+
+.phase_01 #contents .btn_block {
+	padding-left: 11px;
+	margin-bottom: 40px;
+}
+
+.phase_01 #contents .btn_block li {
+	display: inline-block;
+	padding-left: 24px;
+}
+
+.phase_01 #contents #block_01 {
+	border-radius: 7px;
+	background: url(../images/phase_01/bg_block_01.png);
+	padding: 12px 35px 35px;
+	margin-bottom: 30px;
+}
+
+.phase_01 #contents #block_01 h2 {
+	margin-bottom: 14px;
+	margin-left: 0;
+}
+
+.phase_01 #contents #block_01 ul {
+	
+}
+
+.phase_01 #contents #block_01 ul li {
+	width: 226px;
+	border-radius: 6px;
+	background-color: #fff;
+	padding: 15px;
+	margin-left: 15px;
+	float: left;
+}
+
+.phase_01 #contents #block_01 ul li:first-child {
+	margin-left: 0;
+}
+
+.phase_01 #contents #block_01 ul li .img {
+	
+}
+
+.phase_01 #contents #block_01 ul li .txt {
+	color: #2c2c2c;
+	font-size: 14px;
+	text-align: center;
+}
+
+.phase_01 #contents #block_02 {
+	border-radius: 7px;
+	background: url(../images/phase_01/bg_block_02.png);
+	padding: 24px 35px 35px;
+	margin-bottom: 37px;
+}
+
+.phase_01 #contents #block_02 h2 {
+	margin-bottom: 24px;
+	margin-left: 0;
+}
+
+.phase_01 #contents #block_02 .sub_block {
+	color: #2c2c2c;
+	border-radius: 6px;
+	background-color: #fff;
+	padding: 16px 22px;
+}
+
+.phase_01 #contents #block_02 .sub_block h3 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.phase_01 #contents #block_02 .sub_block p {
+	font-size: 14px;
+}
+
+.phase_01 #contents #block_02 .sub_block ul li {
+	font-size: 14px;
+	list-style: none;
+	background: url(../images/phase_01/bg_list.png) no-repeat left 0.5em;
+	padding-left: 12px;
+	margin-left: 0;
+}
+
+.phase_01 #contents #block_02 .sub_block .mb1em {
+	margin-bottom: 1em;
+}
+
+.phase_01 #contents #block_02 .sub_block a {
+	color: #598e00;
+	text-decoration: none;
+}
+
+.phase_01 #contents #block_03 {
+	padding-left: 35px;
+}
+
+.phase_01 #contents #block_03 h2 {
+	color: #2c2c2c;
+	font-size: 16px;
+	margin-bottom: 15px;
+	margin-left: 0;
+}
+
+.phase_01 #contents #block_03 p {
+	color: #2c2c2c;
+	font-size: 14px;
+}
+
+.phase_01 #contents #block_03 p a {
+	color: #003fa8;
+}
+

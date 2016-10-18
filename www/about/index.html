@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="Keywords" content="パスタ,パスタレシピ,パスタメニュー,ゆで方,おいしい作り方,クッキングスクール,スパゲッティ,スパゲティ" />
+<meta name="Description" content="日本パスタ協会の公式サイト。ご家庭で簡単に作れるパスタレシピを毎週、様々な切り口でご紹介。その他、自分の好みのパスタを探せる検索機能や、自分のオリジナルレシピをみんなに紹介できるパスタレシピ投稿ページ、パスタクッキングスクールのご案内など、パスタの楽しみ方を広げられるサイトです。" />
+<meta name="copyright" content="Japan-Pasta Association, All rights reserved." />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="" />
+<link href="/shared/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<script type="text/javascript" src="/shared/js/jquery.js"></script>
+<script type="text/javascript" src="/shared/js/default.js"></script>
+<script type="text/javascript" src="/shared/js/peoplerecipe.js" ></script>
+<script type="text/javascript">
+<!--
+window.onload = function() {
+  dispMemberRecipeList();
+  dispRecommendRecipe();
+}
+//-->
+</script>
+<title>このサイトについて│日本パスタ協会</title>
+</head>
+<body id="about">
+<div id="page">
+<div class="pageBt">
+	<div id="header">
+		<!--#include virtual="/include/inc_header.html"-->
+<!--#include virtual="/include/inc_gnavi.html"-->
+	</div>
+	<!-- / header -->
+	<p class="location"><a href="/index.html">HOME</a> ＞ このサイトについて</p>
+	<div id="mainArea">
+		<div id="contents">
+			<h1><img src="/about/images/h_about_site.jpg" alt="このサイトについて" width="683" height="92" /></h1>
+			<p class="lead">このウェブサイト（以下、当サイトとします）は、一般社団法人日本パスタ協会（以下、当協会とします）が運営しています。以下の事項をお読み頂き、これらの事項をご了承された場合のみ、当サイトをご利用ください。</p>		
+			<div class="utility">
+        <h3 class="utilityTitleTop"><span>■著作権について</span></h3>
+        <p>当サイトに掲載されている情報は、著作権法で保護されています。私的使用その他法律によって明示的に認められる範囲を超えて、これらの情報を使用することは、事前に当協会の承諾を必要とします。</p>
+      	
+        <h3 class="utilityTitle"><span>■リンクについて</span></h3>
+        <p>当サイトに対してリンクを設ける場合は下記の条件の遵守をお願いいたします。</p>
+        
+        <ul>
+          <li class="listExtend">1.&nbsp;下記の内容を含む文章、画像、映像又は音声を掲載したウェブサイトにおいて、リンクを設けることはお断りします。</li>
+            <ul>
+              <li>ア） 法令に違反し又は公序良俗を害するもの</li>
+              <li>イ） 他人のプライバシーを害し、又は名誉・信用を毀損するおそれのあるもの</li>
+              <li>ウ） 犯罪その他の違法行為を誘引し、又は殊更に暴力の描写を行うもの</li>
+              <li>エ） 特定の政治活動、思想活動、宗教を広告するもの オ） その他社会通念上著しく不相当なもの</li>
+            </ul>
+          <li>2.&nbsp;上記1以外にもリンク元のウェブサイトが、当協会の理念にそぐわない内容を含むものと認められる場合、ないしは、業務上の事情によりリンクをお断りする場合があります。</li>      	
+          <li>3.&nbsp;フレーム内で当サイトが展開されるなど、当サイトであることが不明確となり、第三者に誤解を与えうるサイトへのリンクはお断りいたします。</li>
+          <li class="end">4.&nbsp;以上の条件に違反するリンクについて、当協会がリンクの解除を求めたときは、これに応じていただくものとします。</li>
+       	</ul>
+        
+        <h3 class="utilityTitle"><span>■免責事項</span></h3>
+                
+        <ul>
+          <li>1.&nbsp;当協会は当サイトに掲載された情報について、充分注意・確認をした上で掲載しておりますが、情報が古くなったり、間違っている場合もあります。当該情報につき利用者の方が損害を被った場合でも当協会は一切責任を負えませんので、当サイトの情報は利用者の方自身の責任においてご利用下さい。また、当サイトにリンクしている他のいかなるウェブサイトの内　　容にも責任を負いません。ご利用者がリンクサイトを利用される際は、そのリンクサイトの利用条件にも同意いただく必要が　あります。上記の「リンクについて」をご確認ください。</li>
+       		<li>2.&nbsp;当サイト上のコンテンツやURLは予告なしに変更または削除されることがあります。あらかじめご了承下さい。</li>
+          <li>3.&nbsp;当サイトの機能について中断、エラーの発生、当サイト及びサーバーにおけるコンピュータウィルスその他の有害物の発生等につきましては、一切保証致しません。また、利用者が当サイトをご利用になったことにより生じるいかなる損害についても保証するものではありません。</li>
+        	<li class="end">4.&nbsp;当サイトの使用条件は、予告なしに変更されることがあります。当サイトの使用条件が変更された場合、変更後の使用条件に従っていただきます。あらかじめご了承下さい。</li>
+        </ul>
+        
+        <h3 class="utilityTitle"><span>■推奨ブラウザ</span></h3>
+        <p>当サイトをより快適に、より安全にご利用いただくために、最新のバージョンのブラウザでご覧いただくことを推奨いたします。</p>
+      </div>
+			<div class="btmLink">
+				<p class="back"><a href="javascript:history.back();"><img src="/shared/images/btn_back_off.gif" alt="戻る" width="36" height="13" class="swap" /></a></p>
+				<p class="pagetop"><a href="#header"><img src="/shared/images/btn_pagetop_rody_off.gif" alt="このページのトップへ" width="108" height="16" class="swap" /></a></p>
+			</div>
+		</div>
+		<!-- / contents -->
+		<div id="sub">
+			<!--#include virtual="/include/inc_side_contents.html"-->
+			<!--#include virtual="/include/inc_side_banner.html"-->
+			<!--#include virtual="/recipe_ranking.html"-->
+		</div>
+		<!-- / sub -->
+	</div>
+	<!-- / mainArea -->
+	<!--#include virtual="/include/inc_footer_link.html"-->
+	<!--#include virtual="/include/inc_footer.html"-->
+	<!-- / footer -->
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-182016-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

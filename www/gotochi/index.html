@@ -1,0 +1,708 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="Keywords" content="パスタ,パスタレシピ,パスタメニュー,ゆで方,おいしい作り方,クッキングスクール,スパゲッティ,スパゲティ" />
+<meta name="Description" content="日本パスタ協会の公式サイト。ご家庭で簡単に作れるパスタレシピを毎週、様々な切り口でご紹介。その他、自分の好みのパスタを探せる検索機能や、自分のオリジナルレシピをみんなに紹介できるパスタレシピ投稿ページ、パスタクッキングスクールのご案内など、パスタの楽しみ方を広げられるサイトです。" />
+<meta name="copyright" content="Japan-Pasta Association, All rights reserved." />
+<meta name="robots" content="index, follow" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta name="author" content="" />
+<link href="/shared/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="/shared/css/fancybox.css" rel="stylesheet" type="text/css" media="screen,print" />
+<script type="text/javascript" src="/shared/js/jquery.js"></script>
+<script type="text/javascript" src="/shared/js/fancybox.js"></script>
+<script type="text/javascript" src="/shared/js/gotochi.js"></script>
+<style type="text/css">
+<!--
+#gotochi #gotochi_map #pref_list li {top: 0px; left: 0px;}
+#gotochi #gotochi_map #pref_list li#pref_shimane {top: 311px; left: 255px;}
+#gotochi #gotochi_map #pref_list li#pref_yamanashi {top: 380px; left: 580px;}
+#gotochi #gotochi_map #pref_list li#pref_tochigi {top: 311px; left: 653px;}
+#gotochi #gotochi_map #pref_list li#pref_nagasaki {top: 333px; left: 52px;}
+#gotochi #gotochi_map #pref_list li#pref_aomori {top: 171px; left: 691px;}
+#gotochi #gotochi_map #pref_list li#pref_nara {top: 395px; left: 400px;}
+#gotochi #gotochi_map #pref_list li#pref_nagano {top: 335px; left: 547px;}
+#gotochi #gotochi_map #pref_list li#pref_okinawa {top: 440px; left: 38px;}
+#gotochi #gotochi_map #pref_list li#pref_tokushima {top: 438px; left: 277px;}
+#gotochi #gotochi_map #pref_list li#pref_ehime {top: 404px; left: 219px;}
+#gotochi #gotochi_map #pref_list li#pref_shizuoka {top: 417px; left: 539px;}
+#gotochi #gotochi_map #pref_list li#pref_miyagi {top: 243px; left: 706px;}
+#gotochi #gotochi_map #pref_list li#pref_kyoto {top: 315px; left: 400px;}
+#gotochi #gotochi_map #pref_list li#pref_ishikawa {top: 252px; left: 506px;}
+#gotochi #gotochi_map #pref_list li#pref_oita {top: 370px; left: 149px;}
+#gotochi #gotochi_map #pref_list li#pref_yamagata {top: 242px; left: 655px;}
+#gotochi #gotochi_map #pref_list li#pref_kouchi {top: 438px; left: 213px;}
+#gotochi #gotochi_map #pref_list li#pref_hokkaido {top: 66px; left: 707px;}
+#gotochi #gotochi_map #pref_list li#pref_ibaraki {top: 320px; left: 692px;}
+#gotochi #gotochi_map #pref_list li#pref_kumamoto {top: 392px; left: 104px;}
+#gotochi #gotochi_map #pref_list li#pref_hyogo {top: 328px; left: 338px;}
+#gotochi #gotochi_map #pref_list li#pref_iwate {top: 207px; left: 715px;}
+#gotochi #gotochi_map #pref_list li#pref_kanagawa {top: 409px; left: 601px;}
+#gotochi #gotochi_map #pref_list li#pref_niigata {top: 275px; left: 606px;}
+#gotochi #gotochi_map #pref_list li#pref_akita {top: 207px; left: 662px;}
+#gotochi #gotochi_map #pref_list li#pref_yamaguchi {top: 327px; left: 209px;}
+#gotochi #gotochi_map #pref_list li#pref_hiroshima {top: 343px; left: 248px;}
+#gotochi #gotochi_map #pref_list li#pref_fukuoka {top: 329px; left: 139px;}
+#gotochi #gotochi_map #pref_list li#pref_mie {top: 430px; left: 428px;}
+#gotochi #gotochi_map #pref_list li#pref_fukushima {top: 275px; left: 678px;}
+
+#gotochi #gotochi_map #pref_list li#pref_chiba {top: 382px; left: 685px;}
+#gotochi #gotochi_map #pref_list li#pref_osaka {top: 362px; left: 368px;}
+#gotochi #gotochi_map #pref_list li#pref_wakayama {top: 430px; left: 354px;}
+#gotochi #gotochi_map #pref_list li#pref_tottori {top: 311px; left: 302px;}
+#gotochi #gotochi_map #pref_list li#pref_miyazaki {top: 405px; left: 143px;}
+#gotochi #gotochi_map #pref_list li#pref_tokyo {top: 378px; left: 636px;}
+#gotochi #gotochi_map #pref_list li#pref_gunma {top: 311px; left: 607px;}
+#gotochi #gotochi_map #pref_list li#pref_saga {top: 329px; left: 84px;}
+#gotochi #gotochi_map #pref_list li#pref_kagawa {top: 404px; left: 283px;}
+#gotochi #gotochi_map #pref_list li#pref_saitama {top: 346px; left: 630px;}
+#gotochi #gotochi_map #pref_list li#pref_aichi {top: 417px; left: 480px;}
+#gotochi #gotochi_map #pref_list li#pref_fukui {top: 315px; left: 474px;}
+#gotochi #gotochi_map #pref_list li#pref_gifu {top: 362px; left: 486px;}
+#gotochi #gotochi_map #pref_list li#pref_shiga {top: 362px; left: 442px;}
+#gotochi #gotochi_map #pref_list li#pref_kagoshima {top: 444px; left: 116px;}
+#gotochi #gotochi_map #pref_list li#pref_toyama {top: 275px; left: 552px;}
+
+-->
+</style>
+<!--[if IE 6]>
+<script type="text/javascript" src="/shared/js/DD_belatedPNG.js"></script>
+<script type="text/javascript">
+	DD_belatedPNG.fix('img, .png_bg, #fancybox-close');
+</script>
+<style type="text/css">
+	.png {position: relative;}
+</style>
+<![endif]-->
+<title>ご当地パスタレシピ│日本パスタ協会</title>
+</head>
+<body id="gotochi" class="nav04">
+ <div id="page" class="map_page">
+<div class="pageBt">
+	<div id="header">
+		<!--#include virtual="/include/inc_header.html"-->
+		<!--#include virtual="/include/inc_gnavi.html"-->
+	</div>
+	<!-- / header -->
+	<p class="location"><a href="/index.html">HOME</a> ＞ ご当地パスタレシピ</p>
+	<div id="mainArea">
+		<h1><img src="/gotochi/images/h1.jpg" width="870" height="140" alt="パスタクッキングセミナー" /></h1>
+		<div id="content_header" class="clearfix">
+			<!--h2><img src="/gotochi/images/h2_lead.gif" width="620" height="57" alt="一般社団法人日本パスタ協会が、これまで全国各地で行った「ご当地パスタ クッキングセミナー」のご当地食材を使ったパスタレシピをご紹介します！" /></h2-->
+			<!--p><a href="/event/kyoudo/index.html"><img src="/gotochi/images/btn_about_seminar_off.gif" class="swap" width="241" height="38" alt="ご当地パスタ クッキングセミナーとは" /></a></p-->
+		</div>
+		<div id="gotochi_map">
+			<h3><img src="./images/head_map.gif" width="560" height="48" alt="ご当地食材を使ったオリジナルの味" /></h3>
+			<p class="lead"><img src="./images/text_map.gif" width="445" height="102" alt="パスタレシピが気になる地域の☆に カーソルを合わせて食材をクリック！" /></p>
+			<p class="recipe_list"><a href="./list.html"><img src="./images/btn_recipe_list_off.gif" class="swap" width="190" height="38" alt="ご当地パスタ レシピ一覧へ" /></a></p>
+			<ul id="pref_list">
+				<li id="pref_shimane">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="島根県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_shimane.gif" width="154" height="36" alt="島根県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_shimane_01.gif" width="146" height="18" alt="奥出雲町" /></dt>
+								<dd><a href="#shimane_01" rel="shimane"><img src="./images/map/ing_shimane_01_off.gif" class="swap" width="146" height="30" alt="エリンギ" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_yamanashi">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="山梨県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_yamanashi.gif" width="154" height="36" alt="山梨県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_yamanashi_01.gif" width="146" height="18" alt="甲府市" /></dt>
+								<dd><a href="#yamanashi_01" rel="yamanashi"><img src="./images/map/ing_yamanashi_01_off.gif" class="swap" width="146" height="30" alt="なす" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_tochigi">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="栃木県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_tochigi.gif" width="154" height="36" alt="栃木県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_tochigi_01.gif" width="146" height="18" alt="宇都宮市" /></dt>
+								<dd><a href="#tochigi_01" rel="tochigi"><img src="./images/map/ing_tochigi_01_off.gif" class="swap" width="146" height="30" alt="トマト" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_nagasaki">
+					<dl class="outer_dl type_02">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="長崎県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_nagasaki.gif" width="254" height="36" alt="長崎県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_nagasaki_01.gif" width="246" height="18" alt="壱岐市／雲仙市" /></dt>
+								<dd><a href="#nagasaki_01" rel="nagasaki"><img src="./images/map/ing_nagasaki_01_off.gif" class="swap" width="246" height="30" alt="アスパラガス × いりこ" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_aomori">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="青森県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_aomori.gif" width="154" height="36" alt="青森県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_aomori_01.gif" width="146" height="18" alt="青森市" /></dt>
+								<dd><a href="#aomori_01" rel="aomori"><img src="./images/map/ing_aomori_01_off.gif" class="swap" width="146" height="30" alt="ホタテ" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_nara">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="奈良県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_nara.gif" width="154" height="36" alt="奈良県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_nara_01.gif" width="146" height="18" alt="奈良市" /></dt>
+								<dd><a href="#nara_01" rel="nara"><img src="./images/map/ing_nara_01_off.gif" class="swap" width="146" height="30" alt="奈良漬け" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_nagano">
+					<dl class="outer_dl type_03">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="長野県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_nagano.gif" width="254" height="36" alt="長野県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_nagano_01.gif" width="246" height="18" alt="川中島町／長野市" /></dt>
+								<dd><a href="#nagano_01" rel="nagano"><img src="./images/map/ing_nagano_01_off.gif" class="swap" width="246" height="30" alt="川中島白桃／エリンギ" /></a></dd>
+							</dl>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_nagano_02.gif" width="246" height="18" alt="長野市" /></dt>
+								<dd><a href="#nagano_02" rel="nagano"><img src="./images/map/ing_nagano_02_off.gif" class="swap" width="246" height="30" alt="きのこ類" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_okinawa">
+					<dl class="outer_dl type_04">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="沖縄県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_okinawa.gif" width="154" height="36" alt="沖縄県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_okinawa_01.gif" width="146" height="18" alt="那覇市" /></dt>
+								<dd><a href="#okinawa_01" rel="okinawa"><img src="./images/map/ing_okinawa_01_off.gif" class="swap" width="146" height="30" alt="青パパイヤ" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_tokushima">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="徳島県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_tokushima.gif" width="154" height="36" alt="徳島県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_tokushima_01.gif" width="146" height="18" alt="徳島市" /></dt>
+								<dd><a href="#tokushima_01" rel="tokushima"><img src="./images/map/ing_tokushima_01_off.gif" class="swap" width="146" height="30" alt="なると金時" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_ehime">
+					<dl class="outer_dl type_03">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="愛媛県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_ehime.gif" width="254" height="36" alt="愛媛県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_ehime_01.gif" width="246" height="18" alt="松山市" /></dt>
+								<dd><a href="#ehime_01" rel="ehime"><img src="./images/map/ing_ehime_01_off.gif" class="swap" width="246" height="30" alt="伊予美人（里芋） × タイ" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_shizuoka">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="静岡県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_shizuoka.gif" width="154" height="36" alt="静岡県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_shizuoka_01.gif" width="146" height="18" alt="浜松市" /></dt>
+								<dd><a href="#shizuoka_01" rel="shizuoka"><img src="./images/map/ing_shizuoka_01_off.gif" class="swap" width="146" height="30" alt="浜名湖のり" /></a></dd>
+							</dl>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_shizuoka_02.gif" width="146" height="18" alt="静岡市" /></dt>
+								<dd><a href="#shizuoka_02" rel="shizuoka"><img src="./images/map/ing_shizuoka_02_off.gif" class="swap" width="146" height="30" alt="桜えび" /></a></dd>
+								<dd><a href="#shizuoka_03" rel="shizuoka"><img src="./images/map/ing_shizuoka_03_off.gif" class="swap" width="146" height="30" alt="静岡産野菜" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_miyagi">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="宮城県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_miyagi.gif" width="154" height="36" alt="宮城県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_miyagi_01.gif" width="146" height="18" alt="仙台市" /></dt>
+								<dd><a href="#miyagi_01" rel="miyagi"><img src="./images/map/ing_miyagi_01_off.gif" class="swap" width="146" height="30" alt="仙台曲がりねぎ" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_kyoto">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="京都府" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_kyoto.gif" width="154" height="36" alt="京都府 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_kyoto_01.gif" width="146" height="18" alt="京都市" /></dt>
+								<dd><a href="#kyoto_01" rel="kyoto"><img src="./images/map/ing_kyoto_01_off.gif" class="swap" width="146" height="30" alt="みず菜" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_ishikawa">
+					<dl class="outer_dl type_03">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="石川県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_ishikawa.gif" width="254" height="36" alt="石川県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_ishikawa_01.gif" width="246" height="18" alt="金沢市" /></dt>
+								<dd><a href="#ishikawa_01" rel="ishikawa"><img src="./images/map/ing_ishikawa_01_off.gif" class="swap" width="246" height="30" alt="加賀れんこん" /></a></dd>
+								<dd><a href="#ishikawa_02" rel="ishikawa"><img src="./images/map/ing_ishikawa_02_off.gif" class="swap" width="246" height="30" alt="加賀れんこん×ヘタ紫なす" /></a></dd>
+								<dd><a href="#ishikawa_03" rel="ishikawa"><img src="./images/map/ing_ishikawa_03_off.gif" class="swap" width="246" height="30" alt="さつまいも" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_oita">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="大分県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_oita.gif" width="154" height="36" alt="大分県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_oita_01.gif" width="146" height="18" alt="大分市" /></dt>
+								<dd><a href="#oita_01" rel="oita"><img src="./images/map/ing_oita_01_off.gif" class="swap" width="146" height="30" alt="大分味一ねぎ" /></a></dd>
+								<dd><a href="#oita_02" rel="oita"><img src="./images/map/ing_oita_02_off.gif" class="swap" width="146" height="30" alt="大分赤採りトマト" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_yamagata">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="山形県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_yamagata.gif" width="154" height="36" alt="山形県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_yamagata_01.gif" width="146" height="18" alt="山形市" /></dt>
+								<dd><a href="#yamagata_01" rel="yamagata"><img src="./images/map/ing_yamagata_01_off.gif" class="swap" width="146" height="30" alt="山形おかひじき" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_kouchi">
+					<dl class="outer_dl type_03">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="高知県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_kouchi.gif" width="254" height="36" alt="高知県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_kouchi_01.gif" width="246" height="18" alt="高知市" /></dt>
+								<dd><a href="#kouchi_01" rel="kouchi"><img src="./images/map/ing_kouchi_01_off.gif" class="swap" width="246" height="30" alt="カツオ × 県産野菜" /></a></dd>
+								<dd><a href="#kouchi_02" rel="kouchi"><img src="./images/map/ing_kouchi_02_off.gif" class="swap" width="246" height="30" alt="土佐はちきん地鶏 × 県産野菜" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_hokkaido">
+					<dl class="outer_dl type_05">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="北海道" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_hokkaido.gif" width="254" height="36" alt="北海道 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_hokkaido_01.gif" width="246" height="18" alt="函館市" /></dt>
+								<dd><a href="#hokkaido_01" rel="hokkaido"><img src="./images/map/ing_hokkaido_01_off.gif" class="swap" width="246" height="30" alt="イカ × エビ" /></a></dd>
+								<dd><a href="#hokkaido_02" rel="hokkaido"><img src="./images/map/ing_hokkaido_02_off.gif" class="swap" width="246" height="62" alt="ミニトマト × ささげ × パセリ × チコリ × レタス" /></a></dd>
+							</dl>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_hokkaido_02.gif" width="246" height="18" alt="札幌市" /></dt>
+								<dd><a href="#hokkaido_03" rel="hokkaido"><img src="./images/map/ing_hokkaido_03_off.gif" class="swap" width="246" height="30" alt="北海道産秋鮭" /></a></dd>
+							</dl>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_hokkaido_03.gif" width="246" height="18" alt="旭川市" /></dt>
+								<dd><a href="#hokkaido_04" rel="hokkaido"><img src="./images/map/ing_hokkaido_04_off.gif" class="swap" width="246" height="30" alt="愛別産きのこ" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_ibaraki">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="茨城県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_ibaraki.gif" width="154" height="36" alt="茨城県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_ibaraki_01.gif" width="146" height="18" alt="水戸市" /></dt>
+								<dd><a href="#ibaraki_01" rel="ibaraki"><img src="./images/map/ing_ibaraki_01_off.gif" class="swap" width="146" height="30" alt="ローズポーク" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_kumamoto">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="熊本県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_kumamoto.gif" width="154" height="36" alt="熊本県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_kumamoto_01.gif" width="146" height="18" alt="熊本市" /></dt>
+								<dd><a href="#kumamoto_01" rel="kumamoto"><img src="./images/map/ing_kumamoto_01_off.gif" class="swap" width="146" height="30" alt="トマト" /></a></dd>
+								<dd><a href="#kumamoto_02" rel="kumamoto"><img src="./images/map/ing_kumamoto_02_off.gif" class="swap" width="146" height="30" alt="ナス" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_hyogo">
+					<dl class="outer_dl type_03">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="兵庫県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_hyogo.gif" width="254" height="36" alt="兵庫県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_hyogo_01.gif" width="246" height="18" alt="美方郡香美町" /></dt>
+								<dd><a href="#hyogo_01" rel="hyogo"><img src="./images/map/ing_hyogo_01_off.gif" class="swap" width="246" height="30" alt="香美町 へしこ" /></a></dd>
+							</dl>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_hyogo_02.gif" width="246" height="18" alt="姫路市" /></dt>
+								<dd><a href="#hyogo_02" rel="hyogo"><img src="./images/map/ing_hyogo_02_off.gif" class="swap" width="246" height="30" alt="淡路島たまねぎ × 県産野菜" /></a></dd>
+							</dl>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_hyogo_03.gif" width="246" height="18" alt="神戸市" /></dt>
+								<dd><a href="#hyogo_03" rel="hyogo"><img src="./images/map/ing_hyogo_03_off.gif" class="swap" width="246" height="30" alt="丹波黒 枝豆" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_iwate">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="岩手県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_iwate.gif" width="154" height="36" alt="岩手県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_iwate_01.gif" width="146" height="18" alt="盛岡市" /></dt>
+								<dd><a href="#iwate_01" rel="iwate"><img src="./images/map/ing_iwate_01_off.gif" class="swap" width="146" height="30" alt="岩手県産秋鮭" /></a></dd>
+								<dd><a href="#iwate_02" rel="iwate"><img src="./images/map/ing_iwate_02_off.gif" class="swap" width="146" height="30" alt="もりおか短角牛" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_kanagawa">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="神奈川県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_kanagawa.gif" width="154" height="36" alt="神奈川県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_kanagawa_01.gif" width="146" height="18" alt="小田原市" /></dt>
+								<dd><a href="#kanagawa_01" rel="kanagawa"><img src="./images/map/ing_kanagawa_01_off.gif" class="swap" width="146" height="30" alt="鯵" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_niigata">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="新潟県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_niigata.gif" width="154" height="36" alt="新潟県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_niigata_01.gif" width="146" height="18" alt="新潟市" /></dt>
+								<dd><a href="#niigata_01" rel="niigata"><img src="./images/map/ing_niigata_01_off.gif" class="swap" width="146" height="30" alt="かぐらなんばん" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_akita">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="秋田県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_akita.gif" width="154" height="36" alt="秋田県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_akita_01.gif" width="146" height="18" alt="大館市" /></dt>
+								<dd><a href="#akita_01" rel="akita"><img src="./images/map/ing_akita_01_off.gif" class="swap" width="146" height="30" alt="とんぶり" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_yamaguchi">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="山口県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_yamaguchi.gif" width="154" height="36" alt="山口県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_yamaguchi_01.gif" width="146" height="18" alt="山口市" /></dt>
+								<dd><a href="#yamaguchi_01" rel="yamaguchi"><img src="./images/map/ing_yamaguchi_01_off.gif" class="swap" width="146" height="30" alt="はなっこりー" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_hiroshima">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="広島県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_hiroshima.gif" width="154" height="36" alt="広島県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_hiroshima_01.gif" width="146" height="18" alt="広島市" /></dt>
+								<dd><a href="#hiroshima_01" rel="hiroshima"><img src="./images/map/ing_hiroshima_01_off.gif" class="swap" width="146" height="30" alt="川内広島菜" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_fukuoka">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="福岡県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_fukuoka.gif" width="154" height="36" alt="福岡県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_fukuoka_01.gif" width="146" height="18" alt="福岡市" /></dt>
+								<dd><a href="#fukuoka_01" rel="fukuoka"><img src="./images/map/ing_fukuoka_01_off.gif" class="swap" width="146" height="30" alt="博多ぶなしめじ" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_mie">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="三重県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_mie.gif" width="154" height="36" alt="三重県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_mie_01.gif" width="146" height="18" alt="四日市市" /></dt>
+								<dd><a href="#mie_01" rel="mie"><img src="./images/map/ing_mie_01_off.gif" class="swap" width="146" height="30" alt="蓄養ハマグリ" /></a></dd>
+								<dd><a href="#mie_02" rel="mie"><img src="./images/map/ing_mie_02_off.gif" class="swap" width="146" height="30" alt="里芋" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_fukushima">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="福島県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_fukushima.gif" width="154" height="36" alt="福島県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_fukushima_01.gif" width="146" height="18" alt="郡山市" /></dt>
+								<dd><a href="#fukushima_01" rel="fukushima"><img src="./images/map/ing_fukushima_01_off.gif" class="swap" width="146" height="30" alt="福島県野菜" /></a></dd>
+								<dd><a href="#fukushima_02" rel="fukushima"><img src="./images/map/ing_fukushima_02_off.gif" class="swap" width="146" height="30" alt="しいたけ" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_chiba">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="千葉県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_chiba.gif" width="154" height="36" alt="千葉県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><!--img src="./images/map/place_chiba_01.gif" width="146" height="18" alt="" /--></dt>
+								<dd><a href="#chiba_01" rel="chiba"><img src="./images/map/ing_chiba_01_off.gif" class="swap" width="146" height="30" alt="落花生" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_osaka">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="大阪府" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_osaka.gif" width="154" height="36" alt="大阪府 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><!--img src="./images/map/place_osaka_01.gif" width="146" height="18" alt="" /--></dt>
+								<dd><a href="#osaka_01" rel="osaka"><img src="./images/map/ing_osaka_01_off.gif" class="swap" width="146" height="30" alt="水なす" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_wakayama">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="和歌山県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_wakayama.gif" width="154" height="36" alt="和歌山県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><!--img src="./images/map/place_wakayama_01.gif" width="146" height="18" alt="" /--></dt>
+								<dd><a href="#wakayama_01" rel="wakayama"><img src="./images/map/ing_wakayama_01_off.gif" class="swap" width="146" height="30" alt="梅干し" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_tottori">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="鳥取県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_tottori.gif" width="154" height="36" alt="鳥取県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><!--img src="./images/map/place_tottori_01.gif" width="146" height="18" alt="" /--></dt>
+								<dd><a href="#tottori_01" rel="tottori"><img src="./images/map/ing_tottori_01_off.gif" class="swap" width="146" height="30" alt="らっきょう" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_miyazaki">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="宮崎県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_miyazaki.gif" width="154" height="36" alt="宮崎県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><!--img src="./images/map/place_miyazaki_01.gif" width="146" height="18" alt="" /--></dt>
+								<dd><a href="#miyazaki_01" rel="miyazaki"><img src="./images/map/ing_miyazaki_01_off.gif" class="swap" width="146" height="30" alt="マンゴー" /></a></dd>
+								<dd><a href="#miyazaki_02" rel="miyazaki"><img src="./images/map/ing_miyazaki_02_off.gif" class="swap" width="146" height="30" alt="地鶏の炭火焼き" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_tokyo">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="東京都" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_tokyo.gif" width="154" height="36" alt="東京都 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><!--img src="./images/map/place_tokyo_01.gif" width="146" height="18" alt="" /--></dt>
+								<dd><a href="#tokyo_01" rel="tokyo"><img src="./images/map/ing_tokyo_01_off.gif" class="swap" width="146" height="30" alt="小松菜" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_gunma">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="群馬県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_gunma.gif" width="154" height="36" alt="群馬県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_gunma_01.gif" width="146" height="18" alt="高崎市" /></dt>
+								<dd><a href="#gunma_01" rel="gunma"><img src="./images/map/ing_gunma_01_off.gif" class="swap" width="146" height="30" alt="うれっ娘トマト" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_saga">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="佐賀県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_saga.gif" width="154" height="36" alt="佐賀県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_saga_01.gif" width="146" height="18" alt="佐賀市" /></dt>
+								<dd><a href="#saga_01" rel="saga"><img src="./images/map/ing_saga_01_off.gif" class="swap" width="146" height="30" alt="肥前さくらポーク" /></a></dd>
+								<dd><a href="#saga_02" rel="saga"><img src="./images/map/ing_saga_02_off.gif" class="swap" width="146" height="30" alt="骨太有明鶏" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_kagawa">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="香川県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_kagawa.gif" width="154" height="36" alt="香川県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dt><img src="./images/map/place_kagawa_01.gif" width="146" height="18" alt="高松市" /></dt>
+								<dd><a href="#kagawa_01" rel="kagawa"><img src="./images/map/ing_kagawa_01_off.gif" class="swap" width="146" height="30" alt="まんば（ひゃっか）" /></a></dd>
+								<dd><a href="#kagawa_02" rel="kagawa"><img src="./images/map/ing_kagawa_02_off.gif" class="swap" width="146" height="30" alt="金時にんじん" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_saitama">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="埼玉県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_saitama.gif" width="154" height="36" alt="埼玉県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dd><a href="#saitama_01" rel="saitama"><img src="./images/map/ing_saitama_01_off.gif" class="swap" width="146" height="30" alt="深谷ねぎ" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_aichi">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="愛知県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_aichi.gif" width="154" height="36" alt="愛知県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dd><a href="#aichi_01" rel="aichi"><img src="./images/map/ing_aichi_01_off.gif" class="swap" width="146" height="30" alt="八丁味噌" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_fukui">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="福井県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_fukui.gif" width="154" height="36" alt="福井県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dd><a href="#fukui_01" rel="fukui"><img src="./images/map/ing_fukui_01_off.gif" class="swap" width="146" height="30" alt="甘海老" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_gifu">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="岐阜県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_gifu.gif" width="154" height="36" alt="岐阜県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dd><a href="#gifu_01" rel="gifu"><img src="./images/map/ing_gifu_01_off.gif" class="swap" width="146" height="30" alt="各務原キムチ" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_shiga">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="滋賀県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_shiga.gif" width="154" height="36" alt="滋賀県 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dd><a href="#shiga_01" rel="shiga"><img src="./images/map/ing_shiga_01_off.gif" class="swap" width="146" height="30" alt="瀬田しじみ" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_kagoshima" style="z-index: 1;">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="鹿児島県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_kagoshima.gif" width="154" height="36" alt="鹿児島 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dd><a href="#kagoshima_01" rel="kagoshima"><img src="./images/map/ing_kagoshima_01_off.gif" class="swap" width="146" height="30" alt="さつまいも" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+				<li id="pref_toyama" style="z-index: 1;">
+					<dl class="outer_dl">
+						<dt class="outer_dt"><img src="./images/icon_star.png" width="30" height="31" alt="富山県" /></dt>
+						<dd class="outer_dd">
+							<h4><img src="./images/map/place_head_toyama.gif" width="154" height="36" alt="富山 ご当地食材" /></h4>
+							<dl class="inner_dl">
+								<dd><a href="#toyama_01" rel="toyama"><img src="./images/map/ing_toyama_01_off.gif" class="swap" width="146" height="30" alt="ほたるいか" /></a></dd>
+							</dl>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+		<div id="screen"></div>
+	</div>
+	<!-- / mainArea -->
+	<!--#include virtual="/include/inc_footer_link.html"-->
+	<!--#include virtual="/include/inc_footer.html"-->
+	<!-- / footer -->
+</div>
+</div>
+
+<!--#include virtual="./inc_popup.html"-->
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-182016-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

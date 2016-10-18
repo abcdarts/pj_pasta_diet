@@ -1,0 +1,9 @@
+<Files "season2.php">
+AuthUserFile /export/hosting/pasta.or.jp/webapp2/.htpasswd_season2
+AuthGroupFile /dev/null
+AuthName "Basic Authentication"
+AuthType Basic
+<Limit POST GET>
+require valid-user
+</Limit>
+</Files>

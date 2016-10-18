@@ -1,0 +1,116 @@
+.text-mw {  font-size: 12px; line-height: 1.75}
+.text-sn {  font-size: 10px; line-height: 1.2}
+.caption { font-size: 10px; line-height: 1.2 ; color: #666666}
+.date { font-size: 10px; line-height: 1.2 ; font-weight: bold; color: #996633}
+.text-mn { font-size: 12px; line-height: 1.33}
+form{
+	margin: 0;
+}
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+; color: #996633}
+
+a:active {
+	text-decoration: none;
+}
+.link-blue { font-size: 12px; line-height: 16px ; color: #5C73AE}
+.link-blue_ss { font-size: 10px; line-height: 16px ; color: #5C73AE}
+.link-gray { font-size: 12px; line-height: 16px ; color: #999999}
+.th-l { font-size: 12px; line-height: 16px ; color: #1D1D80}
+.sub-title { font-size: 12px; font-weight: bold; color: #1D1D80; background-image: url(../images/page_title_bk.gif); height: 35px; border: solid; border-width: 1px 1px 1px 3px; border-color: #CCCAE6 #CCCAE6 #CCCAE6 #9999C2}
+.td-deco-12px { font-size: 12px; line-height: 16px ; background-color: #EEEEFD; border-color: black #BABFCF #BABFCF black; border-style: solid; border-right-width: 1px; border-bottom-width: 1px}
+.td-deco-12px-2 { font-size: 12px; line-height: 16px ; background-color: #F8F1E1; border-color: black #D4CEC1 #D4CEC1 black; border-style: solid; border-right-width: 1px; border-bottom-width: 1px}
+.td-deco-12px-3 { font-size: 12px; line-height: 16px ; background-color: #f1f1f1; border-color: black #CCCCCC #CCCCCC black; border-style: solid; border-right-width: 1px; border-bottom-width: 1px}
+.lead { font-size: 12px; line-height: 21px ; color: #333366}
+.td-deco-12px-b { font-size: 12px; line-height: 16px ; background-color: #EEEEFD; border-color: black #BABFCF #BABFCF black; border-style: solid; border-right-width: 1px; border-bottom-width: 1px ; font-weight: bold; color: #7D7D9E; padding-top: 3px; padding-bottom: 3px}
+.link-darkblue { font-size: 12px; line-height: 16px ; color: #000066}
+.news-date { font-size: 10px; background-color: #EFDCB1; padding-top: 3px; padding-right: 5px; padding-bottom: 3px; padding-left: 5px; border-color: #bfa262 black black; color: #754804; border-style: solid; border-top-width: 1px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px}
+.news-text { font-size: 12px; padding-top: 3px; padding-right: 5px; padding-bottom: 3px; padding-left: 5px; border-color: BFA262 black black; line-height: 140%; border-style: none}
+.recipe-month {  font-size: 12px; font-weight: bold; color: #FFFFFF; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px}
+.recipe-name { font-size: 12px; padding-bottom: 4px; font-weight: bold; color: #B08D40; padding-right: 3px}
+.recipe-lead { font-size: 10px; line-height: 12px ; padding-bottom: 3px; padding-right: 3px}
+.remarks {  padding-top: 8px; padding-right: 5px; padding-bottom: 8px; padding-left: 5px; border: 1px #999999 solid; background-color: #FFFEEE}
+.remarks-text { font-size: 10px; line-height: 12px }
+.search-term { font-size: 12px; border-color: black black #A8967E; background-color: #D1C3AA; font-weight: bold; color: #68401B; border-style: solid; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 1px; border-left-width: 0px}
+.search-choice { font-size: 12px; line-height: 16px ; color: #993366}
+.recipe-kcal { font-size: 10px; font-weight: normal; color: #99003D}
+.recipe-copy { font-size: 12px; font-weight: normal; color: #996600; padding-top: 6px; padding-bottom: 6px}
+.recipe-material { font-size: 12px; font-weight: normal; color: #254179; padding-top: 4px; padding-bottom: 4px; width: 185px; border-color: black black #687DB0; border-style: solid; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 1px; border-left-width: 0px}
+.recipe-quantity { font-size: 12px; font-weight: normal; color: #254179; padding-top: 4px; padding-bottom: 4px; width: 65px; border-color: black black #687DB0; border-style: solid; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 1px; border-left-width: 0px}
+.recipe-step { font-size: 12px; font-weight: normal; color: #333333; width: 250px; border-color: black black #254179; padding-left: 5px; border-style: none}
+.recipe-result-mes { font-size: 12px; color: #CC3333}
+.recipe-result-navi { font-size: 10px; color: #336699}
+.recipe-material-set { font-size: 12px; font-weight: normal; color: #254179; padding-top: 4px; padding-bottom: 4px; width: 180px; border-color: black black #687DB0; padding-right: 4px; padding-left: 4px; border-style: none}
+.recipe-quantity-set { font-size: 12px; font-weight: normal; color: #254179; padding-top: 4px; padding-bottom: 4px; width: 70px; border-color: black black #687DB0; padding-right: 4px; padding-left: 4px; border-style: none }
+.recipe-material-set-t { font-size: 10px; font-weight: bold; color: #254179; padding-top: 4px; padding-bottom: 4px; border-color: black black #687DB0; border-style: none}
+.recipe-material-pasta { font-size: 12px; font-weight: bold; color: #B56383}
+.recipe-material-comment { font-size: 10px}
+.text-mww { font-size: 12px; line-height: 28px}
+.td_school {  background-color: #eaf6fa; border-color: #95c1cf #95C1CF #95C1CF; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.td_kyoudo {  background-color: #eeffe8; border-color: #a0c295 #a0c295 #a0c295; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.td_college { background-color: #eae7f5; border-color: #c2b7dc #C2B7DC #C2B7DC; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.td_description { background-color: #f1f1f1; border-color: #999999 #999999 #777777 #777777; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.sitemap-01 { font-size: 12px; height: 36px; padding-left: 5px}
+.sitemap-02 { font-size: 12px; height: 36px; padding-left: 40px}
+.sitemap-03 { font-size: 12px; height: 34px; padding-left: 80px}
+.sitemap-04 { font-size: 12px; height: 32px; padding-left: 120px}
+.utility-subtitle { font-size: 12px; font-weight: normal; color: #6B3A03; padding-top: 10px; padding-bottom: 5px; border-color: black black #6B3A03; border-style: solid; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 1px; border-left-width: 0px}
+.about-cont { font-size: 12px; line-height: 18px; color: #666666; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px}
+
+.recipe-title{
+	font-size: 16px;
+	color: #683902;
+	font-weight: bold;
+}
+.recipe-title a{
+	color: #683902;
+}
+.top-recipe-title {
+	font-size: 14px;
+	line-height: 1.1;
+	font-weight: bold;
+	color: #754804;
+}
+.top-recipe-title a{
+	color: #754804;
+}
+.top-lastrecipe-title{
+	color: #b08d40;
+	font-size: 10px;
+	font-weight: bold;
+}
+.top-lastrecipe-title a{
+	color: #b08d40;
+}
+
+.recipe-author{
+	font-size: 10px;
+	color: #ff8400;
+}
+.recipe-item{
+	font-size: 12px;
+	line-height: 1.75;
+	color: #683902;
+}
+.recipe-step-num{
+	font-size: 12px;
+	color: #683902;
+}
+.recipe-step-num-pro{
+	font-size: 12px;
+	color: #07619c;
+}
+.recipe-nav a{
+	color: #866237;
+}
+.rollover{}
+.popLink{}
+

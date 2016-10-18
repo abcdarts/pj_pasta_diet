@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="Keywords" content="パスタ,パスタレシピ,パスタメニュー,ゆで方,おいしい作り方,クッキングスクール,スパゲッティ,スパゲティ" />
+<meta name="Description" content="日本パスタ協会の公式サイト。ご家庭で簡単に作れるパスタレシピを毎週、様々な切り口でご紹介。その他、自分の好みのパスタを探せる検索機能や、自分のオリジナルレシピをみんなに紹介できるパスタレシピ投稿ページ、パスタクッキングスクールのご案内など、パスタの楽しみ方を広げられるサイトです。" />
+<meta name="copyright" content="Japan-Pasta Association, All rights reserved." />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="" />
+<link href="/shared/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<script type="text/javascript" src="/shared/js/jquery.js"></script>
+<script type="text/javascript" src="/shared/js/default.js"></script>
+<title>投稿する│レシピを投稿する│日本パスタ協会</title>
+</head>
+<body class="nav02">
+<div id="page">
+<div class="pageBt">
+	<div id="header">
+		<strong><a href="/index.html"><img src="/shared/images/logo.gif" alt="社団法人 日本パスタ協会" width="215" height="64" /></a></strong>
+		<p><img src="/shared/images/txt_hd01.gif" alt="パスタのレシピ情報満載！パスタ協会のオフィシャルサイトです！" width="315" height="14" /><br /><!--#include virtual="/recipe_total.html"--></p>
+		<div class="hdnavi">
+			<ul>
+				<li><!--#include virtual="/login_check1.php"--></li>
+				<li><a href="/recipe/mymenu/favorite.php">お気に入りリスト</a></li>
+				<li class="line"><span><a href="/sitemap.html">サイトマップ</a></span></li>
+			</ul>
+		</div>
+<!--#include virtual="/include/inc_gnavi.html"-->
+	</div>
+	<!-- / header -->
+	<p class="location"><a href="/index.html">HOME</a> ＞ <a href="/recipe/mymenu/myrecipe.php?cmd=InsertDispForm">レシピを投稿する</a> ＞ マイページ：レシピを投稿する</p>
+	<div id="mainArea">
+		<div id="contents">
+			<h1><img src="images/h_form.jpg" alt="レシピを投稿する" width="683" height="92" /></h1>
+			<div class="formArea">
+				<tmpl:node name="description">
+				<p class="topTxt"><a href="/rules.html">利用規約</a>に同意の上、レシピを投稿してください。<span class="redMark">(*)</span>印のついた項目は必須項目です。</p>
+				</tmpl:node>
+				<tmpl:node name="error">
+				<dl class="error">
+					<dt>入力内容に不備がありました。</dt>
+					<dd>下記のエラーをご確認の上、入力内容を修正して、<br />再度<em>「入力内容を確認する」</em>ボタンをクリックしてください。
+					<tmpl:node name="error:recipe_name">
+					<tmpl:node name="null">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" />レシピのタイトルを入力してください。</p>
+					</tmpl:node>
+					<tmpl:node name="maxlength">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" />レシピのタイトルは全角24文字以内で入力してください。</p>
+					</tmpl:node>
+					<tmpl:node name="regex">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" />レシピのタイトルに使用できない文字（丸付き数字、カッコ付き文字、ローマ数字など）が含まれています。</p>
+					</tmpl:node>
+					</tmpl:node>
+					
+					<tmpl:node name="error:recipe_caption">
+					<tmpl:node name="null">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" />パスタの紹介文を入力してください。</p>
+					</tmpl:node>
+					<tmpl:node name="maxlength">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" />パスタの紹介文は全角40文字以内で入力してください。</p>
+					</tmpl:node>
+					<tmpl:node name="regex">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" />パスタの紹介文に使用できない文字（丸付き数字、カッコ付き文字、ローマ数字など）が含まれています。</p>
+					</tmpl:node>
+					</tmpl:node>
+					
+					<tmpl:node name="error:recipe_img_file_name">
+					<tmpl:node name="null">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" />出来上がりの写真をアップロードしてください。</p>
+					</tmpl:node>
+					</tmpl:node>
+					
+					<tmpl:node name="error:recipe_item_amount">
+					<tmpl:node name="null">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" />材料（人数）を入力してください。</p>
+					</tmpl:node>
+					<tmpl:node name="regex">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" />材料（人数）は３桁以内の数字で入力してください。</p>
+					</tmpl:node>
+					</tmpl:node>
+					
+					<tmpl:node name="error:item">
+					<tmpl:node name="error:item_name">
+					<tmpl:node name="null">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" /><tmpl:var name="idx" />番目の材料（食材）を入力してください。</p>
+					</tmpl:node>
+					<tmpl:node name="maxlength">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" /><tmpl:var name="idx" />番目の材料（食材）は全角50文字以内で入力してください。</p>
+					</tmpl:node>
+					<tmpl:node name="regex">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" /><tmpl:var name="idx" />番目の材料（食材）に使用できない文字（丸付き数字、カッコ付き文字、ローマ数字など）が含まれています。</p>
+					</tmpl:node>
+					</tmpl:node>
+					
+					<tmpl:node name="error:item_amount">
+					<tmpl:node name="null">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" /><tmpl:var name="idx" />番目の材料（数量）を入力してください。</p>
+					</tmpl:node>
+					<tmpl:node name="maxlength">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" /><tmpl:var name="idx" />番目の材料（数量）は全角50文字以内で入力してください。</p>
+					</tmpl:node>
+					<tmpl:node name="regex">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" /><tmpl:var name="idx" />番目の材料（数量）に使用できない文字（丸付き数字、カッコ付き文字、ローマ数字など）が含まれています。</p>
+					</tmpl:node>
+					</tmpl:node>
+					</tmpl:node>
+					
+					<tmpl:node name="error:recipe_detail">
+					<tmpl:node name="null">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" />作り方<tmpl:var name="idx" />を入力してください。</p>
+					</tmpl:node>
+					<tmpl:node name="maxlength">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" />作り方<tmpl:var name="idx" />は全角500文字以内で入力してください。</p>
+					</tmpl:node>
+					<tmpl:node name="regex">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" />作り方<tmpl:var name="idx" />に使用できない文字（丸付き数字、カッコ付き文字、ローマ数字など）が含まれています。</p>
+					</tmpl:node>
+					</tmpl:node>
+					
+					<tmpl:node name="error:recipe_note">
+					<tmpl:node name="null">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" />メモを入力してください。</p>
+					</tmpl:node>
+					<tmpl:node name="maxlength">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" />メモは全角500文字以内で入力してください。</p>
+					</tmpl:node>
+					<tmpl:node name="regex">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" />メモに使用できない文字（丸付き数字、カッコ付き文字、ローマ数字など）が含まれています。</p>
+					</tmpl:node>
+					</tmpl:node>
+					
+					<tmpl:node name="error:recipe_source">
+					<tmpl:node name="null">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" />パスタソースの種類を選択してください。</p>
+					</tmpl:node>
+					<tmpl:node name="exists">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" />パスタソースの種類を選択してください。</p>
+					</tmpl:node>
+					</tmpl:node>
+					
+					<tmpl:node name="error:recipe_pasta">
+					<tmpl:node name="null">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" />パスタの種類を選択してください。</p>
+					</tmpl:node>
+					<tmpl:node name="exists">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" />パスタの種類を選択してください。</p>
+					</tmpl:node>
+					</tmpl:node>
+					
+					<tmpl:node name="error:recipe_main_item">
+					<tmpl:node name="null">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" />メインの食材を選択してください。</p>
+					</tmpl:node>
+					<tmpl:node name="exists">
+						<p><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13" />メインの食材を選択してください。</p>
+					</tmpl:node>
+					</tmpl:node>
+					</dd>
+				</dl>
+				</tmpl:node>
+				<form action="myrecipe.php" method="post" name="recipe_form" id="recipe_form">
+				<input type="hidden" name="del_item_num" id="del_item_num" value="">
+				<input type="hidden" name="del_detail_num" id="del_detail_num" value="">
+				<div class="tblArea">
+				<table cellspacing="0" cellpadding="0" summary="レシピ投稿フォーム" class="type2">
+					<tr class="top">
+						<th>レシピのタイトル <span class="redMark">(*)</span></th>
+						<td><input name="recipe_name" type="text" class="type01" /><br /><span>（24文字以内でご入力ください）</span></td>
+						<td class="err"><tmpl:node name="error_icon:recipe_name"><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13"></tmpl:node>&nbsp;</td>
+					</tr>
+					<tr>
+						<th>パスタの紹介文 <span class="redMark">(*)</span></th>
+						<td><textarea name="recipe_caption" cols="30" rows="3" class="type02"></textarea><br /><span>（24文字以内でご入力ください）</span></td>
+						<td class="err"><tmpl:node name="error_icon:recipe_caption"><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13"></tmpl:node>&nbsp;</td>
+					</tr>
+					<tr>
+						<th>出来上がりの写真 <span class="redMark">(*)</span></th>
+						<td>「参照」ボタンを押して写真を選び、「アップロード」ボタンを押してください。<br />
+							<iframe src="myrecipe.php?cmd=UploadDispForm" frameborder="0"></iframe>
+						</td>
+						<td class="err"><tmpl:node name="error_icon:recipe_img_file_name"><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13"></tmpl:node>&nbsp;</td>
+					</tr>
+					<!--<tr>
+						<th>材料 <span class="redMark">(*)</span></th>
+						<td colspan="2">
+						  <table cellspacing="0" cellpadding="0" class="materials" summary="材料">
+							<tr>
+								<td colspan="2"><input name="recipe_item_amount" type="text" class="type03" />　人前</td>
+								<td class="err"><tmpl:node name="error_icon:recipe_item_amount"><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13"></tmpl:node>&nbsp;</td>
+							</tr>
+							<tr>
+								<td>・食材</td>
+								<td colspan="2">・数量</td>
+							</tr>
+							<tmpl:node name="item_list">
+							<tr>
+								<td><input name="item[<tmpl:var name="num" />][item_name]" type="text" class="type04" /></td>
+								<td>
+									<input name="item[<tmpl:var name="num" />][item_amount]" type="text" class="type03" />
+									<tmpl:node name="del_item"><a href="javascript:document.getElementById('cmd').value='DelItem'; document.getElementById('del_item_num').value='<tmpl:var name="num" />'; document.getElementById('recipe_form').submit();">[削除]</a></tmpl:node>
+								</td>
+								<td class="err"><tmpl:node name="error_icon:item"><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13"></tmpl:node>&nbsp;</td>
+							</tr>
+							</tmpl:node>
+							<tr>
+								<td colspan="3"><a href="javascript:document.getElementById('cmd').value='AddItem'; document.getElementById('recipe_form').submit();"><img src="/recipe/mymenu/images/btn_materials.gif" alt="材料を追加" /></a></td>
+							</tr>
+						</table></td>
+					</tr>
+					<tr>
+						<th>作り方 <span class="redMark">(*)</span></th>
+						<td class="make" colspan="2"><table cellspacing="0" cellpadding="0" summary="作り方">
+							<tmpl:node name="recipe_detail_list">
+							<tr>
+								<th><tmpl:var name="num" />.</th>
+								<td>
+									<textarea name="recipe_detail_<tmpl:var name="num"><tmpl:filter name="fillchar" value="0" length="2" /></tmpl:var>" cols="30" rows="4" class="type05" id="recipe_detail_<tmpl:var name="num"><tmpl:filter name="fillchar" value="0" length="2" /></tmpl:var>"></textarea>
+									<tmpl:node name="del_detail"><a href="javascript:document.getElementById('cmd').value='DelDetail'; document.getElementById('del_detail_num').value='<tmpl:var name="num" />'; document.getElementById('recipe_form').submit();" />[削除]</a></tmpl:node>
+								</td>
+								<td class="err"><tmpl:node name="error_icon:recipe_detail"><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13"></tmpl:node>&nbsp;</td>
+							</tr>
+							</tmpl:node>
+							<tmpl:node name="add_recipe_detail">
+							<tr>
+								<td colspan="3" class="btn"><a href="javascript:document.getElementById('cmd').value='AddDetail'; document.getElementById('recipe_form').submit();"><img src="/recipe/mymenu/images/btn_make.gif" alt="作り方を追加" /></a></td>
+							</tr>
+							</tmpl:node>
+						</table></td>
+					</tr>-->
+					<tr>
+						<th>メモ</th>
+						<td>
+							<textarea name="recipe_note" cols="30" rows="3" class="type05"></textarea>
+							<br />※オススメポイントや、ワンポイントアドバイスなど
+						</td>
+						<td class="err"><tmpl:node name="error_icon:recipe_note"><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13"></tmpl:node>&nbsp;</td>
+					</tr>
+					<tr>
+						<th>カテゴリーを選択 <span class="redMark">(*)</span></th>
+						<td class="radio">
+							<div class="category">
+								<dl>
+									<dt>オイル系：</dt>
+									<dd>
+										<ul>
+											<li><input type="radio" name="recipe_category" id="recipe_category001" value="001" /><label for="recipe_category001">ぺペロンチーノ</label></li>
+											<li><input type="radio" name="recipe_category" id="recipe_category002" value="002" /><label for="recipe_category002">ボンゴレ・ビアンコ</label></li>
+											<li><p><input type="radio" name="recipe_category" id="recipe_category003" value="003" /><label for="recipe_category003">その他</label></p></li>
+										</ul>
+									</dd>
+									<dt>トマト系：</dt>
+									<dd>
+										<ul>
+											<li><input type="radio" name="recipe_category" id="recipe_category004" value="004" /><label for="recipe_category004">ミートソース</label></li>
+											<li><input type="radio" name="recipe_category" id="recipe_category005" value="005" /><label for="recipe_category005">ナポリタン</label></li>
+											<li><input type="radio" name="recipe_category" id="recipe_category006" value="006" /><label for="recipe_category006">ペスカトーレ</label></li>
+											<li><input type="radio" name="recipe_category" id="recipe_category007" value="007" /><label for="recipe_category007">アラビアータ</label></li>
+											<li><input type="radio" name="recipe_category" id="recipe_category008" value="008" /><label for="recipe_category008">トマトソース</label></li>
+											<li><input type="radio" name="recipe_category" id="recipe_category009" value="009" /><label for="recipe_category009">ボンゴレロッソ</label></li>
+											<li><input type="radio" name="recipe_category" id="recipe_category010" value="010" /><label for="recipe_category010">その他</label></li>
+										</ul>
+									</dd>
+									<dt>クリーム系：</dt>
+									<dd>
+										<ul>
+											<li><input type="radio" name="recipe_category" id="recipe_category011" value="011" /><label for="recipe_category011">カルボナーラ</label></li>
+											<li><input type="radio" name="recipe_category" id="recipe_category012" value="012" /><label for="recipe_category012">クリームソース</label></li>
+											<li><input type="radio" name="recipe_category" id="recipe_category013" value="013" /><label for="recipe_category013">トマトクリーム</label></li>
+											<li><input type="radio" name="recipe_category" id="recipe_category014" value="014" /><label for="recipe_category014">その他</label></li>
+										</ul>
+									</dd>
+									<dt>和風系：</dt>
+									<dd>
+										<ul>
+											<li><input type="radio" name="recipe_category" id="recipe_category015" value="015" /><label for="recipe_category015">明太子・たらこ</label></li>
+											<li><input type="radio" name="recipe_category" id="recipe_category016" value="016" /><label for="recipe_category016">しょうゆ風</label></li>
+											<li><input type="radio" name="recipe_category" id="recipe_category017" value="017" /><label for="recipe_category017">梅風</label></li>
+											<li><input type="radio" name="recipe_category" id="recipe_category018" value="018" /><label for="recipe_category018">納豆</label></li>
+											<li><input type="radio" name="recipe_category" id="recipe_category019" value="019" /><label for="recipe_category019">その他</label></li>
+										</ul>
+									</dd>
+									<dt>その他：</dt>
+									<dd>
+										<ul>
+											<li><input type="radio" name="recipe_category" id="recipe_category020" value="020" /><label for="recipe_category020">スープ系</label></li>
+											<li><input type="radio" name="recipe_category" id="recipe_category021" value="021" /><label for="recipe_category021">グラタン</label></li>
+											<li><input type="radio" name="recipe_category" id="recipe_category022" value="022" /><label for="recipe_category022">ラザニア</label></li>
+											<li><input type="radio" name="recipe_category" id="recipe_category023" value="023" /><label for="recipe_category023">サラダ</label></li>
+											<li><input type="radio" name="recipe_category" id="recipe_category024" value="024" /><label for="recipe_category024">その他</label></li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+						</td>
+						<td class="err">
+							<tmpl:node name="error_icon:recipe_category"><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13">&nbsp;</tmpl:node>
+						</td>
+					</tr>
+					<tr>
+						<th>パスタの種類 <span class="redMark">(*)</span></th>
+						<td class="radio">
+							<input name="recipe_pasta" type="radio" value="スパゲッティ" id="pasta01" checked="checked" /><label for="pasta01">スパゲッティ</label>　
+							<input name="recipe_pasta" type="radio" value="ペンネ" id="pasta02" /><label for="pasta02">ペンネ</label>　
+							<input name="recipe_pasta" type="radio" value="マカロニ" id="pasta03" /><label for="pasta03">マカロニ</label>　
+							<input name="recipe_pasta" type="radio" value="その他パスタ" id="pasta04" /><label for="pasta04">その他パスタ</label>
+						</td>
+						<td class="err">
+							<tmpl:node name="error_icon:recipe_pasta"><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13"></tmpl:node>&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<th>メインの食材 <span class="redMark">(*)</span><br />（複数選択可）</th>
+						<td class="check">
+							<input name="recipe_main_item[]" type="checkbox" value="牛肉" id="mainItem01" /><label for="mainItem01">牛肉</label>　
+							<input name="recipe_main_item[]" type="checkbox" value="豚肉" id="mainItem02" /><label for="mainItem02">豚肉</label>　
+							<input name="recipe_main_item[]" type="checkbox" value="鶏肉" id="mainItem03" /><label for="mainItem03">鶏肉</label>　
+							<input name="recipe_main_item[]" type="checkbox" value="その他肉類" id="mainItem04" /><label for="mainItem04">その他肉類</label><br />
+							<input name="recipe_main_item[]" type="checkbox" value="魚" id="mainItem05" /><label for="mainItem05">魚</label>　
+							<input name="recipe_main_item[]" type="checkbox" value="貝" id="mainItem06" /><label for="mainItem06">貝</label>　
+							<input name="recipe_main_item[]" type="checkbox" value="その他魚介類" id="mainItem07" /><label for="mainItem07">その他魚介類</label><br />
+							<input name="recipe_main_item[]" type="checkbox" value="旬の野菜" id="mainItem08" /><label for="mainItem08">旬の野菜</label>　
+							<input name="recipe_main_item[]" type="checkbox" value="ハーブ類" id="mainItem09" /><label for="mainItem09">ハーブ類</label>　
+							<input name="recipe_main_item[]" type="checkbox" value="豆類" id="mainItem10" /><label for="mainItem10">豆類</label>　
+							<input name="recipe_main_item[]" type="checkbox" value="きのこ類" id="mainItem11" /><label for="mainItem11">きのこ類</label><br />
+							<input name="recipe_main_item[]" type="checkbox" value="その他野菜" id="mainItem12" /><label for="mainItem12">その他野菜</label>　
+							<input name="recipe_main_item[]" type="checkbox" value="トマト" id="mainItem13" /><label for="mainItem13">トマト</label><br />
+							<input name="recipe_main_item[]" type="checkbox" value="チーズ" id="lb314" /><label for="lb314">チーズ</label>　
+							<input name="recipe_main_item[]" type="checkbox" value="卵" id="mainItem15" /><label for="mainItem15">卵</label>
+						</td>
+						<td class="err">
+							<tmpl:node name="error_icon:recipe_main_item"><img src="../../shared/images/icon_error.gif" alt="" width="13" height="13"></tmpl:node>&nbsp;
+						</td>
+					</tr>
+				</table>
+				</div>
+				<tmpl:node name="context2">
+				<tmpl:node name="Insert">
+				<input type="hidden" name="cmd" id="cmd" value="InsertConfirm">
+				</tmpl:node>
+				<tmpl:node name="Update">
+				<input type="hidden" name="cmd" id="cmd" value="UpdateConfirm">
+				</tmpl:node>
+				</tmpl:node>
+				<p class="btn"><input name="submit" type="image" src="/shared/images/btn_confirm.gif" alt="入力内容を確認する" /></p>
+				</form>
+			</div>
+			<div class="btmLink">
+				<tmpl:node name="context3">
+				<tmpl:node name="Insert">
+				<p class="back"><a href="myrecipe.php?cmd=ListUp"><img src="/shared/images/btn_back_off.gif" alt="戻る" width="36" height="13" class="swap" /></a></p>
+				</tmpl:node>
+				<tmpl:node name="Update">
+				<p class="back"><a href="myrecipe.php?cmd=ListUp"><img src="/shared/images/btn_back_off.gif" alt="戻る" width="36" height="13" class="swap" /></a></p>
+				</tmpl:node>
+				</tmpl:node>
+				<p class="pagetop"><a href="#header"><img src="/shared/images/btn_pagetop_off.gif" alt="このページのトップへ" width="105" height="13" class="swap" /></a></p>
+			</div>
+		</div>
+		<!-- / contents -->
+		<div id="sub">
+			<dl class="lnavi">
+				<dt><tmpl:var name="member_nickname"><tmpl:filter name="htmlspecialchars" value="yes" /></tmpl:var>さんのマイページ</dt>
+				<dd>
+					<ul>
+						<li><a href="/recipe/mymenu/myrecipe.php?cmd=InsertDispForm"><img src="/recipe/images/lnavi01_off.gif" alt="レシピを投稿する" width="152" height="25" class="swap" /></a></li>
+						<li><a href="/recipe/mymenu/myrecipe.php"><img src="/recipe/images/lnavi02_off.gif" alt="投稿済みレシピ" width="152" height="25" class="swap" /></a></li>
+						<li><a href="/recipe/mymenu/favorite.php"><img src="/recipe/images/lnavi03_off.gif" alt="お気に入りリスト" width="152" height="25" class="swap" /></a></li>
+						<li><a href="<tmpl:var name="Domain_HTTPS" />/recipe/mymenu/alter.php"><img src="/recipe/images/lnavi04_off.gif" alt="登録情報の変更" width="152" height="25" class="swap" /></a></li>
+					</ul>
+					<p><a href="logout.php">ログアウト</a></p>
+				</dd>
+			</dl>
+			<!--[bnrArea]-->
+			<!--#include virtual="/bnr_area.html"-->
+			<!--/[bnrArea]-->
+		</div>
+		<!-- / sub -->
+	</div>
+	<!-- / mainArea -->
+	<div id="footer">
+	<div class="footerLine">
+		<ul>
+			<li><a href="/sitemap.html"><img src="/shared/images/ftnavi01_off.gif" alt="サイトマップ" width="78" height="13" class="swap" /></a></li>
+			<li><a href="/about/index.html"><img src="/shared/images/ftnavi02_off.gif" alt="このサイトについて" width="110" height="13" class="swap" /></a></li>
+			<li><a href="/privacy/index.html"><img src="/shared/images/ftnavi03_off.gif" alt="プライバシーポリシー" width="122" height="13" class="swap" /></a></li>
+			<li><a href="/rules.html"><img src="/shared/images/ftnavi04_off.gif" alt="利用規約" width="64" height="13" class="swap"></a></li>
+		</ul>
+		<address>Japan-Pasta Association, All rights reserved.</address>
+	</div>
+	</div>
+	<!-- / footer -->
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-182016-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

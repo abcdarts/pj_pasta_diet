@@ -1,0 +1,226 @@
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: 116.7%;
+}
+
+#contents {
+  width: 872px;
+}
+
+.m_btn a {
+  background-color: #abcb29;
+  border-radius: 5px;
+  color: #FFF;
+  box-sizing: border-box;
+  display: block;
+  font-size: 116.7%;
+  font-weight: bold;
+  position: relative;
+  min-height: 40px;
+  margin-left: auto;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  width: 160px;
+}
+.m_btn a:hover {
+  filter: alpha(opacity=75);
+  -moz-opacity: 0.75;
+  opacity: 0.75;
+}
+
+div.btmLink {
+  margin-left: 25px;
+  width: 820px;
+}
+
+.movieList {
+  margin-bottom: 40px;
+}
+.movieList .photoBox {
+  float: left;
+  margin-right: 20px;
+  width: 400px;
+}
+.movieList .photoBox a {
+  display: block;
+  margin-bottom: 10px;
+}
+.movieList .photoBox a:hover {
+  filter: alpha(opacity=75);
+  -moz-opacity: 0.75;
+  opacity: 0.75;
+}
+.movieList .textBox {
+  float: right;
+  width: 400px;
+}
+.movieList .textBox h2 {
+  font-size: 183.3%;
+  margin-bottom: 10px;
+}
+#contents .movieList .textBox h2 {
+  margin-left: 0;
+}
+.movieList .textBox h2 span {
+  color: #949183;
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+}
+.movieList .textBox .descWrap {
+  margin-bottom: 10px;
+}
+
+#page h1 {
+  margin-bottom: 20px;
+  width: 870px;
+}
+#page .social_area {
+  width: 820px;
+  padding-left: 25px;
+}
+#page .social_area ul {
+  width: 276px;
+  margin-left: auto;
+}
+
+.movieDetail h2 {
+  font-size: 183.3%;
+  background: url(/movie/images/ico_head_catch.gif) no-repeat left center;
+  padding-left: 30px;
+  margin-left: 0 !important;
+  margin-bottom: 10px;
+}
+
+#recipe_visual {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#recipe-info {
+  position: relative;
+}
+
+#recipe_ingredients {
+  width: 513px;
+  margin: 0 auto 20px;
+}
+#recipe_ingredients .h4_block {
+  position: relative;
+  z-index: 10;
+}
+#recipe_ingredients .h4_block .num {
+  font-weight: bold;
+  line-height: 1;
+  position: absolute;
+  top: 54px;
+  left: 448px;
+}
+#recipe_ingredients #info_detail {
+  min-height: 190px;
+  height: auto !important;
+  height: 190px;
+  background: url(/movie/images/ingredient_body_bg.gif) no-repeat left top;
+}
+#recipe_ingredients #info_detail ul {
+  width: auto;
+  padding-top: 4px;
+  margin-left: 24px;
+}
+#recipe_ingredients #info_detail ul li {
+  margin-bottom: 0.9em;
+}
+#recipe_ingredients #info_detail ul li dl {
+  display: block;
+}
+#recipe_ingredients #info_detail ul li dl dt {
+  width: 135px;
+  font-size: 116.6666%;
+  line-height: 1.3;
+  background: url(/movie/images/catch_ingredient.gif) no-repeat left 0.4em;
+  padding-left: 14px;
+  float: left;
+}
+#recipe_ingredients #info_detail ul li dl dd {
+  color: #dd832c;
+  line-height: 1.3;
+  margin-left: 149px;
+}
+#recipe_ingredients #info_detail ul li span {
+  font-size: 85%;
+}
+#recipe_ingredients #info_detail ul.col2 {
+  width: 200px;
+  float: left;
+}
+.movie02 #recipe_ingredients #info_detail ul.col2:first-child {
+  width: 220px;
+}
+.movie02 #recipe_ingredients #info_detail ul.col2:first-child dt {
+  width: 100px;
+}
+.movie02 #recipe_ingredients #info_detail ul.col2:first-child dd {
+  margin-left: 114px;
+}
+.movie02 #recipe_ingredients #info_detail ul.col2:last-child {
+  width: 230px;
+}
+
+div.detailArea {
+  margin: 0 0 30px;
+  width: 820px;
+  padding-left: 25px;
+}
+div.detailArea div.advice {
+  margin: 0;
+}
+div.detailArea div.advice p {
+  margin: 17px 0 30px;
+  padding: 10px;
+}
+div.detailArea ul.make li {
+  padding: 10px 10px 10px 42px;
+  font-size: 116.7%;
+}
+div.detailArea ul.make li span {
+  left: 14px;
+}
+div.detailArea ul.make li span.strong {
+  color: #3058A6;
+  font-weight: bold;
+  position: static;
+  display: inline;
+  font-size: 14px;
+}
+
+#teacher h3 {
+  margin-bottom: 20px;
+}
+#teacher #teacher_profile {
+  width: 606px;
+  display: inline;
+  padding-left: 15px;
+  float: left;
+}
+#teacher #teacher_profile dt {
+  font-size: 133%;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#teacher #teacher_profile dd {
+  font-size: 116.7%;
+}
+#teacher #teacher_photo {
+  width: 164px;
+  height: 173px;
+  text-align: center;
+  background: url(/movie/images/teacher_bg.gif) no-repeat left top;
+  display: inline;
+  padding: 10px 15px 0 0;
+  margin-left: 20px;
+  float: left;
+}

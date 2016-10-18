@@ -1,0 +1,6 @@
+<Files ~ "list_test\.php$">
+order deny,allow
+deny from all
+allow from 219.109.216.3
+</Files>
+

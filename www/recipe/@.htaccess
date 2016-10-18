@@ -1,0 +1,4 @@
+php_value mbstring.http_output "SJIS"
+<Files "category">
+SetHandler application/x-httpd-php
+</Files>

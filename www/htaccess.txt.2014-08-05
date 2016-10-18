@@ -1,0 +1,30 @@
+ErrorDocument 503 /503/maintenance.html
+
+Options +Includes
+AddHandler server-parsed .html
+
+php_value output_handler "mb_output_handler"
+php_value output_buffering "4096"
+php_value magic_quotes_gpc "0"
+php_value upload_max_filesize "10M"
+
+php_value mbstring.encoding_translation "On"
+php_value mbstring.detect_order "auto"
+php_value mbstring.http_input "SJIS,EUC-JP,UTF-8"
+php_value mbstring.http_output "SJIS"
+php_value mbstring.language "Japanese"
+php_value mbstring.script_encoding "EUC-JP"
+php_value mbstring.internal_encoding "EUC-JP"
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_URI} !=/503/maintenance.html [NC]
+  RewriteCond %{REQUEST_URI} !/images/
+  RewriteCond %{REQUEST_URI} !/shared/
+  RewriteCond %{REMOTE_ADDR} !=219.109.216.3
+  RewriteRule ^.*$ - [R=503,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header set Retry-After "Tue, 05 Aug 2014 13:00:00 GMT"
+</IfModule>

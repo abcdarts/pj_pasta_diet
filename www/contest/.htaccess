@@ -1,0 +1,21 @@
+#RewriteEngine on
+#RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|iPad|Android|Windows\ Phone)
+#RewriteCond %{HTTP_REFERER} !^http://www.pasta.or.jp
+#RewriteCond %{HTTP_REFERER} !^http://pasta-stg.check.pensees.co.jp
+#RewriteRule ^(.*)$ smt/contest/$1 [R]
+#RewriteRule ^smt/contest/list.php$ http://www.pasta.or.jp/contest/list.php [R=301,L]
+#RewriteBase /
+
+<Files ~ "list_test\.php$">
+order deny,allow
+deny from all
+allow from 219.109.216.3
+</Files>
+
+#<Files ~ "list\.php$">
+#order deny,allow
+#deny from all
+#allow from 219.109.216.3
+#</Files>
+
+

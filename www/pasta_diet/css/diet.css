@@ -9,7 +9,6 @@
 }
 #diet{
     color: #000;
-    font-size: 16px;
     line-height: 1.8em;
 }
 
@@ -27,7 +26,7 @@
 }
 
 #diet .text-heading h2{
-    font-size: 28px;
+    font-size: 24px;
     font-weight: normal;
     padding: 40px 30px;
 }
@@ -45,7 +44,7 @@
 }
 
 #diet .diet-section h3{
-    font-size: 34px;
+    font-size: 30px;
     margin: 10px 0 30px;
     padding: 0 25px;
 }
@@ -57,12 +56,12 @@
 
 #diet .diet-section .quote{
     text-align: right;
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 10px;
 }
 
 #diet .diet-section .quote span{
-    font-size: 12px;
+    font-size: 10px;
 }
 
 
@@ -96,17 +95,18 @@
 }
 
 .heading-text{
-    font-size: 26px;
+    font-size: 24px;
     line-height: 38px;
     text-align: center;
 }
 
 .heading-text span{
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 }
 
 #diet .diet-section ul{
+    margin-top: 10px;
     overflow: hidden;
     zoom: 1;
 }
@@ -114,7 +114,7 @@
 #diet .diet-section ul li{
     float: left;
     width: 148px;
-    height: 270px;
+    height: 260px;
     padding-left: 10px;
 }
 
@@ -127,7 +127,7 @@
 }
 #diet .diet-section ul li p a{
     color: #000;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.3em;
     font-weight: normal;
 }

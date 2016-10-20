@@ -1,0 +1,61 @@
+@charset "Shift-JIS";
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+#movie{
+    color: #000;
+    line-height: 1.8em;
+}
+
+#movie .main_image{
+    margin-top: 15px;
+}
+
+#movie .text-heading h2{
+    font-size: 24px;
+    line-height: 1.6em;
+    color: #77b931;
+    font-weight: normal;
+    padding: 15px 10px;
+}
+
+#movie .text-heading p{
+    padding: 0 15px;
+}
+
+#movie .movie-section{
+    padding: 0 15px;
+}
+
+#movie .movie-section p{
+    padding: 0 25px;
+}
+
+#movie .movie-section h3{
+    font-size: 30px;
+    margin: 10px 0 15px;
+    padding: 10px 35px;
+    color: #ff6d00;
+    font-size: 24px;
+    background: url(../images/icon_01.png) left center no-repeat;
+    background-size: 27px 36px;
+}
+
+#movie .movie-section .embed-movie{
+    width: 280px;
+    margin: 0 auto;
+}
+
+#movie .link p{
+    margin-top: 5px;
+    padding: 0 10px;
+    text-align: right;
+}
+
+#movie .link p a{
+    font-size: 10px;
+    color: #000;
+}

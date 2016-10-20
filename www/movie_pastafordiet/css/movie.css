@@ -1,0 +1,68 @@
+@charset "Shift-JIS";
+
+.mb30{
+    margin-bottom: 30px !important;
+}
+
+.pr85{
+    padding-right: 85px !important;
+}
+#movie{
+    color: #000;
+    line-height: 1.8em;
+}
+
+#movie .main_image{
+    margin-top: 15px;
+}
+
+#movie .text-heading h2{
+    font-size: 28px;
+    line-height: 1.6em;
+    color: #77b931;
+    font-weight: normal;
+    padding: 35px 35px;
+}
+
+#movie .text-heading p{
+    padding: 0 35px;
+}
+
+#movie .movie-section{
+    padding: 0 35px;
+}
+
+#movie .movie-section p{
+    padding: 0 25px;
+}
+
+#movie .movie-section h3{
+    font-size: 30px;
+    margin: 10px 0 30px;
+    padding: 10px 35px;
+    color: #ff6d00;
+    font-size: 36px;
+    background: url(../images/icon_01.png) left center no-repeat;
+}
+
+#movie div.btmLink{
+    position: static;
+    width: 870px;
+    margin: 0 15px;
+    padding: 20px 0 35px;
+    overflow: hidden;
+    zoom: 1;
+}
+
+#movie div.btmLink p.back{
+    position: static;
+    top: auto;
+    left: auto;
+    float: left;
+}
+
+#movie div.btmLink p.pagetop {
+    margin-top: -3px;
+    padding: 0px 15px 0px;
+    float: right;
+}

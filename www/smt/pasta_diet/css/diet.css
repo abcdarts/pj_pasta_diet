@@ -226,3 +226,14 @@ img{
     float: left;
     font-size: 14px;
 }
+
+#diet .link p{
+    margin-top: 5px;
+    padding: 0 10px;
+    text-align: right;
+}
+
+#diet .link p a{
+    font-size: 10px;
+    color: #000;
+}

@@ -49,6 +49,22 @@ img{
     margin: 0 auto;
 }
 
+#movie .text-link-area{
+    border: 1px solid #ccc;
+    padding: 10px 3%;
+    background: #fff;
+    width: 84%;
+    margin: 20px auto 0;
+}
+
+#movie .text-link-area a{
+    margin-top: 5px;
+    display: block;
+    background: url(../images/icon_02.png) 3px 5px no-repeat;
+    background-size: 6px 10px;
+    padding-left: 15px;
+}
+
 #movie .link p{
     margin-top: 5px;
     padding: 0 10px;

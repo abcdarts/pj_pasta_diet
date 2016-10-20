@@ -45,6 +45,21 @@
     background: url(../images/icon_01.png) left center no-repeat;
 }
 
+#movie .text-link-area{
+    border: 1px solid #ccc;
+    padding: 30px;
+    background: #fff;
+    width: 738px;
+    margin: 40px auto 0;
+}
+
+#movie .text-link-area a{
+    margin-top: 5px;
+    display: block;
+    background: url(../images/icon_02.png) left center no-repeat;
+    padding-left: 15px;
+}
+
 #movie div.btmLink{
     position: static;
     width: 870px;

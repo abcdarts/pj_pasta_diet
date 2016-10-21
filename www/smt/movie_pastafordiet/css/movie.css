@@ -14,6 +14,11 @@ img{
     margin-top: 15px;
 }
 
+#movie .main_column{
+    background: #fff;
+    padding-bottom: 30px;
+}
+
 #movie .text-heading h2{
     font-size: 24px;
     line-height: 1.6em;
@@ -74,4 +79,8 @@ img{
 #movie .link p a{
     font-size: 10px;
     color: #000;
+}
+
+#movie .search_block_btm{
+    padding-top: 10px;
 }

@@ -14,7 +14,7 @@ img{
     margin-top: 15px;
 }
 
-#movie .main_column{
+#movie #main_column{
     background: #fff;
     padding-bottom: 30px;
 }
@@ -81,6 +81,6 @@ img{
     color: #000;
 }
 
-#movie .search_block_btm{
+#movie #search_block_btm{
     padding-top: 10px;
 }
